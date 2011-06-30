@@ -1,0 +1,22 @@
+	package WebRequirementsMetamodel.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class IDependencyItemSemanticEditPolicy extends WebRequirementsMetamodel.diagram.edit.policies.WebRequirementsMetamodelBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public IDependencyItemSemanticEditPolicy() {
+				super(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.IDependency_4004);
+	}
+
+			/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getDestroyElementCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyElementRequest req) {
+		return getGEFWrapper(new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyElementCommand(req));
+	}
+					
+	}

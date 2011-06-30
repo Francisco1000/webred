@@ -1,0 +1,419 @@
+package WebRequirementsMetamodel.diagram.part;
+
+import org.eclipse.osgi.util.NLS;
+
+/**
+ * @generated
+ */
+public class Messages extends NLS {
+
+	/**
+	 * @generated
+	 */
+	static {
+		NLS.initializeMessages("messages", Messages.class); //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private Messages() {
+	}
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizardTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizard_DiagramModelFilePageTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizard_DiagramModelFilePageDescription;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizard_DomainModelFilePageTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizard_DomainModelFilePageDescription;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizardOpenEditorError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizardCreationError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelCreationWizardPageExtensionError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditorUtil_OpenModelResourceErrorDialogTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditorUtil_OpenModelResourceErrorDialogMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditorUtil_CreateDiagramProgressTask;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditorUtil_CreateDiagramCommandLabel;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_isModifiable;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_handleElementContentChanged;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_IncorrectInputError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_NoDiagramInResourceError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_DiagramLoadingError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_UnsynchronizedFileSaveError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_SaveDiagramTask;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_SaveNextResourceTask;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDocumentProvider_SaveAsOperation;
+
+	/**
+	 * @generated
+	 */
+	public static String InitDiagramFile_ResourceErrorDialogTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String InitDiagramFile_ResourceErrorDialogMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String InitDiagramFile_WizardTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String InitDiagramFile_OpenModelFileDialogTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_CreationPageName;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_CreationPageTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_CreationPageDescription;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_RootSelectionPageName;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_RootSelectionPageTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_RootSelectionPageDescription;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_RootSelectionPageSelectionTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_RootSelectionPageNoSelectionMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_RootSelectionPageInvalidSelectionMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_InitDiagramCommand;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelNewDiagramFileWizard_IncorrectRootError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditor_SavingDeletedFile;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditor_SaveAsErrorTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditor_SaveAsErrorMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditor_SaveErrorTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelDiagramEditor_SaveErrorMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelElementChooserDialog_SelectModelElementTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String ModelElementSelectionPageMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String ValidateActionMessage;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodel1Group_title;
+
+	/**
+	 * @generated
+	 */
+	public static String SR1CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String SR1CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Actor2CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Actor2CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Belief3CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Belief3CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Goal4CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Goal4CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Softgoal5CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Softgoal5CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Content6CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Content6CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Navigational7CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Navigational7CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Service8CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Service8CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Personalization9CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Personalization9CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Layout10CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Layout10CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Decomposition11CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Decomposition11CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String MeansEnd12CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String MeansEnd12CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Contribution13CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Contribution13CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String CommandName_OpenDiagram;
+
+	/**
+	 * @generated
+	 */
+	public static String NavigatorActionProvider_OpenDiagramActionName;
+
+	/**
+	 * @generated
+	 */
+	public static String AbstractParser_UnexpectedValueType;
+
+	/**
+	 * @generated
+	 */
+	public static String AbstractParser_WrongStringConversion;
+
+	/**
+	 * @generated
+	 */
+	public static String AbstractParser_UnknownLiteral;
+
+	/**
+	 * @generated
+	 */
+	public static String MessageFormatParser_InvalidInputError;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelModelingAssistantProviderTitle;
+
+	/**
+	 * @generated
+	 */
+	public static String WebRequirementsMetamodelModelingAssistantProviderMessage;
+
+	//TODO: put accessor fields manually	
+}

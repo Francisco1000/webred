@@ -1,0 +1,378 @@
+package WebRequirementsMetamodel.diagram.part;
+
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.eclipse.gmf.runtime.notation.View;
+
+/**
+ * @generated
+ */
+public class WebRequirementsMetamodelDiagramUpdater {
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor> getSemanticChildren(
+			View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry
+				.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.SDEditPart.VISUAL_ID:
+			return getSD_1000SemanticChildren(view);
+		}
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor> getSD_1000SemanticChildren(
+			View view) {
+		if (!view.isSetElement()) {
+			return Collections.emptyList();
+		}
+		WebRequirementsMetamodel.SD modelElement = (WebRequirementsMetamodel.SD) view
+				.getElement();
+		LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor> result = new LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor>();
+		for (Iterator<?> it = modelElement.getStrategicDependencies()
+				.iterator(); it.hasNext();) {
+			WebRequirementsMetamodel.Argumentable childElement = (WebRequirementsMetamodel.Argumentable) it
+					.next();
+			int visualID = WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getActors().iterator(); it.hasNext();) {
+			WebRequirementsMetamodel.Actor childElement = (WebRequirementsMetamodel.Actor) it
+					.next();
+			int visualID = WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID) {
+				result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContainedLinks(
+			View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry
+				.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.SDEditPart.VISUAL_ID:
+			return getSD_1000ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+			return getContent_2001ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+			return getService_2002ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+			return getPersonalization_2003ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+			return getSoftgoal_2004ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+			return getNavigational_2005ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+			return getActor_2006ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+			return getGoal_2007ContainedLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+			return getLayout_2008ContainedLinks(view);
+		}
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getIncomingLinks(
+			View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry
+				.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+			return getContent_2001IncomingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+			return getService_2002IncomingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+			return getPersonalization_2003IncomingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+			return getSoftgoal_2004IncomingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+			return getNavigational_2005IncomingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+			return getActor_2006IncomingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+			return getGoal_2007IncomingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+			return getLayout_2008IncomingLinks(view);
+		}
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getOutgoingLinks(
+			View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry
+				.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+			return getContent_2001OutgoingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+			return getService_2002OutgoingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+			return getPersonalization_2003OutgoingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+			return getSoftgoal_2004OutgoingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+			return getNavigational_2005OutgoingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+			return getActor_2006OutgoingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+			return getGoal_2007OutgoingLinks(view);
+		case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+			return getLayout_2008OutgoingLinks(view);
+		}
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSD_1000ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContent_2001ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getService_2002ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getPersonalization_2003ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSoftgoal_2004ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getNavigational_2005ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getActor_2006ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getGoal_2007ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getLayout_2008ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContent_2001IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getService_2002IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getPersonalization_2003IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSoftgoal_2004IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getNavigational_2005IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getActor_2006IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getGoal_2007IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getLayout_2008IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContent_2001OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getService_2002OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getPersonalization_2003OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSoftgoal_2004OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getNavigational_2005OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getActor_2006OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getGoal_2007OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getLayout_2008OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+}

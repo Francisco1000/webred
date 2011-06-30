@@ -1,0 +1,27 @@
+package WebRequirementsMetamodel.diagram.preferences;
+
+/**
+ * @generated
+ */
+public class DiagramPreferenceInitializer extends org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer {
+
+	/**
+ * @generated
+ */
+	public void initializeDefaultPreferences() {
+		org.eclipse.jface.preference.IPreferenceStore store = getPreferenceStore();
+		WebRequirementsMetamodel.diagram.preferences.DiagramGeneralPreferencePage.initDefaults(store);
+WebRequirementsMetamodel.diagram.preferences.DiagramAppearancePreferencePage.initDefaults(store);
+WebRequirementsMetamodel.diagram.preferences.DiagramConnectionsPreferencePage.initDefaults(store);
+WebRequirementsMetamodel.diagram.preferences.DiagramPrintingPreferencePage.initDefaults(store);
+WebRequirementsMetamodel.diagram.preferences.DiagramRulersAndGridPreferencePage.initDefaults(store);
+
+	}
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.jface.preference.IPreferenceStore getPreferenceStore() {
+		return WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().getPreferenceStore();
+	}
+} 

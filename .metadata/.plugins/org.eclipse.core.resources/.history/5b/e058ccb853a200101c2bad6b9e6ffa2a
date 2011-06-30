@@ -1,0 +1,455 @@
+	package WebRequirementsMetamodel.diagram.part;
+
+	/**
+ * @generated
+ */
+public class WebRequirementsMetamodelDiagramUpdater {
+		
+		/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor> getSemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.SDEditPart.VISUAL_ID:
+	return getSD_1000SemanticChildren(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+	/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor> getSD_1000SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (!view.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+WebRequirementsMetamodel.SD modelElement = (WebRequirementsMetamodel.SD) view.getElement();
+	java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getStrategicDependencies().iterator(); it.hasNext();) {
+		WebRequirementsMetamodel.Argumentable childElement = (WebRequirementsMetamodel.Argumentable) it.next();
+					int visualID = WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+if (visualID == WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+						for (java.util.Iterator<?> it = modelElement.getActors().iterator(); it.hasNext();) {
+		WebRequirementsMetamodel.Actor childElement = (WebRequirementsMetamodel.Actor) it.next();
+					int visualID = WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID) {
+	result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.SDEditPart.VISUAL_ID:
+	return getSD_1000ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+	return getContent_2001ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+	return getNavigational_2002ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+	return getPersonalization_2003ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+	return getGoal_2004ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+	return getSoftgoal_2005ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+	return getService_2006ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+	return getActor_2007ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+	return getLayout_2008ContainedLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.DecompositionEditPart.VISUAL_ID:
+	return getDecomposition_4001ContainedLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getIncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+	return getContent_2001IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+	return getNavigational_2002IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+	return getPersonalization_2003IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+	return getGoal_2004IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+	return getSoftgoal_2005IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+	return getService_2006IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+	return getActor_2007IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+	return getLayout_2008IncomingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.DecompositionEditPart.VISUAL_ID:
+	return getDecomposition_4001IncomingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getOutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+	return getContent_2001OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+	return getNavigational_2002OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+	return getPersonalization_2003OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+	return getGoal_2004OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+	return getSoftgoal_2005OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+	return getService_2006OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+	return getActor_2007OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+	return getLayout_2008OutgoingLinks(view);
+case WebRequirementsMetamodel.diagram.edit.parts.DecompositionEditPart.VISUAL_ID:
+	return getDecomposition_4001OutgoingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSD_1000ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContent_2001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getNavigational_2002ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getPersonalization_2003ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getGoal_2004ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSoftgoal_2005ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getService_2006ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getActor_2007ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getLayout_2008ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getDecomposition_4001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContent_2001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Content modelElement = (WebRequirementsMetamodel.Content) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Decomposition_4001(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getNavigational_2002IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Navigational modelElement = (WebRequirementsMetamodel.Navigational) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Decomposition_4001(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getPersonalization_2003IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Personalization modelElement = (WebRequirementsMetamodel.Personalization) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Decomposition_4001(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getGoal_2004IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Goal modelElement = (WebRequirementsMetamodel.Goal) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Decomposition_4001(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSoftgoal_2005IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Softgoal modelElement = (WebRequirementsMetamodel.Softgoal) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Decomposition_4001(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getService_2006IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Service modelElement = (WebRequirementsMetamodel.Service) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Decomposition_4001(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getActor_2007IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getLayout_2008IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Layout modelElement = (WebRequirementsMetamodel.Layout) view.getElement();
+	java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences = org.eclipse.emf.ecore.util.EcoreUtil.CrossReferencer.find(view.eResource().getResourceSet().getResources());
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getIncomingTypeModelFacetLinks_Decomposition_4001(modelElement, crossReferences));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getDecomposition_4001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getContent_2001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Content modelElement = (WebRequirementsMetamodel.Content) view.getElement();
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Decomposition_4001(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getNavigational_2002OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Navigational modelElement = (WebRequirementsMetamodel.Navigational) view.getElement();
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Decomposition_4001(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getPersonalization_2003OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Personalization modelElement = (WebRequirementsMetamodel.Personalization) view.getElement();
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Decomposition_4001(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getGoal_2004OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Goal modelElement = (WebRequirementsMetamodel.Goal) view.getElement();
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Decomposition_4001(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getSoftgoal_2005OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Softgoal modelElement = (WebRequirementsMetamodel.Softgoal) view.getElement();
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Decomposition_4001(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getService_2006OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Service modelElement = (WebRequirementsMetamodel.Service) view.getElement();
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Decomposition_4001(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getActor_2007OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getLayout_2008OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	WebRequirementsMetamodel.Layout modelElement = (WebRequirementsMetamodel.Layout) view.getElement();
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Decomposition_4001(modelElement));	
+	return result;
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getDecomposition_4001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+private static java.util.Collection<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getIncomingTypeModelFacetLinks_Decomposition_4001(WebRequirementsMetamodel.IntentionalElement target, java.util.Map<org.eclipse.emf.ecore.EObject, java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting>> crossReferences) {
+	java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+	java.util.Collection<org.eclipse.emf.ecore.EStructuralFeature.Setting> settings = crossReferences.get(target);
+	for (org.eclipse.emf.ecore.EStructuralFeature.Setting setting : settings) {
+		if (setting.getEStructuralFeature() != WebRequirementsMetamodel.WebRequirementsMetamodelPackage.eINSTANCE.getDecomposition_SubElement() || false == setting.getEObject() instanceof WebRequirementsMetamodel.Decomposition) {
+	continue;
+}
+WebRequirementsMetamodel.Decomposition link = (WebRequirementsMetamodel.Decomposition) setting.getEObject();
+	if (WebRequirementsMetamodel.diagram.edit.parts.DecompositionEditPart.VISUAL_ID != WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+				WebRequirementsMetamodel.IntentionalElement src = link.getElement();
+			result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor(src, target, link, WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Decomposition_4001, WebRequirementsMetamodel.diagram.edit.parts.DecompositionEditPart.VISUAL_ID));
+		}
+	return result;	
+}
+				
+		/**
+ * @generated
+ */
+private static java.util.Collection<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> getOutgoingTypeModelFacetLinks_Decomposition_4001(WebRequirementsMetamodel.IntentionalElement source) {
+	WebRequirementsMetamodel.SR container = null;
+	// Find container element for the link.
+	// Climb up by containment hierarchy starting from the source
+	// and return the first element that is instance of the container class.
+	for (org.eclipse.emf.ecore.EObject element = source; element != null && container == null; element = element.eContainer()) {
+		if (element instanceof WebRequirementsMetamodel.SR) {
+			container = (WebRequirementsMetamodel.SR) element;
+		}
+	}
+	if (container == null) {
+		return java.util.Collections.emptyList();
+	}
+		java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor> result = new java.util.LinkedList<WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor>();
+	for (java.util.Iterator<?> links = container.getIRelationships().iterator(); links.hasNext();) {
+	org.eclipse.emf.ecore.EObject linkObject = (org.eclipse.emf.ecore.EObject ) links.next();
+	if (false == linkObject instanceof WebRequirementsMetamodel.Decomposition) {
+		continue;
+	}
+	WebRequirementsMetamodel.Decomposition link = (WebRequirementsMetamodel.Decomposition) linkObject;
+		if (WebRequirementsMetamodel.diagram.edit.parts.DecompositionEditPart.VISUAL_ID != WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getLinkWithClassVisualID(link)) {
+	continue;
+}
+			WebRequirementsMetamodel.IntentionalElement dst = link.getSubElement();
+							WebRequirementsMetamodel.IntentionalElement src = link.getElement();
+								if (src != source) {
+	continue;
+}
+						result.add(new WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelLinkDescriptor(src, dst, link, WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Decomposition_4001, WebRequirementsMetamodel.diagram.edit.parts.DecompositionEditPart.VISUAL_ID));
+		}
+	return result;	
+}		
+	
+	}

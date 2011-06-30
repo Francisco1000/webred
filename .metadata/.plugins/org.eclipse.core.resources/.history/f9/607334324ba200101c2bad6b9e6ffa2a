@@ -1,0 +1,189 @@
+
+package WebRequirementsMetamodel.diagram.part;
+
+/**
+ * @generated
+ */
+public class WebRequirementsMetamodelPaletteFactory {
+
+	/**
+ * @generated
+ */
+	public void fillPalette(org.eclipse.gef.palette.PaletteRoot paletteRoot) {
+		paletteRoot.add(createWebRequirementsMetamodel1Group());
+	}
+
+	/**
+ * Creates "WebRequirementsMetamodel" palette tool group
+ * @generated
+ */
+	private org.eclipse.gef.palette.PaletteContainer createWebRequirementsMetamodel1Group() {
+				org.eclipse.gef.palette.PaletteGroup paletteContainer = new org.eclipse.gef.palette.PaletteGroup(WebRequirementsMetamodel.diagram.part.Messages.WebRequirementsMetamodel1Group_title);
+				 paletteContainer.setId("createWebRequirementsMetamodel1Group"); //$NON-NLS-1$
+								paletteContainer.add(createSR1CreationTool());
+paletteContainer.add(createActor2CreationTool());
+paletteContainer.add(createBelief3CreationTool());
+paletteContainer.add(createGoal4CreationTool());
+paletteContainer.add(createSoftgoal5CreationTool());
+paletteContainer.add(createContent6CreationTool());
+paletteContainer.add(createNavigational7CreationTool());
+paletteContainer.add(createService8CreationTool());
+paletteContainer.add(createPersonalization9CreationTool());
+paletteContainer.add(createLayout10CreationTool());
+paletteContainer.add(createDecomposition11CreationTool());
+paletteContainer.add(createMeansEnd12CreationTool());
+paletteContainer.add(createContribution13CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createSR1CreationTool() {
+		org.eclipse.gef.palette.ToolEntry entry = new org.eclipse.gef.palette.ToolEntry(WebRequirementsMetamodel.diagram.part.Messages.SR1CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.SR1CreationTool_desc, null, null) {};
+				 entry.setId("createSR1CreationTool"); //$NON-NLS-1$
+										return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createActor2CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Actor2CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Actor2CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Actor_2006));
+				 entry.setId("createActor2CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Actor_2006));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createBelief3CreationTool() {
+		org.eclipse.gef.palette.ToolEntry entry = new org.eclipse.gef.palette.ToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Belief3CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Belief3CreationTool_desc, null, null) {};
+				 entry.setId("createBelief3CreationTool"); //$NON-NLS-1$
+										return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createGoal4CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Goal4CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Goal4CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Goal_2007));
+				 entry.setId("createGoal4CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Goal_2007));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createSoftgoal5CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Softgoal5CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Softgoal5CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Softgoal_2004));
+				 entry.setId("createSoftgoal5CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Softgoal_2004));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createContent6CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Content6CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Content6CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Content_2001));
+				 entry.setId("createContent6CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Content_2001));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createNavigational7CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Navigational7CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Navigational7CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Navigational_2005));
+				 entry.setId("createNavigational7CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Navigational_2005));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createService8CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Service8CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Service8CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Service_2002));
+				 entry.setId("createService8CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Service_2002));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createPersonalization9CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Personalization9CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Personalization9CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Personalization_2003));
+				 entry.setId("createPersonalization9CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Personalization_2003));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createLayout10CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Layout10CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Layout10CreationTool_desc, java.util.Collections.singletonList(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Layout_2008));
+				 entry.setId("createLayout10CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImageDescriptor(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Layout_2008));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createDecomposition11CreationTool() {
+		org.eclipse.gef.palette.ToolEntry entry = new org.eclipse.gef.palette.ToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Decomposition11CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Decomposition11CreationTool_desc, null, null) {};
+				 entry.setId("createDecomposition11CreationTool"); //$NON-NLS-1$
+										return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createMeansEnd12CreationTool() {
+		org.eclipse.gef.palette.ToolEntry entry = new org.eclipse.gef.palette.ToolEntry(WebRequirementsMetamodel.diagram.part.Messages.MeansEnd12CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.MeansEnd12CreationTool_desc, null, null) {};
+				 entry.setId("createMeansEnd12CreationTool"); //$NON-NLS-1$
+										return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createContribution13CreationTool() {
+		org.eclipse.gef.palette.ToolEntry entry = new org.eclipse.gef.palette.ToolEntry(WebRequirementsMetamodel.diagram.part.Messages.Contribution13CreationTool_title, WebRequirementsMetamodel.diagram.part.Messages.Contribution13CreationTool_desc, null, null) {};
+				 entry.setId("createContribution13CreationTool"); //$NON-NLS-1$
+										return entry;
+	}
+
+
+
+	/**
+ * @generated
+ */
+	private static class NodeToolEntry extends org.eclipse.gef.palette.ToolEntry {
+
+		/**
+ * @generated
+ */
+		private final java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> elementTypes;
+
+		/**
+ * @generated
+ */
+		private NodeToolEntry(String title, String description, java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> elementTypes) {
+			super(title, description, null, null);
+			this.elementTypes = elementTypes;
+		}
+
+		/**
+ * @generated
+ */
+		public org.eclipse.gef.Tool createTool() {
+			org.eclipse.gef.Tool tool = new org.eclipse.gmf.runtime.diagram.ui.tools.UnspecifiedTypeCreationTool(elementTypes);
+			tool.setProperties(getToolProperties());
+			return tool;
+		}
+	}
+}

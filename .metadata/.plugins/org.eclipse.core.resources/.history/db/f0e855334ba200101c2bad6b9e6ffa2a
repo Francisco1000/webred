@@ -1,0 +1,300 @@
+	package WebRequirementsMetamodel.diagram.navigator;
+
+/**
+ * @generated
+ */
+public class WebRequirementsMetamodelNavigatorLabelProvider extends org.eclipse.jface.viewers.LabelProvider implements org.eclipse.ui.navigator.ICommonLabelProvider, org.eclipse.jface.viewers.ITreePathLabelProvider {
+
+		/**
+ * @generated
+ */
+static {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().getImageRegistry().put("Navigator?UnknownElement", org.eclipse.jface.resource.ImageDescriptor.getMissingImageDescriptor());  //$NON-NLS-1$
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().getImageRegistry().put("Navigator?ImageNotFound", org.eclipse.jface.resource.ImageDescriptor.getMissingImageDescriptor());  //$NON-NLS-1$
+}
+	
+		/**
+ * @generated
+ */
+public void updateLabel(org.eclipse.jface.viewers.ViewerLabel label, org.eclipse.jface.viewers.TreePath elementPath) {
+	Object element = elementPath.getLastSegment();
+	if (element instanceof WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem && !isOwnView(((WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem) element).getView())) {
+		return;
+	}
+	label.setText(getText(element));
+	label.setImage(getImage(element));
+}
+	
+		/**
+ * @generated
+ */
+public org.eclipse.swt.graphics.Image getImage(Object element) {
+	if (element instanceof WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorGroup) {
+	WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorGroup group = (WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorGroup) element;
+	return WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().getBundledImage(group.getIcon());
+}
+
+	if (element instanceof WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem) {
+	WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem navigatorItem = (WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem) element;
+	if (!isOwnView(navigatorItem.getView())) {
+		return super.getImage(element);
+	}
+	return getImage(navigatorItem.getView());
+}
+
+	
+		return super.getImage(element);
+}
+	
+		/**
+ * @generated
+ */
+public org.eclipse.swt.graphics.Image getImage(org.eclipse.gmf.runtime.notation.View view) {
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.SDEditPart.VISUAL_ID:
+	return getImage("Navigator?Diagram?http://WebRequirementsMetamodel?SD", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.SD_1000); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Content", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Content_2001); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Service", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Service_2002); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Personalization", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Personalization_2003); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Softgoal", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Softgoal_2004); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Navigational", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Navigational_2005); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Actor", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Actor_2006); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Goal", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Goal_2007); //$NON-NLS-1$
+case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+	return getImage("Navigator?TopLevelNode?http://WebRequirementsMetamodel?Layout", WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Layout_2008); //$NON-NLS-1$
+	}
+		return getImage("Navigator?UnknownElement", null);  //$NON-NLS-1$
+}
+	
+		/**
+ * @generated
+ */
+private org.eclipse.swt.graphics.Image getImage(String key, org.eclipse.gmf.runtime.emf.type.core.IElementType elementType) {
+	org.eclipse.jface.resource.ImageRegistry imageRegistry = WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().getImageRegistry();
+	org.eclipse.swt.graphics.Image image = imageRegistry.get(key);
+	if (image == null && elementType != null && WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.isKnownElementType(elementType)) {
+		image = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.getImage(elementType);
+		imageRegistry.put(key, image);
+	}
+			
+	if (image == null) {
+		image = imageRegistry.get("Navigator?ImageNotFound");  //$NON-NLS-1$
+		imageRegistry.put(key, image);
+	}
+	return image;
+}
+	
+		/**
+ * @generated
+ */
+public String getText(Object element) {
+	if (element instanceof WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorGroup) {
+	WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorGroup group = (WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorGroup) element;
+	return group.getGroupName();
+}
+
+	if (element instanceof WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem) {
+	WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem navigatorItem = (WebRequirementsMetamodel.diagram.navigator.WebRequirementsMetamodelNavigatorItem) element;
+   		if (!isOwnView(navigatorItem.getView())) {
+   			return null;
+   		}
+   		return getText(navigatorItem.getView());
+	}
+
+	
+		return super.getText(element);
+}
+	
+		/**
+ * @generated
+ */
+public String getText(org.eclipse.gmf.runtime.notation.View view) {
+	if (view.getElement() != null && view.getElement().eIsProxy()) {
+		return getUnresolvedDomainElementProxyText(view);
+	}
+		switch (WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getVisualID(view)) {
+		case WebRequirementsMetamodel.diagram.edit.parts.SDEditPart.VISUAL_ID:
+	return getSD_1000Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ContentEditPart.VISUAL_ID:
+	return getContent_2001Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ServiceEditPart.VISUAL_ID:
+	return getService_2002Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.PersonalizationEditPart.VISUAL_ID:
+	return getPersonalization_2003Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.SoftgoalEditPart.VISUAL_ID:
+	return getSoftgoal_2004Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.NavigationalEditPart.VISUAL_ID:
+	return getNavigational_2005Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+	return getActor_2006Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+	return getGoal_2007Text(view);
+case WebRequirementsMetamodel.diagram.edit.parts.LayoutEditPart.VISUAL_ID:
+	return getLayout_2008Text(view);
+	}
+		return getUnknownElementText(view);
+}
+	
+		/**
+ * @generated
+ */
+private String getSD_1000Text(org.eclipse.gmf.runtime.notation.View view) {
+			WebRequirementsMetamodel.SD domainModelElement = (WebRequirementsMetamodel.SD) view.getElement();
+if (domainModelElement != null) {
+	return domainModelElement.getName();
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("No domain element for view with visualID = " + 1000);  //$NON-NLS-1$
+		return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getContent_2001Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Content_2001, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.ContentNameEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5001); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getService_2002Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Service_2002, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.ServiceNameEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5002); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getPersonalization_2003Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Personalization_2003, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.PersonalizationNameEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5003); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getSoftgoal_2004Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Softgoal_2004, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.SoftgoalNameEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5004); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getNavigational_2005Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Navigational_2005, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.NavigationalNameEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5005); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getActor_2006Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Actor_2006, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.ActorDescriptionEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5006); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getGoal_2007Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Goal_2007, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.GoalNameEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5007); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	/**
+ * @generated
+ */
+private String getLayout_2008Text(org.eclipse.gmf.runtime.notation.View view) {
+					org.eclipse.gmf.runtime.common.ui.services.parser.IParser parser = WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelParserProvider.getParser(WebRequirementsMetamodel.diagram.providers.WebRequirementsMetamodelElementTypes.Layout_2008, view.getElement() != null ? view.getElement() : view, WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getType(WebRequirementsMetamodel.diagram.edit.parts.LayoutNameEditPart.VISUAL_ID));
+if (parser != null) {
+	return parser.getPrintString(new org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter(view.getElement() != null ? view.getElement() : view), org.eclipse.gmf.runtime.common.ui.services.parser.ParserOptions.NONE.intValue());
+} else {
+	WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5008); //$NON-NLS-1$
+	return "";  //$NON-NLS-1$
+}
+	}
+	
+		/**
+ * @generated
+ */
+private String getUnknownElementText(org.eclipse.gmf.runtime.notation.View view) {
+	return "<UnknownElement Visual_ID = " + view.getType() + ">";  //$NON-NLS-1$  //$NON-NLS-2$
+}
+	
+		/**
+ * @generated
+ */
+private String getUnresolvedDomainElementProxyText(org.eclipse.gmf.runtime.notation.View view) {
+	return "<Unresolved domain element Visual_ID = " + view.getType() + ">";  //$NON-NLS-1$  //$NON-NLS-2$
+}
+	
+		/**
+ * @generated
+ */
+public void init(org.eclipse.ui.navigator.ICommonContentExtensionSite aConfig) {
+}
+
+		/**
+ * @generated
+ */
+public void restoreState(org.eclipse.ui.IMemento aMemento) {
+}
+
+		/**
+ * @generated
+ */
+public void saveState(org.eclipse.ui.IMemento aMemento) {
+}
+	
+		/**
+ * @generated
+ */
+public String getDescription(Object anElement) {
+	return null;
+}
+	
+		/**
+ * @generated
+ */
+private boolean isOwnView(org.eclipse.gmf.runtime.notation.View view) {
+	return WebRequirementsMetamodel.diagram.edit.parts.SDEditPart.MODEL_ID.equals(WebRequirementsMetamodel.diagram.part.WebRequirementsMetamodelVisualIDRegistry.getModelID(view));
+}
+
+	}
