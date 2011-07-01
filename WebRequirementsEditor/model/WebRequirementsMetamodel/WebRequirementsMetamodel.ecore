@@ -29,7 +29,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//Dependable">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iBeliefs" upperBound="-1"
-        eType="#//Belief"/>
+        eType="#//Belief" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="StrategicRelationships"
         upperBound="-1" eType="#//SR" containment="true"/>

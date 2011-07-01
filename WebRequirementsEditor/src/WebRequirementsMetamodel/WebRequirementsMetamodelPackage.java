@@ -282,7 +282,7 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int ACTOR__DESCRIPTION = DEPENDABLE_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>IBeliefs</b></em>' reference list.
+	 * The feature id for the '<em><b>IBeliefs</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1694,10 +1694,10 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	EAttribute getActor_Description();
 
 	/**
-	 * Returns the meta object for the reference list '{@link WebRequirementsMetamodel.Actor#getIBeliefs <em>IBeliefs</em>}'.
+	 * Returns the meta object for the containment reference list '{@link WebRequirementsMetamodel.Actor#getIBeliefs <em>IBeliefs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>IBeliefs</em>'.
+	 * @return the meta object for the containment reference list '<em>IBeliefs</em>'.
 	 * @see WebRequirementsMetamodel.Actor#getIBeliefs()
 	 * @see #getActor()
 	 * @generated
@@ -2378,7 +2378,7 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute ACTOR__DESCRIPTION = eINSTANCE.getActor_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>IBeliefs</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>IBeliefs</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

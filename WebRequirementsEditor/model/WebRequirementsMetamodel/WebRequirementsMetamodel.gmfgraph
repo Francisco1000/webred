@@ -625,14 +625,6 @@
             xsi:type="gmfgraph:Label"
             name="TaskNameFigure"
             text=""/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="LayoutCriticalityFigure"
-            text=""/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="LayoutEvaluationFigure"
-            text=""/>
         <template
             y="20"/>
         <template
@@ -670,14 +662,6 @@
         <children
             xsi:type="gmfgraph:Label"
             name="ResourceNameFigure"
-            text=""/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="ContentCriticalityFigure"
-            text=""/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="ContentEvaluationFigure"
             text=""/>
       </actualFigure>
       <accessors
