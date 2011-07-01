@@ -1,6 +1,0 @@
-#Wed Jun 29 14:20:32 CEST 2011
-eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/WebRequirementsEditor/model/WebRequirementsMetamodel/WebRequirementsMetamodel.genmodel
-gmf_dashboard/domainModel=platform\:/resource/WebRequirementsEditor/model/WebRequirementsMetamodel/WebRequirementsMetamodel.ecore
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/WebRequirementsEditor/model/WebRequirementsMetamodel/WebRequirementsMetamodel.gmfgraph
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/WebRequirementsEditor/model/WebRequirementsMetamodel/WebRequirementsMetamodel.gmftool

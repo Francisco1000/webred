@@ -1,7 +1,0 @@
-# Tracing options for the WebRequirementsEditor.diagram plug-in
-
-# Common issues
-WebRequirementsEditor.diagram/debug=false
-
-# Visual IDs
-WebRequirementsEditor.diagram/debug/visualID=false
