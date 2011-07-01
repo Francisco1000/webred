@@ -80,7 +80,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.3"/>
+          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.2"/>
       <diagramNode
           href="WebRequirementsMetamodel.gmfgraph#Goal"/>
     </ownedChild>
@@ -100,7 +100,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.4"/>
+          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.3"/>
       <diagramNode
           href="WebRequirementsMetamodel.gmfgraph#Softgoal"/>
     </ownedChild>
@@ -220,8 +220,6 @@
   <nodes>
     <containmentFeature
         href="WebRequirementsMetamodel.ecore#//SD/StrategicDependencies"/>
-    <childrenFeature
-        href="WebRequirementsMetamodel.ecore#//SD/StrategicDependencies"/>
     <ownedChild>
       <domainMetaElement
           href="WebRequirementsMetamodel.ecore#//Resource"/>
@@ -234,7 +232,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.6"/>
+          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.5"/>
       <diagramNode
           href="WebRequirementsMetamodel.gmfgraph#Resource"/>
     </ownedChild>
@@ -254,7 +252,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.5"/>
+          href="WebRequirementsMetamodel.gmftool#//@palette/@tools.0/@tools.4"/>
       <diagramNode
           href="WebRequirementsMetamodel.gmfgraph#Task"/>
     </ownedChild>

@@ -24,7 +24,6 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -65,7 +64,7 @@ public class ActorImpl extends DependableImpl implements Actor {
 	protected String description = DESCRIPTION_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getIBeliefs() <em>IBeliefs</em>}' reference list.
+	 * The cached value of the '{@link #getIBeliefs() <em>IBeliefs</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getIBeliefs()
@@ -151,7 +150,7 @@ public class ActorImpl extends DependableImpl implements Actor {
 	 */
 	public EList<Belief> getIBeliefs() {
 		if (iBeliefs == null) {
-			iBeliefs = new EObjectResolvingEList<Belief>(Belief.class, this, WebRequirementsMetamodelPackage.ACTOR__IBELIEFS);
+			iBeliefs = new EObjectContainmentEList<Belief>(Belief.class, this, WebRequirementsMetamodelPackage.ACTOR__IBELIEFS);
 		}
 		return iBeliefs;
 	}
@@ -197,6 +196,8 @@ public class ActorImpl extends DependableImpl implements Actor {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case WebRequirementsMetamodelPackage.ACTOR__IBELIEFS:
+				return ((InternalEList<?>)getIBeliefs()).basicRemove(otherEnd, msgs);
 			case WebRequirementsMetamodelPackage.ACTOR__STRATEGIC_RELATIONSHIPS:
 				return ((InternalEList<?>)getStrategicRelationships()).basicRemove(otherEnd, msgs);
 		}

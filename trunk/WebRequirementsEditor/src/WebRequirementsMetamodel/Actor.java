@@ -55,17 +55,17 @@ public interface Actor extends Dependable {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>IBeliefs</b></em>' reference list.
+	 * Returns the value of the '<em><b>IBeliefs</b></em>' containment reference list.
 	 * The list contents are of type {@link WebRequirementsMetamodel.Belief}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>IBeliefs</em>' reference list isn't clear,
+	 * If the meaning of the '<em>IBeliefs</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>IBeliefs</em>' reference list.
+	 * @return the value of the '<em>IBeliefs</em>' containment reference list.
 	 * @see WebRequirementsMetamodel.WebRequirementsMetamodelPackage#getActor_IBeliefs()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Belief> getIBeliefs();
