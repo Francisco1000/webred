@@ -6,7 +6,7 @@
     complianceLevel="6.0" copyrightFields="false">
   <foreignModel>WebRequirementsMetamodel.ecore</foreignModel>
   <genPackages prefix="WebRequirementsMetamodel" disposableProviderFactory="true"
-      ecorePackage="WebRequirementsMetamodel.ecore#/">
+      fileExtensions="mx" ecorePackage="WebRequirementsMetamodel.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="WebRequirementsMetamodel.ecore#//Criticality">
       <genEnumLiterals ecoreEnumLiteral="WebRequirementsMetamodel.ecore#//Criticality/open"/>
       <genEnumLiterals ecoreEnumLiteral="WebRequirementsMetamodel.ecore#//Criticality/critical"/>

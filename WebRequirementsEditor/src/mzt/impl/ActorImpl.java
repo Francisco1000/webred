@@ -4,14 +4,14 @@
  *
  * $Id$
  */
-package WebRequirementsMetamodel.impl;
-
-import WebRequirementsMetamodel.Actor;
-import WebRequirementsMetamodel.Belief;
-import WebRequirementsMetamodel.SR;
-import WebRequirementsMetamodel.WebRequirementsMetamodelPackage;
+package mzt.impl;
 
 import java.util.Collection;
+
+import mzt.Actor;
+import mzt.Belief;
+import mzt.SR;
+import mzt.WebRequirementsMetamodelPackage;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -33,10 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link WebRequirementsMetamodel.impl.ActorImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link WebRequirementsMetamodel.impl.ActorImpl#getIBeliefs <em>IBeliefs</em>}</li>
- *   <li>{@link WebRequirementsMetamodel.impl.ActorImpl#getName <em>Name</em>}</li>
- *   <li>{@link WebRequirementsMetamodel.impl.ActorImpl#getStrategicRelationships <em>Strategic Relationships</em>}</li>
+ *   <li>{@link mzt.impl.ActorImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link mzt.impl.ActorImpl#getIBeliefs <em>IBeliefs</em>}</li>
+ *   <li>{@link mzt.impl.ActorImpl#getName <em>Name</em>}</li>
+ *   <li>{@link mzt.impl.ActorImpl#getStrategicRelationships <em>Strategic Relationships</em>}</li>
  * </ul>
  * </p>
  *

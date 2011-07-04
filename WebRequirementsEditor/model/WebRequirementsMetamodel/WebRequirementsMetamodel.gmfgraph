@@ -512,7 +512,7 @@
       <actualFigure
           xsi:type="gmfgraph:PolylineConnection"
           name="DecompositionFigure"
-          targetDecoration="//@figures.0/@descriptors.13/@actualFigure/@children.1">
+          sourceDecoration="//@figures.0/@descriptors.13/@actualFigure/@children.1">
         <foregroundColor
             xsi:type="gmfgraph:RGBColor"/>
         <children
