@@ -4,7 +4,7 @@
  *
  * $Id$
  */
-package WebRequirementsMetamodel;
+package mzt;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -16,14 +16,14 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link WebRequirementsMetamodel.Actor#getDescription <em>Description</em>}</li>
- *   <li>{@link WebRequirementsMetamodel.Actor#getIBeliefs <em>IBeliefs</em>}</li>
- *   <li>{@link WebRequirementsMetamodel.Actor#getName <em>Name</em>}</li>
- *   <li>{@link WebRequirementsMetamodel.Actor#getStrategicRelationships <em>Strategic Relationships</em>}</li>
+ *   <li>{@link mzt.Actor#getDescription <em>Description</em>}</li>
+ *   <li>{@link mzt.Actor#getIBeliefs <em>IBeliefs</em>}</li>
+ *   <li>{@link mzt.Actor#getName <em>Name</em>}</li>
+ *   <li>{@link mzt.Actor#getStrategicRelationships <em>Strategic Relationships</em>}</li>
  * </ul>
  * </p>
  *
- * @see WebRequirementsMetamodel.WebRequirementsMetamodelPackage#getActor()
+ * @see mzt.WebRequirementsMetamodelPackage#getActor()
  * @model
  * @generated
  */
@@ -38,14 +38,14 @@ public interface Actor extends Dependable {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
-	 * @see WebRequirementsMetamodel.WebRequirementsMetamodelPackage#getActor_Description()
+	 * @see mzt.WebRequirementsMetamodelPackage#getActor_Description()
 	 * @model
 	 * @generated
 	 */
 	String getDescription();
 
 	/**
-	 * Sets the value of the '{@link WebRequirementsMetamodel.Actor#getDescription <em>Description</em>}' attribute.
+	 * Sets the value of the '{@link mzt.Actor#getDescription <em>Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Description</em>' attribute.
@@ -56,7 +56,7 @@ public interface Actor extends Dependable {
 
 	/**
 	 * Returns the value of the '<em><b>IBeliefs</b></em>' containment reference list.
-	 * The list contents are of type {@link WebRequirementsMetamodel.Belief}.
+	 * The list contents are of type {@link mzt.Belief}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>IBeliefs</em>' containment reference list isn't clear,
@@ -64,7 +64,7 @@ public interface Actor extends Dependable {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>IBeliefs</em>' containment reference list.
-	 * @see WebRequirementsMetamodel.WebRequirementsMetamodelPackage#getActor_IBeliefs()
+	 * @see mzt.WebRequirementsMetamodelPackage#getActor_IBeliefs()
 	 * @model containment="true"
 	 * @generated
 	 */
@@ -80,14 +80,14 @@ public interface Actor extends Dependable {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see WebRequirementsMetamodel.WebRequirementsMetamodelPackage#getActor_Name()
+	 * @see mzt.WebRequirementsMetamodelPackage#getActor_Name()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link WebRequirementsMetamodel.Actor#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link mzt.Actor#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -106,14 +106,14 @@ public interface Actor extends Dependable {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Strategic Relationships</em>' containment reference.
 	 * @see #setStrategicRelationships(SR)
-	 * @see WebRequirementsMetamodel.WebRequirementsMetamodelPackage#getActor_StrategicRelationships()
+	 * @see mzt.WebRequirementsMetamodelPackage#getActor_StrategicRelationships()
 	 * @model containment="true"
 	 * @generated
 	 */
 	SR getStrategicRelationships();
 
 	/**
-	 * Sets the value of the '{@link WebRequirementsMetamodel.Actor#getStrategicRelationships <em>Strategic Relationships</em>}' containment reference.
+	 * Sets the value of the '{@link mzt.Actor#getStrategicRelationships <em>Strategic Relationships</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Strategic Relationships</em>' containment reference.

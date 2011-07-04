@@ -4,7 +4,7 @@
  *
  * $Id$
  */
-package WebRequirementsMetamodel;
+package mzt;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see WebRequirementsMetamodel.WebRequirementsMetamodelFactory
+ * @see mzt.WebRequirementsMetamodelFactory
  * @model kind="package"
  * @generated
  */
@@ -34,7 +34,7 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "WebRequirementsMetamodel";
+	String eNAME = "mzt";
 
 	/**
 	 * The package namespace URI.
@@ -58,14 +58,14 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	WebRequirementsMetamodelPackage eINSTANCE = WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl.init();
+	WebRequirementsMetamodelPackage eINSTANCE = mzt.impl.WebRequirementsMetamodelPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.SDImpl <em>SD</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.SDImpl <em>SD</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.SDImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getSD()
+	 * @see mzt.impl.SDImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getSD()
 	 * @generated
 	 */
 	int SD = 0;
@@ -134,11 +134,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int SD_FEATURE_COUNT = 6;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.SRImpl <em>SR</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.SRImpl <em>SR</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.SRImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getSR()
+	 * @see mzt.impl.SRImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getSR()
 	 * @generated
 	 */
 	int SR = 1;
@@ -180,11 +180,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int SR_FEATURE_COUNT = 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.IntentionalElementImpl <em>Intentional Element</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.IntentionalElementImpl <em>Intentional Element</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.IntentionalElementImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getIntentionalElement()
+	 * @see mzt.impl.IntentionalElementImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getIntentionalElement()
 	 * @generated
 	 */
 	int INTENTIONAL_ELEMENT = 2;
@@ -208,11 +208,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int INTENTIONAL_ELEMENT_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.DependableImpl <em>Dependable</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.DependableImpl <em>Dependable</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.DependableImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getDependable()
+	 * @see mzt.impl.DependableImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getDependable()
 	 * @generated
 	 */
 	int DEPENDABLE = 22;
@@ -245,11 +245,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int DEPENDABLE_FEATURE_COUNT = 2;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.ActorImpl <em>Actor</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.ActorImpl <em>Actor</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.ActorImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getActor()
+	 * @see mzt.impl.ActorImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getActor()
 	 * @generated
 	 */
 	int ACTOR = 3;
@@ -318,11 +318,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int ACTOR_FEATURE_COUNT = DEPENDABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.BeliefImpl <em>Belief</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.BeliefImpl <em>Belief</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.BeliefImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getBelief()
+	 * @see mzt.impl.BeliefImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getBelief()
 	 * @generated
 	 */
 	int BELIEF = 4;
@@ -346,11 +346,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int BELIEF_FEATURE_COUNT = INTENTIONAL_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.ArgumentableImpl <em>Argumentable</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.ArgumentableImpl <em>Argumentable</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.ArgumentableImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getArgumentable()
+	 * @see mzt.impl.ArgumentableImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getArgumentable()
 	 * @generated
 	 */
 	int ARGUMENTABLE = 9;
@@ -410,11 +410,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int ARGUMENTABLE_FEATURE_COUNT = INTENTIONAL_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.GoalImpl <em>Goal</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.GoalImpl <em>Goal</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.GoalImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getGoal()
+	 * @see mzt.impl.GoalImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getGoal()
 	 * @generated
 	 */
 	int GOAL = 5;
@@ -474,11 +474,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int GOAL_FEATURE_COUNT = ARGUMENTABLE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.TaskImpl <em>Task</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.TaskImpl <em>Task</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.TaskImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getTask()
+	 * @see mzt.impl.TaskImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getTask()
 	 * @generated
 	 */
 	int TASK = 6;
@@ -538,11 +538,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int TASK_FEATURE_COUNT = ARGUMENTABLE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.ResourceImpl <em>Resource</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.ResourceImpl <em>Resource</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.ResourceImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getResource()
+	 * @see mzt.impl.ResourceImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getResource()
 	 * @generated
 	 */
 	int RESOURCE = 7;
@@ -602,11 +602,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int RESOURCE_FEATURE_COUNT = ARGUMENTABLE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.SoftgoalImpl <em>Softgoal</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.SoftgoalImpl <em>Softgoal</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.SoftgoalImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getSoftgoal()
+	 * @see mzt.impl.SoftgoalImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getSoftgoal()
 	 * @generated
 	 */
 	int SOFTGOAL = 8;
@@ -666,11 +666,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int SOFTGOAL_FEATURE_COUNT = ARGUMENTABLE_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.ContentImpl <em>Content</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.ContentImpl <em>Content</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.ContentImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getContent()
+	 * @see mzt.impl.ContentImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getContent()
 	 * @generated
 	 */
 	int CONTENT = 10;
@@ -757,11 +757,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int CONTENT_FEATURE_COUNT = RESOURCE_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.WebRequirementsImpl <em>Web Requirements</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.WebRequirementsImpl <em>Web Requirements</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getWebRequirements()
+	 * @see mzt.impl.WebRequirementsImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getWebRequirements()
 	 * @generated
 	 */
 	int WEB_REQUIREMENTS = 11;
@@ -803,11 +803,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int WEB_REQUIREMENTS_FEATURE_COUNT = 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.NavigationalImpl <em>Navigational</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.NavigationalImpl <em>Navigational</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.NavigationalImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getNavigational()
+	 * @see mzt.impl.NavigationalImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getNavigational()
 	 * @generated
 	 */
 	int NAVIGATIONAL = 12;
@@ -894,11 +894,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int NAVIGATIONAL_FEATURE_COUNT = TASK_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.ServiceImpl <em>Service</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.ServiceImpl <em>Service</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.ServiceImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getService()
+	 * @see mzt.impl.ServiceImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getService()
 	 * @generated
 	 */
 	int SERVICE = 13;
@@ -985,11 +985,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int SERVICE_FEATURE_COUNT = TASK_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.PersonalizationImpl <em>Personalization</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.PersonalizationImpl <em>Personalization</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.PersonalizationImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getPersonalization()
+	 * @see mzt.impl.PersonalizationImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getPersonalization()
 	 * @generated
 	 */
 	int PERSONALIZATION = 14;
@@ -1076,11 +1076,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int PERSONALIZATION_FEATURE_COUNT = TASK_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.LayoutImpl <em>Layout</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.LayoutImpl <em>Layout</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.LayoutImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getLayout()
+	 * @see mzt.impl.LayoutImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getLayout()
 	 * @generated
 	 */
 	int LAYOUT = 15;
@@ -1167,11 +1167,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int LAYOUT_FEATURE_COUNT = TASK_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.RelationshipImpl <em>Relationship</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.RelationshipImpl <em>Relationship</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.RelationshipImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getRelationship()
+	 * @see mzt.impl.RelationshipImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getRelationship()
 	 * @generated
 	 */
 	int RELATIONSHIP = 16;
@@ -1195,11 +1195,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int RELATIONSHIP_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.DecompositionImpl <em>Decomposition</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.DecompositionImpl <em>Decomposition</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.DecompositionImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getDecomposition()
+	 * @see mzt.impl.DecompositionImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getDecomposition()
 	 * @generated
 	 */
 	int DECOMPOSITION = 17;
@@ -1241,11 +1241,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int DECOMPOSITION_FEATURE_COUNT = RELATIONSHIP_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.MeansEndImpl <em>Means End</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.MeansEndImpl <em>Means End</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.MeansEndImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getMeansEnd()
+	 * @see mzt.impl.MeansEndImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getMeansEnd()
 	 * @generated
 	 */
 	int MEANS_END = 18;
@@ -1287,11 +1287,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int MEANS_END_FEATURE_COUNT = RELATIONSHIP_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.ContributionImpl <em>Contribution</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.ContributionImpl <em>Contribution</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.ContributionImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getContribution()
+	 * @see mzt.impl.ContributionImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getContribution()
 	 * @generated
 	 */
 	int CONTRIBUTION = 19;
@@ -1360,11 +1360,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int CONTRIBUTION_FEATURE_COUNT = RELATIONSHIP_FEATURE_COUNT + 5;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.CorrelationImpl <em>Correlation</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.CorrelationImpl <em>Correlation</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.CorrelationImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getCorrelation()
+	 * @see mzt.impl.CorrelationImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getCorrelation()
 	 * @generated
 	 */
 	int CORRELATION = 20;
@@ -1397,11 +1397,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int CORRELATION_FEATURE_COUNT = RELATIONSHIP_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.impl.IDependencyImpl <em>IDependency</em>}' class.
+	 * The meta object id for the '{@link mzt.impl.IDependencyImpl <em>IDependency</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.impl.IDependencyImpl
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getIDependency()
+	 * @see mzt.impl.IDependencyImpl
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getIDependency()
 	 * @generated
 	 */
 	int IDEPENDENCY = 21;
@@ -1452,777 +1452,777 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	int IDEPENDENCY_FEATURE_COUNT = RELATIONSHIP_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.Criticality <em>Criticality</em>}' enum.
+	 * The meta object id for the '{@link mzt.Criticality <em>Criticality</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.Criticality
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getCriticality()
+	 * @see mzt.Criticality
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getCriticality()
 	 * @generated
 	 */
 	int CRITICALITY = 23;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.Evaluation <em>Evaluation</em>}' enum.
+	 * The meta object id for the '{@link mzt.Evaluation <em>Evaluation</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.Evaluation
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getEvaluation()
+	 * @see mzt.Evaluation
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getEvaluation()
 	 * @generated
 	 */
 	int EVALUATION = 24;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.InitialStatus <em>Initial Status</em>}' enum.
+	 * The meta object id for the '{@link mzt.InitialStatus <em>Initial Status</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.InitialStatus
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getInitialStatus()
+	 * @see mzt.InitialStatus
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getInitialStatus()
 	 * @generated
 	 */
 	int INITIAL_STATUS = 25;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.stakeholders <em>stakeholders</em>}' enum.
+	 * The meta object id for the '{@link mzt.stakeholders <em>stakeholders</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.stakeholders
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getstakeholders()
+	 * @see mzt.stakeholders
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getstakeholders()
 	 * @generated
 	 */
 	int STAKEHOLDERS = 26;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.ContributionType <em>Contribution Type</em>}' enum.
+	 * The meta object id for the '{@link mzt.ContributionType <em>Contribution Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.ContributionType
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getContributionType()
+	 * @see mzt.ContributionType
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getContributionType()
 	 * @generated
 	 */
 	int CONTRIBUTION_TYPE = 27;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.CorrelationType <em>Correlation Type</em>}' enum.
+	 * The meta object id for the '{@link mzt.CorrelationType <em>Correlation Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.CorrelationType
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getCorrelationType()
+	 * @see mzt.CorrelationType
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getCorrelationType()
 	 * @generated
 	 */
 	int CORRELATION_TYPE = 28;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.RichInternetApplication <em>Rich Internet Application</em>}' enum.
+	 * The meta object id for the '{@link mzt.RichInternetApplication <em>Rich Internet Application</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.RichInternetApplication
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getRichInternetApplication()
+	 * @see mzt.RichInternetApplication
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getRichInternetApplication()
 	 * @generated
 	 */
 	int RICH_INTERNET_APPLICATION = 29;
 
 	/**
-	 * The meta object id for the '{@link WebRequirementsMetamodel.WeightValue <em>Weight Value</em>}' enum.
+	 * The meta object id for the '{@link mzt.WeightValue <em>Weight Value</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see WebRequirementsMetamodel.WeightValue
-	 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getWeightValue()
+	 * @see mzt.WeightValue
+	 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getWeightValue()
 	 * @generated
 	 */
 	int WEIGHT_VALUE = 30;
 
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.SD <em>SD</em>}'.
+	 * Returns the meta object for class '{@link mzt.SD <em>SD</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>SD</em>'.
-	 * @see WebRequirementsMetamodel.SD
+	 * @see mzt.SD
 	 * @generated
 	 */
 	EClass getSD();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.SD#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.SD#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see WebRequirementsMetamodel.SD#getName()
+	 * @see mzt.SD#getName()
 	 * @see #getSD()
 	 * @generated
 	 */
 	EAttribute getSD_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.SD#getDescription <em>Description</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.SD#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Description</em>'.
-	 * @see WebRequirementsMetamodel.SD#getDescription()
+	 * @see mzt.SD#getDescription()
 	 * @see #getSD()
 	 * @generated
 	 */
 	EAttribute getSD_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.SD#getCreationDate <em>Creation Date</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.SD#getCreationDate <em>Creation Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Creation Date</em>'.
-	 * @see WebRequirementsMetamodel.SD#getCreationDate()
+	 * @see mzt.SD#getCreationDate()
 	 * @see #getSD()
 	 * @generated
 	 */
 	EAttribute getSD_CreationDate();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link WebRequirementsMetamodel.SD#getDependencies <em>Dependencies</em>}'.
+	 * Returns the meta object for the containment reference list '{@link mzt.SD#getDependencies <em>Dependencies</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Dependencies</em>'.
-	 * @see WebRequirementsMetamodel.SD#getDependencies()
+	 * @see mzt.SD#getDependencies()
 	 * @see #getSD()
 	 * @generated
 	 */
 	EReference getSD_Dependencies();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link WebRequirementsMetamodel.SD#getActors <em>Actors</em>}'.
+	 * Returns the meta object for the containment reference list '{@link mzt.SD#getActors <em>Actors</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Actors</em>'.
-	 * @see WebRequirementsMetamodel.SD#getActors()
+	 * @see mzt.SD#getActors()
 	 * @see #getSD()
 	 * @generated
 	 */
 	EReference getSD_Actors();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link WebRequirementsMetamodel.SD#getStrategicDependencies <em>Strategic Dependencies</em>}'.
+	 * Returns the meta object for the containment reference list '{@link mzt.SD#getStrategicDependencies <em>Strategic Dependencies</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Strategic Dependencies</em>'.
-	 * @see WebRequirementsMetamodel.SD#getStrategicDependencies()
+	 * @see mzt.SD#getStrategicDependencies()
 	 * @see #getSD()
 	 * @generated
 	 */
 	EReference getSD_StrategicDependencies();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.SR <em>SR</em>}'.
+	 * Returns the meta object for class '{@link mzt.SR <em>SR</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>SR</em>'.
-	 * @see WebRequirementsMetamodel.SR
+	 * @see mzt.SR
 	 * @generated
 	 */
 	EClass getSR();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link WebRequirementsMetamodel.SR#getIRelationships <em>IRelationships</em>}'.
+	 * Returns the meta object for the containment reference list '{@link mzt.SR#getIRelationships <em>IRelationships</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>IRelationships</em>'.
-	 * @see WebRequirementsMetamodel.SR#getIRelationships()
+	 * @see mzt.SR#getIRelationships()
 	 * @see #getSR()
 	 * @generated
 	 */
 	EReference getSR_IRelationships();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link WebRequirementsMetamodel.SR#getIElement <em>IElement</em>}'.
+	 * Returns the meta object for the containment reference list '{@link mzt.SR#getIElement <em>IElement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>IElement</em>'.
-	 * @see WebRequirementsMetamodel.SR#getIElement()
+	 * @see mzt.SR#getIElement()
 	 * @see #getSR()
 	 * @generated
 	 */
 	EReference getSR_IElement();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.SR#getDescription <em>Description</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.SR#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Description</em>'.
-	 * @see WebRequirementsMetamodel.SR#getDescription()
+	 * @see mzt.SR#getDescription()
 	 * @see #getSR()
 	 * @generated
 	 */
 	EAttribute getSR_Description();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.IntentionalElement <em>Intentional Element</em>}'.
+	 * Returns the meta object for class '{@link mzt.IntentionalElement <em>Intentional Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Intentional Element</em>'.
-	 * @see WebRequirementsMetamodel.IntentionalElement
+	 * @see mzt.IntentionalElement
 	 * @generated
 	 */
 	EClass getIntentionalElement();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.IntentionalElement#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.IntentionalElement#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see WebRequirementsMetamodel.IntentionalElement#getName()
+	 * @see mzt.IntentionalElement#getName()
 	 * @see #getIntentionalElement()
 	 * @generated
 	 */
 	EAttribute getIntentionalElement_Name();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Actor <em>Actor</em>}'.
+	 * Returns the meta object for class '{@link mzt.Actor <em>Actor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Actor</em>'.
-	 * @see WebRequirementsMetamodel.Actor
+	 * @see mzt.Actor
 	 * @generated
 	 */
 	EClass getActor();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Actor#getDescription <em>Description</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Actor#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Description</em>'.
-	 * @see WebRequirementsMetamodel.Actor#getDescription()
+	 * @see mzt.Actor#getDescription()
 	 * @see #getActor()
 	 * @generated
 	 */
 	EAttribute getActor_Description();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link WebRequirementsMetamodel.Actor#getIBeliefs <em>IBeliefs</em>}'.
+	 * Returns the meta object for the containment reference list '{@link mzt.Actor#getIBeliefs <em>IBeliefs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>IBeliefs</em>'.
-	 * @see WebRequirementsMetamodel.Actor#getIBeliefs()
+	 * @see mzt.Actor#getIBeliefs()
 	 * @see #getActor()
 	 * @generated
 	 */
 	EReference getActor_IBeliefs();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Actor#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Actor#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see WebRequirementsMetamodel.Actor#getName()
+	 * @see mzt.Actor#getName()
 	 * @see #getActor()
 	 * @generated
 	 */
 	EAttribute getActor_Name();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link WebRequirementsMetamodel.Actor#getStrategicRelationships <em>Strategic Relationships</em>}'.
+	 * Returns the meta object for the containment reference '{@link mzt.Actor#getStrategicRelationships <em>Strategic Relationships</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Strategic Relationships</em>'.
-	 * @see WebRequirementsMetamodel.Actor#getStrategicRelationships()
+	 * @see mzt.Actor#getStrategicRelationships()
 	 * @see #getActor()
 	 * @generated
 	 */
 	EReference getActor_StrategicRelationships();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Belief <em>Belief</em>}'.
+	 * Returns the meta object for class '{@link mzt.Belief <em>Belief</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Belief</em>'.
-	 * @see WebRequirementsMetamodel.Belief
+	 * @see mzt.Belief
 	 * @generated
 	 */
 	EClass getBelief();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Goal <em>Goal</em>}'.
+	 * Returns the meta object for class '{@link mzt.Goal <em>Goal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Goal</em>'.
-	 * @see WebRequirementsMetamodel.Goal
+	 * @see mzt.Goal
 	 * @generated
 	 */
 	EClass getGoal();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Task <em>Task</em>}'.
+	 * Returns the meta object for class '{@link mzt.Task <em>Task</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Task</em>'.
-	 * @see WebRequirementsMetamodel.Task
+	 * @see mzt.Task
 	 * @generated
 	 */
 	EClass getTask();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Resource <em>Resource</em>}'.
+	 * Returns the meta object for class '{@link mzt.Resource <em>Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Resource</em>'.
-	 * @see WebRequirementsMetamodel.Resource
+	 * @see mzt.Resource
 	 * @generated
 	 */
 	EClass getResource();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Softgoal <em>Softgoal</em>}'.
+	 * Returns the meta object for class '{@link mzt.Softgoal <em>Softgoal</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Softgoal</em>'.
-	 * @see WebRequirementsMetamodel.Softgoal
+	 * @see mzt.Softgoal
 	 * @generated
 	 */
 	EClass getSoftgoal();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Argumentable <em>Argumentable</em>}'.
+	 * Returns the meta object for class '{@link mzt.Argumentable <em>Argumentable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Argumentable</em>'.
-	 * @see WebRequirementsMetamodel.Argumentable
+	 * @see mzt.Argumentable
 	 * @generated
 	 */
 	EClass getArgumentable();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Argumentable#getCriticality <em>Criticality</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Argumentable#getCriticality <em>Criticality</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Criticality</em>'.
-	 * @see WebRequirementsMetamodel.Argumentable#getCriticality()
+	 * @see mzt.Argumentable#getCriticality()
 	 * @see #getArgumentable()
 	 * @generated
 	 */
 	EAttribute getArgumentable_Criticality();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Argumentable#getEvaluation <em>Evaluation</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Argumentable#getEvaluation <em>Evaluation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Evaluation</em>'.
-	 * @see WebRequirementsMetamodel.Argumentable#getEvaluation()
+	 * @see mzt.Argumentable#getEvaluation()
 	 * @see #getArgumentable()
 	 * @generated
 	 */
 	EAttribute getArgumentable_Evaluation();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Content <em>Content</em>}'.
+	 * Returns the meta object for class '{@link mzt.Content <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Content</em>'.
-	 * @see WebRequirementsMetamodel.Content
+	 * @see mzt.Content
 	 * @generated
 	 */
 	EClass getContent();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.WebRequirements <em>Web Requirements</em>}'.
+	 * Returns the meta object for class '{@link mzt.WebRequirements <em>Web Requirements</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Web Requirements</em>'.
-	 * @see WebRequirementsMetamodel.WebRequirements
+	 * @see mzt.WebRequirements
 	 * @generated
 	 */
 	EClass getWebRequirements();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.WebRequirements#getInitialStatus <em>Initial Status</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.WebRequirements#getInitialStatus <em>Initial Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Initial Status</em>'.
-	 * @see WebRequirementsMetamodel.WebRequirements#getInitialStatus()
+	 * @see mzt.WebRequirements#getInitialStatus()
 	 * @see #getWebRequirements()
 	 * @generated
 	 */
 	EAttribute getWebRequirements_InitialStatus();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.WebRequirements#getSolicitedBy <em>Solicited By</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.WebRequirements#getSolicitedBy <em>Solicited By</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Solicited By</em>'.
-	 * @see WebRequirementsMetamodel.WebRequirements#getSolicitedBy()
+	 * @see mzt.WebRequirements#getSolicitedBy()
 	 * @see #getWebRequirements()
 	 * @generated
 	 */
 	EAttribute getWebRequirements_SolicitedBy();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.WebRequirements#getImplementedIn <em>Implemented In</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.WebRequirements#getImplementedIn <em>Implemented In</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Implemented In</em>'.
-	 * @see WebRequirementsMetamodel.WebRequirements#getImplementedIn()
+	 * @see mzt.WebRequirements#getImplementedIn()
 	 * @see #getWebRequirements()
 	 * @generated
 	 */
 	EAttribute getWebRequirements_ImplementedIn();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Navigational <em>Navigational</em>}'.
+	 * Returns the meta object for class '{@link mzt.Navigational <em>Navigational</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Navigational</em>'.
-	 * @see WebRequirementsMetamodel.Navigational
+	 * @see mzt.Navigational
 	 * @generated
 	 */
 	EClass getNavigational();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Service <em>Service</em>}'.
+	 * Returns the meta object for class '{@link mzt.Service <em>Service</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Service</em>'.
-	 * @see WebRequirementsMetamodel.Service
+	 * @see mzt.Service
 	 * @generated
 	 */
 	EClass getService();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Personalization <em>Personalization</em>}'.
+	 * Returns the meta object for class '{@link mzt.Personalization <em>Personalization</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Personalization</em>'.
-	 * @see WebRequirementsMetamodel.Personalization
+	 * @see mzt.Personalization
 	 * @generated
 	 */
 	EClass getPersonalization();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Layout <em>Layout</em>}'.
+	 * Returns the meta object for class '{@link mzt.Layout <em>Layout</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Layout</em>'.
-	 * @see WebRequirementsMetamodel.Layout
+	 * @see mzt.Layout
 	 * @generated
 	 */
 	EClass getLayout();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Relationship <em>Relationship</em>}'.
+	 * Returns the meta object for class '{@link mzt.Relationship <em>Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Relationship</em>'.
-	 * @see WebRequirementsMetamodel.Relationship
+	 * @see mzt.Relationship
 	 * @generated
 	 */
 	EClass getRelationship();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Relationship#getDescription <em>Description</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Relationship#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Description</em>'.
-	 * @see WebRequirementsMetamodel.Relationship#getDescription()
+	 * @see mzt.Relationship#getDescription()
 	 * @see #getRelationship()
 	 * @generated
 	 */
 	EAttribute getRelationship_Description();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Decomposition <em>Decomposition</em>}'.
+	 * Returns the meta object for class '{@link mzt.Decomposition <em>Decomposition</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Decomposition</em>'.
-	 * @see WebRequirementsMetamodel.Decomposition
+	 * @see mzt.Decomposition
 	 * @generated
 	 */
 	EClass getDecomposition();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.Decomposition#getElement <em>Element</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.Decomposition#getElement <em>Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Element</em>'.
-	 * @see WebRequirementsMetamodel.Decomposition#getElement()
+	 * @see mzt.Decomposition#getElement()
 	 * @see #getDecomposition()
 	 * @generated
 	 */
 	EReference getDecomposition_Element();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.Decomposition#getSubElement <em>Sub Element</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.Decomposition#getSubElement <em>Sub Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Sub Element</em>'.
-	 * @see WebRequirementsMetamodel.Decomposition#getSubElement()
+	 * @see mzt.Decomposition#getSubElement()
 	 * @see #getDecomposition()
 	 * @generated
 	 */
 	EReference getDecomposition_SubElement();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.MeansEnd <em>Means End</em>}'.
+	 * Returns the meta object for class '{@link mzt.MeansEnd <em>Means End</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Means End</em>'.
-	 * @see WebRequirementsMetamodel.MeansEnd
+	 * @see mzt.MeansEnd
 	 * @generated
 	 */
 	EClass getMeansEnd();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.MeansEnd#getMeans <em>Means</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.MeansEnd#getMeans <em>Means</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Means</em>'.
-	 * @see WebRequirementsMetamodel.MeansEnd#getMeans()
+	 * @see mzt.MeansEnd#getMeans()
 	 * @see #getMeansEnd()
 	 * @generated
 	 */
 	EReference getMeansEnd_Means();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.MeansEnd#getEnds <em>Ends</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.MeansEnd#getEnds <em>Ends</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Ends</em>'.
-	 * @see WebRequirementsMetamodel.MeansEnd#getEnds()
+	 * @see mzt.MeansEnd#getEnds()
 	 * @see #getMeansEnd()
 	 * @generated
 	 */
 	EReference getMeansEnd_Ends();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Contribution <em>Contribution</em>}'.
+	 * Returns the meta object for class '{@link mzt.Contribution <em>Contribution</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Contribution</em>'.
-	 * @see WebRequirementsMetamodel.Contribution
+	 * @see mzt.Contribution
 	 * @generated
 	 */
 	EClass getContribution();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.Contribution#getContributor <em>Contributor</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.Contribution#getContributor <em>Contributor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Contributor</em>'.
-	 * @see WebRequirementsMetamodel.Contribution#getContributor()
+	 * @see mzt.Contribution#getContributor()
 	 * @see #getContribution()
 	 * @generated
 	 */
 	EReference getContribution_Contributor();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.Contribution#getContributed <em>Contributed</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.Contribution#getContributed <em>Contributed</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Contributed</em>'.
-	 * @see WebRequirementsMetamodel.Contribution#getContributed()
+	 * @see mzt.Contribution#getContributed()
 	 * @see #getContribution()
 	 * @generated
 	 */
 	EReference getContribution_Contributed();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Contribution#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Contribution#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see WebRequirementsMetamodel.Contribution#getType()
+	 * @see mzt.Contribution#getType()
 	 * @see #getContribution()
 	 * @generated
 	 */
 	EAttribute getContribution_Type();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Contribution#getWeightOnClient <em>Weight On Client</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Contribution#getWeightOnClient <em>Weight On Client</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Weight On Client</em>'.
-	 * @see WebRequirementsMetamodel.Contribution#getWeightOnClient()
+	 * @see mzt.Contribution#getWeightOnClient()
 	 * @see #getContribution()
 	 * @generated
 	 */
 	EAttribute getContribution_WeightOnClient();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Contribution#getWeightOnServer <em>Weight On Server</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Contribution#getWeightOnServer <em>Weight On Server</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Weight On Server</em>'.
-	 * @see WebRequirementsMetamodel.Contribution#getWeightOnServer()
+	 * @see mzt.Contribution#getWeightOnServer()
 	 * @see #getContribution()
 	 * @generated
 	 */
 	EAttribute getContribution_WeightOnServer();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Correlation <em>Correlation</em>}'.
+	 * Returns the meta object for class '{@link mzt.Correlation <em>Correlation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Correlation</em>'.
-	 * @see WebRequirementsMetamodel.Correlation
+	 * @see mzt.Correlation
 	 * @generated
 	 */
 	EClass getCorrelation();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.Correlation#getType <em>Type</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.Correlation#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Type</em>'.
-	 * @see WebRequirementsMetamodel.Correlation#getType()
+	 * @see mzt.Correlation#getType()
 	 * @see #getCorrelation()
 	 * @generated
 	 */
 	EAttribute getCorrelation_Type();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.IDependency <em>IDependency</em>}'.
+	 * Returns the meta object for class '{@link mzt.IDependency <em>IDependency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>IDependency</em>'.
-	 * @see WebRequirementsMetamodel.IDependency
+	 * @see mzt.IDependency
 	 * @generated
 	 */
 	EClass getIDependency();
 
 	/**
-	 * Returns the meta object for the reference list '{@link WebRequirementsMetamodel.IDependency#getDependencyTo <em>Dependency To</em>}'.
+	 * Returns the meta object for the reference list '{@link mzt.IDependency#getDependencyTo <em>Dependency To</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Dependency To</em>'.
-	 * @see WebRequirementsMetamodel.IDependency#getDependencyTo()
+	 * @see mzt.IDependency#getDependencyTo()
 	 * @see #getIDependency()
 	 * @generated
 	 */
 	EReference getIDependency_DependencyTo();
 
 	/**
-	 * Returns the meta object for the reference list '{@link WebRequirementsMetamodel.IDependency#getDependencyFrom <em>Dependency From</em>}'.
+	 * Returns the meta object for the reference list '{@link mzt.IDependency#getDependencyFrom <em>Dependency From</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Dependency From</em>'.
-	 * @see WebRequirementsMetamodel.IDependency#getDependencyFrom()
+	 * @see mzt.IDependency#getDependencyFrom()
 	 * @see #getIDependency()
 	 * @generated
 	 */
 	EReference getIDependency_DependencyFrom();
 
 	/**
-	 * Returns the meta object for the attribute '{@link WebRequirementsMetamodel.IDependency#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link mzt.IDependency#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see WebRequirementsMetamodel.IDependency#getName()
+	 * @see mzt.IDependency#getName()
 	 * @see #getIDependency()
 	 * @generated
 	 */
 	EAttribute getIDependency_Name();
 
 	/**
-	 * Returns the meta object for class '{@link WebRequirementsMetamodel.Dependable <em>Dependable</em>}'.
+	 * Returns the meta object for class '{@link mzt.Dependable <em>Dependable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Dependable</em>'.
-	 * @see WebRequirementsMetamodel.Dependable
+	 * @see mzt.Dependable
 	 * @generated
 	 */
 	EClass getDependable();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.Dependable#getDependencyFrom <em>Dependency From</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.Dependable#getDependencyFrom <em>Dependency From</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Dependency From</em>'.
-	 * @see WebRequirementsMetamodel.Dependable#getDependencyFrom()
+	 * @see mzt.Dependable#getDependencyFrom()
 	 * @see #getDependable()
 	 * @generated
 	 */
 	EReference getDependable_DependencyFrom();
 
 	/**
-	 * Returns the meta object for the reference '{@link WebRequirementsMetamodel.Dependable#getDependencyTo <em>Dependency To</em>}'.
+	 * Returns the meta object for the reference '{@link mzt.Dependable#getDependencyTo <em>Dependency To</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Dependency To</em>'.
-	 * @see WebRequirementsMetamodel.Dependable#getDependencyTo()
+	 * @see mzt.Dependable#getDependencyTo()
 	 * @see #getDependable()
 	 * @generated
 	 */
 	EReference getDependable_DependencyTo();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.Criticality <em>Criticality</em>}'.
+	 * Returns the meta object for enum '{@link mzt.Criticality <em>Criticality</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Criticality</em>'.
-	 * @see WebRequirementsMetamodel.Criticality
+	 * @see mzt.Criticality
 	 * @generated
 	 */
 	EEnum getCriticality();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.Evaluation <em>Evaluation</em>}'.
+	 * Returns the meta object for enum '{@link mzt.Evaluation <em>Evaluation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Evaluation</em>'.
-	 * @see WebRequirementsMetamodel.Evaluation
+	 * @see mzt.Evaluation
 	 * @generated
 	 */
 	EEnum getEvaluation();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.InitialStatus <em>Initial Status</em>}'.
+	 * Returns the meta object for enum '{@link mzt.InitialStatus <em>Initial Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Initial Status</em>'.
-	 * @see WebRequirementsMetamodel.InitialStatus
+	 * @see mzt.InitialStatus
 	 * @generated
 	 */
 	EEnum getInitialStatus();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.stakeholders <em>stakeholders</em>}'.
+	 * Returns the meta object for enum '{@link mzt.stakeholders <em>stakeholders</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>stakeholders</em>'.
-	 * @see WebRequirementsMetamodel.stakeholders
+	 * @see mzt.stakeholders
 	 * @generated
 	 */
 	EEnum getstakeholders();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.ContributionType <em>Contribution Type</em>}'.
+	 * Returns the meta object for enum '{@link mzt.ContributionType <em>Contribution Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Contribution Type</em>'.
-	 * @see WebRequirementsMetamodel.ContributionType
+	 * @see mzt.ContributionType
 	 * @generated
 	 */
 	EEnum getContributionType();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.CorrelationType <em>Correlation Type</em>}'.
+	 * Returns the meta object for enum '{@link mzt.CorrelationType <em>Correlation Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Correlation Type</em>'.
-	 * @see WebRequirementsMetamodel.CorrelationType
+	 * @see mzt.CorrelationType
 	 * @generated
 	 */
 	EEnum getCorrelationType();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.RichInternetApplication <em>Rich Internet Application</em>}'.
+	 * Returns the meta object for enum '{@link mzt.RichInternetApplication <em>Rich Internet Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Rich Internet Application</em>'.
-	 * @see WebRequirementsMetamodel.RichInternetApplication
+	 * @see mzt.RichInternetApplication
 	 * @generated
 	 */
 	EEnum getRichInternetApplication();
 
 	/**
-	 * Returns the meta object for enum '{@link WebRequirementsMetamodel.WeightValue <em>Weight Value</em>}'.
+	 * Returns the meta object for enum '{@link mzt.WeightValue <em>Weight Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for enum '<em>Weight Value</em>'.
-	 * @see WebRequirementsMetamodel.WeightValue
+	 * @see mzt.WeightValue
 	 * @generated
 	 */
 	EEnum getWeightValue();
@@ -2250,11 +2250,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.SDImpl <em>SD</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.SDImpl <em>SD</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.SDImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getSD()
+		 * @see mzt.impl.SDImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getSD()
 		 * @generated
 		 */
 		EClass SD = eINSTANCE.getSD();
@@ -2308,11 +2308,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EReference SD__STRATEGIC_DEPENDENCIES = eINSTANCE.getSD_StrategicDependencies();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.SRImpl <em>SR</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.SRImpl <em>SR</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.SRImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getSR()
+		 * @see mzt.impl.SRImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getSR()
 		 * @generated
 		 */
 		EClass SR = eINSTANCE.getSR();
@@ -2342,11 +2342,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute SR__DESCRIPTION = eINSTANCE.getSR_Description();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.IntentionalElementImpl <em>Intentional Element</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.IntentionalElementImpl <em>Intentional Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.IntentionalElementImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getIntentionalElement()
+		 * @see mzt.impl.IntentionalElementImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getIntentionalElement()
 		 * @generated
 		 */
 		EClass INTENTIONAL_ELEMENT = eINSTANCE.getIntentionalElement();
@@ -2360,11 +2360,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute INTENTIONAL_ELEMENT__NAME = eINSTANCE.getIntentionalElement_Name();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.ActorImpl <em>Actor</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.ActorImpl <em>Actor</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.ActorImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getActor()
+		 * @see mzt.impl.ActorImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getActor()
 		 * @generated
 		 */
 		EClass ACTOR = eINSTANCE.getActor();
@@ -2402,61 +2402,61 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EReference ACTOR__STRATEGIC_RELATIONSHIPS = eINSTANCE.getActor_StrategicRelationships();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.BeliefImpl <em>Belief</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.BeliefImpl <em>Belief</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.BeliefImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getBelief()
+		 * @see mzt.impl.BeliefImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getBelief()
 		 * @generated
 		 */
 		EClass BELIEF = eINSTANCE.getBelief();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.GoalImpl <em>Goal</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.GoalImpl <em>Goal</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.GoalImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getGoal()
+		 * @see mzt.impl.GoalImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getGoal()
 		 * @generated
 		 */
 		EClass GOAL = eINSTANCE.getGoal();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.TaskImpl <em>Task</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.TaskImpl <em>Task</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.TaskImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getTask()
+		 * @see mzt.impl.TaskImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getTask()
 		 * @generated
 		 */
 		EClass TASK = eINSTANCE.getTask();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.ResourceImpl <em>Resource</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.ResourceImpl <em>Resource</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.ResourceImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getResource()
+		 * @see mzt.impl.ResourceImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getResource()
 		 * @generated
 		 */
 		EClass RESOURCE = eINSTANCE.getResource();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.SoftgoalImpl <em>Softgoal</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.SoftgoalImpl <em>Softgoal</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.SoftgoalImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getSoftgoal()
+		 * @see mzt.impl.SoftgoalImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getSoftgoal()
 		 * @generated
 		 */
 		EClass SOFTGOAL = eINSTANCE.getSoftgoal();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.ArgumentableImpl <em>Argumentable</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.ArgumentableImpl <em>Argumentable</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.ArgumentableImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getArgumentable()
+		 * @see mzt.impl.ArgumentableImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getArgumentable()
 		 * @generated
 		 */
 		EClass ARGUMENTABLE = eINSTANCE.getArgumentable();
@@ -2478,21 +2478,21 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute ARGUMENTABLE__EVALUATION = eINSTANCE.getArgumentable_Evaluation();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.ContentImpl <em>Content</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.ContentImpl <em>Content</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.ContentImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getContent()
+		 * @see mzt.impl.ContentImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getContent()
 		 * @generated
 		 */
 		EClass CONTENT = eINSTANCE.getContent();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.WebRequirementsImpl <em>Web Requirements</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.WebRequirementsImpl <em>Web Requirements</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getWebRequirements()
+		 * @see mzt.impl.WebRequirementsImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getWebRequirements()
 		 * @generated
 		 */
 		EClass WEB_REQUIREMENTS = eINSTANCE.getWebRequirements();
@@ -2522,51 +2522,51 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute WEB_REQUIREMENTS__IMPLEMENTED_IN = eINSTANCE.getWebRequirements_ImplementedIn();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.NavigationalImpl <em>Navigational</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.NavigationalImpl <em>Navigational</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.NavigationalImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getNavigational()
+		 * @see mzt.impl.NavigationalImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getNavigational()
 		 * @generated
 		 */
 		EClass NAVIGATIONAL = eINSTANCE.getNavigational();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.ServiceImpl <em>Service</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.ServiceImpl <em>Service</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.ServiceImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getService()
+		 * @see mzt.impl.ServiceImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getService()
 		 * @generated
 		 */
 		EClass SERVICE = eINSTANCE.getService();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.PersonalizationImpl <em>Personalization</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.PersonalizationImpl <em>Personalization</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.PersonalizationImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getPersonalization()
+		 * @see mzt.impl.PersonalizationImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getPersonalization()
 		 * @generated
 		 */
 		EClass PERSONALIZATION = eINSTANCE.getPersonalization();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.LayoutImpl <em>Layout</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.LayoutImpl <em>Layout</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.LayoutImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getLayout()
+		 * @see mzt.impl.LayoutImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getLayout()
 		 * @generated
 		 */
 		EClass LAYOUT = eINSTANCE.getLayout();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.RelationshipImpl <em>Relationship</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.RelationshipImpl <em>Relationship</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.RelationshipImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getRelationship()
+		 * @see mzt.impl.RelationshipImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getRelationship()
 		 * @generated
 		 */
 		EClass RELATIONSHIP = eINSTANCE.getRelationship();
@@ -2580,11 +2580,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute RELATIONSHIP__DESCRIPTION = eINSTANCE.getRelationship_Description();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.DecompositionImpl <em>Decomposition</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.DecompositionImpl <em>Decomposition</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.DecompositionImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getDecomposition()
+		 * @see mzt.impl.DecompositionImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getDecomposition()
 		 * @generated
 		 */
 		EClass DECOMPOSITION = eINSTANCE.getDecomposition();
@@ -2606,11 +2606,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EReference DECOMPOSITION__SUB_ELEMENT = eINSTANCE.getDecomposition_SubElement();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.MeansEndImpl <em>Means End</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.MeansEndImpl <em>Means End</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.MeansEndImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getMeansEnd()
+		 * @see mzt.impl.MeansEndImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getMeansEnd()
 		 * @generated
 		 */
 		EClass MEANS_END = eINSTANCE.getMeansEnd();
@@ -2632,11 +2632,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EReference MEANS_END__ENDS = eINSTANCE.getMeansEnd_Ends();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.ContributionImpl <em>Contribution</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.ContributionImpl <em>Contribution</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.ContributionImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getContribution()
+		 * @see mzt.impl.ContributionImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getContribution()
 		 * @generated
 		 */
 		EClass CONTRIBUTION = eINSTANCE.getContribution();
@@ -2682,11 +2682,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute CONTRIBUTION__WEIGHT_ON_SERVER = eINSTANCE.getContribution_WeightOnServer();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.CorrelationImpl <em>Correlation</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.CorrelationImpl <em>Correlation</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.CorrelationImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getCorrelation()
+		 * @see mzt.impl.CorrelationImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getCorrelation()
 		 * @generated
 		 */
 		EClass CORRELATION = eINSTANCE.getCorrelation();
@@ -2700,11 +2700,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute CORRELATION__TYPE = eINSTANCE.getCorrelation_Type();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.IDependencyImpl <em>IDependency</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.IDependencyImpl <em>IDependency</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.IDependencyImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getIDependency()
+		 * @see mzt.impl.IDependencyImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getIDependency()
 		 * @generated
 		 */
 		EClass IDEPENDENCY = eINSTANCE.getIDependency();
@@ -2734,11 +2734,11 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EAttribute IDEPENDENCY__NAME = eINSTANCE.getIDependency_Name();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.impl.DependableImpl <em>Dependable</em>}' class.
+		 * The meta object literal for the '{@link mzt.impl.DependableImpl <em>Dependable</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.impl.DependableImpl
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getDependable()
+		 * @see mzt.impl.DependableImpl
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getDependable()
 		 * @generated
 		 */
 		EClass DEPENDABLE = eINSTANCE.getDependable();
@@ -2760,81 +2760,81 @@ public interface WebRequirementsMetamodelPackage extends EPackage {
 		EReference DEPENDABLE__DEPENDENCY_TO = eINSTANCE.getDependable_DependencyTo();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.Criticality <em>Criticality</em>}' enum.
+		 * The meta object literal for the '{@link mzt.Criticality <em>Criticality</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.Criticality
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getCriticality()
+		 * @see mzt.Criticality
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getCriticality()
 		 * @generated
 		 */
 		EEnum CRITICALITY = eINSTANCE.getCriticality();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.Evaluation <em>Evaluation</em>}' enum.
+		 * The meta object literal for the '{@link mzt.Evaluation <em>Evaluation</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.Evaluation
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getEvaluation()
+		 * @see mzt.Evaluation
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getEvaluation()
 		 * @generated
 		 */
 		EEnum EVALUATION = eINSTANCE.getEvaluation();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.InitialStatus <em>Initial Status</em>}' enum.
+		 * The meta object literal for the '{@link mzt.InitialStatus <em>Initial Status</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.InitialStatus
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getInitialStatus()
+		 * @see mzt.InitialStatus
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getInitialStatus()
 		 * @generated
 		 */
 		EEnum INITIAL_STATUS = eINSTANCE.getInitialStatus();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.stakeholders <em>stakeholders</em>}' enum.
+		 * The meta object literal for the '{@link mzt.stakeholders <em>stakeholders</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.stakeholders
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getstakeholders()
+		 * @see mzt.stakeholders
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getstakeholders()
 		 * @generated
 		 */
 		EEnum STAKEHOLDERS = eINSTANCE.getstakeholders();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.ContributionType <em>Contribution Type</em>}' enum.
+		 * The meta object literal for the '{@link mzt.ContributionType <em>Contribution Type</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.ContributionType
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getContributionType()
+		 * @see mzt.ContributionType
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getContributionType()
 		 * @generated
 		 */
 		EEnum CONTRIBUTION_TYPE = eINSTANCE.getContributionType();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.CorrelationType <em>Correlation Type</em>}' enum.
+		 * The meta object literal for the '{@link mzt.CorrelationType <em>Correlation Type</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.CorrelationType
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getCorrelationType()
+		 * @see mzt.CorrelationType
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getCorrelationType()
 		 * @generated
 		 */
 		EEnum CORRELATION_TYPE = eINSTANCE.getCorrelationType();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.RichInternetApplication <em>Rich Internet Application</em>}' enum.
+		 * The meta object literal for the '{@link mzt.RichInternetApplication <em>Rich Internet Application</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.RichInternetApplication
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getRichInternetApplication()
+		 * @see mzt.RichInternetApplication
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getRichInternetApplication()
 		 * @generated
 		 */
 		EEnum RICH_INTERNET_APPLICATION = eINSTANCE.getRichInternetApplication();
 
 		/**
-		 * The meta object literal for the '{@link WebRequirementsMetamodel.WeightValue <em>Weight Value</em>}' enum.
+		 * The meta object literal for the '{@link mzt.WeightValue <em>Weight Value</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see WebRequirementsMetamodel.WeightValue
-		 * @see WebRequirementsMetamodel.impl.WebRequirementsMetamodelPackageImpl#getWeightValue()
+		 * @see mzt.WeightValue
+		 * @see mzt.impl.WebRequirementsMetamodelPackageImpl#getWeightValue()
 		 * @generated
 		 */
 		EEnum WEIGHT_VALUE = eINSTANCE.getWeightValue();

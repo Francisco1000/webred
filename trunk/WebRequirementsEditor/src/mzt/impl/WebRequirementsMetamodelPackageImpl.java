@@ -4,39 +4,39 @@
  *
  * $Id$
  */
-package WebRequirementsMetamodel.impl;
+package mzt.impl;
 
-import WebRequirementsMetamodel.Actor;
-import WebRequirementsMetamodel.Argumentable;
-import WebRequirementsMetamodel.Belief;
-import WebRequirementsMetamodel.Content;
-import WebRequirementsMetamodel.Contribution;
-import WebRequirementsMetamodel.ContributionType;
-import WebRequirementsMetamodel.Correlation;
-import WebRequirementsMetamodel.CorrelationType;
-import WebRequirementsMetamodel.Criticality;
-import WebRequirementsMetamodel.Decomposition;
-import WebRequirementsMetamodel.Dependable;
-import WebRequirementsMetamodel.Evaluation;
-import WebRequirementsMetamodel.Goal;
-import WebRequirementsMetamodel.IDependency;
-import WebRequirementsMetamodel.InitialStatus;
-import WebRequirementsMetamodel.IntentionalElement;
-import WebRequirementsMetamodel.Layout;
-import WebRequirementsMetamodel.MeansEnd;
-import WebRequirementsMetamodel.Navigational;
-import WebRequirementsMetamodel.Personalization;
-import WebRequirementsMetamodel.Relationship;
-import WebRequirementsMetamodel.Resource;
-import WebRequirementsMetamodel.RichInternetApplication;
-import WebRequirementsMetamodel.Service;
-import WebRequirementsMetamodel.Softgoal;
-import WebRequirementsMetamodel.Task;
-import WebRequirementsMetamodel.WebRequirements;
-import WebRequirementsMetamodel.WebRequirementsMetamodelFactory;
-import WebRequirementsMetamodel.WebRequirementsMetamodelPackage;
-import WebRequirementsMetamodel.WeightValue;
-import WebRequirementsMetamodel.stakeholders;
+import mzt.Actor;
+import mzt.Argumentable;
+import mzt.Belief;
+import mzt.Content;
+import mzt.Contribution;
+import mzt.ContributionType;
+import mzt.Correlation;
+import mzt.CorrelationType;
+import mzt.Criticality;
+import mzt.Decomposition;
+import mzt.Dependable;
+import mzt.Evaluation;
+import mzt.Goal;
+import mzt.IDependency;
+import mzt.InitialStatus;
+import mzt.IntentionalElement;
+import mzt.Layout;
+import mzt.MeansEnd;
+import mzt.Navigational;
+import mzt.Personalization;
+import mzt.Relationship;
+import mzt.Resource;
+import mzt.RichInternetApplication;
+import mzt.Service;
+import mzt.Softgoal;
+import mzt.Task;
+import mzt.WebRequirements;
+import mzt.WebRequirementsMetamodelFactory;
+import mzt.WebRequirementsMetamodelPackage;
+import mzt.WeightValue;
+import mzt.stakeholders;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -281,7 +281,7 @@ public class WebRequirementsMetamodelPackageImpl extends EPackageImpl implements
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see WebRequirementsMetamodel.WebRequirementsMetamodelPackage#eNS_URI
+	 * @see mzt.WebRequirementsMetamodelPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
@@ -1098,18 +1098,18 @@ public class WebRequirementsMetamodelPackageImpl extends EPackageImpl implements
 		iDependencyEClass.getESuperTypes().add(this.getRelationship());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(sdEClass, WebRequirementsMetamodel.SD.class, "SD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSD_Name(), ecorePackage.getEString(), "Name", null, 1, 1, WebRequirementsMetamodel.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSD_Description(), ecorePackage.getEString(), "Description", null, 0, 1, WebRequirementsMetamodel.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSD_CreationDate(), ecorePackage.getEString(), "creationDate", "21/03/2001", 1, 1, WebRequirementsMetamodel.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSD_Dependencies(), this.getIDependency(), null, "dependencies", null, 0, -1, WebRequirementsMetamodel.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSD_Actors(), this.getActor(), null, "actors", null, 0, -1, WebRequirementsMetamodel.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSD_StrategicDependencies(), this.getArgumentable(), null, "StrategicDependencies", null, 0, -1, WebRequirementsMetamodel.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(sdEClass, mzt.SD.class, "SD", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSD_Name(), ecorePackage.getEString(), "Name", null, 1, 1, mzt.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSD_Description(), ecorePackage.getEString(), "Description", null, 0, 1, mzt.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSD_CreationDate(), ecorePackage.getEString(), "creationDate", "21/03/2001", 1, 1, mzt.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSD_Dependencies(), this.getIDependency(), null, "dependencies", null, 0, -1, mzt.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSD_Actors(), this.getActor(), null, "actors", null, 0, -1, mzt.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSD_StrategicDependencies(), this.getArgumentable(), null, "StrategicDependencies", null, 0, -1, mzt.SD.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(srEClass, WebRequirementsMetamodel.SR.class, "SR", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getSR_IRelationships(), this.getRelationship(), null, "iRelationships", null, 0, -1, WebRequirementsMetamodel.SR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSR_IElement(), this.getIntentionalElement(), null, "iElement", null, 0, -1, WebRequirementsMetamodel.SR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSR_Description(), ecorePackage.getEString(), "Description", null, 1, 1, WebRequirementsMetamodel.SR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(srEClass, mzt.SR.class, "SR", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSR_IRelationships(), this.getRelationship(), null, "iRelationships", null, 0, -1, mzt.SR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSR_IElement(), this.getIntentionalElement(), null, "iElement", null, 0, -1, mzt.SR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSR_Description(), ecorePackage.getEString(), "Description", null, 1, 1, mzt.SR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(intentionalElementEClass, IntentionalElement.class, "IntentionalElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getIntentionalElement_Name(), ecorePackage.getEString(), "name", null, 1, 1, IntentionalElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
