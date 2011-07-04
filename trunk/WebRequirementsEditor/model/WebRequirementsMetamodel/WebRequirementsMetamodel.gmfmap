@@ -193,6 +193,16 @@
             <containmentFeature
                 href="WebRequirementsMetamodel.ecore#//SR/iElement"/>
           </children>
+          <children
+              referencedChild="//@nodes.9/@ownedChild">
+            <containmentFeature
+                href="WebRequirementsMetamodel.ecore#//SR/iElement"/>
+          </children>
+          <children
+              referencedChild="//@nodes.8/@ownedChild">
+            <containmentFeature
+                href="WebRequirementsMetamodel.ecore#//SR/iElement"/>
+          </children>
         </ownedChild>
       </children>
     </ownedChild>
