@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapstarthook{The content of this chapter corresponds with the
+following paper: \textbf{J.-N. Maz{\'o}n and J. Trujillo. A Model
+Driven Modernization Approach for Automatically Deriving
+Multidimensional Models in Data Warehouses. 26th International
+Conference on Conceptual Modeling (ER 2007), Auckland (New Zealand),
+November 5-9, 2007. Lecture Notes in Computer Science Vol. 4801,
+pp.56--71. [Acceptance rate: 22.2\%].}}
+
+
+\chapter{A Model Driven Modernization Approach for Automatically Deriving Multidimensional Models in Data Warehouses}
+\label{c6} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+The development of a data warehouse claims for an in-depth analysis
+of data sources. In the previous chapter, it is assumed that a
+documentation of the data sources is available. However, this is not
+always true, since in real scenarios data sources are truly legacy
+systems and its manual analysis may become highly difficult. To
+overcome these problems, in this chapter the development of a data
+warehouse  is considered as a modernization scenario that addresses
+the analysis of the available data sources, thus discovering
+multidimensional structures to either derive a data-driven
+conceptual multidimensional model or reconcile a requirement-driven
+conceptual multidimensional model with data sources. The content of
+this chapter corresponds with the part of the approach shaded in the
+figure below.
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{img/chapters/chapter6}
+  \end{center}
+  %\caption{} \label{}
+\end{figure}
+
+
+The content of this chapter was published in the \emph{International
+Conference on Conceptual Modeling (ER)}. It is one of the  most
+important conferences in data and process modeling, database
+technology, and database applications. This conference is a wide
+forum for researchers and industrial experts interested in all
+aspects of database and information systems design and usage. Topics
+of interest include data warehousing and business intelligence.
+\emph{ER} is a top-ranking conference, since it has an
+\emph{Estimated Impact of Conference (EIC)} value of \emph{0.91}
+according to \emph{The Computer Science Conference Ranking Website}
+(\url{http://www.cs-conference-ranking.org/home.html}). The
+\emph{acceptance rate} of this conference is usually around
+\emph{20\%}.
+
+
+\includepdf[openright=true,pages={1-16}]{mazon_er07.pdf}
+%

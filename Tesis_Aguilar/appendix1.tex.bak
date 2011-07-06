@@ -1,0 +1,1687 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapstarthook{The content of this appendix has been submitted to
+\emph{Data \& Knowledge Engineering} [IF2007: 1.144].}
+
+\chapter{A Survey on Summarizability Issues in Multidimensional Modeling}
+\label{a1} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+\chaptermark{A survey on summarizability issues}
+
+
+The development of a data warehouse (DW) system is based on a
+conceptual multidimensional (MD) model, which provides a high level
+of abstraction in accurately and expressively describing real-world
+situations. Once this model is designed, the corresponding logical
+representation must be obtained as the basis of the implementation
+of the DW according to one specific technology. However, even though
+a good conceptual MD model is designed underneath a DW, there is a
+semantic gap between this model and its logical representation. In
+particular, this gap complicates an adequate treatment of
+summarizability issues, which in turn may lead to erroneous results
+of data analysis tools. Research addressing this topic has produced
+only partial solutions, and individual terminology used by different
+parties hinders further progress. Consequently, based on a unifying
+vocabulary, this survey sheds light on (i) the weak and strong
+points of current approaches for modeling complex MD structures that
+reflect real-world situations in a conceptual MD model and (ii)
+existing mechanisms to avoid summarizability problems when
+conceptual MD models are being implemented.
+
+
+
+\section{Introduction}
+\label{a1:sec:intro} Nowadays, data warehouse (DW) systems play a
+decisive role in providing companies with many years of historical
+information in an accurate way for the decision making process. The
+development of these systems is based on multidimensional (MD)
+modeling~\cite{book/Jarke/DW}, since (i) it is close to the way of
+thinking of human analysts and, therefore, it helps users to
+understand data; and (ii) it supports performance improvements as
+its simple structure allows designers to predict decision makers'
+intentions.
+
+MD models structure data according to a multidimensional space,
+where dimensions specify different ways the data can be viewed,
+aggregated, and sorted (e.g., according to time, store, customer,
+product, etc.).  Events of interest for an analyst (e.g., sales of
+products, treatments of patients, duration of processes, etc.)  are
+represented as facts which are associated with cells or points in
+this multidimensional space and which are described in terms of a
+set of measures.  Thus, every fact is based on a set of dimensions
+that determine the granularity adopted for representing the fact's
+measures. Dimensions, in turn, are organized as hierarchies of
+levels that allow analysts to aggregate data at different levels of
+detail.
+
+Hence, two major issues must be faced by designers of MD models:
+\begin{enumerate}
+\item The adequate representation of interactions between dimensions and
+  facts~\cite{DBLP:conf/dmdw/SongRME01}.
+\item The adequate representation of relationships between levels of
+  aggregation within a dimension
+  hierarchy~\cite{DBLP:conf/vldb/JagadishLS99}.
+\end{enumerate}
+
+In order to take these issues into consideration, the MD constructs
+listed in Tab.~\ref{a1:tab:md-constructs} have to be used. Modeling
+by using the full potential of these constructs often results in
+complex MD structures. These structures can be designed in a variety
+of ways in order to reflect real-world situations, and their
+accurate yet understandable design is a cornerstone to enable users
+to analyze large amounts of data stored in DWs to effectively and
+efficiently support decision-making processes.
+
+\begin{table}
+  \centering
+  \caption{Constructs for multidimensional modeling}
+  \label{a1:tab:md-constructs}
+  \begin{tabular}{|l|l|}
+    \hline
+    Construct & Features\\
+    \hline\hline
+    Level-Level association & roles, multiplicities, default: many-to-one\\
+    Level-Level generalization & default: disjoint and complete\\
+    Fact-Dimension association & multiplicities, default: many-to-one\\
+    \hline
+  \end{tabular}
+\end{table}
+
+In order to provide a common vocabulary for MD modeling, the UML
+profile proposed in~\cite{DBLP:journals/dke/Lujan-MoraTS06} is used
+through this survey.  With this profile, MD models are specified as
+UML class diagrams, where facts and dimensions are represented by
+\textit{Fact} (\includegraphics[height=3mm]{img/icons/fact}) and
+\textit{Dimension}
+(\includegraphics[height=3mm]{img/icons/dimension}) classes
+respectively. More precisely, \textit{Fact} classes are defined as
+composite classes in shared aggregation relationships with several
+\textit{Dimension} classes.  If multiplicities are not specified for
+those relationships, a default of many-to-one is assumed, i.e., each
+fact is associated with one coordinate in every dimension, and each
+of the coordinates can be used for many facts. Measures for
+\textit{Fact} classes are represented as attributes with the
+\textit{FactAttribute} stereotype
+(\includegraphics[height=2mm]{img/icons/fa}).  With respect to
+dimensions, each level of a dimension hierarchy is specified by a
+\textit{Base} class.  Every \textit{Base} class
+(\includegraphics[height=3mm]{img/icons/base}) can contain several
+dimension attributes (\textit{DimensionAttribute} stereotype,
+\includegraphics[height=2mm]{img/icons/da}), and must also contain a
+descriptor attribute (\textit{Descriptor} stereotype,
+\includegraphics[height=2mm]{img/icons/des}).
+ Associations (represented by the stereotype
+\textit{Rolls-UpTo}, \includegraphics[height=3mm]{img/icons/roll})
+between pairs of \textit{Base} classes form a dimension hierarchy.
+On the one hand, roles are used to indicate which level is assumed
+to provide a more detailed view than the other: Role \textit{r}, for
+roll-up, (resp.~\textit{d}, for drill-down) represents the direction
+in which the level of detail decreases (resp.~increases).  On the
+other, UML multiplicities are used to specify associations more
+precisely.
+
+%Including deg. dimensions and facts???
+%This UML profile also allows the definition of degenerate dimensions and
+%facts~\cite{book/Kimball/DW}. Degenerate dimensions represent other
+%fact features in addition to the measures for analysis. They are
+%stereotyped attributes of the \emph{Fact} class
+%(\emph{DegenerateDimension} stereotype,
+%\includegraphics[height=2mm]{img/dd}). Degenerate facts are used to
+%provide further features for every instance combination between
+%facts and dimensions. They are represented as an association class
+%attached to a relationship between a \textit{Fact} class and a
+%\textit{Dimension} class (\emph{DegenerateFact} stereotype,
+%\includegraphics[height=3mm]{img/dfact.eps}).
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{img/dke/example}
+  \end{center}
+  \caption{Sample scenario} \label{a1:fig:sample}
+\end{figure}
+
+For an introductory example consider the conceptual MD model shown
+in Fig.~\ref{a1:fig:sample}. Roughly, this model represents a sample
+MD scenario, where the facts of interest are sales.  These sales are
+structured in a four-dimensional space and allow to analyze who
+(dimension \textit{Customer}) bought and who sold (dimension
+\textit{Salesperson}), what (dimension \textit{Product}), and when
+(dimension \textit{Date}). Concerning multiplicities for
+associations between levels we note that the ``standard'' case is
+many-to-one ($1..*$ at role \emph{d} and $1$ at $r$) such as in the
+case of levels \textit{Day} and \textit{Week}.  Here every day
+belongs to exactly one week, and every week consists of several
+days. Other cases include the many-to-many relationship ($1..*$ at
+both roles) between \textit{Week} and \textit{Month}, which is
+commonly referred to as \emph{non-strict}, the many-to-at-most-one
+relationship ($1..*$ at role \emph{d} and $0..1$ at \emph{r})
+between \textit{Product} and \textit{Category}, which we call
+\emph{roll-up incomplete}, as well as the zero-or-more-to-one
+relationship ($0..*$ at role \emph{d} and $1$ at \emph{r}) between
+\textit{Region} and \textit{Country}, which we call \emph{drill-down
+incomplete}. The ``standard'' case for associations between facts
+and dimensions is many-to-one ($0..*$ at the role of the \emph{Fact}
+class and $1..1$ at the \emph{Dimension} class), for example between
+\emph{Sales} and \emph{Date} to indicate that one sale is made at
+one certain day, and at a single day several sales can be made.
+``Non-standard'' situations include the many-to-many relationship
+($*$ at the role of the \emph{Fact} and \emph{Dimension} class)
+between \emph{Sales} and \emph{Salesperson}, and the many-to-zero
+relationship ($0$ at the role of the \emph{Dimension} class) between
+\emph{Sales} and \emph{Customer}.
+
+Importantly, end-user tools for data analysis, such as OLAP (On-Line
+Analytical Processing) or ``what-if'' analysis, assume that MD
+models ensure summarizability, which refers to the possibility of
+accurately computing aggregate values with a coarser level of detail
+from values with a finer level of detail. Every MD model to be
+implemented must ensure summarizability because, otherwise, its
+violation can lead to incorrect results, and therefore erroneous
+analysis
+decisions~\cite{DBLP:conf/ssdbm/LehnerAW98,DBLP:conf/ssdbm/LenzS97}.
+In addition, summarizability is a necessary precondition for
+performance optimizations based on
+pre-aggregation~\cite{DBLP:conf/vldb/PedersenJD99}.
+
+Therefore, although the sample scenario shown in
+Fig.~\ref{a1:fig:sample} takes advantage of highly expressive
+constructs to design an understandable conceptual MD model,
+summarizability is guaranteed only in case of many-to-one
+relationships whereas the other cases require special treatment to
+ensure consistent query results.  E.g., consider the reports shown
+in Tab.~\ref{a1:tab:DrillDownIncompleteness}. The sales by region
+are shown in Tab.~\ref{a1:tab:DrillDownIncompletenessA} (each region
+belongs to exactly one country), where the total amount is $60$.
+However, if we try to roll-up to country (see
+Tab.~\ref{a1:tab:DrillDownIncompletenessB}), the total sales change
+to $70$.  Note that as an example for a violation of summarizability
+the total numbers obtained in both reports disagree since
+``Westfalen'', ``Bayern'' and ``Rheinland'' are german regions,
+``Valencia'' and ``Murcia'' are spanish regions, but ``Andorra'' has
+no associated regions (as indicated in Fig.~\ref{a1:fig:sample} by
+the minimum multiplicity $0$ at role \emph{d} for the association
+between region and country) and, therefore, its sales are not
+considered in aggregations by region. Importantly, an analyst, who
+rolls-up from the report in
+Tab.~\ref{a1:tab:DrillDownIncompletenessA} towards the one in in
+Tab.~\ref{a1:tab:DrillDownIncompletenessB}, may perceive this
+difference as an inconsistency. Further details and examples for
+such situations are given in Sect.~\ref{a1:sec:summarizability}.
+
+\begin{table}
+\centering \caption{Inconsistent totals for sales due to drill-down
+incompleteness.}
+     \label{a1:tab:DrillDownIncompleteness}
+\subtable[Sales by region.] {
+        \label{a1:tab:DrillDownIncompletenessA}
+        \begin{tabular}{|c|c|}
+        \hline
+        Region & Sales \\
+        \hline
+        \hline
+        Westfalen & 10 \\
+        Bayern & 5 \\
+        Rheinland & 10 \\
+        Valencia & 15 \\
+        Murcia & 20 \\
+        \hline
+        Total & 60 \\
+        \hline
+        \end{tabular}
+} \qquad \qquad \subtable[Sales by country.] {
+     \label{a1:tab:DrillDownIncompletenessB}
+        \begin{tabular}{|c|c|}
+        \hline
+        Country & Sales \\
+        \hline
+        \hline
+        Germany & 25 \\
+        Spain & 35 \\
+        Andorra & 10 \\
+        \hline
+        Total & 70 \\
+        \hline
+        \end{tabular}
+}
+\end{table}
+
+Bearing these considerations in mind, the focus of this survey is on
+research that addresses how to conceptually model complex MD
+structures in an understandable fashion for designers and users,
+whilst accurate query responses are allowed by enforcing
+summarizability when MD models are being implemented. Although there
+is a general agreement concerning basic MD modeling concepts, there
+is still a need for unifying terminology, in particular for a
+successful treatment of summarizability issues. Therefore, this
+survey provides a common vocabulary to integrate existing approaches
+for tackling summarizability issues in MD modeling. Our discussion
+is structured by dividing the state-of-the-art into two main axes:
+\begin{itemize}
+\item General approaches for multidimensional modeling. These
+approaches focus on defining a structured design process for MD
+modeling, giving guidelines to design complex MD structures but
+considering summarizability issues only to a certain extent.
+\item Multidimensional modeling approaches with special emphasis on complex
+structures. These approaches focus on solving summarizability
+problems when complex MD structures are defined.
+\end{itemize}
+
+This survey is organized as follows.  In the next section we provide
+an in-depth description of summarizability concepts and analyze to
+what extent complex MD structures affect summarizability.  Later, in
+Sect.~\ref{a1:sec:general} and~\ref{a1:sec:specific} we present
+current approaches for modeling complex MD structures and sketch how
+they tackle summarizability.  We discuss our findings in
+Sect.~\ref{a1:sec:discussion} and conclude in
+Sect.~\ref{a1:sec:conclusions}.
+
+
+
+\section{Summarizability and Multidimensional Modeling}
+\label{a1:sec:summarizability} The notion of \emph{summarizability}
+was introduced by Rafa\-nelli and
+Shoshani~\cite{DBLP:conf/ssdbm/RafanelliS90} in the context of
+statistical databases, where it refers to the correct computation of
+aggregate values with a coarser level of detail from aggregate
+values with a finer level of detail. Although this seminal work on
+summarizability is framed within the context of statistical
+databases, it is considered as a cornerstone in MD modeling, because
+the authors lay the foundations for detecting and avoiding
+summarizability problems in an MD space.
+
+Concerning the notion of summarizability, consider a
+\emph{Rolls-UpTo} association between two dimension levels, say the
+coarser level $l_r$ and the finer level $l_d$, and aggregate values
+for $l_d$. According to Rafanelli and
+Sho\-sha\-ni~\cite{DBLP:conf/ssdbm/RafanelliS90}, this association
+is \emph{summarizable} if ``using'' this association ``yields the
+correct summary values'' for $l_r$, and they observe that
+many-to-one associations satisfy summarizability while many-to-many
+associations violate summarizability.  For example, in the scenario
+of Fig.~\ref{a1:fig:sample} if aggregate sales per \textit{Week}
+($=l_d$) are given, then there is no way to correctly compute
+aggregate sales per \textit{Month} ($=l_r$) using the many-to-many
+association between \textit{Week} and \textit{Month} as it is
+unknown how the sales of weeks that partially lie in two months need
+to be divided.
+
+Furthermore, Rafanelli and Shoshani state four necessary conditions
+for summarizability, whose essence translates as follows into our
+setting:
+\begin{enumerate}
+\item Many-to-many associations must not be used, i.e., the maximum
+  multiplicity of the coarser level (role \emph{r}) in \emph{Rolls-UpTo} associations
+  must be $1$ (instead of $*$).
+\item Existing many-to-one associations among levels must be modeled.
+\item Many-to-one associations must be ``full,'' i.e., all values contributing
+  to the coarser level must be recorded somewhere at the finer level.
+  This condition can be enforced by including an additional value ``other'' at
+  the finer level, which records potentially missing values.
+\item There must not be missing values.
+\end{enumerate}
+We emphasize that the first two of these conditions deal with the
+schema level whereas the remaining two are semantic conditions
+concerning the data level.  Indeed, we neglect such completeness
+issues in this survey as they embody general data quality problems,
+which need to be addressed independently of aggregation: Clearly,
+if, e.g., one particular product is missing in the database then no
+sales concerning this product are recorded, which in turn implies
+that total sales numbers will be incorrect.  Although strictly
+speaking summarizability is violated as incorrect aggregate values
+are obtained, the core of the problem does not lie in the use of
+aggregation.
+
+In the spirit of \cite{DBLP:conf/ssdbm/RafanelliS90}, Lenz and
+Shoshani~\cite{DBLP:conf/ssdbm/LenzS97} argue that summarizability
+is of most importance for queries concerning multidimensional data,
+since violations of this property may lead to erroneous conclusions
+and decisions.  Hence, users should be informed when performing
+non-summarizable operations.  Importantly, Lenz and Shoshani show
+that summarizability is dependent on (i) types of measures and (ii)
+the specific dimensions under consideration.  Moreover, they state
+three necessary conditions for summarizability.  The first of these
+conditions, called \emph{disjointness}, agrees with condition (1) of
+Rafanelli and Shoshani stated above.  The second condition, called
+\emph{completeness}, includes condition (4) above and requires in
+addition that the minimum multiplicity at both ends of an
+association is $1$ (instead of $0$).  The third condition, called
+\emph{type compatibility}, ensures that the aggregate function
+applied to a measure is summarizable according to the type of the
+measure (stock, flow and value-per-unit) and the type of the related
+dimensions (temporal, non-temporal).  E.g., account balances or
+quantity on hand are of type stock and, hence, must not be summed
+over the time dimension.  (In contrast, computing average balances
+over time or sums of balances over products is reasonable.)
+
+For the special case where aggregate functions are restricted to the
+\emph{sum} operator, the term \emph{additivity} (instead of
+summarizability) is used frequently. An in-depth analysis of
+additivity and a taxonomy for reasons why additivity may not hold is
+presented by Horner and Song~\cite{DBLP:conf/er/HornerS05}.  They
+distinguish schema problems, which are our focus in this survey,
+from data problems (e.g., inconsistencies and imprecision) and
+computational problems (e.g., type compatibility in the sense of
+\cite{DBLP:conf/ssdbm/LenzS97}), give typical examples for each
+problematic case, and suggest guidelines for their management.
+Concerning schema problems, in particular roll-up and drill-down
+incomplete as well as non-strict associations, the general ideas are
+(i) to tolerate and display incorrect results and (ii) to measure
+and display inaccuracies, which enables analysts to estimate whether
+and how much results may suffer from summarizability problems.
+
+Finally, although Lenz and Shoshani~\cite{DBLP:conf/ssdbm/LenzS97}
+only focus on the relationships between two levels of a dimension
+hierarchy, the relationships between facts and dimensions can also
+cause summarizability problems in MD modeling. Specifically, to
+avoid erroneous results when an MD model is queried, every measure
+in the fact must be determined by all dimensions, (i.e., the maximum
+and minimum multiplicity at the dimension end must be $1$ in the
+relationship between a fact and a dimension), which we also address
+in the following.
+
+\subsection{Constraints for Summarizability}
+\label{a1:sec:dependencies}
+
+It is instructive to note that the conditions for summarizability
+given in~\cite{DBLP:conf/ssdbm/RafanelliS90} and
+in~\cite{DBLP:conf/ssdbm/LenzS97} are incomparable: Condition (3)
+of~\cite{DBLP:conf/ssdbm/RafanelliS90} is not covered
+by~\cite{DBLP:conf/ssdbm/LenzS97}, and condition (3)
+of~\cite{DBLP:conf/ssdbm/LenzS97} is not covered
+by~\cite{DBLP:conf/ssdbm/RafanelliS90}.  Nevertheless, the
+conditions related to disjointness, completeness, and presence of
+many-to-one associations can all be understood as constraints (or
+dependencies) that are expressible at the schema level (e.g., in
+terms of multiplicities as done above).  In fact, several authors
+advocate to represent summarizability conditions explicitly via
+dependencies at the schema level.
+
+Importantly, Lehner et al.~\cite{DBLP:conf/ssdbm/LehnerAW98}
+realized that many-to-one associations between dimension level are
+just functional dependencies (FDs) as known from standard relational
+database theory, and they distinguish strong FDs, which correspond
+to total functions, from weak ones, which correspond to partial
+functions and which give rise to roll-up incomplete associations in
+our terminology.
+
+Similarly, Niemi et
+al.~\cite{DBLP:conf/dmdw/NiemiNT01,DBLP:journals/dke/NiemiNT03} also
+observe that FDs in dimension hierarchies avoid summarizability
+problems. Moreover, they mention the use of Boolean dependencies to
+deal with special cases of many-to-many associations, and they
+propose novel dependencies to avoid roll-up and
+drill-incompleteness.
+
+Based on the work of~\cite{DBLP:conf/ssdbm/LehnerAW98},
+Lechtenb{\"o}rger and
+Vo\-ssen~\cite{DBLP:journals/is/LechtenborgerV03} define three
+multidimensional normal forms (MNFs).  Intuitively, the first one
+(1MNF) deals with the adequate representation of an MD model based
+on the FDs that hold in the underlying data sources.  Importantly,
+1MNF implies the first two conditions for summarizability of
+Rafanelli and Shoshani~\cite{DBLP:conf/ssdbm/RafanelliS90}.
+Furthermore, the second and third MNF allow to model accurately when
+and why summarizability may not be given according to the conditions
+of~\cite{DBLP:conf/ssdbm/LenzS97,DBLP:conf/ssdbm/RafanelliS90} but
+can be ensured in a context-sensitive manner based on schema
+information.  For example, the specialization of customers into
+private customers and companies shown in Fig.~\ref{a1:fig:sample}
+cannot be represented directly in most MD modeling approaches.
+Instead, those approaches would include roll-up incomplete
+associations from \textit{Customer} to \textit{Job} as well as from
+\textit{Customer} to \textit{Branch}.  Now, to enrich modeling
+approaches without explicit presence of specialization constructs,
+the work~\cite{DBLP:journals/is/LechtenborgerV03} introduces
+\emph{context dependencies}, which enable an implicit representation
+of such specializations (and their reconstruction in relational
+implementations).
+
+A context dependency of~\cite{DBLP:journals/is/LechtenborgerV03} can
+be regarded as a restricted kind of \emph{dimension constraint} in
+the sense of~\cite{DBLP:journals/tods/HurtadoGM05}.  Hurtado et
+al.~\cite{DBLP:journals/tods/HurtadoGM05} point out that there are
+two kinds of dimension hierarchies: homogeneous and heterogeneous.
+The former fulfills the summarizability conditions, whereas the
+latter does not. While heterogeneous dimensions have hierarchies
+where two members in a given level are allowed to have ancestors in
+different levels, homogeneous dimensions contain the typical
+normalized hierarchies without summarizability problems. The authors
+argue that it is easier for designers to model heterogeneous
+dimensions because they are closer to real-world (they represent
+more naturally and cleanly many practical situations).  In our
+context, heterogeneous dimensions correspond to roll-up/drill-down
+incomplete hierarchies (since the mapping between levels in
+heterogeneous dimensions is defined as partial), whereas non-strict
+associations are not addressed in
+\cite{DBLP:journals/tods/HurtadoGM05}.  The aim of Hurtado et al.\
+is to reason about summarizability of heterogeneous dimensions via a
+new kind of integrity constraints, called \emph{dimension
+constraints}, for which they derive a summarizability test.
+Moreover, they introduce the notion of frozen dimensions, which
+represent minimal homogeneous dimensions mixed up in a heterogeneous
+dimension, and they provide an algorithm for the implication problem
+of dimension constraints based on frozen dimensions.
+
+The constraints for summarizability presented so far aim at a
+careful definition of dimensions and their hierarchies.  Hence, they
+are called intra-dimensional constraints
+in~\cite{DBLP:conf/ssdbm/LehnerAW98}.  However, within the full
+scope of MD modeling, further inter-dimensional
+constraints~\cite{DBLP:conf/ssdbm/LehnerAW98} for relationships
+between facts and dimensions are needed to ensure summarizability.
+These interdimensional constraints are related to the grain of the
+fact in such a way that, to avoid erroneous results when an MD model
+is queried, every measure in the fact must be determined by all
+dimensions, which is reflected in the common relational
+implementation of a star schema, where the primary key of the fact
+table is composed of foreign keys of the dimension
+tables~\cite{book/Kimball/DW}. These constraints are made formally
+precise by the 1MNF proposed
+in~\cite{DBLP:journals/is/LechtenborgerV03}. Indeed, 1MNF makes sure
+that the terminal dimension levels of all dimensions of a fact form
+a key for every measure and implies that all measures are recorded
+with the same granularity.
+
+In order to obtain a complete picture of the problem space, which
+allows to pinpoint and differentiate previous approaches, we next
+revisit each of the UML constructs listed in
+Tab.~\ref{a1:tab:md-constructs} that are used to model complex MD
+structures.  For each construct, we systematically discuss the
+arising summarizability issues based on a complete enumeration of
+cases.
+
+\subsection{Relationships between Dimension Levels}
+Dimension hierarchies are among the most important MD structures to
+be modeled, since they are used by data analysis tools to accurately
+aggregate or disaggregate data, depending on levels of aggregation.
+These levels of aggregation must be explicitly specified by
+organizing the members of a given dimension into hierarchies of
+levels, in particular in the presence of various kinds of
+``irregularity'' or ``heterogeneity'' for which early examples can
+be found in~\cite{DBLP:conf/ssdbm/LehnerAW98}.
+
+Importantly, all kinds of relationships between pairs of dimension
+levels that have been proposed so far can be represented either by
+associations or by generalizations of dimension levels as listed in
+Tab.~\ref{a1:tab:md-constructs}. Concerning associations, we have
+already seen that multiplicities play a crucial role for
+summarizability.  In view of that observation in
+Tab.~\ref{a1:tab:multiplicity-classification} we present a complete
+characterization of associations based on the minimum and maximum
+multiplicities used in the roles \emph{d} and \emph{r}.  In that
+table ``regular'' and ``unusual'' denote association types without
+summarizability problems, the latter being rarely used, whereas the
+remaining entries form a selection of terms used in the literature
+for a particular irregularity; the ones used in this paper are
+\emph{emphasized} and explained in the following.  In particular, we
+propose the novel terms ``drill-down incomplete'' and ``roll-up
+incomplete,'' which convey a figurative meaning that we hope to be
+easy to remember.
+
+Moreover, we emphasize that our discussion deals with single
+associations in contrast to entire hierarchies, which allows for a
+more precise classification and treatment of summarizability issues
+(in particular, a single hierarchy may contain unproblematic
+associations as well as problematic associations of different
+kinds).
+
+Concerning generalization we briefly observe that disjointness of
+generalizations bears similarity with strictness, whereas
+completeness corresponds to roll-up completeness.  Details are
+presented below.
+
+\begin{table}
+    %\tiny
+  \centering
+  \caption{Classification of associations between dimension levels}
+  \label{a1:tab:multiplicity-classification}
+    \begin{tabular}{|c||c|c|c|c|}
+         \hline
+       & \multicolumn{2}{|c|}{Minimum Multiplicity} & \multicolumn{2}{|c|}{Maximum Multiplicity} \\\hline
+       & 0 & 1 & 1 & * \\\hline
+      Role d & \emph{drill-down incomplete}, asymmetric, non-onto, unbalanced & regular & unusual & regular \\
+      Role r & \emph{roll-up incomplete}, incomplete, non-covering, ragged & regular & regular & \emph{non-strict} \\\hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Regular Relationships between Dimension Levels} We
+note that summarizability of the ``regular'' entries follows from
+the necessary conditions ``disjointness'' and ``completeness'' for
+summarizability stated in \cite{DBLP:conf/ssdbm/LenzS97}. Indeed,
+disjointness implies that the maximum multiplicity at role \emph{r}
+is $1$ while completeness implies that the minimum multiplicities at
+both roles are $1$.  Furthermore, if the maximum multiplicity at
+role \emph{d} is $1$ an unusual situation arises; however, this
+situation does not contradict the necessary conditions of
+\cite{DBLP:conf/ssdbm/LenzS97}.
+
+\subsubsection{Drill-down Completeness}
+A \emph{Rolls-UpTo} association involving a pair of dimension levels
+is \emph{drill-down complete} if for every element $e$ of the
+coarser level (i.e., role r, such as \textit{Country} for the
+association between \textit{City} and \textit{Country}) there exists
+an element at the finer level (i.e., role d, here \textit{City})
+which is associated with element $e$; otherwise, it is called
+\emph{drill-down incomplete}.  In other words, a \emph{Rolls-UpTo}
+association is drill-down incomplete if the minimum multiplicity at
+role \emph{d} is $0$; otherwise, it is drill-down complete.  For
+example, the association between \textit{Country} and
+\textit{Region} in Fig.~\ref{a1:fig:sample} is drill-down incomplete
+as there are countries (such as Andorra, Monaco, etc.)  without
+associated regions.  As explained in the Introduction and
+illustrated in Tab.~\ref{a1:tab:DrillDownIncompleteness}, drill-down
+incompleteness violates summarizability since it may yield
+inconsistent totals.
+
+\subsubsection{Roll-up Completeness}
+A \emph{Rolls-UpTo} association involving a pair of dimension levels
+is \emph{roll-up complete} if for every element $e$ of the finer
+level (i.e., role d, such as \textit{Product} for the association
+between \textit{Product} and \textit{Brand}) there exists an element
+at the coarser level (i.e., role r, here \textit{Brand}) which is
+associated with element $e$; otherwise, it is called \emph{roll-up
+incomplete}.  In other words, a \emph{Rolls-UpTo} association is
+roll-up incomplete if the minimum multiplicity at role \emph{r} is
+$0$; otherwise, it is roll-up complete.  For example, the
+association between \textit{Product} and \textit{Category} in
+Fig.~\ref{a1:fig:sample} is roll-up incomplete, and faces the
+problem of inconsistent totals as shown in
+Tab.~\ref{a1:tab:RollUpIncompleteness}, where we assume that
+``milk'' and ``beer'' belong to category ``drink'', ``bread'' and
+``tuna'' to category ``food'', and ``napkin'' has no category.
+Therefore, when factual data is aggregated by product the sales are
+$60$ (see Tab.~\ref{a1:tab:RollUpIncompletenessA}). However, special
+attention should be paid when data is aggregated by category, since
+``napkin'' sales are not taken into account and the total sales
+decrease to $40$ (as shown in
+Tab.~\ref{a1:tab:RollUpIncompletenessB}).
+
+\begin{table}
+\centering \caption{Inconsistent totals for sales due to roll-up
+incompleteness.}
+     \label{a1:tab:RollUpIncompleteness}
+\subtable[By product.] {
+        \label{a1:tab:RollUpIncompletenessA}
+        \begin{tabular}{|c|c|}
+        \hline
+        Product & Sales \\
+        \hline
+        \hline
+        Milk & 10 \\
+        Beer & 5 \\
+        Bread & 10 \\
+        Tuna & 15 \\
+        Napkin & 20 \\
+        \hline
+        Total & 60 \\
+        \hline
+        \end{tabular}
+} \qquad\qquad \subtable[By category.] {
+     \label{a1:tab:RollUpIncompletenessB}
+        \begin{tabular}{|c|c|}
+        \hline
+        Category & Sales \\
+        \hline
+        \hline
+        Drink & 15 \\
+        Food & 25 \\
+        \hline
+        Total & 40 \\
+        \hline
+        \end{tabular}
+}
+\end{table}
+
+
+\subsubsection{Strictness}
+A \emph{Rolls-UpTo} association involving a pair of dimension levels
+is \emph{strict} if for every element $e$ of the finer level (i.e.,
+role d, such as \textit{Day} for the association between
+\textit{Day} and \textit{Week}) there exists at most one element at
+the coarser level (i.e., role r, here \textit{Week}) which is
+associated with element $e$; otherwise, it is called
+\emph{non-strict}.  In other words, a \emph{Rolls-UpTo} association
+is strict if the maximum multiplicity at role \emph{r} is $1$;
+otherwise, it is non-strict.  For example, the association between
+\textit{Week} and \textit{Month} in Fig.~\ref{a1:fig:sample} is
+non-strict, and requires special care to avoid the well-known double
+counting problem, which is illustrated in
+Tab.~\ref{a1:tab:NonStrictness}: As week ``5-2008'' partially
+belongs to ``January'' as well as ``February'' (see
+Tab.~\ref{a1:tab:NonStrictnessA}), the sales for week ``5-2008''
+should not be counted twice (as is done in
+Tab.~\ref{a1:tab:NonStrictnessB}) but should be divided
+appropriately among both months.
+
+\begin{table}
+\centering \caption{Double counting problem for sales due to
+non-strictness.}
+     \label{a1:tab:NonStrictness}
+\subtable[Sales by week.] {
+        \label{a1:tab:NonStrictnessA}
+        \begin{tabular}{|c|c|}
+        \hline
+        Week & Sales \\
+        \hline
+        \hline
+        4-2008 & 10 \\
+        5-2008 & 20 \\
+        6-2008 & 10 \\
+        7-2008 & 10 \\
+        8-2008 & 10 \\
+        9-2008 & 10 \\
+        \hline
+        Total & 70 \\
+        \hline
+        \end{tabular}
+} \qquad\qquad \subtable[Sales by month.] {
+     \label{a1:tab:NonStrictnessB}
+        \begin{tabular}{|c|c|}
+        \hline
+        Month & Sales \\
+        \hline
+        \hline
+        Jan-2008 & 30 \\
+        Feb-2008 & 60 \\
+        \hline
+        Total & 90 \\
+        \hline
+        \end{tabular}}
+\end{table}
+
+
+\subsubsection{Generalization}
+As observed by Lehner et al.~\cite{DBLP:conf/ssdbm/LehnerAW98},
+dimension levels in MD models may exhibit heterogeneity in the sense
+that certain properties may only be applicable to a subset of
+elements. E.g., for the dimension level \textit{Customer} in the
+scenario shown in Fig.~\ref{a1:fig:sample}, some customers can be
+categorized by their \textit{Gender} (if they are human beings) and
+others by \textit{ContactPerson} (if they are companies).  If those
+properties are modeled as levels, which are reachable from
+\textit{Customer} via \emph{Rolls-UpTo} associations, then those
+associations will necessarily suffer from roll-up incompleteness and
+the inherent summarizability problems. Moreover, as explained
+in~\cite{DBLP:conf/ssdbm/LehnerAW98}, sparse data cubes may result,
+and users may pose inconsistent queries (``show sales by Gender and
+ContactPerson usage'').
+
+From an object-oriented perspective such heterogeneity indicates the
+existence of sub-classes where the individual properties are either
+applicable (as attributes) or not.  In fact, this perspective guides
+the definition of the third multidimensional normal
+of~\cite{DBLP:journals/is/LechtenborgerV03}, where context
+dependencies explain the applicability of dimension levels;
+moreover, these dependencies can be used to construct class
+hierarchies that contain the applicable attributes, which avoids
+roll-up incompleteness and associated summarizability problems.  It
+is instructive to note, however, that this approach does \emph{not}
+allow generalizations as modeling constructs.  Moreover, although
+several MD design proposals are based on object-oriented modeling
+and, in particular, the
+UML~\cite{DBLP:journals/is/AbelloSS06,DBLP:journals/dke/Lujan-MoraTS06,DBLP:journals/dss/PratAC06}
+none of them explicitly suggests the use of generalization to avoid
+roll-up incompleteness.  In line with~\cite{Bodart01} we argue that
+optional constructs such multiplicities of $0$ should be avoided in
+\emph{understandable} conceptual models whenever possible.  In
+particular, generalization relationships for dimension levels embody
+an attractive alternative for roll-up incomplete associations.
+
+With generalization, new analysis potential is unleashed.  As
+explained in~\cite{DBLP:journals/is/LechtenborgerV03}, (i)
+traditional roll-up operations may be performed within a certain
+sub-class by using only the applicable levels, which now provides
+context-sensitive summarizability, or (ii) a novel type of
+drill-down operation allows to switch from \emph{Base} classes to
+their immediate sub-classes, e.g., in Fig.~\ref{a1:fig:sample} sales
+for all \textit{Customer}s are split into sales for \textit{Company}
+and \textit{Private} customers (or in the opposite direction via a
+novel type of roll-up).  In traditional MD modeling approaches case
+(ii) can be simulated by introducing a new dimension level that
+captures the immediate sub-classes and that is connected from the
+base class via a \emph{Rolls-UpTo} association (e.g., there is a
+\emph{Rolls-UpTo} association from \textit{Customer} --role
+\emph{d}-- to the new level \textit{CustomerType} --role \emph{r}--
+with elements ``company'' and ``private'').  It is easy to see that
+this association has
+\begin{itemize}
+\item multiplicity $1$ at role \emph{r} if the generalization is complete and
+  disjoint,
+\item multiplicity $0..1$ at role \emph{r} if the generalization is incomplete
+  and disjoint,
+\item multiplicity $1..*$ at role \emph{r} if the generalization is complete
+  and overlapping, and
+\item multiplicity $0..*$ at role \emph{r} if the generalization is incomplete
+  and overlapping.
+\end{itemize}
+Consequently, the novel type of drill-down and roll-up operations is
+summarizable for complete and disjoint generalizations, whereas
+other cases exhibit the summarizability issues of roll-up incomplete
+and/or non-strict associations seen above.
+
+
+\subsection{Fact-Dimension Relationships}
+A crucial decision for designing multidimensional models concerns
+the grain of facts~\cite{book/Kimball/DW}, i.e., the list of
+dimensions which defines the scope of the measures in a fact.
+Therefore, the grain of the fact is determined by fact-dimension
+relationships. To avoid erroneous results, an MD model must have a
+consistent granularity, which means that every measure in the fact
+must be determined by all dimensions. As we have explained in
+Sect.~\ref{a1:sec:dependencies} this assumption is made formally
+precise by the first multidimensional normal form proposed
+in~\cite{DBLP:journals/is/LechtenborgerV03}. This assumption implies
+that the relationship between a fact and a dimension must be
+many-to-one, which avoids summarizability problems. Therefore,
+multidimensional models are usually defined according to this
+multiplicity constraint in order to enforce summarizability in
+fact-dimension relationships. However, these constraints are too
+strict for modeling many real-world situations in an easy and
+understandable way. Designers must deal with scenarios in which
+different granularities are necessary and where relationships
+between a fact and a dimension can have different multiplicities.
+Such situations can lead to MD models with summarizability problems.
+Specifically, Tab.~\ref{a1:tab:FD-multiplicity-classification}
+presents different kinds of fact-dimension relationships, which are
+characterized by the multiplicities of the association between fact
+and dimension.
+
+\begin{table}
+    %\tiny
+  \centering
+  \caption{Classification of associations between facts and dimensions}
+  \label{a1:tab:FD-multiplicity-classification}
+    \begin{tabular}{|c||c|c|c|c|}
+         \hline
+       & \multicolumn{2}{|c|}{Minimum Multiplicity} & \multicolumn{2}{|c|}{Maximum Multiplicity} \\\hline
+       & 0 & 1 & 1 & * \\\hline
+      Fact & regular & unusual & unusual & regular \\
+      Dimension & \emph{incomplete dimensioning} & regular & regular & \emph{non-strict dimensioning}, many-to-many \\\hline
+    \end{tabular}
+\end{table}
+
+Again, ``regular'' and ``unusual'' means that summarizability is
+ensured, whilst the other terms denote situations which violate
+summarizability.
+
+\subsubsection{Regular Fact-Dimension Relationships} Summarizability is ensured in these relationships, because the fact
+is functionally determined by the dimension. The common feature of
+these regular situations is that the minimum and maximum
+multiplicity in the role of the \emph{Dimension} class is $1$ to
+indicate that every instance of the \emph{Fact} class must be always
+related to one and only one instance of the \emph{Dimension} class.
+The other multiplicities are described as follows:
+
+\begin{itemize}
+
+\item Minimum multiplicity of $0$ at the end of the fact. This
+multiplicity allows the existence of dimension instances that are
+not related with any fact instance. This is the most common option
+for multidimensional modeling, e.g., consider a \emph{Product}
+dimension where some products have not been sold so far.
+
+\item Minimum multiplicity of $1$ at the end of the fact. This
+multiplicity requires that every dimension instance is related with
+at least one fact instance. For practical purposes this multiplicity
+is usually ignored, since it introduces additional restrictions in
+the multidimensional model that make ETL
+(Extrac\-tion-Transformation-Load) processes more complex and prone
+to fail.
+
+\item Maximum multiplicity of $1$ at the end of the fact. This
+multiplicity requires that every dimension instance is related with
+at most one fact instance. For practical purposes this multiplicity
+is usually ignored as well, since it prevents the orthogonal use of
+dimensions. E.g., consider a \emph{Time} dimension where every date
+can only be used once.
+
+\item Maximum multiplicity of $*$ at the end of the fact. This
+multiplicity allows dimension instances to be related with many fact
+instances. It is the most desirable option within the regular
+situations.
+\end{itemize}
+
+
+\subsubsection{Incomplete Fact-Dimension Relationships} An
+association between a fact $f$ and a dimension $d$ is complete if
+for every fact instance of $f$, there exists a dimension instance of
+$d$ which is related to that fact instance; otherwise, the
+association is \emph{incomplete}. This situation can fall into a
+summarizability violation since there is a granularity mismatch in
+the instances of the fact. In other words, a fact-dimension
+association is incomplete if the minimum multiplicity at the end of
+the dimension is $0$. For example, the association between
+\emph{Customer} dimension and \emph{Sales} fact in
+Fig.~\ref{a1:fig:sample} exhibits an incomplete relationship. This
+sample faces the problem of inconsistent totals, as shown in
+Tab.~\ref{a1:tab:DimensioningIncompletenessA}, where we assume that
+John and Anna buy some products in January, and George goes shopping
+in April. The totals arise in a supermarket where some customers
+have loyalty cards to get discounts. For those customers, sales are
+recorded directly together with their personal information (e.g.,
+city of residence). In contrast, sales of (anonymous) customers
+without cards are recorded without considering any personal
+information (see Tab.~\ref{a1:tab:DimensioningIncompletenessB}).
+Consequently, when the sales are analyzed by customer and date some
+sales are missing (those from anonymous customers). Only when the
+customer is not taken into account, the total sales are correct. The
+problem of inconsistency is shown in
+Tab.~\ref{a1:tab:DimensioningIncompleteness} where some anonymous
+sales made in January are not shown when customer dimension is
+considered.
+
+\begin{table}
+\centering \caption{Inconsistent totals for sales due to
+incompleteness.}
+     \label{a1:tab:DimensioningIncompleteness}
+\subtable[Sales by customer and time.] {
+        \label{a1:tab:DimensioningIncompletenessA}
+        \begin{tabular}[t]{|c|c|c|}
+        \hline
+        Customer & Date & Sales \\
+        \hline
+        \hline
+        John & January-2001 & 10 \\
+        Anna & January-2001 & 5 \\
+        George & April-2001 & 15 \\
+        \hline
+       \multicolumn{2}{|c|}{Total} & 30 \\
+        \hline
+        \end{tabular}
+} \qquad\qquad \subtable[Sales by time.] {
+     \label{a1:tab:DimensioningIncompletenessB}
+        \begin{tabular}[t]{|c|c|}
+        \hline
+        Date & Sales \\
+        \hline
+        \hline
+        January-2001 & 25 \\
+        April-2001 & 15 \\
+        \hline
+        Total & 40 \\
+        \hline
+        \end{tabular}}
+\end{table}
+
+
+\subsubsection{Non-strict Fact-Dimension Relationships} An association
+between a fact $f$ and a dimension $d$ is strict if for every
+instance of the fact $f$ there exists at most one instance of the
+dimension $d$ which is related to that fact instance; otherwise, it
+is called \emph{non-strict}. In other words, non-strict associations
+between a fact and a specific dimension are specified by means of
+the multiplicity $*$ in the role of the corresponding dimension.
+This situation may cause summarizability problems in the same way as
+the double counting problem for non-strict dimension associations
+explained above. For example, in Fig.~\ref{a1:fig:sample}, the
+association between the \emph{Sales} fact and the \emph{Salesperson}
+dimension is non-strict, which means that more than one salesperson
+could be involved in the same sale. This problem is illustrated in
+Tab.~\ref{a1:tab:DimensioningNonStrictness}: as the sale made on
+``January 17th'' is shared by ``Bill'' and ``Peter'', it should be
+counted once.
+
+%Jose: Including degenerate facts or weighting factor?
+%Within this context, degenerate facts are also important in order to
+%indicate further features for every instance combination in a
+%many-to-many relationship with a particular
+%dimension~\cite{book/Kimball/DW}.
+
+\begin{table}
+\centering \caption{Double counting problem for sales due to
+non-strictness.}
+     \label{a1:tab:DimensioningNonStrictness}
+\subtable[Sales by salesperson.] {
+     \label{a1:tab:DimensioningNonStrictnessA}
+        \begin{tabular}[t]{|c|c|c|}
+        \hline
+        Date & Salesperson & Sales \\
+        \hline
+        \hline
+        17/01/2001 & Bill & 10 \\
+        17/01/2001 & Peter & 10 \\
+        18/01/2001 & Bill & 5 \\
+        18/01/2001 & Peter & 5 \\
+        \hline
+        \multicolumn{2}{|c|}{Total} & 30 \\
+        \hline
+        \end{tabular}
+} \qquad \subtable[Shared sales by salesperson.] {
+     \label{a1:tab:DimensioningNonStrictnessB}
+        \begin{tabular}[t]{|c|c|c|}
+        \hline
+        Date & Salesperson & Sales \\
+        \hline
+        \hline
+        17/01/2001 & Bill, Peter & 10 \\
+        18/01/2001 & Bill & 5 \\
+        18/01/2001 &  Peter & 5 \\
+        \hline
+        \multicolumn{2}{|c|}{Total} & 20 \\
+        \hline
+        \end{tabular}}
+\end{table}
+
+\subsubsection{Beyond Multiplicities} In addition to summarizability issues arising from problematic multiplicities,
+there is another more subtle way in which an inadequate choice for
+the grain of facts can lead to summarizability problems.  As an
+example, consider the scenario shown in Fig.~\ref{a1:fig:sample} and
+assume that there is an additional measure recording the age of
+customers.  If this measure is included in the fact \textit{Sales},
+then duplicate age values will be recorded for every product bought
+by a customer within the same year.  Formally, these duplicates
+arise as the age is functionally dependent on only two of the three
+dimensions, namely on the levels \textit{Date} and
+\textit{Customer}.  Indeed, such a scenario violates the first
+multidimensional normal form defined
+in~\cite{DBLP:journals/is/LechtenborgerV03} (see also
+Sect.~\ref{a1:sec:dependencies}).  Notice that while in this example
+it may seem obvious \emph{not} to record customer ages for customer
+sales, in more complex scenarios such situations may be more
+difficult to detect.  In this survey, we assume that MD models
+satisfy the first multidimensional normal form, which can be
+guaranteed based on an analysis of functional dependencies occurring
+in the application domain, for example using the tool Data Warehouse
+Detective~\cite{DBLP:conf/btw/HaselmannLV07}.
+
+
+\section{General Approaches for Multidimensional Modeling}
+\label{a1:sec:general} When implementing the MD model in a
+relational platform, the most common representation is the star
+sche\-ma~\cite{book/Kimball/DW}. This schema consists of one central
+fact table and several related dimension tables. The levels of
+aggregation are implicitly contained within the dimension tables. As
+the star schema is a \emph{logical} representation that aims at a
+relational implementation, it does not consider the modeling of
+complex MD structures and it only ensures summarizability if the
+relationships between MD elements are many-to-one. Therefore,
+several \emph{conceptual} modeling approaches have been proposed to
+design MD models that address the design of complex MD structures to
+accurately model the real world.
+
+In this section, we first review early \emph{conceptual} modeling
+approaches such as~\cite{DBLP:journals/ijcis/GolfarelliMR98}
+and~\cite{DBLP:conf/dmdw/HusemannLV00}, which focus on a structured
+design process starting from requirements and ending in a
+tool-specific implementation but which lack support for defining
+complex MD structures. Afterwards, we consider the recent
+approaches~\cite{DBLP:journals/is/AbelloSS06,DBLP:journals/dke/Lujan-MoraTS06,DBLP:journals/dss/PratAC06},
+which exhibit more expressiveness based on an object-oriented
+perspective but which lack in a detailed proposal for ensuring
+summarizability.
+
+In~\cite{DBLP:journals/ijcis/GolfarelliMR98}, the authors present a
+graphical conceptual model for designing MD models (Dimensional Fact
+Mo\-del). This conceptual model consists of a set of fact schemata
+whose basic elements are facts, measures, attributes, dimensions,
+and hierarchies. The relationship between a fact and a specific
+dimension is always many-to-one, and only strict hierarchies can be
+explicitly modeled by means of many-to-one links between dimension
+attributes to explicitly indicate how to aggregate and disaggregate
+data. Furthermore, the existence of optional relationships between
+attributes in a hierarchy and type compatibility (the third
+condition for summarizability of~\cite{DBLP:conf/ssdbm/LenzS97}) of
+fact attributes along dimensions is explicitly considered. This
+approach does not deal with obtaining an implementation of the
+conceptual MD model without summarizability problems because it only
+uses constructs that do not violate summarizability conditions.
+
+The MD model proposed in~\cite{DBLP:conf/dmdw/HusemannLV00} stresses
+the design of summarizable dimension hierarchies in the presence of
+optional dimension levels and advocates the specification of
+summarizability constraints.  The authors propose a graphical
+notation for conceptual MD design and also show how to apply
+multidimensional normal
+forms~\cite{DBLP:conf/ssdbm/LehnerAW98,DBLP:conf/dmdw/HusemannLV00,DBLP:journals/is/LechtenborgerV03}
+in order to guarantee summarizability.  Dimension hierarchies are
+classified into two basic types: (i) a simple hierarchy consists of
+exactly one aggregation path within a dimension, and (ii) a multiple
+dimension hierarchy contains at least two different aggregation
+paths in a dimension.  Alternative aggregation paths occur in
+multiple hierarchies if elements of split levels belong to exactly
+one element of a higher level.  Moreover, optional groups of
+aggregation paths are also allowed if some element of a dimension
+level does not belong to an element of some higher level. Therefore,
+this approach considers not only strict hierarchies but also
+generalization relationships between dimension levels. Regarding the
+relationships between facts and dimensions, only many-to-one
+relations are considered, and multidimensional normal forms are used
+in this approach to ensure that the measures are determined by the
+set of dimensions.
+
+Concerning semantically richer proposals,
+in~\cite{DBLP:journals/dss/PratAC06}, Prat et al. first build a
+general UML (Unified Modeling Language) diagram which is enriched
+with MD concepts that facilitate the derivation of a logical
+representation. Although, the authors describe in another
+paper~\cite{DBLP:conf/er/AkokaCP01} how to model different kinds of
+dimension hierarchies, the transformations of the hierarchies into a
+logical level are not as rich, since they are only defined from
+many-to-one and one-to-one associations of the conceptual model to
+fulfill summarizability conditions. Moreover, many-to-many
+relationships in the general UML diagram are mapped to facts
+directly, whereas roll-up/drill-down incompleteness is not
+addressed. Type compatibility is considered in this work, since the
+link between a measure and a dimension is characterized by a set of
+aggregate functions depending on the type of the measure and the
+corresponding dimension.
+
+Another approach which uses UML constructs is described
+in~\cite{DBLP:journals/is/AbelloSS06}, where the authors define the
+MD data model YAM$^{\mbox{2}}$.  Here, a dimension is a connected,
+directed graph, where every vertex corresponds to a hierarchy level,
+and an edge reflects that every instance of target level can be
+decomposed into a collection of instances of the source level (a
+relation between levels reflects a part-whole relationship among
+instances of levels). Although rich constructs are provided,
+hierarchies must conform with the three conditions for
+summarizability of \cite{DBLP:conf/ssdbm/LenzS97} (disjointness,
+completeness and type compatibility) at the conceptual level. The
+authors argue that the first two conditions depend on constraints
+specified over multiplicities of relationships between levels, and
+they propose to allow different kinds of hierarchies provided that
+multiplicity information is taken into account to decide whether
+summarizability is given (allowing non-strict hierarchies). However,
+neither roll-up incomplete nor drill-down incomplete hierarchies are
+allowed because every instance of a dimension must have the same
+structure; to address this shortcoming, the authors propose a
+solution at the instance level based on dummy values. Concerning the
+third condition, YAM$^{\mbox{2}}$ allows to specify information
+related to type compatibility directly in the metamodel. Moreover,
+YAM$^{\mbox{2}}$ covers multiple hierarchies in each dimension as
+well as generalization relationships between levels. Modeling
+non-strict relationships between facts and dimensions is considered
+by means of multiplicities in the UML association, whilst
+incompleteness is addressed by defining generalization between facts
+in order to express optionality. Unfortunately, the approach does
+not provide mechanisms to avoid summarizability problems that arise
+during schema implementation.
+
+Finally, in~\cite{DBLP:journals/dke/Lujan-MoraTS06}, a UML profile
+for MD modeling is proposed.  In this approach, a dimension is
+composed of hierarchy levels.  An association between levels
+specifies the relationship between two levels of a hierarchy.  The
+only prerequisite is that these levels must define a Directed
+Acyclic Graph (DAG) rooted in the dimension. A dimension contains a
+unique first hierarchy level called terminal dimension level.  An
+aggregation path is a subsequence of hierarchy levels, which starts
+in a terminal level (lower level of detail).  The definition of a
+dimension hierarchy is very expressive, since there are no
+restrictions concerning associations between dimension levels,
+provided that every hierarchy fulfills the DAG condition.
+Consequently, every kind of relationship between levels of a
+dimension can be represented by using the corresponding multiplicity
+in the association between levels. Furthermore, it is worth
+mentioning that this work considers the definition of non-strict and
+incomplete relationships between facts and dimensions via the
+definition of different multiplicities between facts and dimensions.
+However, this work neither offers guidelines to help the designer
+model different kinds of complex MD structures nor to ensure
+summarizability.  Concerning type compatibility, all measures are
+considered as additive by default, i.e., measure values can be
+summed along all dimensions. Non-additivity and semi-additivity are
+considered by defining constraints on measures between brackets and
+placing them somewhere around the fact. These constraints have
+formal underlying formulae and contain the allowed operators, if
+any, along the dimension that the measure is not additive.  Finally,
+in~\cite{journals/dss/Mazon2008,journals/dke/Mazon2007}, this
+approach is integrated in a model driven framework in order to
+obtain a logical representation of the conceptual MD model in an
+automatic way.
+
+\section{Multidimensional Modeling of Complex Structures}
+\label{a1:sec:specific} In this section, we review approaches that
+improve the proposals previously mentioned via the definition of
+mechanisms to facilitate the modeling of complex MD structures and
+their implementation ensuring summarizability. These approaches are
+concerned with either (i) how to model complex dimension hierarchies
+or (ii) how to model relationships between facts and dimensions.
+
+\subsection{Dimension Hierarchies}
+\label{a1:sec:dim-hierarchies} One fundamental work has been carried
+out by Pedersen et
+al.~\cite{DBLP:conf/vldb/PedersenJD99,DBLP:journals/is/PedersenJD01},
+in which the authors argue that summarizability occurs when
+dimension hierarchies are ``normalized,'' i.e., roll-up and
+drill-down complete as well as strict.  Importantly, starting from
+an MD data model allowing multiple, drill-down and roll-up
+incomplete, as well as non-strict hierarchies, the authors show how
+to (i) transform dimension \emph{instances} to enforce
+summarizability and (ii) implement transformed hierarchies using
+relational database technology. The authors argue that an MD
+modeling approach should support the explicit design of every kind
+of hierarchy at a conceptual level to model real-world scenarios
+accurately and at the same time easily. Only later at a logical
+phase, summarizability constraints must be enforced by transforming
+hierarchies into well-behaved logical structures that enable
+summarizability when data analysis tools are used. For doing so,
+instance level algorithms are presented to automatically transform
+dimension hierarchies to achieve summarizability for hierarchies
+that are roll-up/drill-down incomplete or non-strict. As this
+proposal works at the instance level, it is necessary to transform
+the data that will populate the DW, which may involve considerable
+efforts of preprocessing. In particular, ETL processes become more
+complex, as summarizability checks must be incorporated and executed
+for every update.  In addition, as the data transformations produce
+artificial data values, data analysis becomes more complex.
+
+In~\cite{DBLP:conf/caise/MalinowskiZ04,DBLP:journals/dke/MalinowskiZ06}
+the authors present a classification of different kinds of complex
+real-world dimension hierarchies, and they define the MultiDimER
+model for the conceptual design of complex MD models based on an
+extension of the well-known Entity-Relationships (ER) model. The
+idea is that this classification guides developers to properly
+capture at a conceptual level the precise semantic of different
+kinds of hierarchies without being limited by current data analysis
+tools. Modeling of so-called generalized hierarchies is allowed, but
+somewhat surprisingly the authors do not consider generalization
+constructs (although extended ER models typically include support
+for generalization relationships). Furthermore, the authors discuss
+how to map these conceptual hierarchies to the relational model
+(enabling implementation in commercial tools). However, the mapping
+between the conceptual and the logical is described informally. In
+addition, the commented mapping is tool-dependent and it may vary
+depending on the scenario. Finally, each mapping is defined
+independently from the others and the combination of multiple
+mappings in a process is not addressed at all. In particular, it
+remains open which mapping needs to be applied first if several of
+them are applicable (e.g., if a hierarchy is at the same time
+roll-up incomplete and non-strict, and both kinds of heterogeneity
+need to be resolved). As no ordering for applying mappings for
+different hierarchies is specified, applicability problems of the
+overall approach arise.
+
+Similarly, in~\cite{DBLP:conf/dawak/MansmannS06,MansmannIJDWDM07}
+the authors argue that OLAP tools could fail when dealing with
+complex hierarchies for real-world situations, since they only admit
+homogeneous dimension hierarchies. Hence, hierarchies need to be
+modeled precisely at a conceptual level and then complex hierarchies
+should be transformed to make them navigable in a uniform manner. To
+this end, the authors present a framework for conceptual modeling of
+complex hierarchies and their transformation into a set of
+well-behaved sub-hierarchies without summarizability problems. They
+present how to deal with generalization hierarchies at a conceptual
+model by using informal guidelines, and they use the algorithms from
+Pedersen et al.~\cite{DBLP:conf/vldb/PedersenJD99} (slightly
+modified) to eliminate roll-up/drill-down incomplete and non-strict
+hierarchies at the instance level. They focus on visualization of
+data and every of the proposed transformation aims at incorporating
+a different kind of hierarchies into a visual OLAP interface to
+query complex data properly.
+
+In the same spirit, in~\cite{DBLP:conf/er/AkokaCP01} the authors
+argue that modeling hierarchies directly at the logical level (by
+using, for example star or snowflake schemas) can be misleading;
+hence careful conceptual design is necessary, which then requires a
+non-trivial transformation to derive a logical representation. The
+authors advocate the use of aggregation and generalization
+associations to model hierarchies in UML. Nevertheless, they see
+problems with the use of generalization in hierarchies in MD models,
+and they aim to preserve the information contained in UML
+generalizations by transforming them into aggregations following the
+proposal of~\cite{DBLP:conf/dmdw/MoodyK00}. The transformations are
+formalized with OCL rules in~\cite{DBLP:journals/dss/PratAC06}.
+
+
+\subsection{Fact-Dimension Relationships}
+Few efforts address the proper design of relationships between facts
+and dimensions and their summarizability issues. Surprisingly, every
+work is only concerned with the many-to-many relationships between
+facts and dimensions, i.e. non-strictness, thus ignoring incomplete
+relationships.
+
+The first proposal considers so-called multivalued
+dimensions~\cite{book/Kimball/DW}, which permit a star schema to
+have non-strict relationships between facts and dimensions by means
+of a bridge table. This bridge table captures the non-strict
+fact-dimension relationship by using foreign keys that refer to the
+tables that represent the dimension and the fact. These foreign keys
+also form a compound primary key for the bridge table. Song et
+al.~\cite{DBLP:conf/dmdw/SongRME01} focus on defining several
+methods to improve the use of a bridge table. They advocate the
+representation of many-to-many relationships with correct semantics,
+maintaining at the same time the star schema structure by defining
+six different approaches. They also give advantages and
+disadvantages of each approach and recommendations for their use.
+Apart from summarizability issues, the authors consider other
+challenges such as storage or performance requirements.
+Unfortunately, both
+approaches~\cite{book/Kimball/DW,DBLP:conf/dmdw/SongRME01} are
+defined at the logical level, which requires a lot of expertise to
+model real-world situations in too complex schemas.
+
+Pedersen et
+al.~\cite{DBLP:journals/is/PedersenJD01,DBLP:conf/vldb/PedersenJD99}
+state that non-strict relationships between facts and dimensions are
+necessary in many real-world situations, therefore, these
+relationships must be directly captured in a conceptual model.
+Nevertheless, in~\cite{DBLP:conf/vldb/PedersenJD99} summarizability
+is tackled at the instance level by modifying data instances, which
+raises several problems as mentioned in
+Sect.\ref{a1:sec:dim-hierarchies}. Another point of view is
+described in~\cite{DBLP:journals/is/PedersenJD01}, where a
+relational approach is described for representing fact-dimension
+non-strict\-ness by means of alternatives that broaden the use of
+bridge tables with more expressive solutions.
+
+
+\section{Discussion}
+\label{a1:sec:discussion} Early approaches for MD modeling exhibited
+a lack of rich mechanisms to specify different kinds of complex MD
+structures. For example, the well-known star
+schema~\cite{book/Kimball/DW} does not explicitly define dimension
+hierarchies, while other approaches only consider conceptual MD
+models with limited expressiveness (such
+as~\cite{DBLP:journals/ijcis/GolfarelliMR98,DBLP:conf/dmdw/HusemannLV00}),
+where summarizability is guaranteed since problematic complex
+structures are ignored. However, this lack of modeling support
+increases the modeling efforts necessary to reflect complex
+real-world scenarios.
+
+Due to this fact, several
+approaches~\cite{DBLP:journals/is/PedersenJD01,DBLP:conf/caise/MalinowskiZ04,DBLP:journals/tods/HurtadoGM05,DBLP:conf/dawak/MansmannS06}
+arose to define more expressive MD formalisms for modeling complex
+real-world scenarios, whilst ensuring summarizability. The common
+foundation of these works is the definition of a classification of
+different kinds of complex MD structures in order to ease the task
+of designers about identifying different real-world situations. Most
+of these approaches present a set of informal guidelines to
+transform the defined complex MD structures into MD structures which
+enforce summarizability but which require manual decisions and a lot
+of expertise when dealing with complex structures, which reduces
+their applicability. Furthermore, these approaches do not provide
+enough expressivity to specify every complex MD structure, thus only
+providing partial solutions. Hence, subsequent research dealt with
+the definition of more expressive MD formalisms for defining
+real-world
+scenarios~\cite{DBLP:journals/dke/Lujan-MoraTS06,DBLP:journals/is/AbelloSS06,DBLP:journals/dss/PratAC06}.
+These approaches are based upon an object-oriented approach to allow
+designers to model more complex MD structures, but they neither
+offer guidelines for using those more expressive features properly
+nor formal mechanisms to avoid summarizability problems of complex
+MD models. Actually, even full expressiveness of object-orientation
+(generalization) is not exploited so far for considering
+summarizability on MD modeling.
+
+Therefore, the discussion revolves around two key issues in MD
+modeling~\cite{DBLP:conf/dolap/RizziALT06}: defining complex
+structures in an explicit way, and giving mechanisms to support
+their implementation to avoid the semantic gap regarding
+summarizability problems. Moreover, suggestions for improving the
+state-of-the-art are also provided.
+
+
+\subsection{Modeling Complex Multidimensional Structures}
+Several properties related to the definition of MD models are
+addressed in Table~\ref{a1:tab:related1}. Specifically, this table
+focuses on showing (i) the technique or notation used to specify the
+MD model (technique column), (ii) the supported kind of hierarchies
+according to our unified notation (roll-up incompleteness,
+drill-down incompleteness, non-strictness, and generalization
+columns), (iii) the different kinds of relationships between a fact
+and a dimension (incomplete and non-strict fact-dimension
+relationships), and (iv) some kind of guidelines or classification
+framework provided in support of modeling complex MD structures. At
+first sight, state-of-the-art in MD modeling lacks an overall
+approach that defines mechanisms to guide designers to define every
+complex MD structure, since current research only offers partial
+solutions either for dimension hierarchies or for fact-dimension
+relationships.
+
+\begin{table}
+    \tiny
+    \centering
+        \caption{Properties considered for modeling complex MD structures}
+    \label{a1:tab:related1}
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+        & Technique & \multicolumn{4}{|c|}{Hierarchies} & \multicolumn{2}{|c|}{F-D relationships} & Guidelines \\
+        \cline{3-8}
+        & & Drill-down inc. & Roll-up inc. & Non-strictness & Generalization & Incompleteness & Non-strictness & \\
+        \hline
+        \hline
+        \cite{DBLP:journals/dke/Lujan-MoraTS06} & UML & Yes & Yes & Yes & Yes & Yes & Yes & No \\
+        \cite{DBLP:journals/is/AbelloSS06} & UML & No & No & Yes & Yes & Yes& Yes & No \\
+        \cite{DBLP:conf/er/AkokaCP01,DBLP:journals/dss/PratAC06} & UML & No & Yes & Yes & Yes & No & No & No \\
+        \cite{DBLP:conf/caise/MalinowskiZ04,DBLP:journals/dke/MalinowskiZ06} & ER & Yes & Yes & Yes & Yes & No & No & Yes \\
+        \cite{DBLP:conf/vldb/PedersenJD99,DBLP:journals/is/PedersenJD01} & Formalism & Yes & Yes & Yes & No & No & Yes & Yes \\
+        \cite{DBLP:conf/dawak/MansmannS06,MansmannIJDWDM07} & ER & Yes & Yes & Yes & Yes & No & Yes & Yes \\
+        \cite{DBLP:journals/ijcis/GolfarelliMR98} & DFM & No & No & No & No & No & No & No \\
+        \cite{DBLP:conf/dmdw/HusemannLV00,DBLP:journals/is/LechtenborgerV03} & MNFs & No & Yes & No & Yes & No & No & Yes \\
+        \cite{book/Kimball/DW} & Relational & No & No & No & No & No & Yes & Yes \\
+        \cite{DBLP:journals/tods/HurtadoGM05} & Formalism & Yes & Yes & No & No & No & No & Yes \\
+%        \cite{DBLP:conf/ssdbm/LenzS97} & Formalism & Yes & Yes & No & - & Yes & No & Yes --> check again!!!\\
+        \cite{DBLP:conf/dmdw/SongRME01} & Relational & No & No & No & No & No & Yes & Yes \\
+        \hline
+        \end{tabular}
+\end{table}
+
+\subsubsection{Techniques} The most popular techniques used to define
+MD structures are somehow related to a relational viewpoint. Thus,
+some approaches~\cite{book/Kimball/DW,DBLP:conf/dmdw/SongRME01}
+directly define MD structures as relational concepts (such as
+tables, columns keys, and so on) at the logical level. Other
+approaches~\cite{DBLP:journals/ijcis/GolfarelliMR98,DBLP:conf/dmdw/HusemannLV00}
+define several MD structures at a conceptual level by using their
+own notation, but they are highly influenced by a subsequent
+relational implementation, since they use well-known concepts from
+relational databases such as functional dependencies. Moreover,
+other conceptual
+approaches~\cite{DBLP:journals/dke/MalinowskiZ06,MansmannIJDWDM07}
+are based on Entity-Relationship modeling, which is suitably
+extended by additional notation to accommodate specifics of
+multidimensional modeling.
+%
+% The problem is that models highly related to a relational
+% implementation are not as expressive as required to model every
+% complex MD structure at the conceptual level. To overcome this
+% problem, other
+Finally, some approaches use either the
+UML~\cite{DBLP:journals/dke/Lujan-MoraTS06,DBLP:journals/is/AbelloSS06,DBLP:journals/dss/PratAC06}
+or their own
+formalisms~\cite{DBLP:journals/tods/HurtadoGM05,DBLP:journals/is/PedersenJD01}.
+
+In any case, it is apparent that a highly expressive modeling
+technique or language must be used to be able to reflect any
+real-world situation to model complex MD structures in an easy way
+at the conceptual level.
+
+\subsubsection{Hierarchies}
+Approaches at the logical level such as~\cite{book/Kimball/DW} fail
+in providing mechanisms to model different kinds of hierarchies.
+Although, the approach proposed
+in~\cite{DBLP:journals/ijcis/GolfarelliMR98} is defined at the
+conceptual level, it only considers regular hierarchies. The
+conceptual approach defined
+in~\cite{DBLP:conf/dmdw/HusemannLV00,DBLP:journals/is/LechtenborgerV03}
+increases the level of expressiveness, by allowing to model roll-up
+incomplete and generalization hierarchies,
+while~\cite{DBLP:journals/tods/HurtadoGM05} only addresses roll-up
+and drill-down incompleteness.
+
+Thanks to the expressiveness of UML the approach described
+in~\cite{DBLP:journals/dke/Lujan-MoraTS06} covers every possible
+kind of hierarchy. Other UML-based approaches lack some features:
+\cite{DBLP:journals/is/AbelloSS06} does not deal with roll-up and
+drill-down incompleteness, while \cite{DBLP:journals/dss/PratAC06}
+does not give support for drill-down incompleteness.
+
+Some non-UML approaches are also very expressive. The proposal
+of~\cite{DBLP:journals/is/PedersenJD01} only misses generalization
+relationships within a dimension hierarchy, while
+in~\cite{DBLP:journals/dke/MalinowskiZ06} a form of generalization
+is considered but without using generalization constructs. Finally,
+in~\cite{MansmannIJDWDM07}, every kind of dimension hierarchy is
+addressed.
+
+Hence, few approaches are able to represent every kind of dimension
+hierarchy to model every possible real-world situation, which must
+be a desirable property for any MD modeling approach.
+
+\subsubsection{Fact-dimension Relationship} Several approaches point out the necessity for
+support of many-to-many relationships between fact and dimensions
+(non-strictness), e.g.,~\cite{DBLP:journals/dke/Lujan-MoraTS06}.
+However, regarding incompleteness, there are only two works that
+allow its
+definition~\cite{DBLP:journals/dke/Lujan-MoraTS06,DBLP:journals/is/AbelloSS06}.
+Other works are somehow related to this issue, e.g.,
+\cite{DBLP:conf/vldb/PedersenJD99}~stresses the necessity for having
+facts with at least one dimension value in every dimension in order
+to avoid complex and misleading models. Then, incomplete
+relationships between facts and dimensions are not allowed, and
+certain real-world situations cannot be specified.
+
+\subsubsection{Guidelines} Apart from a specific notation, several approaches provide guidance for defining complex MD
+structures. A classification framework of different kinds of
+dimension hierarchies is defined
+in~\cite{DBLP:journals/dke/MalinowskiZ06,DBLP:journals/is/PedersenJD01,MansmannIJDWDM07}
+in order to help designers to discover situations in the real-world
+that can be modeled according to a certain dimension hierarchy type.
+Other work~\cite{DBLP:conf/dmdw/HusemannLV00} defines a process to
+apply multidimensional normal forms in modeling dimension
+hierarchies. On the other hand, thanks to the definition of
+dimension constraints in~\cite{DBLP:journals/tods/HurtadoGM05},
+summarizability can be characterized and checked. Finally, how to
+use bridge tables for designing non-strict dimensioning is proposed
+by~\cite{book/Kimball/DW}. Furthermore, there are several proposals
+that broaden the use of bridge tables with more expressive
+solutions~\cite{DBLP:journals/is/PedersenJD01,DBLP:conf/dmdw/SongRME01}.
+
+
+\subsection{Ensuring Summarizability in Multidimensional Models}
+In order to check and enforce summarizability in MD models,
+state-of-the-art offers different kinds of approa\-ches.
+Table~\ref{a1:tab:related2} focuses on providing the properties
+related to the transformation mechanisms between complex MD
+structures and their counterparts without summarizability problems.
+The following properties have been studied: (i) mechanism used to
+check the summarizability conditions (none, guidelines, algorithm,
+rules) in the kind column, (ii) level of automation (manual,
+semiautomatic, automatic), (iii) level in which the summarizability
+is enforced (schema, instance), and (iv) tool support for
+summarizability fulfillment.
+
+\begin{table}
+    %\tiny
+    \centering
+       \caption{Properties considered for ensuring summarizability}
+    \label{a1:tab:related2}
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & Kind  & Automation & Level & Tool\\
+        \hline
+        \hline
+        \cite{DBLP:journals/dke/Lujan-MoraTS06} & none & - & - & - \\
+        \cite{DBLP:journals/is/AbelloSS06} & none & - & - & - \\
+        \cite{DBLP:conf/er/AkokaCP01,DBLP:journals/dss/PratAC06} & Rules & Semiautomatic & Schema/instance & No \\
+        \cite{DBLP:conf/caise/MalinowskiZ04,DBLP:journals/dke/MalinowskiZ06} & Guidelines & Manual & Schema/instance & No \\
+        \cite{DBLP:conf/vldb/PedersenJD99,DBLP:journals/is/PedersenJD01} & Algorithm & Automatic & Instance & Yes \\
+        \cite{DBLP:conf/dawak/MansmannS06,MansmannIJDWDM07} & Algorithm & Semiautomatic & Schema/instance & Yes \\
+        \cite{DBLP:journals/ijcis/GolfarelliMR98} & Direct & - & - & - \\
+        \cite{DBLP:conf/dmdw/HusemannLV00,DBLP:journals/is/LechtenborgerV03} & Rules & Automatic & Schema/instance & No \\
+        \cite{book/Kimball/DW} & Direct & - & - & - \\
+        \cite{DBLP:journals/tods/HurtadoGM05} & Algorithm & Automatic & Schema &  Yes \\
+%        \cite{DBLP:conf/ssdbm/LenzS97} & Guidelines & Manual & Schema/instance &  No \\
+        \cite{DBLP:conf/dmdw/SongRME01} & Direct & - & - & - \\
+        \hline
+        \end{tabular}
+\end{table}
+
+\subsubsection{Kind}
+Importantly, at one end of the spectrum some of the studied
+approaches lack mechanisms to check summarizability constraints:
+those approaches only address how to model complex MD structures
+(``none'' in Tab.~\ref{a1:tab:related2}). At the other end, there
+are approaches that focus on directly defining a
+summarizability-compliant model, so they do not need to check
+summarizability conditions (``direct'' in
+Tab.~\ref{a1:tab:related2}). In between, we can find approaches that
+either use informal guidelines to help designers check
+summarizability~\cite{DBLP:journals/dke/MalinowskiZ06} or a set of
+rules or algorithms to formalize summarizability
+checking~\cite{DBLP:conf/dmdw/HusemannLV00,DBLP:journals/is/PedersenJD01,MansmannIJDWDM07,DBLP:journals/dss/PratAC06,DBLP:journals/tods/HurtadoGM05}.
+
+\subsubsection{Automation}
+The kind of used modeling technique somehow determines the level of
+automation. Therefore, the proposals that are automatic are based on
+algorithms~\cite{DBLP:journals/is/PedersenJD01,DBLP:journals/tods/HurtadoGM05,DBLP:conf/dmdw/HusemannLV00}.
+Manual or semiautomatic proposals are based on informal guidelines
+which prevent their total
+automation~\cite{DBLP:journals/dke/MalinowskiZ06}. Other approaches
+are based on rules \cite{DBLP:journals/dss/PratAC06} or algorithms
+\cite{MansmannIJDWDM07} but they need human interaction to validate
+their application or to provide further information (e.g.
+determining the applicable aggregation functions). Moreover, the
+level of automation is also influenced by the complexity in applying
+the corresponding mechanisms. The proposals described
+in~\cite{DBLP:journals/dke/MalinowskiZ06,MansmannIJDWDM07} addresses
+summarizability for entire dimension hierarchies; however, there is
+ no formal mechanism to check summarizability constraints in the hierarchy as
+ a whole, which can include different features at the same time.
+Other approaches such
+as~\cite{DBLP:journals/is/PedersenJD01,DBLP:journals/tods/HurtadoGM05}
+consider relationships between dimension levels to obtain a
+summarizable version of the dimension hierarchy. This last solution
+also allows the definition of modular and easy-to-apply algorithms
+that can be applied automatically.
+
+\subsubsection{Level} Summarizability checking and enforcing can be done
+at two different levels. Some approaches directly transform the data
+instances to ensure
+summarizability~\cite{DBLP:journals/is/PedersenJD01}, e.g., adding
+some special values, or requiring information from data
+instances~\cite{DBLP:conf/dmdw/HusemannLV00,DBLP:conf/dmdw/SongRME01}.
+The advantage of these approaches lies in their algorithmic
+mechanisms to check summarizability; however, non-trivial effort is
+required to preprocess the huge amounts of data instances before
+checking the summarizability conditions. Other approaches combine
+the instance level with information extracted from the schema to
+decrease the level of required preprocessing and improve
+performance~\cite{DBLP:journals/dss/PratAC06,MansmannIJDWDM07,DBLP:journals/dke/MalinowskiZ06}.
+Anyway, the most desirable situation is working only with
+information from the schema, as stated
+by~\cite{DBLP:journals/tods/HurtadoGM05} (their dimension
+constraints allow us to test summarizability at the schema level),
+which avoids exploring potentially huge data instances.
+
+\subsubsection{Tool Support}
+Only three approaches present some kind of implementation that helps
+in checking and enforcing the summarizability conditions. The
+approach for modeling and transforming complex MD structures
+of~\cite{MansmannIJDWDM07} was implemented as part of an OLAP tool
+in order to improve the visualization expressiveness. The algorithms
+for enforcing summarizability proposed
+in~\cite{DBLP:journals/tods/HurtadoGM05,DBLP:journals/is/PedersenJD01},
+were implemented and tested. Nevertheless, it is worth noting that,
+even though several implementations are described, there is neither
+a prototype nor a tool that supports checking and enforcing the
+summarizability conditions in a modular and easy-to-use fashion for
+designers.
+
+\subsection{Suggestions for Future Work}
+There are three fundamental areas that need to be covered: (i)
+ensuring summarizability in a comprehensive DW design process, (ii)
+addressing every complex MD structure in an integrated way, and
+(iii) developing a tool that supports the design of complex MD
+structures without summarizability problems. In addition, DWs are
+more and more used in other novel areas, such as biological,
+multimedia, or spatio-temporal~\cite{DBLP:conf/dolap/RizziALT06},
+rather than the classical enterprise domain. Interestingly, this
+scenario poses new research challenges for tackling summarizability,
+since even if a carefully designed MD model is obtained,
+summarizability may not be ensured at all without considering
+specific semantics of each domain. For example, geographical DWs
+should use spatial semantics to face up with partial containment
+dimension hierarchies~\cite{DBLP:journals/vldb/JensenKPT04}, as well
+as imprecise and uncertain
+data~\cite{DBLP:journals/vldb/BurdickDJRV07}. Therefore, specific
+semantics of each domain should be further investigated to help
+ensuring summarizability in the next generation of DWs.
+
+%In addition, the next generation of DWs poses new research
+%challenges for tackling summarizability, since DWs are more and more
+%used away from the classical enterprise domain, in unusual areas,
+%such as biological, multimedia, or spatio-temporal
+%applications~\cite{DBLP:conf/dolap/RizziALT06}. Even if a carefully
+%designed MD model is obtained, summarizability may not be ensured at
+%all in these emerging domains without considering their specific
+%semantics, e.g., geographical DWs should use spatial semantics to
+%face up with partial containment dimension
+%hierarchies~\cite{DBLP:journals/vldb/JensenKPT04}, as well as
+%imprecise and uncertain
+%data~\cite{DBLP:journals/vldb/BurdickDJRV07}. Therefore, specific
+%semantics of each domain should be further investigated to help
+%ensuring summarizability in the next generation of DWs.
+
+%Some of the new summarizability issues will come from facing up with
+%the specific semantics of these emerging domains, since they involve
+%more complex data types than traditional and simple alphanumerical
+%data types, e.g., specialized spatial data structures used in GIS
+%(Geographic Information Systems) or data streams related to Business
+%Process Monitoring (BPM).
+
+Summarizability needs to be addressed as integrated aspect of a
+comprehensive design process (rather than as problem concerning
+isolated MD concepts). A good way to achieve this goal is to follow
+the con\-cep\-tual/lo\-gi\-cal/phy\-si\-cal design phases, which
+allows the designer to take advantage of complex MD structures at a
+conceptual level without taking summarizability into account for the
+initial design.  Afterwards, this rich conceptual model should be
+transformed (semi-) automatically into another model based on
+summarizability considerations (e.g., non-strict dimension-fact
+relationships may be replaced with more complex schema structures
+that explicitly represent different granularities). Whether this
+transformation should work at the conceptual level or should lead to
+another model at the logical level is subject to future work. In any
+case, the transformed model then serves as basis for an
+implementation of the MD model without summarizability problems,
+thus bridging the inherent semantic gap.
+
+In addition, while current work gives more importance to dimension
+hierarchies, we are not aware of research that (a) integrates the
+definition of all types of complex MD structures presented in this
+survey and (b) at the same time defines guidelines to ease the task
+of designer.  For example, non-strict relations between facts and
+dimensions do occur in real-world scenarios, hence need to be
+modeled conceptually and then transformed correctly into their
+corresponding implementation, addressing summarizability
+problems~\cite{DBLP:conf/dmdw/SongRME01,DBLP:journals/is/PedersenJD01}.
+Furthermore, we argue that object-based approaches are a good choice
+to proceed: Importantly, approaches that use UML
+constructs~\cite{DBLP:journals/is/AbelloSS06,DBLP:journals/dke/Lujan-MoraTS06,DBLP:journals/dss/PratAC06}
+can represent generalization relationships explicitly to ensure
+context-sensitive summarizability.  Thus, there is no need for
+designers to explicitly deal with dimension
+constraints~\cite{DBLP:journals/tods/HurtadoGM05} or context
+dependencies~\cite{DBLP:conf/dmdw/HusemannLV00,DBLP:journals/is/LechtenborgerV03},
+while retaining their advantages.
+
+Finally, advanced modeling and transformation approaches need to be
+supported via tools that help designers in checking and enforcing
+summarizability.  Such support is even more pressing when dealing
+with complex MD models.
+
+\section{Conclusions}
+\label{a1:sec:conclusions} MD modeling stresses the definition of
+complex MD structures, allowing designers to deal with real-world
+situations, such as roll-up incomplete or non-strict hierarchies.
+Specifically, powerful modeling constructs must be used to define
+rich conceptual MD structures, such as (i) relationships between
+levels within a dimension hierarchy, and (ii) relationships between
+facts and dimensions.
+
+One key issue when a MD model is being defined is dealing with
+summarizability. Summarizability guaranties correct aggregation of
+data. However in real-world scenarios summarizability does not arise
+in a natural way, and frequently MD design starts with
+non-summarizable but easily specified and understood conceptual
+models. Then, an equivalent summarizable model must be obtained
+before the implementation.
+
+This survey provides researchers with an overall understanding about
+current approaches for modeling complex MD structures that reflect
+real-world situations and the mechanisms for enforcing
+summarizability.  We conclude that further research is needed to
+tackle summarizability issues in MD modeling in a comprehensive way
+which remains as an open research problem.
+
+%\bibliographystyle{spbasic}      % basic style, author-year citations
+%\bibliographystyle{spmpsci}      % mathematics and physical sciences
+%\bibliographystyle{spphys}       % APS-like style for physics
+
+%\bibliographystyle{abbrv}
+
+\bibliographystyle{abbrv}
+\bibliography{tesis}
+
+
+%
