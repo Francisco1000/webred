@@ -1,0 +1,230 @@
+\begin{thebibliography}{10}
+
+\bibitem{DBLP:journals/is/AbelloSS06}
+A.~Abell{\'o}, J.~Samos, and F.~Saltor.
+\newblock {YAM}$^{\mbox{2}}$: a multidimensional conceptual model extending
+  {UML}.
+\newblock {\em Inf. Syst.}, 31(6):541--567, 2006.
+
+\bibitem{DBLP:conf/er/AkokaCP01}
+J.~Akoka, I.~Comyn-Wattiau, and N.~Prat.
+\newblock Dimension hierarchies design from {UML} generalizations and
+  aggregations.
+\newblock In {\em ER}, pages 442--455, 2001.
+
+\bibitem{Bodart01}
+F.~Bodart, A.~Patel, M.~Sim, and R.~Weber.
+\newblock Should optional properties be used in conceptual modelling? a theory
+  and three empirical tests.
+\newblock {\em Inf. Syst. Research}, 12(4):384--405, 2001.
+
+\bibitem{BORLAND}
+{B}orland {T}ogether.
+\newblock \url{http://www.borland.com/together}.
+
+\bibitem{DBLP:journals/tods/Chen76}
+P.~P. Chen.
+\newblock The entity-relationship model - toward a unified view of data.
+\newblock {\em ACM Trans. Database Syst.}, 1(1):9--36, 1976.
+
+\bibitem{czarnecki03modeltransformation}
+K.~Czarnecki and S.~Helsen.
+\newblock Classification of model transformation approaches.
+\newblock In {\em Proceedings of the 2nd OOPSLA Workshop on Generative
+  Technique in the Context of the Model Driven Architecture}, Anaheim, October
+  2003.
+
+\bibitem{ECLIPSE}
+{E}clipse.
+\newblock \url{http://www.eclipse.org/}.
+
+\bibitem{DBLP:conf/gg/GerberLRSW02}
+A.~Gerber, M.~Lawley, K.~Raymond, J.~Steel, and A.~Wood.
+\newblock Transformation: The missing link of {M}{D}{A}.
+\newblock In {\em ICGT}, pages 90--105, 2002.
+
+\bibitem{DBLP:journals/ijcis/GolfarelliMR98}
+M.~Golfarelli, D.~Maio, and S.~Rizzi.
+\newblock The {D}imensional {F}act {M}odel: A conceptual model for data
+  warehouses.
+\newblock {\em Int. J. Cooperative Inf. Syst.}, 7(2-3):215--247, 1998.
+
+\bibitem{DBLP:conf/er/HornerS05}
+J.~Horner and I.-Y. Song.
+\newblock A taxonomy of inaccurate summaries and their management in {OLAP}
+  systems.
+\newblock In {\em ER}, pages 433--448, 2005.
+
+\bibitem{DBLP:journals/tods/HurtadoGM05}
+C.~A. Hurtado, C.~Guti{\'e}rrez, and A.~O. Mendelzon.
+\newblock Capturing summarizability with integrity constraints in {OLAP}.
+\newblock {\em ACM Trans. Database Syst.}, 30(3):854--886, 2005.
+
+\bibitem{book/Inmon/buildingDW}
+W.~Inmon.
+\newblock {\em Building the Data Warehouse}.
+\newblock Wiley \& Sons, 2002.
+
+\bibitem{DBLP:conf/vldb/JagadishLS99}
+H.~V. Jagadish, L.~V.~S. Lakshmanan, and D.~Srivastava.
+\newblock What can hierarchies do for data warehouses?
+\newblock In {\em VLDB}, pages 530--541, 1999.
+
+\bibitem{book/Jarke/DW}
+M.~Jarke, M.~Lenzerini, Y.~Vassiliou, and P.~Vassiliadis.
+\newblock {\em Fundamentals of Data Warehouses}.
+\newblock Springer, 2000.
+
+\bibitem{DBLP:journals/vldb/JensenKPT04}
+C.~S. Jensen, A.~Kligys, T.~B. Pedersen, and I.~Timko.
+\newblock Multidimensional data modeling for location-based services.
+\newblock {\em VLDB J.}, 13(1):1--21, 2004.
+
+\bibitem{book/Kimball/DW}
+R.~Kimball and M.~Ross.
+\newblock {\em The Data Warehouse Toolkit}.
+\newblock Wiley \& Sons, 2002.
+
+\bibitem{book/Kleppe/MDA}
+A.~Kleppe, J.~Warmer, and W.~Bast.
+\newblock {\em MDA Explained. The Practice and Promise of The Model Driven
+  Architecture}.
+\newblock Addison Wesley, 2003.
+
+\bibitem{ATL}
+A.~T. Language.
+\newblock \url{http://www.eclipse.org/m2m/atl/}.
+
+\bibitem{DBLP:journals/is/LechtenborgerV03}
+J.~Lechtenb{\"o}rger and G.~Vossen.
+\newblock Multidimensional normal forms for data warehouse design.
+\newblock {\em Inf. Syst.}, 28(5):415--434, 2003.
+
+\bibitem{DBLP:conf/ssdbm/LehnerAW98}
+W.~Lehner, J.~Albrecht, and H.~Wedekind.
+\newblock Normal forms for multidimensional databases.
+\newblock In {\em SSDBM}, pages 63--72, 1998.
+
+\bibitem{DBLP:conf/ssdbm/LenzS97}
+H.-J. Lenz and A.~Shoshani.
+\newblock Summarizability in {OLAP} and statistical data bases.
+\newblock In {\em SSDBM}, pages 132--143, 1997.
+
+\bibitem{DBLP:journals/dke/Lujan-MoraTS06}
+S.~Luj{\'a}n-Mora, J.~Trujillo, and I.-Y. Song.
+\newblock A {UML} profile for multidimensional modeling in data warehouses.
+\newblock {\em Data Knowl. Eng.}, 59(3):725--769, 2006.
+
+\bibitem{DBLP:journals/dke/MalinowskiZ06}
+E.~Malinowski and E.~Zim{\'a}nyi.
+\newblock Hierarchies in a multidimensional model: From conceptual modeling to
+  logical representation.
+\newblock {\em Data Knowl. Eng.}, 59(2):348--377, 2006.
+
+\bibitem{MalZim2008:book}
+E.~Malinowski and E.~Zim{\'a}nyi.
+\newblock {\em Advanced data warehouse design: From conventional to spatial and
+  temporal applications}.
+\newblock Springer-Verlag, 2008.
+
+\bibitem{DBLP:conf/dawak/MansmannS06}
+S.~Mansmann and M.~H. Scholl.
+\newblock Extending visual {OLAP} for handling irregular dimensional
+  hierarchies.
+\newblock In {\em DaWaK}, pages 95--105, 2006.
+
+\bibitem{MansmannIJDWDM07}
+S.~Mansmann and M.~H. Scholl.
+\newblock Empowering the {OLAP} technology to support complex dimension
+  hierarchies.
+\newblock {\em Int J. Data Warehous. Min.}, 3(4):31--50, 2007.
+
+\bibitem{MLT08}
+J.-N. Maz{\'o}n, J.~Lechtenb{\"o}rger, and J.~Trujillo.
+\newblock Solving summarizability problems in fact-dimension relationships for
+  multidimensional models.
+\newblock In {\em Proc. DOLAP (to appear)}, 2008.
+
+\bibitem{DBLP:conf/dawak/MazonPT06}
+J.-N. Maz{\'o}n, J.~Pardillo, and J.~Trujillo.
+\newblock Applying transformations to model driven data warehouses.
+\newblock In {\em DaWaK}, pages 13--22, 2006.
+
+\bibitem{journals/dss/Mazon2008}
+J.-N. Maz{\'o}n and J.~Trujillo.
+\newblock An {MDA} approach for the development of data warehouses.
+\newblock {\em Decis. Support Syst.}, 45(1):41--58, 2008.
+
+\bibitem{MEDINI}
+medini{QVT}.
+\newblock \url{http://projects.ikv.de/qvt}.
+
+\bibitem{DBLP:conf/dmdw/MoodyK00}
+D.~L. Moody and M.~A.~R. Kortink.
+\newblock From enterprise models to dimensional models: a methodology for data
+  warehouse and data mart design.
+\newblock In {\em DMDW}, page~5, 2000.
+
+\bibitem{OMG/MDA}
+{Object Management Group}.
+\newblock {MDA} {G}uide 1.0.1.
+  \url{http://www.omg.org/cgi-bin/doc?omg/03-06-01}.
+
+\bibitem{OMG/QVT}
+{Object Management Group}.
+\newblock {M}{O}{F} 2.0 {Q}uery/{V}iew/{T}ransformation.
+  \url{http://www.omg.org/cgi-bin/doc?ptc/2005-11-01}.
+
+\bibitem{OMG/OCL}
+{Object Management Group}.
+\newblock {O}bject {C}onstraint {L}anguage ({O}{C}{L}) specification 2.0
+  \url{http://www.omg.org/cgi-bin/doc?ptc/03-10-14}.
+
+\bibitem{OMG/UML}
+{Object Management Group}.
+\newblock {U}nified {M}odeling {L}anguage {S}pecification 2.0.
+  \url{http://www.omg.org/cgi-bin/doc?formal/05-07-04}.
+
+\bibitem{DBLP:conf/vldb/PedersenJD99}
+T.~B. Pedersen, C.~S. Jensen, and C.~E. Dyreson.
+\newblock Extending practical pre-aggregation in on-line analytical processing.
+\newblock In {\em VLDB}, pages 663--674, 1999.
+
+\bibitem{DBLP:journals/is/PedersenJD01}
+T.~B. Pedersen, C.~S. Jensen, and C.~E. Dyreson.
+\newblock A foundation for capturing and querying complex multidimensional
+  data.
+\newblock {\em Inf. Syst.}, 26(5):383--423, 2001.
+
+\bibitem{DBLP:books/idea/mddb2003/PourabbasR03}
+E.~Pourabbas and M.~Rafanelli.
+\newblock Hierarchies.
+\newblock In {\em Multidimensional Databases}, pages 91--115. 2003.
+
+\bibitem{DBLP:journals/dss/PratAC06}
+N.~Prat, J.~Akoka, and I.~Comyn-Wattiau.
+\newblock A {UML}-based data warehouse design method.
+\newblock {\em Decis. Support Syst.}, 42(3):1449--1473, 2006.
+
+\bibitem{DBLP:conf/ssdbm/RafanelliS90}
+M.~Rafanelli and A.~Shoshani.
+\newblock {STORM}: A statistical object representation model.
+\newblock In {\em SSDBM}, pages 14--29, 1990.
+
+\bibitem{DBLP:conf/dolap/RizziALT06}
+S.~Rizzi, A.~Abell{\'o}, J.~Lechtenb{\"o}rger, and J.~Trujillo.
+\newblock Research in data warehouse modeling and design: dead or alive?
+\newblock In {\em DOLAP}, pages 3--10, 2006.
+
+\bibitem{DBLP:journals/software/SendallK03}
+S.~Sendall and W.~Kozaczynski.
+\newblock Model transformation: The heart and soul of model-driven software
+  development.
+\newblock {\em IEEE Software}, 20(5):42--45, 2003.
+
+\bibitem{SMARTQVT}
+{S}mart{QVT}. {A}n open source model transformation tool implementing the {MOF}
+  2.0 {QVT}-{O}perational language.
+\newblock \url{http://smartqvt.elibel.tm.fr/}.
+
+\end{thebibliography}

@@ -1,0 +1,127 @@
+\begin{thebibliography}{10}
+
+\bibitem{DBLP:conf/er/AkokaCP01}
+J.~Akoka, I.~Comyn-Wattiau, and N.~Prat.
+\newblock Dimension hierarchies design from {UML} generalizations and
+  aggregations.
+\newblock In {\em ER}, pages 442--455, 2001.
+
+\bibitem{DBLP:conf/er/CherfiP03}
+S.~S.-S. Cherfi and N.~Prat.
+\newblock Multidimensional schemas quality: Assessing and balancing
+  analyzability and simplicity.
+\newblock In {\em ER (Workshops)}, pages 140--151, 2003.
+
+\bibitem{DBLP:conf/er/HornerS05}
+J.~Horner and I.-Y. Song.
+\newblock A taxonomy of inaccurate summaries and their management in {OLAP}
+  systems.
+\newblock In {\em ER}, pages 433--448, 2005.
+
+\bibitem{DBLP:journals/tods/HurtadoGM05}
+C.~A. Hurtado, C.~Guti{\'e}rrez, and A.~O. Mendelzon.
+\newblock Capturing summarizability with integrity constraints in {OLAP}.
+\newblock {\em ACM Trans. Database Syst.}, 30(3):854--886, 2005.
+
+\bibitem{book/Kimball/DW}
+R.~Kimball and M.~Ross.
+\newblock {\em The Data Warehouse Toolkit}.
+\newblock Wiley \& Sons, 2002.
+
+\bibitem{DBLP:journals/is/LechtenborgerV03}
+J.~Lechtenb{\"o}rger and G.~Vossen.
+\newblock Multidimensional normal forms for data warehouse design.
+\newblock {\em Inf. Syst.}, 28(5):415--434, 2003.
+
+\bibitem{DBLP:conf/ssdbm/LehnerAW98}
+W.~Lehner, J.~Albrecht, and H.~Wedekind.
+\newblock Normal forms for multidimensional databases.
+\newblock In {\em SSDBM}, pages 63--72, 1998.
+
+\bibitem{DBLP:conf/ssdbm/LenzS97}
+H.-J. Lenz and A.~Shoshani.
+\newblock Summarizability in {OLAP} and statistical data bases.
+\newblock In {\em SSDBM}, pages 132--143, 1997.
+
+\bibitem{DBLP:journals/dke/Lujan-MoraTS06}
+S.~Luj{\'a}n-Mora, J.~Trujillo, and I.-Y. Song.
+\newblock A {UML} profile for multidimensional modeling in data warehouses.
+\newblock {\em Data Knowl. Eng.}, 59(3):725--769, 2006.
+
+\bibitem{DBLP:journals/dke/MalinowskiZ06}
+E.~Malinowski and E.~Zim{\'a}nyi.
+\newblock Hierarchies in a multidimensional model: From conceptual modeling to
+  logical representation.
+\newblock {\em Data Knowl. Eng.}, 59(2):348--377, 2006.
+
+\bibitem{DBLP:conf/er/MansmannNS07}
+S.~Mansmann, T.~Neumuth, and M.~H. Scholl.
+\newblock Multidimensional data modeling for business process analysis.
+\newblock In {\em ER}, pages 23--38, 2007.
+
+\bibitem{DBLP:conf/dawak/MansmannS06}
+S.~Mansmann and M.~H. Scholl.
+\newblock Extending visual {OLAP} for handling irregular dimensional
+  hierarchies.
+\newblock In {\em DaWaK}, pages 95--105, 2006.
+
+\bibitem{journals/dss/Mazon2008}
+J.-N. Maz{\'o}n and J.~Trujillo.
+\newblock An {MDA} approach for the development of data warehouses.
+\newblock {\em Decis. Support Syst.}, 45(1):41--58, 2008.
+
+\bibitem{journals/dke/Mazon2007}
+J.-N. Maz{\'o}n, J.~Trujillo, and J.~Lechtenb{\"o}rger.
+\newblock Reconciling requirement-driven data warehouses with data sources via
+  multidimensional normal forms.
+\newblock {\em Data Knowl. Eng.}, 63(3):725--751, 2007.
+
+\bibitem{OMG/MDA}
+{Object Management Group}.
+\newblock {MDA} {G}uide 1.0.1.
+  \url{http://www.omg.org/cgi-bin/doc?omg/03-06-01}.
+
+\bibitem{OMG/QVT}
+{Object Management Group}.
+\newblock {M}{O}{F} 2.0 {Q}uery/{V}iew/{T}ransformation.
+  \url{http://www.omg.org/cgi-bin/doc?ptc/2005-11-01}.
+
+\bibitem{OMG/UML}
+{Object Management Group}.
+\newblock {U}nified {M}odeling {L}anguage {S}pecification 2.0.
+  \url{http://www.omg.org/cgi-bin/doc?formal/05-07-04}.
+
+\bibitem{DBLP:conf/vldb/PedersenJD99}
+T.~B. Pedersen, C.~S. Jensen, and C.~E. Dyreson.
+\newblock Extending practical pre-aggregation in on-line analytical processing.
+\newblock In {\em VLDB}, pages 663--674, 1999.
+
+\bibitem{DBLP:journals/is/PedersenJD01}
+T.~B. Pedersen, C.~S. Jensen, and C.~E. Dyreson.
+\newblock A foundation for capturing and querying complex multidimensional
+  data.
+\newblock {\em Inf. Syst.}, 26(5):383--423, 2001.
+
+\bibitem{DBLP:conf/ssdbm/RafanelliS90}
+M.~Rafanelli and A.~Shoshani.
+\newblock {STORM}: A statistical object representation model.
+\newblock In {\em SSDBM}, pages 14--29, 1990.
+
+\bibitem{DBLP:conf/dolap/RizziALT06}
+S.~Rizzi, A.~Abell{\'o}, J.~Lechtenb{\"o}rger, and J.~Trujillo.
+\newblock Research in data warehouse modeling and design: dead or alive?
+\newblock In {\em DOLAP}, pages 3--10, 2006.
+
+\bibitem{DBLP:conf/dmdw/SongRME01}
+I.-Y. Song, W.~Rowen, C.~Medsker, and E.~F. Ewen.
+\newblock An analysis of many-to-many relationships between fact and dimension
+  tables in dimensional modeling.
+\newblock In {\em DMDW}, page~6, 2001.
+
+\bibitem{DBLP:journals/ijbra/WangZR05}
+L.~Wang, A.~Zhang, and M.~Ramanathan.
+\newblock Biostar models of clinical and genomic data for biomedical data
+  warehouse design.
+\newblock {\em IJBRA}, 1(1):63--80, 2005.
+
+\end{thebibliography}

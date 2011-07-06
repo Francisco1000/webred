@@ -1,0 +1,807 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapstarthook{The content of this chapter has been submitted to the
+\emph{ACM Eleventh International Workshop on Data Warehousing and
+OLAP, DOLAP 2008}.}
+
+
+\chapter{Solving Summarizability Problems in Fact-Dimension Relationships for Multidimensional Models}
+\label{a3} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+\chaptermark{Solving summarizability problems in fact-dimension relationships}
+
+
+Multidimensional analysis allows decision makers to
+effi\-ci\-ent\-ly and effectively use data analysis tools, which
+mainly depend on multidimensional (MD) structures of a data
+warehouse such as facts and dimension hierarchies to explore the
+information and aggregate it at different levels of detail in an
+accurate way. A conceptual model of such MD structures serves as
+abstract basis of the subsequent implementation according to one
+specific technology. However, there is a semantic gap between a
+conceptual model and its implementation which complicates an
+adequate treatment of summarizability issues, which in turn may lead
+to erroneous results of data analysis tools and cause the failure of
+the whole data warehouse project.  To bridge this gap for
+relationships between facts and dimension, we present an approach at
+the conceptual level for (i) identifying problematic situations in
+fact-dimension relationships, (ii) defining these relationships in a
+conceptual MD model, and (iii) applying a normalization process to
+transform this conceptual MD model into a summarizability-compliant
+model that avoids erroneous analysis of data. Furthermore, we also
+describe our \textsc{Eclipse}-based implementation of this
+normalization process.
+
+
+\section{Introduction}
+\label{a3:sec:intro} Data analysis tools, such as OLAP (On-Line
+Analytical Processing) tools depend on the multidimensional (MD)
+structures of a data warehouse that allow analysts to explore,
+navigate, and aggregate information at different levels of detail to
+support the decision making process. Current approaches for data
+warehouse design advocate to start the development by defining a
+conceptual model in order to describe real-world situations by using
+MD structures~\cite{DBLP:conf/dolap/RizziALT06}. These structures
+contain two main elements: On one hand, dimensions which specify
+different ways the data can be viewed, aggregated, and sorted (e.g.,
+according to time, store, customer, product, etc.). On the other
+hand, events of interest for an analyst (e.g., sales of products,
+treatments of patients, duration of processes, etc.) are represented
+as facts which are described in terms of a set of measures. Every
+fact is based on a set of dimensions that determine the granularity
+adopted for representing the fact's measures. Dimensions, in turn,
+are organized as hierarchies of levels that allow analysts to
+aggregate data at different levels of detail. Hence, MD conceptual
+modeling must provide mechanisms for defining relationships (i)
+between dimensions and facts, and (ii) between levels of aggregation
+within a dimension hierarchy. These relationships can be modeled in
+a variety of ways in order to reflect real-world situations, and
+their accurate yet understandable design is a cornerstone to enable
+users to analyze large amounts of data stored in data warehouses to
+effectively and efficiently support decision making.
+
+Importantly, a MD model must ensure summarizability, which refers to
+the possibility of accurately computing aggregate values with a
+coarser level of detail from values with a finer level of detail. If
+summarizability is violated, then incorrect results can be derived
+in data analysis tools, and therefore erroneous analysis
+decisions~\cite{DBLP:conf/ssdbm/LehnerAW98,DBLP:conf/ssdbm/LenzS97}.
+Besides, summarizability is a necessary precondition for performance
+optimizations based on
+pre-aggregation~\cite{DBLP:conf/vldb/PedersenJD99}.
+
+Traditionally, the focus for ensuring summarizability has been on
+dimension hierarchies due to the influence of statistical databases
+research~\cite{DBLP:conf/ssdbm/LenzS97}. However, within the full
+scope of MD modeling in a data warehouse system, summarizability
+must be also ensured for fact-dimension relationships, which
+surprisingly has been widely ignored so far.
+
+Furthermore, summarizability is usually not addressed at the
+conceptual level, but at later stages of the development, e.g., by
+using instance-specific transformations of data contained in the
+implemented data warehouse~\cite{DBLP:journals/is/PedersenJD01}. We
+argue that such data-oriented approaches towards summarizability are
+problematic for data warehouse designers and end users as huge
+amounts of data need to be transformed and the transformed data
+entries need to be interpreted correctly.
+
+Nevertheless, data transformations appear to be attractive at first
+sight since summarizability-compliant conceptual models tend to be
+more complex and to contain more details than models designed
+without taking summarizability into account (the examples presented
+throughout this paper will illustrate such details). Moreover, in
+\emph{initial} design steps the additional detail provided by
+summari\-zability-compliant models may not be necessary at all; in
+fact, they may even hinder understandability and communication.
+
+As understandability is among the most important properties of
+conceptual models, we argue that conceptual design of MD scenarios
+should allow for an initial stage of modeling that ignores
+summarizability problems and derives a simplified MD model first.
+Then, a normalization process should be applied to transform the
+designed MD model into a constrained conceptual model, which is
+restricted to those MD structures that do not violate
+summarizability. This normalized model contains additional details
+and provides a high level of expressiveness in describing real-world
+situations.
+
+Bearing these considerations in mind, in this paper, we present an
+approach (see Fig.~\ref{a3:fig:approach}) for (i) designing the
+different kinds of fact-dimension relationships in a conceptual
+model in order to easily and understandably represent real-world
+situations regardless of summarizability problems, and (ii) deriving
+normalized conceptual models, which are constrained to those
+fact-dimension relationships that do not violate summarizability and
+which thus serve as basis for the subsequent implementation.
+
+The most important benefit of our approach is that the semantic gap
+between conceptual MD models and their implementation in a database
+platform is bridged, since an intermediate normalized model is used
+to provide a high level of expressiveness in describing MD
+structures for real-world situations, while summarizability
+conditions are ensured. We point out that in this way, we tackle
+summarizability in a platform-independent manner as the normalized
+MD model can be easily deployed in any database platform.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/dolap08/approach2.png}
+\end{center}
+\caption{Normalization process to avoid summarizability problems in
+MD models} \label{a3:fig:approach}
+\end{figure}
+
+The remainder of this paper is structured as follows.  In
+Section~\ref{a3:sec:fact_dim1}, we give an overview of
+summarizability in MD modeling and present how to model different
+kinds of fact-dimension relationships and their summarizability
+problems. In Section~\ref{a3:sec:fact_dim2}, we define a
+normalization process to ensure summarizability in fact-dimension
+relationships, and we describe its implementation in
+Section~\ref{a3:sec:implementation}.  We address related work in
+Section~\ref{a3:sec:related}, and we provide our conclusions and
+sketch future work in Section~\ref{a3:sect:conclusions}.
+
+\section{Fact-Dimension Relationships}\label{a3:sec:fact_dim1}
+A crucial decision for designing MD models concerns the grain of the
+fact~\cite{book/Kimball/DW}, i.e., the list of dimensions which
+defines the scope of the measures in the fact. Therefore, the grain
+of the fact is determined by fact-dimension relationships. In this
+section, we stress the importance of accurately modeling
+fact-dimension relationships, and we describe the different
+situations in which summarizability could be violated.
+
+\subsection{Summarizability and MD Modeling}
+The notion of \emph{summarizability} was introduced by Rafanelli and
+Shoshani~\cite{DBLP:conf/ssdbm/RafanelliS90} in the context of
+statistical databases, where it refers to the correct computation of
+aggregate values with a coarser level of detail from aggregate
+values with a finer level of detail. Lenz and
+Shoshani~\cite{DBLP:conf/ssdbm/LenzS97} argue that summarizability
+is of most importance for queries concerning MD data, since
+violations of this property lead to incorrect aggregation results,
+which in turn may lead to erroneous conclusions and decisions.
+Although this early work on summarizability is focused on
+statistical databases, we consider it as cornerstone in MD modeling,
+because the authors lay the foundations for detecting and avoiding
+summarizability problems in a MD space.  Specifically, the authors
+propose three necessary conditions for summarizability that every
+dimension hierarchy must fulfill:(1) \emph{disjointness} and (2)
+\emph{completeness} of associations between pairs of dimension
+levels imply that every element of the finer dimension level must be
+associated with exactly one element of the coarser dimension level,
+and (3) \emph{type
+  compatibility} is given if a particular aggregate function is applicable to
+a given measure for a given set of dimensions.
+
+Although Lenz and Shoshani~\cite{DBLP:conf/ssdbm/LenzS97} only focus
+on the relationships between two levels of a dimension hierarchy,
+the relationships between facts and dimensions can also cause
+summarizability problems in MD modeling of data warehouses. As the
+previously-mentioned three conditions are concerned with the proper
+definition of dimensions and their hierarchies, they are called
+\emph{intradimensional} constraints
+by~\cite{DBLP:conf/ssdbm/LehnerAW98}. However, within MD modeling,
+\emph{interdimensional} constraints are also required in order to
+ensure summarizability~\cite{DBLP:conf/ssdbm/LehnerAW98}. These
+interdimensional constraints are related to the grain of the fact in
+such a way that, to avoid erroneous results when a MD model is
+queried, every measure in the fact must be determined by all
+dimensions, which is made formally precise by the first MD normal
+form proposed in~\cite{DBLP:journals/is/LechtenborgerV03}.
+
+Intuitively, the relationship between a fact and a dimension must be
+many-to-one to avoid summarizability problems, which can be
+reflected in the common relational implementation of a star schema,
+where the primary key of the fact table is composed of foreign keys
+of the dimension tables~\cite{book/Kimball/DW}. Therefore, MD models
+are usually defined according to this multiplicity constraint in
+order to enforce summarizability in fact-dimension relationships.
+However, many-to-one associations between the fact and every
+dimension are too strict for certain real-world situations. Indeed,
+designers must also deal with scenarios in which different
+granularities are necessary and where relationships between a fact
+and a dimension can have different multiplicities. For example,
+in~\cite{DBLP:conf/dmdw/SongRME01} the authors state that the
+relationship between the diagnosis dimension and the billable
+patient encounter fact is normally many-to-many, as a patient could
+have more than one diagnosis for each billable encounter. However,
+incorrect results can be obtained when measures are queried through
+such a many-to-many relationship, which indicates summarizability
+problems.
+
+
+\subsection{Classifying Fact-Dimension Relationships}
+Modeling different kinds of fact-dimension relationships requires a
+highly expressive language. In this paper, we propose to use our UML
+(Unified Modeling Language)~\cite{OMG/UML} profile for MD
+modeling~\cite{DBLP:journals/dke/Lujan-MoraTS06}. This profile
+contains the necessary stereotypes in order to elegantly represent
+main MD properties at the conceptual level, thus providing a set of
+constructs for modeling real-world MD scenarios\footnote{In this
+paper, we focus on an excerpt of this UML profile, and we refer the
+reader to~\cite{DBLP:journals/dke/Lujan-MoraTS06} for further
+explanations.}.
+
+Specifically, by using our UML profile, the structural properties of
+MD modeling are represented by means of a UML class diagram in which
+the information is clearly organized into facts and dimensions.
+These facts and dimensions are represented by classes stereotyped as
+\emph{Fact} (\includegraphics[height=3mm]{img/icons/fact.png}) and
+\emph{Dimension}
+(\includegraphics[height=3mm]{img/icons/dimension.png})
+respectively. \emph{Fact} classes are defined as composite classes
+in shared aggregation relationships of many \emph{Dimension}
+classes. A fact is composed of measures or fact attributes. These
+are represented as attributes with the \emph{FactAttribute}
+stereotype (\includegraphics[height=2mm]{img/icons/fa.png}). Our
+approach also allows the definition of degenerate dimensions,
+thereby representing other fact features in addition to the measures
+for analysis. These degenerate dimensions are represented as
+stereotyped attributes of the \emph{Fact} class
+(\emph{DegenerateDimension} stereotype,
+\includegraphics[height=2mm]{img/icons/dd.png}).
+Other MD structures that can be defined by using our UML profile are
+dimension hierarchies. Each level of a dimension hierarchy is
+specified by a \textit{Base} class
+(\includegraphics[height=3mm]{img/icons/base.png}) which can contain
+dimension attributes. Associations (represented by the stereotype
+\textit{Rolls-UpTo},
+\includegraphics[height=3mm]{img/icons/roll.png}) between pairs of
+\textit{Base} classes form a dimension hierarchy.
+
+In order to cover different situations when the associations between
+\emph{Fact} and \emph{Dimension} classes are defined, we take
+advantage of the multiplicities in the roles of the \emph{Dimension}
+and \emph{Fact} classes (see
+Table~\ref{a3:tab:FD-multiplicity-classification}). In practice, to
+avoid summarizability problems, there must be a minimum and maximum
+multiplicity of $1$ in the end of a \emph{Dimension} which is
+related to a \emph{Fact}. In
+Table~\ref{a3:tab:FD-multiplicity-classification}, ``regular''
+denotes association types without summarizability problems, whereas
+the remaining entries indicate some irregularity.
+
+\begin{table}
+  \centering
+  \caption{Classification of fact-dimension associations}
+  \label{a3:tab:FD-multiplicity-classification}
+    \begin{tabular}{|c||c|c|c|c|}
+         \hline
+       & \multicolumn{2}{|c|}{Minimum Multiplicity} & \multicolumn{2}{|c|}{Maximum Multiplicity} \\\hline
+       & 0 & 1 & 1 & * \\\hline
+      Fact & regular & regular & regular & regular \\
+      Dimension & incomplete & regular & regular & non-strict \\\hline
+    \end{tabular}
+\end{table}
+
+In the following, every possible kind of relationship between facts
+and dimensions is described. Several examples are provided by using
+our UML profile for MD modeling.
+
+\subsubsection{Regular Fact-Dimension Relationships}
+Concerning the regular entries in
+Table~\ref{a3:tab:FD-multiplicity-classification}, we first note
+that the multiplicities at the fact's end of an association are not
+essential when discussing summarizability.  Indeed, dimension
+instances may typically occur in zero or more fact instances but
+there is no problem if designers know (and model) that dimension
+instances occur in at least or at most one fact instance.  In
+addition, if the multiplicities at the dimension's end of the
+association specify a minimum and maximum multiplicity of $1$ then
+the fact is associated with exactly one instance of that dimension.
+In this case, the fact's measures are assigned to a uniquely
+identified combination of dimension instances, which allows to
+change the level of detail within dimensions without summarizability
+problems.
+
+\paragraph{Minimum multiplicity of $0$ at the end of the fact} This multiplicity
+allows the existence of dimension instances that are not related
+with any fact instance. This is the most common option for MD
+modeling, e.g., consider a \emph{Product} dimension where some
+products have not been sold so far.
+
+\paragraph{Minimum multiplicity of $1$ at the end of the fact} This multiplicity
+requires that every dimension instance is related with at least one
+fact instance. For practical purposes this multiplicity is usually
+ignored, since it introduces additional restrictions in the MD model
+that make ETL (Extraction-Transformation-Load) processes more
+complex and prone to fail.
+
+\paragraph{Maximum multiplicity of $1$ at the end of the fact} This multiplicity
+requires that every dimension instance is related with at most one
+fact instance. For practical purposes this multiplicity is usually
+ignored as well, since it prevents the orthogonal use of dimensions.
+E.g., consider a \emph{Time} dimension where every date can only be
+used once.
+
+\paragraph{Maximum multiplicity of $*$ at the end of the fact} This multiplicity
+allows dimension instances to be related with many fact instances.
+It is the most desirable option within the regular situations.
+
+\subsubsection{Incomplete Fact-Dimension Relationships} An
+association between a \emph{Fact} class $f$ and a \emph{Dimension}
+class $d$ is \emph{complete} if for every fact instance of $f$,
+there exists a dimension instance of $d$ which is related to that
+fact instance; otherwise, the association is \emph{incomplete}. This
+situation represents a summarizability violation since there is a
+granularity mismatch in the instances of the fact. Following our UML
+profile, a fact-dimension association is incomplete if the minimum
+cardinality at the end of the \emph{Dimension} class is $0$. For
+example, the association between the \emph{Customer} dimension and
+the \emph{Sales} fact in Fig.~\ref{a3:sample_inc1} exhibits an
+incomplete relationship. This example faces the problem of
+inconsistent totals, as shown in
+Tab.~\ref{a3:tab:DimensioningIncompleteness}, where we assume that
+John and Anna buy some products in January, and George goes shopping
+in April. The totals arise in a supermarket where some customers
+have loyalty cards to get discounts. For those customers, sales are
+recorded directly together with their personal information (e.g.,
+city of residence). In contrast, sales of (anonymous) customers
+without cards are recorded without considering any personal
+information. Consequently, when the sales are analyzed by customer
+and date some sales are missing (those from anonymous customers).
+Only when the customer is not taken into account, the total sales
+are correct. The problem of inconsistency is shown in
+Tab.~\ref{a3:tab:DimensioningIncompleteness} where some anonymous
+sales made in January are not shown when the analysis is performed
+along the customer dimension.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/dolap08/sample_inc1.png}
+\end{center}
+\caption{Incomplete relationship between \emph{Sales} fact and
+\emph{Customer} dimension} \label{a3:sample_inc1}
+\end{figure}
+
+
+\begin{table}
+\centering \caption{Inconsistent totals for sales}
+     \label{a3:tab:DimensioningIncompleteness}
+\subtable[By customer and time] {
+        \label{a3:tab:DimensioningIncompletenessA}
+        \begin{tabular}{|c|c|}
+        \hline
+        Date & Sales \\
+        \hline
+        \hline
+        January-2001 & 25 \\
+        April-2001 & 15 \\
+        \hline
+        Total & 40 \\
+        \hline
+        \end{tabular}
+} \qquad \qquad \subtable[By time] {
+     \label{a3:tab:DimensioningIncompletenessB}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        Customer & Date & Sales \\
+        \hline
+        \hline
+        John & January-2001 & 10 \\
+        Anna & January-2001 & 5 \\
+        George & April-2001 & 15 \\
+        \hline
+       \multicolumn{2}{|c|}{Total} & 30 \\
+        \hline
+        \end{tabular}
+        }
+\end{table}
+
+
+
+
+Designers must be aware of these incomplete fact-dimen\-si\-on
+relationships, because they appear in several real-world situations,
+e.g., the inherent uncertainty about the function of some genes in
+MD models for the biological
+domain~\cite{DBLP:journals/ijbra/WangZR05} or the heterogeneous
+facts related to surgical processes that can be found in biomedical
+data warehouses~\cite{DBLP:conf/er/MansmannNS07}. Otherwise, data
+analysis tools will present incorrect results.
+
+\subsubsection{Non-strict Fact-Dimension Relationships}
+An association between a \emph{Fact} class $f$ and a
+\emph{Dimension} class $d$ is strict if for every instance of the
+fact $f$ there exists at most one instance of the dimension $d$
+which is related to that fact instance; otherwise, it is called
+\emph{non-strict}. Non-strict fact-dimension relationships imply
+summarizability problems because for each measure in a fact instance
+there could be several instances of the same dimension that are
+associated to that measure, thus causing a granularity mismatch. By
+using our UML profile, non-strict associations between a \emph{Fact}
+class and a specific \emph{Dimension} class are specified by means
+of the maximum multiplicity $*$ in the role of the corresponding
+\emph{Dimension} class. For example, in
+Fig.~\ref{a3:sample_nonstrict1}, the association between the
+\emph{Sales} fact and the \emph{Salesperson} (SP) is non-strict,
+which means that more than one salesperson may be involved in the
+same sale. This situation requires special care to avoid the double
+counting problem, i.e., a measure in the fact is considered more
+than once when the data is analyzed, thus producing erroneous
+results. This problem is illustrated in
+Tab.~\ref{a3:tab:DimensioningNonStrictness}: As the sale made on
+January 17 is shared by Bill and Peter, it should be counted once
+but it will be counted twice in naive implementations.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/dolap08/sample_nonstr1_date.png}
+\end{center}
+\caption{Non-strict relationship between \emph{Sales} fact and
+\emph{Salesperson} dimension} \label{a3:sample_nonstrict1}
+\end{figure}
+
+
+\begin{table}
+\centering \caption{Double counting problem for sales aggregated by
+salesperson}
+     \label{a3:tab:DimensioningNonStrictness}
+\subtable[As single sales] {
+        \label{a3:tab:DimensioningNonStrictnessA}
+        \begin{tabular}[t]{|c|c|c|}
+        \hline
+        Date & SP & Sales \\
+        \hline
+        \hline
+        17/01/07 & Bill & 10 \\
+        17/01/07 & Peter & 10 \\
+        18/01/07 & Bill & 5 \\
+        18/01/07 & Peter & 5 \\
+        \hline
+        \multicolumn{2}{|c|}{Total} & 30 \\
+        \hline
+        \end{tabular}
+} \qquad \qquad \subtable[As joint sales] {
+     \label{a3:tab:DimensioningIncompletenessB}
+        \begin{tabular}[t]{|c|c|c|}
+        \hline
+        Date & SP & Sales \\
+        \hline
+        \hline
+        17/01/07 & Bill, Peter & 10 \\
+        18/01/07 & Bill & 5 \\
+        18/01/07 &  Peter & 5 \\
+        \hline
+        \multicolumn{2}{|c|}{Total} & 20 \\
+        \hline
+        \end{tabular}
+        }
+\end{table}
+
+
+
+Non-strict fact-dimension relationships appear in a pletho\-ra of
+real-world situations, such as the relationships between bank
+customers and accounts~\cite{book/Kimball/DW}, between insured
+drivers and policyholders~\cite{book/Kimball/DW}, or between
+patients and
+diagnoses~\cite{book/Kimball/DW,DBLP:journals/is/PedersenJD01,DBLP:conf/dmdw/SongRME01}.
+
+
+\section{Normalization}\label{a3:sec:fact_dim2}
+A normalization process is carried out in order to obtain a MD model
+that ensures summarizability while accurately capturing the
+expressiveness of the demanded real-world situation. The output of
+such a process is a conceptual model constrained to those elements
+and relationships that do not violate summarizability. From this
+normalized MD model, an implementation which ensures consistent
+results in data analysis tools can be obtained.
+
+Our normalization process is performed at the conceptual level
+(recall Fig.~\ref{a3:fig:approach}) by using schema information to
+ensure summarizability. To this end, a normalized model is
+restricted to the following set of elements and associations between
+them, according to our UML profile\footnote{Note that, for the sake
+of completeness, we also show \emph{Base} classes which do not
+affect summarizability.}:
+
+\begin{itemize}
+    \item \emph{Dimension} classes.
+    \item \emph{Fact} classes (including fact attributes and degenerate dimensions).
+    \item Minimum multiplicity $0$ and maximum $*$ on the side of the \emph{Fact} class in
+    fact-dimension associations. Minimum $1$ and maximum $1$ are unusual but permitted,
+    however the least restrictive and most common situation is assumed.
+    \item Minimum and maximum multiplicity $1$ on the side of the \emph{Dimension} class in fact-dimension associations.
+\end{itemize}
+
+We have defined several guidelines to obtain a normalized model.
+These guidelines are applied to an initial conceptual MD model
+(\emph{source model}) in order to derive a normalized MD model
+(\emph{target model}). Each of these guidelines checks the different
+kinds of fact-dimension associations in order to create, remove or
+modify elements in the source model to obtain a target model which
+ensures summarizability, while the expressiveness of the source
+model is preserved.
+
+\subsection{Regular Fact-Dimension Relationships}
+Regular associations between a fact and a dimension class are those
+that have a minimum and maximum multiplicity of $1$ at the end of
+the \emph{Dimension} class, regardless of the multiplicities at the
+end of the \emph{Fact} class (recall
+Table~\ref{a3:tab:FD-multiplicity-classification}). As these
+associations do not violate summarizability, they do not require
+special treatment. Specifically, this guideline states that regular
+fact-dimension relationships in the source model must also appear in
+the target model. To this end, for each fact-dimension association
+in the source model, it is checked that minimum and maximum
+multiplicities in the end of a \emph{Dimension} class are both $1$.
+If so, the \emph{Fact} and \emph{Dimension} classes, as well as
+their attributes and regular associations, are kept in the target
+model exactly as they occur in the source model.
+
+
+\subsection{Incomplete Fact-Dimension Relationships}
+Incomplete associations between a fact and a dimension have minimum
+multiplicity of $0$ at the end of the \emph{Dimension} class.
+Incompleteness must be eliminated by changing this multiplicity to
+$1$ and creating new elements in the target model to keep the
+semantic expressiveness of the source model. Therefore, once this
+situation is detected in the source model, a new \emph{Fact} class
+is created in the target model to store the fact instances that are
+not related to the \emph{Dimension} class that causes the
+incompleteness. For example, Fig.~\ref{a3:sample_inc1} has an
+incomplete relationship between the \emph{Sales} fact and the
+\emph{Customer} dimension. The corresponding normalized model is
+shown in Fig.~\ref{a3:sample_inc2} where a new
+\emph{SalesNoCustomer} fact is created without any association to
+the \emph{Customer} dimension. This \emph{SalesNoCustomer} fact has
+the fact attributes of the \emph{Sales} fact, and it allows us to
+record every \emph{Sales} fact instance that is not related to any
+\emph{Customer} dimension instance. Now, in the target model, the
+relation between \emph{Sales} and \emph{Customer} is complete, since
+the minimum multiplicity at the end of the \emph{Customer} dimension
+can be turned into $1$.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/dolap08/sample_inc2.png}
+\end{center}
+\caption{Normalized, complete relationship between \emph{Sales} fact
+and \emph{Customer} dimension} \label{a3:sample_inc2}
+\end{figure}
+
+%\pagebreak
+\subsection{Non-strict Fact-Dimension Relationships}
+Non-strictness must be eliminated by turning the maximum
+multiplicity $*$ at the end of the \emph{Dimension} class into $1$
+and creating the necessary elements in the target model to keep the
+semantic expressiveness of the source model. To this end, we note
+that non-strictness can occur under two different situations, which
+require two different transformations to remove non-strict
+fact-dimension relationships. Since these two alternatives have
+different meanings, the designer is forced to decide between them.
+
+On the one hand, if the contribution of each dimension instance for
+each fact instance is known in advance, then the value of the
+measures can be appropriately divided among every dimension
+instance. Therefore, the maximum multiplicity $*$ at the end of the
+\emph{Dimension} class in the source model can be converted into $1$
+in the target model if a degenerate dimension is created in the
+\emph{Fact} in order to group the different dimension instances. In
+this way, we know the total contribution of a complete group by
+considering every individual contribution. For example,
+Fig.~\ref{a3:sample_nonstrict1} represents a source model with a
+non-strict association between the \emph{Sales} fact and the
+\emph{Salesperson} dimension. If we know the amount of individual
+sales of every salesperson within a shared sale, then we obtain the
+target model of Fig.~\ref{a3:sample_nonstrict2a} by adding a new
+degenerate dimension \emph{salespersonGroup} and turning the
+multiplicity at the end of the \emph{Salesperson} dimension into
+$1$. This degenerate dimension \emph{salespersonGroup} is a grouping
+key that allows us to calculate the total sales for a joint sale
+from the individual sales of each salesperson.  We note that this
+solution is called ``multivalued dimensions''
+in~\cite{book/Kimball/DW}, where it is suggested as a solution on
+the logical level (see Sect.~\ref{a3:sec:related}). In contrast, in
+our approach the additional information about individual sales and
+their grouping is expressed explicitly at the conceptual schema
+level.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/dolap08/sample_nonstr2a_date.png}
+\end{center}
+\caption{Normalized, strict relationship when individual
+contributions are known} \label{a3:sample_nonstrict2a}
+\end{figure}
+
+On the other hand, if we do not know the individual contribution of
+each dimension instance to the fact, then we are only concerned with
+the total contribution. However, data about individual dimension
+instances should not be ignored, because they may still be used for
+querying purposes. In this case, the maximum multiplicity $*$ at the
+end of the \emph{Dimension} class is turned into $1$  by creating a
+new \emph{Fact} class in the target model which records all measures
+related to individual dimension instances, whilst the measures
+related to the group of dimension instances are stored in the old
+\emph{Fact} class. Furthermore, a degenerate dimension is created
+for each \emph{Fact} class in the target model to express a
+correspondence between every individual dimension instance and its
+corresponding group, thus enabling the analysis of both facts via
+drill-across operations.
+
+For example, assume that we only know the total sales made by a
+group of several salespersons in the non-strict association between
+the \emph{Sales} fact and the \emph{Salesperson} dimension in
+Fig.~\ref{a3:sample_nonstrict1}. To remove non-strictness, we create
+a new \emph{SalesIndividual} fact, which is associated with the
+\emph{Salesperson} dimension (see the target model of
+Fig.~\ref{a3:sample_nonstrict2b}). This new fact contains no
+measures, since every sale is recorded with a group of salespersons
+in the \emph{Sales} fact. A degenerate dimension
+\emph{salespersonGroup} is also created in each fact. These
+degenerate dimensions enable the analysis of total sales, at the
+same time that we can obtain the individual data of each customer,
+which is stored in another fact. In this way, for a joint sale, we
+can explicitly show the total sales for a group of salespersons and
+recover their individual data by using the new degenerate
+dimensions.  This situation is not resolved by ``multivalued
+dimensions''~\cite{book/Kimball/DW}, since a ``weighting factor'' is
+necessary to identify the individual contributions.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{img/dolap08/sample_nonstr2b_date.png}
+\end{center}
+\caption{Normalized, strict relationship when only total
+contributions are known} \label{a3:sample_nonstrict2b}
+\end{figure}
+
+\section{Implementation}
+\label{a3:sec:implementation} The guidelines of the normalization
+process as described in this paper, have been formally designed by
+using the Que\-ry/Vi\-ew/Trans\-for\-ma\-tion (QVT)
+language~\cite{OMG/QVT} in order to be automatically performed. This
+language is a standard approach for defining formal relations
+between MOF-compliant models. Furthermore, QVT is an essential part
+of the MDA (Model Driven Architecture)~\cite{OMG/MDA} standard as a
+means of defining formal and automatic transformations between
+models. The proposed model-transformation architecture has been
+implemented in the \textsc{Eclipse} (\url{http://www.eclipse.org/})
+development platform, which is a modular open source platform that
+can be extended by means of plugins in order to add more features
+and new functionality.  We have designed a couple of modules
+encapsulated in a unique plugin that provides \textsc{Eclipse} with
+capabilities for executing the normalization process described in
+this paper. We have defined a \emph{multidimensional module} which
+implements the UML profile for MD modeling, and a
+\emph{transformation module} which uses the \textsc{ATL} (ATLAS
+Transformation Language) engine
+(\url{http://www.eclipse.org/m2m/atl/}) for codifying and executing
+the mapping patterns (e.g., Fig.~\ref{a3:fig:tool} shows an excerpt
+of the ATL code to deal with non-strictness) identified in the QVT
+transformations in order to implement the normalization process. By
+using these modules, we provide a customized palette tool that
+permits to easily make a diagram by using our UML profile for
+multidimensional modeling. Additionally, we provide the
+corresponding menu extensions in order to launch the corresponding
+transformations to obtain a normalized model.  Note that our
+implementation naturally allows to deal with complex relationships,
+e.g., non-strict \emph{and} incomplete ones, by simply launching the
+appropriate transformations one after the other.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/dolap08/tool.png}
+\end{center}
+\caption{Snapshot of our \textsc{Eclipse}-based tool}
+\label{a3:fig:tool}
+\end{figure}
+
+
+
+\section{Related Work}\label{a3:sec:related}
+Most of MD modeling approaches only focus on ensuring
+summarizability for dimension
+hierarchies~\cite{DBLP:journals/tods/HurtadoGM05,DBLP:journals/dke/MalinowskiZ06,DBLP:conf/dawak/MansmannS06,DBLP:conf/er/AkokaCP01}.
+Surprisingly, few works address summarizability issues in
+fact-dimension relationships and all of them are only concerned with
+many-to-many relationships between facts and dimensions, i.e.,
+non-strictness, thus ignoring incomplete relationships.
+
+Multivalued dimensions~\cite{book/Kimball/DW} are a first attempt in
+this respect, which permit a star schema to have non-strict
+relationships between facts and dimensions by means of a bridge
+table. This bridge table captures a non-strict fact-dimension
+relationship via foreign keys that refer to the tables that
+represent the dimension and the fact. These foreign keys also form a
+compound primary key for the bridge table. Song et
+al.~\cite{DBLP:conf/dmdw/SongRME01} focus on defining several
+methods at the level of a relational implementation to improve the
+use of a bridge table. They advocate the representation of
+many-to-many relationships with correct semantics, maintaining at
+the same time the star schema structure by defining six different
+approaches. They also give advantages and disadvantages of each
+approach and recommendations for their use. However, both
+approaches~\cite{book/Kimball/DW,DBLP:conf/dmdw/SongRME01} are
+defined at the logical level, which requires a lot of expertise to
+model real-world situations in terms of complex schemas. In
+particular, those approaches do not explicitly show the different
+types of real-world information that might be available at the
+conceptual level (e.g., Fig.~\ref{a3:sample_nonstrict2a} and
+Fig.~\ref{a3:sample_nonstrict2b} clearly represent two different
+real-world situations, which call for different logical
+implementation strategies).
+
+Pedersen et al.~\cite{DBLP:journals/is/PedersenJD01} state that
+non-strict relationships between facts and dimensions are necessary
+in many real case situations, therefore, these relations must be
+directly captured in a conceptual model. Nevertheless,
+summarizability is tackled at the instance level by modifying the
+data in the data warehouse. This may be an unsuitable solution due
+to the fact that data sources are huge in data warehouse systems and
+performance problems may arise when the required complex exploration
+of every stored data instance is done. Furthermore, considering data
+instances requires preprocessing tasks (e.g. every time that the
+data warehouse is updated, the summarizability must be checked).
+
+The novelty of our approach for solving summarizability in
+fact-dimension relationships is the following: (i) we provide a
+systematic way to enumerate all cases by using multiplicities at the
+conceptual level, which allows us to argue about every case whether
+it is problematic or not and to ease the task of designing
+real-world situations, (ii) we give mechanisms to design every
+situation at the conceptual level by using our UML profile for MD
+modeling, and (iii) we provide a normalization process to solve
+summarizability at the conceptual level, without using information
+from data instances.
+
+
+\section{Conclusions and Future Work}
+\label{a3:sect:conclusions} Ensuring hierarchy-related
+summarizability in MD models has been widely tackled by current
+research. However, summarizability problems arising from
+fact-dimension relationships have been ignored so far. Therefore,
+data warehouse designers still face problems when defining
+fact-dimension relationships that accurately reflect real-world
+situations in a MD model, whilst avoiding summarizability problems.
+
+In this paper, we have described a normalization approach for
+ensuring that the implemented MD model will be queried without
+summarizability problems arising from fact-dimen\-sion
+relationships. Following our approach, in a first step designers may
+define fact-dimension associations that ignore summarizability
+conditions in a conceptual model by using our UML profile. This
+conceptual model reflects real-world situations in an understandable
+way. Later, several guidelines can be applied to obtain a normalized
+MD model whose fact-dimension relationships do not allow situations
+that violate summarizability, thus avoiding erroneous analysis of
+data. These guidelines have been implemented in an
+\textsc{Eclipse}-based tool by using the QVT language.
+
+%\paragraph{Future work}
+Our short-term future work consists of including this normalization
+process into our framework for the development of data warehouses
+based on MDA~\cite{journals/dke/Mazon2007,journals/dss/Mazon2008}.
+We also plan to consider summarizability problems when aggregation
+functions are applied to measures from the fact along the different
+dimension hierarchies, as suggested
+in~\cite{DBLP:conf/er/CherfiP03,DBLP:conf/er/HornerS05}.
+
+
+%\section{Acknowledgements}
+%\label{sect:acknowledgements}  This work has been partially
+%supported by the ESPIA project (TIN2007-67078)  from the Spanish
+%Ministry of Education and Science, and by the QUASIMODO project
+%(PAC08-0157-0668) from the Castilla-La Mancha Ministry of Education
+%and Science (Spain). Jose-Norberto Maz{\'o}n is funded by the
+%Spanish Ministry of Education and Science under a FPU grant
+%(AP2005-1360).
+
+\bibliographystyle{abbrv}
+\bibliography{tesis}
+
+
+%

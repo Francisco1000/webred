@@ -1,0 +1,261 @@
+\begin{thebibliography}{10}
+
+\bibitem{DBLP:journals/is/Alhajj03}
+R.~Alhajj.
+\newblock Extracting the extended entity-relationship model from a legacy
+  relational database.
+\newblock {\em Inf. Syst.}, 28(6):597--618, 2003.
+
+\bibitem{BORLAND}
+{B}orland {T}ogether.
+\newblock \url{http://www.borland.com/together}.
+
+\bibitem{DBLP:conf/edbt/CabibboT98}
+L.~Cabibbo and R.~Torlone.
+\newblock A logical approach to multidimensional databases.
+\newblock In {\em EDBT}, pages 183--197, 1998.
+
+\bibitem{ECLIPSE}
+{E}clipse.
+\newblock \url{http://www.eclipse.org/}.
+
+\bibitem{DBLP:conf/dolap/GiorginiRG05}
+P.~Giorgini, S.~Rizzi, and M.~Garzetti.
+\newblock Goal-oriented requirement analysis for data warehouse design.
+\newblock In {\em DOLAP}, pages 47--56, 2005.
+
+\bibitem{RE08}
+O.~Glorio, J.~Pardillo, J.-N. Mazón, and J.~Trujillo.
+\newblock {D}a{W}a{R}a: an {E}clipse {P}lugin for {U}sing i* on {D}ata
+  {W}arehouse {R}equirement {A}nalysis.
+\newblock In {\em 16th {IEEE} {I}nternational {R}equirements {E}ngineering
+  {C}onference {(RE'08)}, {B}arcelona ({S}pain), {S}eptember 8-12, 2008}, pages
+  317--318, 2008.
+
+\bibitem{DBLP:journals/ijcis/GolfarelliMR98}
+M.~Golfarelli, D.~Maio, and S.~Rizzi.
+\newblock The {D}imensional {F}act {M}odel: A conceptual model for data
+  warehouses.
+\newblock {\em Int. J. Cooperative Inf. Syst.}, 7(2-3):215--247, 1998.
+
+\bibitem{DBLP:conf/dmdw/HusemannLV00}
+B.~H{\"u}semann, J.~Lechtenb{\"o}rger, and G.~Vossen.
+\newblock Conceptual data warehouse modeling.
+\newblock In {\em DMDW}, page~6, 2000.
+
+\bibitem{DBLP:conf/vldb/JagadishLS99}
+H.~V. Jagadish, L.~V.~S. Lakshmanan, and D.~Srivastava.
+\newblock What can hierarchies do for data warehouses?
+\newblock In {\em VLDB}, pages 530--541, 1999.
+
+\bibitem{DBLP:journals/vldb/JensenKPT04}
+C.~S. Jensen, A.~Kligys, T.~B. Pedersen, and I.~Timko.
+\newblock Multidimensional data modeling for location-based services.
+\newblock {\em VLDB J.}, 13(1):1--21, 2004.
+
+\bibitem{book/Kimball/DW}
+R.~Kimball and M.~Ross.
+\newblock {\em The Data Warehouse Toolkit}.
+\newblock Wiley \& Sons, 2002.
+
+\bibitem{ATL}
+A.~T. Language.
+\newblock \url{http://www.eclipse.org/m2m/atl/}.
+
+\bibitem{DBLP:journals/is/LechtenborgerV03}
+J.~Lechtenb{\"o}rger and G.~Vossen.
+\newblock Multidimensional normal forms for data warehouse design.
+\newblock {\em Inf. Syst.}, 28(5):415--434, 2003.
+
+\bibitem{DBLP:conf/ssdbm/LehnerAW98}
+W.~Lehner, J.~Albrecht, and H.~Wedekind.
+\newblock Normal forms for multidimensional databases.
+\newblock In {\em SSDBM}, pages 63--72, 1998.
+
+\bibitem{DBLP:conf/ssdbm/LenzS97}
+H.-J. Lenz and A.~Shoshani.
+\newblock Summarizability in {OLAP} and statistical data bases.
+\newblock In {\em SSDBM}, pages 132--143, 1997.
+
+\bibitem{DBLP:journals/dke/Lujan-MoraTS06}
+S.~Luj{\'a}n-Mora, J.~Trujillo, and I.-Y. Song.
+\newblock A {UML} profile for multidimensional modeling in data warehouses.
+\newblock {\em Data Knowl. Eng.}, 59(3):725--769, 2006.
+
+\bibitem{DBLP:journals/dke/MalinowskiZ06}
+E.~Malinowski and E.~Zim{\'a}nyi.
+\newblock Hierarchies in a multidimensional model: From conceptual modeling to
+  logical representation.
+\newblock {\em Data Knowl. Eng.}, 59(2):348--377, 2006.
+
+\bibitem{MalZim2008:book}
+E.~Malinowski and E.~Zim{\'a}nyi.
+\newblock {\em Advanced data warehouse design: From conventional to spatial and
+  temporal applications}.
+\newblock Springer-Verlag, 2008.
+
+\bibitem{DBLP:conf/dawak/MansmannS06}
+S.~Mansmann and M.~H. Scholl.
+\newblock Extending visual {OLAP} for handling irregular dimensional
+  hierarchies.
+\newblock In {\em DaWaK}, pages 95--105, 2006.
+
+\bibitem{DBLP:conf/dawak/MazonPT06}
+J.-N. Maz{\'o}n, J.~Pardillo, and J.~Trujillo.
+\newblock Applying transformations to model driven data warehouses.
+\newblock In {\em DaWaK}, pages 13--22, 2006.
+
+\bibitem{DBLP:conf/er/MazonPT07}
+J.-N. Maz{\'o}n, J.~Pardillo, and J.~Trujillo.
+\newblock A model-driven goal-oriented requirement engineering approach for
+  data warehouses.
+\newblock In {\em ER Workshops}, pages 255--264, 2007.
+
+\bibitem{DBLP:conf/er/MazonT07}
+J.-N. Maz{\'o}n and J.~Trujillo.
+\newblock A model driven modernization approach for automatically deriving
+  multidimensional models in data warehouses.
+\newblock In {\em ER}, pages 56--71, 2007.
+
+\bibitem{journals/dss/Mazon2008}
+J.-N. Maz{\'o}n and J.~Trujillo.
+\newblock An {MDA} approach for the development of data warehouses.
+\newblock {\em Decis. Support Syst.}, 45(1):41--58, 2008.
+
+\bibitem{DBLP:conf/er/MazonTL06}
+J.-N. Maz{\'o}n, J.~Trujillo, and J.~Lechtenb{\"o}rger.
+\newblock A set of {QVT} relations to assure the correctness of data warehouses
+  by using multidimensional normal forms.
+\newblock In {\em ER}, pages 385--398, 2006.
+
+\bibitem{journals/dke/Mazon2007}
+J.-N. Maz{\'o}n, J.~Trujillo, and J.~Lechtenb{\"o}rger.
+\newblock Reconciling requirement-driven data warehouses with data sources via
+  multidimensional normal forms.
+\newblock {\em Data Knowl. Eng.}, 63(3):725--751, 2007.
+
+\bibitem{MEDINI}
+medini{QVT}.
+\newblock \url{http://projects.ikv.de/qvt}.
+
+\bibitem{MOFSCRIPT}
+{MOFS}cript.
+\newblock \url{http://www.eclipse.org/gmt/mofscript/}.
+
+\bibitem{OMG/CWM}
+{Object Management Group}.
+\newblock {C}ommon {W}arehouse {M}etamodel {S}pecification 1.1.
+  \url{http://www.omg.org/cgi-bin/doc?formal/03-03-02}.
+
+\bibitem{OMG/MDA}
+{Object Management Group}.
+\newblock {MDA} {G}uide 1.0.1.
+  \url{http://www.omg.org/cgi-bin/doc?omg/03-06-01}.
+
+\bibitem{OMG/QVT}
+{Object Management Group}.
+\newblock {M}{O}{F} 2.0 {Q}uery/{V}iew/{T}ransformation.
+  \url{http://www.omg.org/cgi-bin/doc?ptc/2005-11-01}.
+
+\bibitem{OMG/MOF2TEXT}
+{Object Management Group}.
+\newblock {MOF} {M}odels to {T}ext {T}ransformation {L}anguage ({Mof2Text}) 2.0
+  \url{http://www.omg.org/cgi-bin/doc?ptc/06-11-01}.
+
+\bibitem{OMG/OCL}
+{Object Management Group}.
+\newblock {O}bject {C}onstraint {L}anguage ({O}{C}{L}) specification 2.0
+  \url{http://www.omg.org/cgi-bin/doc?ptc/03-10-14}.
+
+\bibitem{OMG/UML}
+{Object Management Group}.
+\newblock {U}nified {M}odeling {L}anguage {S}pecification 2.0.
+  \url{http://www.omg.org/cgi-bin/doc?formal/05-07-04}.
+
+\bibitem{DBLP:conf/re/PaimC03}
+F.~R.~S. Paim and J.~Castro.
+\newblock {DWARF}: An approach for requirements definition and management of
+  data warehouse systems.
+\newblock In {\em RE}, pages 75--, 2003.
+
+\bibitem{DBLP:conf/dawak/Pedersen04}
+T.~B. Pedersen.
+\newblock How is {BI} used in industry?: Report from a knowledge exchange
+  network.
+\newblock In {\em DaWaK}, pages 179--188, 2004.
+
+\bibitem{DBLP:conf/vldb/PedersenJD99}
+T.~B. Pedersen, C.~S. Jensen, and C.~E. Dyreson.
+\newblock Extending practical pre-aggregation in on-line analytical processing.
+\newblock In {\em VLDB}, pages 663--674, 1999.
+
+\bibitem{DBLP:journals/is/PedersenJD01}
+T.~B. Pedersen, C.~S. Jensen, and C.~E. Dyreson.
+\newblock A foundation for capturing and querying complex multidimensional
+  data.
+\newblock {\em Inf. Syst.}, 26(5):383--423, 2001.
+
+\bibitem{DBLP:conf/ssdbm/RafanelliS90}
+M.~Rafanelli and A.~Shoshani.
+\newblock {STORM}: A statistical object representation model.
+\newblock In {\em SSDBM}, pages 14--29, 1990.
+
+\bibitem{RATIONAL}
+{R}ational {S}otware.
+\newblock \url{www.ibm.com/software/rational/}.
+
+\bibitem{DBLP:conf/dolap/RizziALT06}
+S.~Rizzi, A.~Abell{\'o}, J.~Lechtenb{\"o}rger, and J.~Trujillo.
+\newblock Research in data warehouse modeling and design: dead or alive?
+\newblock In {\em DOLAP}, pages 3--10, 2006.
+
+\bibitem{DBLP:conf/er/SapiaBHD98}
+C.~Sapia, M.~Blaschka, G.~H{\"o}fling, and B.~Dinter.
+\newblock Extending the e/r model for the multidimensional paradigm.
+\newblock In {\em ER Workshops}, pages 105--116, 1998.
+
+\bibitem{SMARTQVT}
+{S}mart{QVT}. {A}n open source model transformation tool implementing the {MOF}
+  2.0 {QVT}-{O}perational language.
+\newblock \url{http://smartqvt.elibel.tm.fr/}.
+
+\bibitem{DBLP:conf/dolap/SongKD07}
+I.-Y. Song, R.~Khare, and B.~Dai.
+\newblock {SAMSTAR}: a semi-automated lexical method for generating star
+  schemas from an entity-relationship diagram.
+\newblock In {\em DOLAP}, pages 9--16, 2007.
+
+\bibitem{DBLP:conf/dmdw/SongRME01}
+I.-Y. Song, W.~Rowen, C.~Medsker, and E.~F. Ewen.
+\newblock An analysis of many-to-many relationships between fact and dimension
+  tables in dimensional modeling.
+\newblock In {\em DMDW}, page~6, 2001.
+
+\bibitem{DBLP:journals/computer/TrujilloPGS01}
+J.~Trujillo, M.~Palomar, J.~G{\'o}mez, and I.-Y. Song.
+\newblock Designing data warehouses with {O}{O} conceptual models.
+\newblock {\em IEEE Computer}, 34(12):66--75, 2001.
+
+\bibitem{DBLP:conf/dolap/TryfonaBC99}
+N.~Tryfona, F.~Busborg, and J.~G.~B. Christiansen.
+\newblock star{E}{R}: A conceptual model for data warehouse design.
+\newblock In {\em DOLAP}, pages 3--8, 1999.
+
+\bibitem{DBLP:journals/sigmod/VelaFMP06}
+B.~Vela, E.~Fern{\'a}ndez-Medina, E.~Marcos, and M.~Piattini.
+\newblock Model driven development of secure {XML} databases.
+\newblock {\em SIGMOD Record}, 35(3):22--27, 2006.
+
+\bibitem{DBLP:conf/hicss/WinterS03}
+R.~Winter and B.~Strauch.
+\newblock A method for demand-driven information requirements analysis in data
+  warehousing projects.
+\newblock In {\em HICSS}, page 231, 2003.
+
+\bibitem{DBLP:conf/re/Yu97}
+E.~S.~K. Yu.
+\newblock Towards modeling and reasoning support for early-phase requirements
+  engineering.
+\newblock In {\em RE}, pages 226--235, 1997.
+
+\end{thebibliography}

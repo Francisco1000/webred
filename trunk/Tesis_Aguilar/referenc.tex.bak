@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%% referenc.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% sample references
+% "computer science"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+% BibTeX users please use
+% \bibliographystyle{}
+ \bibliography{tesis}
+%
+% Non-BibTeX users please use
+%\begin{thebibliography}{99.}
+%
+% and use \bibitem to create references.
+
+%\end{thebibliography}

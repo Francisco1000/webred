@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapstarthook{The content of this chapter corresponds to the
+following paper: \textbf{J.-N. Maz{\'o}n and J. Trujillo. An MDA
+approach for the development of data warehouses. Decision Support
+Systems, 45(1):41--58, 2008. [IF2007: 1.119].}}
+
+\chapter{An MDA Approach for the Development of Data Warehouses}
+\label{c3} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+
+This chapter describes a standard and integrated model-driven
+framework with which to design each component of a data warehouse.
+Once this framework is defined, the focus is on the multidimensional
+modeling of the data warehouse repository. This chapter specifically
+defines a conceptual multidimensional model and how it is translated
+to a relational-based logical representation by using a model-driven
+approach. The advantages of using the model-driven development to
+design data warehouses are also enumerated. The content of this
+chapter corresponds with the part of the approach shaded in the
+figure below.
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{img/chapters/chapter3}
+  \end{center}
+  %\caption{} \label{}
+\end{figure}
+
+The content of this chapter is a paper published in \emph{Decision
+Support Systems}. This journal focuses on contributions on the
+concepts and operational basis for decision support systems and
+techniques for implementing and evaluating decision support systems.
+Specifically, this journal encourages the following topics:
+artificial intelligence, data base management, decision theory,
+economics, linguistics, management science, mathematical modeling,
+and others. The common thread of articles published in the journal
+is their relevance to theoretical and technical issues for decision
+support systems. As data warehousing has been widely accepted as a
+key technology for organizations to improve their abilities in data
+analysis and decision support, this journal is an important forum of
+publication for researches in the data warehouse domain. Finally, it
+should be mentioned that this journal has an \emph{impact factor} of
+\emph{1.119} in 2007, according to the \emph{Thomson's Science
+Citation Index (SCI)} (\url{http://www.isiwebofknowledge.com/}).
+
+
+\includepdf[openright=true,pages={1-18}]{mazon_dss08.pdf}
+
+
+
+%
