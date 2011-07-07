@@ -1,0 +1,881 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.7.7)  7 JUL 2011 19:16
+entering extended mode
+**Tesis_Aguilar.tex
+
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\Tesis_Aguila
+r.tex"
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\svmono.cls"
+Document Class: svmono 2006/05/11 v4.14 
+Springer Verlag global LaTeX document class for monographs
+Class Springer-SVMono Info: extra/valid Springer sub-package 
+(Springer-SVMono)           not found in option list - using "global" style.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\betweenumberspace=\dimen103
+\headlineindent=\dimen104
+\c@chapter=\count87
+\chapstarthookwidth=\dimen105
+\svitemindent=\dimen106
+\verbatimindent=\dimen107
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 624.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 625.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 626.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 627.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 628.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 629.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 630.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 631.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 632.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 633.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 634.
+\tocchpnum=\dimen108
+\tocsecnum=\dimen109
+\tocsectotal=\dimen110
+\tocsubsecnum=\dimen111
+\tocsubsectotal=\dimen112
+\tocsubsubsecnum=\dimen113
+\tocsubsubsectotal=\dimen114
+\tocparanum=\dimen115
+\tocparatotal=\dimen116
+\tocsubparanum=\dimen117
+\foot@parindent=\dimen118
+\spthmsep=\dimen119
+\c@theorem=\count88
+\c@prob=\count89
+\instindent=\dimen120
+\figgap=\dimen121
+\figcapgap=\dimen122
+\tabcapgap=\dimen123
+\c@merk=\count90
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
+\c@tracingmulticols=\count91
+\mult@box=\box26
+\multicol@leftmargin=\dimen126
+\c@unbalance=\count92
+\c@collectmore=\count93
+\doublecol@number=\count94
+\multicoltolerance=\count95
+\multicolpretolerance=\count96
+\full@width=\dimen127
+\page@free=\dimen128
+\premulticols=\dimen129
+\postmulticols=\dimen130
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count97
+\c@finalcolumnbadness=\count98
+\last@try=\dimen131
+\multicolovershoot=\dimen132
+\multicolundershoot=\dimen133
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\footmisc\footmisc.sty"
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks15
+\footnotemargin=\dimen134
+\c@pp@next@reset=\count99
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2011/03/10 v0.4n Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen135
+\calc@Bdimen=\dimen136
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count102
+\calc@Cskip=\skip47
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2010/03/25 v1.12 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\ppnull.def"
+File: ppnull.def 2011/03/10 v0.4n Pdfpages dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will NOT insert any pages, because
+(pdfpages)                you are producing DVI output.
+
+))
+\AM@pagebox=\box52
+\AM@toc@title=\toks16
+\c@AM@survey=\count103
+\AM@templatesizebox=\box53
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen137
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen138
+\subfiglabelskip=\skip51
+\c@subfigure=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@lotdepth=\count107
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count108
+\Gm@cntv=\count109
+\c@Gm@tempcnt=\count110
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks19
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")
+
+Package geometry Warning: `twoside' should be set to `true' or `false'.
+
+)
+\@indexfile=\write3
+
+Writing index file Tesis_Aguilar.idx
+
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\Tesis_Aguila
+r.aux"
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\dedic.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\ack.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\ack_eng.aux"
+) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\pref.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\part1.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\chapter1.aux
+"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+\AtBeginShipoutBox=\box54
+
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(93.89418pt, 409.71951pt, 93.89418pt)
+* v-part:(T,H,B)=(93.89418pt, 657.25839pt, 93.89418pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04675pt
+* \textwidth=409.71951pt
+* \textheight=657.25839pt
+* \oddsidemargin=21.62419pt
+* \evensidemargin=21.62419pt
+* \topmargin=-2.37581pt
+* \headheight=12.0pt
+* \headsep=12.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=90.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+
+ []
+
+[1
+
+] [2
+
+
+]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\dedic.tex")
+[5
+
+] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\ack.tex" [
+6
+
+
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+) [7]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\ack_eng.tex"
+[8
+
+
+
+
+]) [9]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\pref.tex"
+[10
+
+
+
+
+]
+
+LaTeX Warning: Reference `c2' on page XI undefined on input line 41.
+
+) [11] [12
+
+
+
+]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\Tesis_Aguila
+r.toc")
+\tf@toc=\write4
+ [13] [14
+
+
+]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\part1.tex"
+[1
+
+
+
+] [2])
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\chapter1.tex
+"
+Chapter 1.
+
+LaTeX Warning: Reference `c2' on page 3 undefined on input line 31.
+
+
+LaTeX Warning: Reference `p2' on page 3 undefined on input line 31.
+
+
+LaTeX Warning: Reference `p3' on page 3 undefined on input line 31.
+
+[3
+
+
+
+
+]
+
+LaTeX Warning: Reference `c3' on page 4 undefined on input line 40.
+
+
+LaTeX Warning: Reference `c4' on page 4 undefined on input line 46.
+
+
+LaTeX Warning: Reference `c5' on page 4 undefined on input line 52.
+
+[4]
+
+LaTeX Warning: Reference `c6' on page 5 undefined on input line 59.
+
+
+LaTeX Warning: Reference `a1' on page 5 undefined on input line 73.
+
+
+LaTeX Warning: Reference `a3' on page 5 undefined on input line 79.
+
+
+LaTeX Warning: Reference `c4' on page 5 undefined on input line 84.
+
+[5]
+Overfull \hbox (3.17659pt too wide) in paragraph at lines 103--104
+[][]\OT1/cmr/m/n/10 Una Prop-uesta Ori-en-tada a Ob-je-tivos para el Analisis
+ []
+
+[6]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 123.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
+ [7]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 152.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 152.
+
+
+LaTeX Warning: Reference `c3' on page 8 undefined on input line 152.
+
+
+LaTeX Warning: Reference `c1:fig:approach' on page 8 undefined on input line 16
+4.
+
+
+LaTeX Warning: Citation `DBLP:conf/dawak/MazonPT06' on page 8 undefined on inpu
+t line 166.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 8 undefined on input l
+ine 166.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonT07' on page 8 undefined on input li
+ne 166.
+
+
+LaTeX Warning: Citation `journals/dss/Mazon2008' on page 8 undefined on input l
+ine 166.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonTL06' on page 8 undefined on input l
+ine 166.
+
+
+LaTeX Warning: Citation `journals/dke/Mazon2007' on page 8 undefined on input l
+ine 166.
+
+
+LaTeX Warning: Citation `DBLP:journals/dke/Lujan-MoraTS06' on page 8 undefined 
+on input line 168.
+
+
+LaTeX Warning: Citation `OMG/MDA' on page 8 undefined on input line 175.
+
+
+LaTeX Warning: Reference `c1:fig:approach' on page 8 undefined on input line 17
+7.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 8 undefined on input l
+ine 181.
+
+
+LaTeX Warning: Citation `journals/dke/Mazon2007' on page 8 undefined on input l
+ine 183.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonT07' on page 8 undefined on input li
+ne 183.
+
+
+LaTeX Warning: Reference `c5' on page 8 undefined on input line 211.
+
+[8]
+
+LaTeX Warning: Citation `DBLP:conf/re/Yu97' on page 9 undefined on input line 2
+44.
+
+
+LaTeX Warning: Citation `OMG/UML' on page 9 undefined on input line 248.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 9 undefined on input l
+ine 252.
+
+
+LaTeX Warning: Citation `OMG/QVT' on page 9 undefined on input line 259.
+
+
+LaTeX Warning: Reference `c5' on page 9 undefined on input line 264.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 9 undefined on input l
+ine 265.
+
+
+LaTeX Warning: Citation `DBLP:journals/dke/Lujan-MoraTS06' on page 9 undefined 
+on input line 269.
+
+
+LaTeX Warning: Reference `c5' on page 9 undefined on input line 286.
+
+
+LaTeX Warning: Reference `c6' on page 9 undefined on input line 286.
+
+
+LaTeX Warning: Citation `DBLP:journals/is/LechtenborgerV03' on page 9 undefined
+ on input line 289.
+
+
+LaTeX Warning: Citation `journals/dke/Mazon2007' on page 9 undefined on input l
+ine 295.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonT07' on page 9 undefined on input li
+ne 302.
+
+
+LaTeX Warning: Citation `DBLP:conf/dolap/SongKD07' on page 9 undefined on input
+ line 304.
+
+
+LaTeX Warning: Citation `DBLP:journals/is/Alhajj03' on page 9 undefined on inpu
+t line 308.
+
+[9]
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonTL06' on page 10 undefined on input 
+line 320.
+
+
+LaTeX Warning: Citation `journals/dke/Mazon2007' on page 10 undefined on input 
+line 320.
+
+
+LaTeX Warning: Reference `c3' on page 10 undefined on input line 355.
+
+
+LaTeX Warning: Reference `c4' on page 10 undefined on input line 357.
+
+
+LaTeX Warning: Citation `OMG/CWM' on page 10 undefined on input line 363.
+
+
+LaTeX Warning: Citation `DBLP:conf/dawak/Pedersen04' on page 10 undefined on in
+put line 373.
+
+
+LaTeX Warning: Citation `OMG/MOF2TEXT' on page 10 undefined on input line 376.
+
+
+LaTeX Warning: Citation `RATIONAL' on page 10 undefined on input line 388.
+
+
+LaTeX Warning: Citation `BORLAND' on page 10 undefined on input line 389.
+
+
+LaTeX Warning: Citation `ECLIPSE' on page 10 undefined on input line 391.
+
+
+LaTeX Warning: Citation `RE08' on page 10 undefined on input line 394.
+
+[10]
+
+LaTeX Warning: Reference `c1:fig:profile-i' on page 11 undefined on input line 
+405.
+
+
+LaTeX Warning: Reference `c1:istarpalette' on page 11 undefined on input line 4
+08.
+
+
+Overfull \hbox (5.99998pt too wide) in paragraph at lines 413--425
+[][][] 
+ []
+
+
+LaTeX Warning: Citation `DBLP:conf/dolap/GiorginiRG05' on page 11 undefined on 
+input line 442.
+
+
+LaTeX Warning: Citation `DBLP:journals/dke/Lujan-MoraTS06' on page 11 undefined
+ on input line 461.
+
+
+LaTeX Warning: Reference `c1:fig:profile-md' on page 11 undefined on input line
+ 463.
+
+
+LaTeX Warning: Reference `c1:mdpalette' on page 11 undefined on input line 466.
+
+
+
+LaTeX Warning: Citation `OMG/OCL' on page 11 undefined on input line 468.
+
+
+Overfull \hbox (8.99997pt too wide) in paragraph at lines 487--500
+[][][] 
+ []
+
+[11]
+
+LaTeX Warning: Reference `c1:fig:cwm' on page 12 undefined on input line 509.
+
+
+LaTeX Warning: Citation `ATL' on page 12 undefined on input line 525.
+
+
+LaTeX Warning: Citation `MOFSCRIPT' on page 12 undefined on input line 531.
+
+
+LaTeX Warning: Reference `c1:fig:screenshot' on page 12 undefined on input line
+ 540.
+
+
+LaTeX Warning: Reference `c1:fig:project' on page 12 undefined on input line 54
+6.
+
+
+LaTeX Warning: Reference `c1:fig:parts' on page 12 undefined on input line 548.
+
+
+
+LaTeX Warning: Reference `c1:istarpalette' on page 12 undefined on input line 5
+50.
+
+
+LaTeX Warning: Reference `c1:mdpalette' on page 12 undefined on input line 551.
+
+
+
+LaTeX Warning: Reference `c1:fig:menutransform' on page 12 undefined on input l
+ine 554.
+
+[12]
+
+LaTeX Warning: Reference `c1:fig:cim' on page 13 undefined on input line 623.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 13 undefined on input 
+line 642.
+
+
+LaTeX Warning: Reference `c1:fig:pim1' on page 13 undefined on input line 645.
+
+
+LaTeX Warning: Reference `c1:pim1_fact' on page 13 undefined on input line 647.
+
+
+
+LaTeX Warning: Reference `c1:pim1_dim1' on page 13 undefined on input line 650.
+
+
+
+LaTeX Warning: Reference `c1:pim1_dim2' on page 13 undefined on input line 650.
+
+
+
+LaTeX Warning: Reference `c1:fig:ds' on page 13 undefined on input line 675.
+
+
+LaTeX Warning: Reference `c1:fig:menutransform' on page 13 undefined on input l
+ine 701.
+
+
+LaTeX Warning: Reference `c1:fig:pim2' on page 13 undefined on input line 710.
+
+[13]
+
+LaTeX Warning: Reference `c1:fig:menutransform' on page 14 undefined on input l
+ine 750.
+
+
+LaTeX Warning: Reference `c1:fig:pim3_1' on page 14 undefined on input line 758
+.
+
+
+LaTeX Warning: Reference `c1:fig:pim3_2' on page 14 undefined on input line 759
+.
+
+
+LaTeX Warning: Reference `c1:fig:setstatusnone' on page 14 undefined on input l
+ine 791.
+
+
+LaTeX Warning: Reference `c1:fig:pim4_1' on page 14 undefined on input line 796
+.
+
+
+LaTeX Warning: Reference `c1:fig:pim4_2' on page 14 undefined on input line 797
+.
+
+
+LaTeX Warning: Citation `book/Kimball/DW' on page 14 undefined on input line 83
+0.
+
+
+LaTeX Warning: Reference `c1:fig:psm' on page 14 undefined on input line 835.
+
+
+LaTeX Warning: Reference `c1:fig:codesql' on page 14 undefined on input line 84
+9.
+
+
+LaTeX Warning: Reference `c1:fig:codeolap' on page 14 undefined on input line 8
+51.
+
+[14]
+
+LaTeX Warning: Reference `a1' on page 15 undefined on input line 893.
+
+
+LaTeX Warning: Reference `a2' on page 15 undefined on input line 893.
+
+
+LaTeX Warning: Reference `a3' on page 15 undefined on input line 893.
+
+
+LaTeX Warning: Reference `a1' on page 15 undefined on input line 897.
+
+
+LaTeX Warning: Citation `DBLP:conf/dmdw/SongRME01' on page 15 undefined on inpu
+t line 906.
+
+
+LaTeX Warning: Citation `DBLP:conf/vldb/JagadishLS99' on page 15 undefined on i
+nput line 907.
+
+
+LaTeX Warning: Citation `DBLP:conf/ssdbm/RafanelliS90' on page 15 undefined on 
+input line 911.
+
+
+LaTeX Warning: Citation `DBLP:conf/ssdbm/LehnerAW98' on page 15 undefined on in
+put line 917.
+
+
+LaTeX Warning: Citation `DBLP:conf/ssdbm/LenzS97' on page 15 undefined on input
+ line 921.
+
+
+LaTeX Warning: Citation `DBLP:conf/dmdw/HusemannLV00' on page 15 undefined on i
+nput line 934.
+
+
+LaTeX Warning: Citation `DBLP:conf/dolap/RizziALT06' on page 15 undefined on in
+put line 934.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/SapiaBHD98' on page 15 undefined on input
+ line 934.
+
+
+LaTeX Warning: Citation `DBLP:journals/computer/TrujilloPGS01' on page 15 undef
+ined on input line 934.
+
+
+LaTeX Warning: Citation `DBLP:conf/dolap/TryfonaBC99' on page 15 undefined on i
+nput line 934.
+
+
+LaTeX Warning: Citation `DBLP:journals/vldb/JensenKPT04' on page 15 undefined o
+n input line 945.
+
+
+LaTeX Warning: Citation `MalZim2008:book' on page 15 undefined on input line 94
+5.
+
+
+LaTeX Warning: Citation `DBLP:journals/dke/MalinowskiZ06' on page 15 undefined 
+on input line 956.
+
+
+LaTeX Warning: Citation `DBLP:journals/is/PedersenJD01' on page 15 undefined on
+ input line 956.
+
+
+LaTeX Warning: Citation `DBLP:conf/dawak/MansmannS06' on page 15 undefined on i
+nput line 956.
+
+[15
+
+]
+
+LaTeX Warning: Reference `c1:fig:normalization' on page 16 undefined on input l
+ine 969.
+
+
+LaTeX Warning: Citation `OMG/QVT' on page 16 undefined on input line 972.
+
+
+LaTeX Warning: Citation `ATL' on page 16 undefined on input line 988.
+
+
+LaTeX Warning: Reference `c1:fig:normalizationATL' on page 16 undefined on inpu
+t line 990.
+
+
+LaTeX Warning: Citation `DBLP:conf/dolap/RizziALT06' on page 16 undefined on in
+put line 1013.
+
+No file Tesis_Aguilar.bbl.
+) [16]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\Tesis_Aguila
+r.aux"
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\dedic.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\ack.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\ack_eng.aux"
+) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\pref.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\part1.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\chapter1.aux
+"))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3385 strings out of 494020
+ 48898 string characters out of 3146501
+ 131342 words of memory out of 3000000
+ 6591 multiletter control sequences out of 15000+200000
+ 9400 words of font info for 33 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 37i,11n,39p,1610b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Tesis_Aguilar.dvi (28 pages, 116980 bytes).
