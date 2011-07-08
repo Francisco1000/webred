@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.7.7)  7 JUL 2011 19:16
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.7.7)  8 JUL 2011 21:52
 entering extended mode
 **Tesis_Aguilar.tex
 
@@ -301,7 +301,11 @@ r.aux"
 ) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\pref.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\part1.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\chapter1.aux
-"))
+"
+
+LaTeX Warning: Label `fig:reqmetamodel' multiply defined.
+
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
@@ -414,13 +418,13 @@ r.toc")
 "
 Chapter 1.
 
-LaTeX Warning: Reference `c2' on page 3 undefined on input line 31.
+LaTeX Warning: Reference `c2' on page 3 undefined on input line 29.
 
 
-LaTeX Warning: Reference `p2' on page 3 undefined on input line 31.
+LaTeX Warning: Reference `p2' on page 3 undefined on input line 29.
 
 
-LaTeX Warning: Reference `p3' on page 3 undefined on input line 31.
+LaTeX Warning: Reference `p3' on page 3 undefined on input line 29.
 
 [3
 
@@ -429,433 +433,321 @@ LaTeX Warning: Reference `p3' on page 3 undefined on input line 31.
 
 ]
 
-LaTeX Warning: Reference `c3' on page 4 undefined on input line 40.
+LaTeX Warning: Reference `c3' on page 4 undefined on input line 38.
 
 
-LaTeX Warning: Reference `c4' on page 4 undefined on input line 46.
+LaTeX Warning: Reference `c4' on page 4 undefined on input line 44.
 
 
-LaTeX Warning: Reference `c5' on page 4 undefined on input line 52.
+LaTeX Warning: Reference `c5' on page 4 undefined on input line 50.
 
 [4]
 
-LaTeX Warning: Reference `c6' on page 5 undefined on input line 59.
+LaTeX Warning: Reference `c6' on page 5 undefined on input line 57.
 
 
-LaTeX Warning: Reference `a1' on page 5 undefined on input line 73.
+LaTeX Warning: Reference `a1' on page 5 undefined on input line 71.
 
 
-LaTeX Warning: Reference `a3' on page 5 undefined on input line 79.
+LaTeX Warning: Reference `c3' on page 5 undefined on input line 75.
 
 
-LaTeX Warning: Reference `c4' on page 5 undefined on input line 84.
+LaTeX Warning: Reference `a3' on page 5 undefined on input line 77.
+
+
+LaTeX Warning: Reference `c4' on page 5 undefined on input line 82.
 
 [5]
-Overfull \hbox (3.17659pt too wide) in paragraph at lines 103--104
+Overfull \hbox (3.17659pt too wide) in paragraph at lines 101--102
 [][]\OT1/cmr/m/n/10 Una Prop-uesta Ori-en-tada a Ob-je-tivos para el Analisis
  []
 
 [6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 123.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
  [7]
+File: img/approach.eps Graphic file (type eps)
+
+<img/approach.eps> [8]
+
+LaTeX Warning: Reference `c4' on page 9 undefined on input line 164.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 152.
+(Font)              <9> on input line 166.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 152.
+(Font)              <6> on input line 166.
 
+LaTeX Warning: Reference `c4' on page 9 undefined on input line 166.
 
-LaTeX Warning: Reference `c3' on page 8 undefined on input line 152.
+File: img/iactor.eps Graphic file (type eps)
+<img/iactor.eps>
+File: img/goal.eps Graphic file (type eps)
+ <img/goal.eps>
+File: img/task.eps Graphic file (type eps)
+ <img/task.eps>
+File: img/resource.eps Graphic file (type eps)
+ <img/resource.eps>
+File: img/means-end.eps Graphic file (type eps)
 
-
-LaTeX Warning: Reference `c1:fig:approach' on page 8 undefined on input line 16
-4.
-
-
-LaTeX Warning: Citation `DBLP:conf/dawak/MazonPT06' on page 8 undefined on inpu
-t line 166.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 8 undefined on input l
-ine 166.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonT07' on page 8 undefined on input li
-ne 166.
-
-
-LaTeX Warning: Citation `journals/dss/Mazon2008' on page 8 undefined on input l
-ine 166.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonTL06' on page 8 undefined on input l
-ine 166.
-
-
-LaTeX Warning: Citation `journals/dke/Mazon2007' on page 8 undefined on input l
-ine 166.
-
-
-LaTeX Warning: Citation `DBLP:journals/dke/Lujan-MoraTS06' on page 8 undefined 
-on input line 168.
-
-
-LaTeX Warning: Citation `OMG/MDA' on page 8 undefined on input line 175.
-
-
-LaTeX Warning: Reference `c1:fig:approach' on page 8 undefined on input line 17
-7.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 8 undefined on input l
-ine 181.
-
-
-LaTeX Warning: Citation `journals/dke/Mazon2007' on page 8 undefined on input l
-ine 183.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonT07' on page 8 undefined on input li
-ne 183.
-
-
-LaTeX Warning: Reference `c5' on page 8 undefined on input line 211.
-
-[8]
-
-LaTeX Warning: Citation `DBLP:conf/re/Yu97' on page 9 undefined on input line 2
-44.
-
-
-LaTeX Warning: Citation `OMG/UML' on page 9 undefined on input line 248.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 9 undefined on input l
-ine 252.
-
-
-LaTeX Warning: Citation `OMG/QVT' on page 9 undefined on input line 259.
-
-
-LaTeX Warning: Reference `c5' on page 9 undefined on input line 264.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 9 undefined on input l
-ine 265.
-
-
-LaTeX Warning: Citation `DBLP:journals/dke/Lujan-MoraTS06' on page 9 undefined 
-on input line 269.
-
-
-LaTeX Warning: Reference `c5' on page 9 undefined on input line 286.
-
-
-LaTeX Warning: Reference `c6' on page 9 undefined on input line 286.
-
-
-LaTeX Warning: Citation `DBLP:journals/is/LechtenborgerV03' on page 9 undefined
- on input line 289.
-
-
-LaTeX Warning: Citation `journals/dke/Mazon2007' on page 9 undefined on input l
-ine 295.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/MazonT07' on page 9 undefined on input li
-ne 302.
-
-
-LaTeX Warning: Citation `DBLP:conf/dolap/SongKD07' on page 9 undefined on input
- line 304.
-
-
-LaTeX Warning: Citation `DBLP:journals/is/Alhajj03' on page 9 undefined on inpu
-t line 308.
+<img/means-end.eps>
+File: img/decomposition.eps Graphic file (type eps)
+ <img/decomposition.eps>
+Overfull \hbox (5.99998pt too wide) in paragraph at lines 190--202
+[][][] 
+ []
 
 [9]
+File: img/iStarMetamodel.eps Graphic file (type eps)
+ <img/iStarMetamodel.eps> [10]
+File: img/navigation2relationship.eps Graphic file (type eps)
+ <img/navigation2relationship.eps>
 
-LaTeX Warning: Citation `DBLP:conf/er/MazonTL06' on page 10 undefined on input 
-line 320.
-
-
-LaTeX Warning: Citation `journals/dke/Mazon2007' on page 10 undefined on input 
-line 320.
-
-
-LaTeX Warning: Reference `c3' on page 10 undefined on input line 355.
+LaTeX Warning: Citation `RATIONAL' on page 11 undefined on input line 257.
 
 
-LaTeX Warning: Reference `c4' on page 10 undefined on input line 357.
+LaTeX Warning: Citation `BORLAND' on page 11 undefined on input line 258.
 
 
-LaTeX Warning: Citation `OMG/CWM' on page 10 undefined on input line 363.
-
-
-LaTeX Warning: Citation `DBLP:conf/dawak/Pedersen04' on page 10 undefined on in
-put line 373.
-
-
-LaTeX Warning: Citation `OMG/MOF2TEXT' on page 10 undefined on input line 376.
-
-
-LaTeX Warning: Citation `RATIONAL' on page 10 undefined on input line 388.
-
-
-LaTeX Warning: Citation `BORLAND' on page 10 undefined on input line 389.
-
-
-LaTeX Warning: Citation `ECLIPSE' on page 10 undefined on input line 391.
-
-
-LaTeX Warning: Citation `RE08' on page 10 undefined on input line 394.
-
-[10]
-
-LaTeX Warning: Reference `c1:fig:profile-i' on page 11 undefined on input line 
-405.
-
-
-LaTeX Warning: Reference `c1:istarpalette' on page 11 undefined on input line 4
-08.
-
-
-Overfull \hbox (5.99998pt too wide) in paragraph at lines 413--425
-[][][] 
- []
-
-
-LaTeX Warning: Citation `DBLP:conf/dolap/GiorginiRG05' on page 11 undefined on 
-input line 442.
-
-
-LaTeX Warning: Citation `DBLP:journals/dke/Lujan-MoraTS06' on page 11 undefined
- on input line 461.
-
-
-LaTeX Warning: Reference `c1:fig:profile-md' on page 11 undefined on input line
- 463.
-
-
-LaTeX Warning: Reference `c1:mdpalette' on page 11 undefined on input line 466.
-
-
-
-LaTeX Warning: Citation `OMG/OCL' on page 11 undefined on input line 468.
-
-
-Overfull \hbox (8.99997pt too wide) in paragraph at lines 487--500
-[][][] 
- []
+LaTeX Warning: Citation `RE08' on page 11 undefined on input line 263.
 
 [11]
 
-LaTeX Warning: Reference `c1:fig:cwm' on page 12 undefined on input line 509.
+LaTeX Warning: Reference `c1:fig:profile-i' on page 12 undefined on input line 
+274.
 
 
-LaTeX Warning: Citation `ATL' on page 12 undefined on input line 525.
+LaTeX Warning: Reference `c1:istarpalette' on page 12 undefined on input line 2
+77.
 
 
-LaTeX Warning: Citation `MOFSCRIPT' on page 12 undefined on input line 531.
+Overfull \hbox (5.99998pt too wide) in paragraph at lines 282--294
+[][][] 
+ []
 
 
-LaTeX Warning: Reference `c1:fig:screenshot' on page 12 undefined on input line
- 540.
+LaTeX Warning: Citation `DBLP:conf/dolap/GiorginiRG05' on page 12 undefined on 
+input line 311.
 
 
-LaTeX Warning: Reference `c1:fig:project' on page 12 undefined on input line 54
-6.
+LaTeX Warning: Citation `DBLP:journals/dke/Lujan-MoraTS06' on page 12 undefined
+ on input line 330.
 
 
-LaTeX Warning: Reference `c1:fig:parts' on page 12 undefined on input line 548.
+LaTeX Warning: Reference `c1:fig:profile-md' on page 12 undefined on input line
+ 332.
 
 
-
-LaTeX Warning: Reference `c1:istarpalette' on page 12 undefined on input line 5
-50.
-
-
-LaTeX Warning: Reference `c1:mdpalette' on page 12 undefined on input line 551.
+LaTeX Warning: Reference `c1:mdpalette' on page 12 undefined on input line 335.
 
 
 
-LaTeX Warning: Reference `c1:fig:menutransform' on page 12 undefined on input l
-ine 554.
+LaTeX Warning: Citation `OMG/OCL' on page 12 undefined on input line 337.
+
+
+Overfull \hbox (8.99997pt too wide) in paragraph at lines 356--369
+[][][] 
+ []
 
 [12]
 
-LaTeX Warning: Reference `c1:fig:cim' on page 13 undefined on input line 623.
+LaTeX Warning: Reference `c1:fig:cwm' on page 13 undefined on input line 378.
 
 
-LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 13 undefined on input 
-line 642.
+LaTeX Warning: Citation `MOFSCRIPT' on page 13 undefined on input line 400.
 
 
-LaTeX Warning: Reference `c1:fig:pim1' on page 13 undefined on input line 645.
+LaTeX Warning: Reference `c1:fig:screenshot' on page 13 undefined on input line
+ 409.
 
 
-LaTeX Warning: Reference `c1:pim1_fact' on page 13 undefined on input line 647.
-
-
-
-LaTeX Warning: Reference `c1:pim1_dim1' on page 13 undefined on input line 650.
-
-
-
-LaTeX Warning: Reference `c1:pim1_dim2' on page 13 undefined on input line 650.
-
-
-
-LaTeX Warning: Reference `c1:fig:ds' on page 13 undefined on input line 675.
-
-
-LaTeX Warning: Reference `c1:fig:menutransform' on page 13 undefined on input l
-ine 701.
-
-
-LaTeX Warning: Reference `c1:fig:pim2' on page 13 undefined on input line 710.
-
-[13]
-
-LaTeX Warning: Reference `c1:fig:menutransform' on page 14 undefined on input l
-ine 750.
-
-
-LaTeX Warning: Reference `c1:fig:pim3_1' on page 14 undefined on input line 758
-.
-
-
-LaTeX Warning: Reference `c1:fig:pim3_2' on page 14 undefined on input line 759
-.
-
-
-LaTeX Warning: Reference `c1:fig:setstatusnone' on page 14 undefined on input l
-ine 791.
-
-
-LaTeX Warning: Reference `c1:fig:pim4_1' on page 14 undefined on input line 796
-.
-
-
-LaTeX Warning: Reference `c1:fig:pim4_2' on page 14 undefined on input line 797
-.
-
-
-LaTeX Warning: Citation `book/Kimball/DW' on page 14 undefined on input line 83
-0.
-
-
-LaTeX Warning: Reference `c1:fig:psm' on page 14 undefined on input line 835.
-
-
-LaTeX Warning: Reference `c1:fig:codesql' on page 14 undefined on input line 84
-9.
-
-
-LaTeX Warning: Reference `c1:fig:codeolap' on page 14 undefined on input line 8
-51.
-
-[14]
-
-LaTeX Warning: Reference `a1' on page 15 undefined on input line 893.
-
-
-LaTeX Warning: Reference `a2' on page 15 undefined on input line 893.
-
-
-LaTeX Warning: Reference `a3' on page 15 undefined on input line 893.
-
-
-LaTeX Warning: Reference `a1' on page 15 undefined on input line 897.
-
-
-LaTeX Warning: Citation `DBLP:conf/dmdw/SongRME01' on page 15 undefined on inpu
-t line 906.
-
-
-LaTeX Warning: Citation `DBLP:conf/vldb/JagadishLS99' on page 15 undefined on i
-nput line 907.
-
-
-LaTeX Warning: Citation `DBLP:conf/ssdbm/RafanelliS90' on page 15 undefined on 
-input line 911.
-
-
-LaTeX Warning: Citation `DBLP:conf/ssdbm/LehnerAW98' on page 15 undefined on in
-put line 917.
-
-
-LaTeX Warning: Citation `DBLP:conf/ssdbm/LenzS97' on page 15 undefined on input
- line 921.
-
-
-LaTeX Warning: Citation `DBLP:conf/dmdw/HusemannLV00' on page 15 undefined on i
-nput line 934.
-
-
-LaTeX Warning: Citation `DBLP:conf/dolap/RizziALT06' on page 15 undefined on in
-put line 934.
-
-
-LaTeX Warning: Citation `DBLP:conf/er/SapiaBHD98' on page 15 undefined on input
- line 934.
-
-
-LaTeX Warning: Citation `DBLP:journals/computer/TrujilloPGS01' on page 15 undef
-ined on input line 934.
-
-
-LaTeX Warning: Citation `DBLP:conf/dolap/TryfonaBC99' on page 15 undefined on i
-nput line 934.
-
-
-LaTeX Warning: Citation `DBLP:journals/vldb/JensenKPT04' on page 15 undefined o
-n input line 945.
-
-
-LaTeX Warning: Citation `MalZim2008:book' on page 15 undefined on input line 94
+LaTeX Warning: Reference `c1:fig:project' on page 13 undefined on input line 41
 5.
 
 
-LaTeX Warning: Citation `DBLP:journals/dke/MalinowskiZ06' on page 15 undefined 
-on input line 956.
+LaTeX Warning: Reference `c1:fig:parts' on page 13 undefined on input line 417.
 
 
-LaTeX Warning: Citation `DBLP:journals/is/PedersenJD01' on page 15 undefined on
- input line 956.
+
+LaTeX Warning: Reference `c1:istarpalette' on page 13 undefined on input line 4
+19.
 
 
-LaTeX Warning: Citation `DBLP:conf/dawak/MansmannS06' on page 15 undefined on i
-nput line 956.
-
-[15
-
-]
-
-LaTeX Warning: Reference `c1:fig:normalization' on page 16 undefined on input l
-ine 969.
+LaTeX Warning: Reference `c1:mdpalette' on page 13 undefined on input line 420.
 
 
-LaTeX Warning: Citation `OMG/QVT' on page 16 undefined on input line 972.
+
+LaTeX Warning: Reference `c1:fig:menutransform' on page 13 undefined on input l
+ine 423.
+
+[13]
+
+LaTeX Warning: Reference `c1:fig:cim' on page 14 undefined on input line 492.
 
 
-LaTeX Warning: Citation `ATL' on page 16 undefined on input line 988.
+LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 14 undefined on input 
+line 511.
 
 
-LaTeX Warning: Reference `c1:fig:normalizationATL' on page 16 undefined on inpu
-t line 990.
+LaTeX Warning: Reference `c1:fig:pim1' on page 14 undefined on input line 514.
+
+
+LaTeX Warning: Reference `c1:pim1_fact' on page 14 undefined on input line 516.
+
+
+
+LaTeX Warning: Reference `c1:pim1_dim1' on page 14 undefined on input line 519.
+
+
+
+LaTeX Warning: Reference `c1:pim1_dim2' on page 14 undefined on input line 519.
+
+
+
+LaTeX Warning: Reference `c1:fig:ds' on page 14 undefined on input line 544.
+
+
+LaTeX Warning: Reference `c1:fig:menutransform' on page 14 undefined on input l
+ine 570.
+
+
+LaTeX Warning: Reference `c1:fig:pim2' on page 14 undefined on input line 579.
+
+[14]
+
+LaTeX Warning: Reference `c1:fig:menutransform' on page 15 undefined on input l
+ine 619.
+
+
+LaTeX Warning: Reference `c1:fig:pim3_1' on page 15 undefined on input line 627
+.
+
+
+LaTeX Warning: Reference `c1:fig:pim3_2' on page 15 undefined on input line 628
+.
+
+
+LaTeX Warning: Reference `c1:fig:setstatusnone' on page 15 undefined on input l
+ine 660.
+
+
+LaTeX Warning: Reference `c1:fig:pim4_1' on page 15 undefined on input line 665
+.
+
+
+LaTeX Warning: Reference `c1:fig:pim4_2' on page 15 undefined on input line 666
+.
+
+
+LaTeX Warning: Citation `book/Kimball/DW' on page 15 undefined on input line 69
+9.
+
+
+LaTeX Warning: Reference `c1:fig:psm' on page 15 undefined on input line 704.
+
+
+LaTeX Warning: Reference `c1:fig:codesql' on page 15 undefined on input line 71
+8.
+
+
+LaTeX Warning: Reference `c1:fig:codeolap' on page 15 undefined on input line 7
+20.
+
+[15]
+
+LaTeX Warning: Reference `a1' on page 16 undefined on input line 763.
+
+
+LaTeX Warning: Reference `a2' on page 16 undefined on input line 763.
+
+
+LaTeX Warning: Reference `a3' on page 16 undefined on input line 763.
+
+
+LaTeX Warning: Reference `a1' on page 16 undefined on input line 767.
+
+
+LaTeX Warning: Citation `DBLP:conf/dmdw/SongRME01' on page 16 undefined on inpu
+t line 776.
+
+
+LaTeX Warning: Citation `DBLP:conf/vldb/JagadishLS99' on page 16 undefined on i
+nput line 777.
+
+
+LaTeX Warning: Citation `DBLP:conf/ssdbm/RafanelliS90' on page 16 undefined on 
+input line 781.
+
+
+LaTeX Warning: Citation `DBLP:conf/ssdbm/LehnerAW98' on page 16 undefined on in
+put line 787.
+
+
+LaTeX Warning: Citation `DBLP:conf/ssdbm/LenzS97' on page 16 undefined on input
+ line 791.
+
+
+LaTeX Warning: Citation `DBLP:conf/dmdw/HusemannLV00' on page 16 undefined on i
+nput line 804.
 
 
 LaTeX Warning: Citation `DBLP:conf/dolap/RizziALT06' on page 16 undefined on in
-put line 1013.
+put line 804.
 
-No file Tesis_Aguilar.bbl.
-) [16]
+
+LaTeX Warning: Citation `DBLP:conf/er/SapiaBHD98' on page 16 undefined on input
+ line 804.
+
+
+LaTeX Warning: Citation `DBLP:journals/computer/TrujilloPGS01' on page 16 undef
+ined on input line 804.
+
+
+LaTeX Warning: Citation `DBLP:conf/dolap/TryfonaBC99' on page 16 undefined on i
+nput line 804.
+
+
+LaTeX Warning: Citation `DBLP:journals/vldb/JensenKPT04' on page 16 undefined o
+n input line 815.
+
+
+LaTeX Warning: Citation `MalZim2008:book' on page 16 undefined on input line 81
+5.
+
+
+LaTeX Warning: Citation `DBLP:journals/dke/MalinowskiZ06' on page 16 undefined 
+on input line 826.
+
+
+LaTeX Warning: Citation `DBLP:journals/is/PedersenJD01' on page 16 undefined on
+ input line 826.
+
+
+LaTeX Warning: Citation `DBLP:conf/dawak/MansmannS06' on page 16 undefined on i
+nput line 826.
+
+[16
+
+]
+
+LaTeX Warning: Reference `c1:fig:normalization' on page 17 undefined on input l
+ine 839.
+
+
+LaTeX Warning: Reference `c1:fig:normalizationATL' on page 17 undefined on inpu
+t line 860.
+
+
+LaTeX Warning: Citation `DBLP:conf/dolap/RizziALT06' on page 17 undefined on in
+put line 883.
+
+
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\Tesis_Aguila
+r.bbl" [17])) [18]
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\Tesis_Aguila
 r.aux"
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar_Source\dedic.aux")
@@ -868,14 +760,17 @@ r.aux"
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3385 strings out of 494020
- 48898 string characters out of 3146501
- 131342 words of memory out of 3000000
- 6591 multiletter control sequences out of 15000+200000
- 9400 words of font info for 33 fonts, out of 3000000 for 9000
+ 3411 strings out of 494020
+ 49271 string characters out of 3146501
+ 131473 words of memory out of 3000000
+ 6603 multiletter control sequences out of 15000+200000
+ 9573 words of font info for 34 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 37i,11n,39p,1610b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,11n,39p,129977b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Tesis_Aguilar.dvi (28 pages, 116980 bytes).
+Output written on Tesis_Aguilar.dvi (30 pages, 125836 bytes).
