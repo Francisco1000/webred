@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Tesis_Aguilar.aux
+This is BibTeX, Version 0.99cThe top-level auxiliary file: Tesis_Aguilar.aux
 A level-1 auxiliary file: dedic.aux
 A level-1 auxiliary file: ack.aux
 A level-1 auxiliary file: ack_eng.aux
@@ -7,24 +7,14 @@ A level-1 auxiliary file: part1.aux
 A level-1 auxiliary file: chapter1.aux
 The style file: abbrv.bst
 Database file #1: tesis.bib
-Warning--I didn't find a database entry for "OMG/UML"
-Warning--I didn't find a database entry for "DBLP:conf/er/MazonPT07"
-Warning--I didn't find a database entry for "DBLP:journals/dke/Lujan-MoraTS06"
-Warning--I didn't find a database entry for "DBLP:journals/is/LechtenborgerV03"
-Warning--I didn't find a database entry for "journals/dke/Mazon2007"
-Warning--I didn't find a database entry for "DBLP:conf/er/MazonT07"
-Warning--I didn't find a database entry for "DBLP:conf/dolap/SongKD07"
-Warning--I didn't find a database entry for "DBLP:journals/is/Alhajj03"
-Warning--I didn't find a database entry for "DBLP:conf/er/MazonTL06"
-Warning--I didn't find a database entry for "OMG/CWM"
-Warning--I didn't find a database entry for "DBLP:conf/dawak/Pedersen04"
-Warning--I didn't find a database entry for "OMG/MOF2TEXT"
 Warning--I didn't find a database entry for "RATIONAL"
 Warning--I didn't find a database entry for "BORLAND"
 Warning--I didn't find a database entry for "RE08"
 Warning--I didn't find a database entry for "DBLP:conf/dolap/GiorginiRG05"
+Warning--I didn't find a database entry for "DBLP:journals/dke/Lujan-MoraTS06"
 Warning--I didn't find a database entry for "OMG/OCL"
 Warning--I didn't find a database entry for "MOFSCRIPT"
+Warning--I didn't find a database entry for "DBLP:conf/er/MazonPT07"
 Warning--I didn't find a database entry for "book/Kimball/DW"
 Warning--I didn't find a database entry for "DBLP:conf/dmdw/SongRME01"
 Warning--I didn't find a database entry for "DBLP:conf/vldb/JagadishLS99"
@@ -41,4 +31,4 @@ Warning--I didn't find a database entry for "MalZim2008:book"
 Warning--I didn't find a database entry for "DBLP:journals/dke/MalinowskiZ06"
 Warning--I didn't find a database entry for "DBLP:journals/is/PedersenJD01"
 Warning--I didn't find a database entry for "DBLP:conf/dawak/MansmannS06"
-(There were 34 warnings)
+(There were 24 warnings)
