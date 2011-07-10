@@ -159,7 +159,7 @@ A-OOH es la extensión del método OOH (\emph{Object-Oriented Hypermedia}) \cite{G
 \end{figure}
 
 
-\subsubsection{Especificación del Modelo de Requisitos a Nivel CIM (\emph{Computational Independent Model})}
+\subsubsection{Especificación del Modelo de Requisitos a Nivel CIM}
 
 El primer paso de la propuesta presentada en esta tesis doctoral es la especificación y el modelado de los requisitos de las aplicaciones Web. Esto se describe con más detalle en el \emph{Capítulo~\ref{c4}}.
 
@@ -202,7 +202,7 @@ Elemento & Descripción  \\
 \end{table}
 
 
-Por otra paret, el marco de modelado \emph{i*} tiene que adaptarse al dominio de la ingeniería Web con el fin de poder modelar actores, sus objetivos y las relaciones entre ellos. De esta manera se podrían reflejar los requisitos específicos de Web que no son tenidos en cuenta en las aproximaciones de análisis de requisitos tradicionales como el caso de la navegación. Para realizar la adaptación de \emph{i*} al dominio Web nuestra propuesta utiliza la taxonomía de requisitos Web presentada en \cite{EscalonaK04}, la cual clasifica a los requisitos Web en seis tipos, estos son descritos a continuación:
+Por otra parte, el marco de modelado \emph{i*} tiene que adaptarse al dominio de la ingeniería Web con el fin de poder modelar actores, sus objetivos y las relaciones entre ellos. De esta manera se podrían reflejar los requisitos específicos de Web que no son tenidos en cuenta en las aproximaciones de análisis de requisitos tradicionales como el caso de la navegación. Para realizar la adaptación de \emph{i*} al dominio Web nuestra propuesta utiliza la taxonomía de requisitos Web presentada en \cite{EscalonaK04}, la cual clasifica a los requisitos Web en seis tipos, estos son descritos a continuación:
 
 \begin{itemize}
    \item \textbf{Requisitos de contenido (\emph{Content})}. Con este tipo de requisitos se define el contenido que el sitio Web presenta a sus usuarios. Algunos ejemplos pueden ser:  ``información del libro'' o ``categorías del producto''.
@@ -250,7 +250,140 @@ En primera instancia, se pretende obtener el modelo de dominio a partir del mode
 \end{figure}
 
 
-\subsubsection{Implementación}
+El modelo de navegación de A-OOH...........
+
+\subsection{Gestión de Requisitos en A-OOH}
+
+Un modelo MD conceptual (es decir, un PIM según la propuesta MDA
+presentada anteriormente) proporciona un alto nivel de abstracción
+para describir de manera exacta y expresiva situaciones reales.
+Hasta ahora se ha mostrado como, una vez que se diseña este modelo,
+se deriva la representación lógica correspondiente como base de la
+implementación del AD según una tecnología específica.
+
+Sin embargo, aunque se diseñe un buen modelo MD conceptual, existe
+un intervalo semántico entre este modelo y su representación lógica
+que complica un adecuado tratamiento de la \emph{sumarizabilidad},
+lo que puede conducir a la obtención de resultados erróneos en las
+herramientas de análisis de datos. Las investigaciones llevadas a
+cabo hasta la fecha sólo plantean soluciones parciales, usando
+diferentes tipos de terminologías que dificultan el progreso en este
+área.
+
+Por tanto, la propuesta dirigida por modelos para el diseño MD
+presentada en esta tesis doctoral se ha extendido mediante la
+inclusión de varias transformaciones que tienen en cuenta los
+problemas de sumarizabilidad en el paso del PIM al PSM. Esta parte
+de la tesis se describe en profundidad en los
+apéndices~\ref{a1},~\ref{a2} y~\ref{a3}.
+
+Con el fin de motivar esta parte de la investigación, se ha
+realizado una revisión del estado de la cuestión (ver
+apéndice~\ref{a1}), aportando una terminología unificada, para
+determinar (i) los puntos fuertes y débiles de las propuestas
+actuales en cuanto al modelado MD de estructuras complejas a nivel
+conceptual y (ii) los mecanismos existentes para evitar problemas de
+sumarizabilidad cuando se implementan modelos MDs conceptuales. Esta
+revisión sugiere que la sumarizabilidad se debe asegurar mediante un
+proceso global apoyado por una herramienta de diseño que permita:
+
+\begin{enumerate}
+\item La representación adecuada de las interacciones entre dimensiones y hechos~\cite{DBLP:conf/dmdw/SongRME01}.
+\item La representación adecuada de las relaciones entre niveles de agregación en una jerarquía de dimensión.~\cite{DBLP:conf/vldb/JagadishLS99}.
+\end{enumerate}
+
+La noción de \emph{sumarizabilidad} fue descrita por primera vez por
+Rafanelli y Shoshani~\cite{DBLP:conf/ssdbm/RafanelliS90} para bases
+de datos estadísticas, donde se refiere al cálculo correcto de
+valores agregados a bajo nivel de detalle a partir de valores de más
+alto nivel. Aunque este trabajo sólo trata las relaciones entre dos
+niveles de jerarquía de dimensión, las relaciones entre hecho y
+dimensión también pueden causar problemas de sumarizabilidad en un
+modelo MD~\cite{DBLP:conf/ssdbm/LehnerAW98}. Por tanto, para poder
+ser implementado, un modelo MD debe asegurar la sumarizabilidad en
+estos dos tipos de estructuras MD. De lo contrario, su violación
+puede derivar en resultados incorrectos y decisiones
+erróneas~\cite{DBLP:conf/ssdbm/LenzS97}.
+
+En vista de estas complicaciones, la manera tradicional de proceder
+es implementar un modelo MD sin incluir aquellas estructuras que
+pueden causar problemas de sumarizabilidad. Sin embargo, esta
+propuesta es muy simple y dificulta la tarea de los diseñadores que
+no pueden usar toda la expresividad de un modelo conceptual. Por
+tanto, los diseñadores desperdician mucho esfuerzo en implementar un
+modelo MD con constructores MD poco expresivos, debiendo ser muy
+cuidadosos para obtener una representación fidedigna de escenarios
+reales.
+
+Por el contrario, según algunos
+autores~\cite{DBLP:conf/dmdw/HusemannLV00,DBLP:conf/dolap/RizziALT06,DBLP:conf/er/SapiaBHD98,DBLP:journals/computer/TrujilloPGS01,DBLP:conf/dolap/TryfonaBC99}
+el modelado MD pretende representar cada elemento MD en un modelo
+conceptual independiente de la implementación con el fin de reflejar
+situaciones reales lo más precisamente posible. Una vez que se
+diseña un modelo MD conceptual, se deriva su correspondiente
+representación lógica como base de su implementación en una
+tecnología concreta. Sin embargo, la diferencia de expresividad
+entre los elementos representados en los modelos MD conceptuales y
+su representación lógica debe reducirse para preservar toda la
+información capturada por las estructuras MD complejas, mientras se
+resuelven los problemas de
+sumarizabilidad~\cite{DBLP:journals/vldb/JensenKPT04,MalZim2008:book}.
+Además, derivar una representación lógica de un modelo MD conceptual
+es una tarea tediosa y sensible a errores por lo que debe ser
+automatizada tanto como sea posible.
+
+Hasta ahora existen pocas propuestas que hayan considerado las
+cuestiones mencionadas anteriormente, de manera conjunta, para
+modelar cada tipo de jerarquía y relación entre hecho y dimensión a
+nivel conceptual y, automáticamente, derivar una representación
+lógica que preserve la información definida a nivel conceptual
+evitando problemas de
+sumarizabilidad~\cite{DBLP:journals/dke/MalinowskiZ06,DBLP:journals/is/PedersenJD01,DBLP:conf/dawak/MansmannS06}.
+Además, las propuestas presentadas hasta la fecha tienen los
+siguientes inconvenientes: (i) sólo definen mecanismos informales
+para evitar problemas de sumarizabilidad, lo que dificulta
+soluciones automáticas o (ii) requieren de transformaciones a nivel
+de instancia (y no a nivel de esquema) para evitar problemas de
+sumarizabilidad por lo que se requiere de un preprocesado complejo
+que deriva en problemas de rendimiento y se producen instancias de
+datos ``artificiales'' difíciles de interpretar durante el análisis.
+
+Para paliar estos problemas, se ha extendido la propuesta MDA
+previamente presentada con un \emph{proceso de normalización}.
+Esencialmente, tal y como se muestra en la
+Fig.~\ref{c1:fig:normalization}, una vez que se define un PIM (el
+cual permite especificar estructuras MD complejas), se obtiene un
+PIM normalizado por medio de la ejecución automática de varias
+transformaciones QVT~\cite{OMG/QVT}. Este PIM normalizado captura la
+información representada en el modelo MD conceptual usando solamente
+aquel subconjunto de elementos que no viola la sumarizabilidad. A
+partir del PIM normalizado se puede derivar un PSM.
+
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=0.8\textwidth]{img/summary/normalization.png}
+%\end{center}
+%\caption{Proceso de normalización para evitar problemas de
+%sumarizabilidad} \label{c1:fig:normalization}
+%\end{figure}
+
+El proceso de normalización ha sido implementado junto con la
+herramienta basada en \emph{Eclipse} presentada anteriormente. Se ha
+definido un \emph{plugin} con todas las transformaciones QVT
+necesarias (implementadas con el motor de ATL~\cite{ATL}) para
+ejecutar el proceso de normalización de manera automática. En la
+Fig.~\ref{c1:fig:normalizationATL} se muestra una captura de
+pantalla.
+
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\textwidth]{img/summary/normalizationATL.png}
+%\end{center}
+%\caption{Implementación del proceso de normalización en
+%\emph{Eclipse} mediante ATL} \label{c1:fig:normalizationATL}
+%\end{figure}
+
+\subsection{Implementación}
 \label{c1:implementation}
 
 Después de probar varias plataformas, tales como
@@ -737,137 +870,6 @@ herramienta de análisis de datos (Fig.~\ref{c1:fig:codeolap}).
 
 \clearpage
 
-\subsection{Gestión de Requisitos en A-OOH}
-
-Un modelo MD conceptual (es decir, un PIM según la propuesta MDA
-presentada anteriormente) proporciona un alto nivel de abstracción
-para describir de manera exacta y expresiva situaciones reales.
-Hasta ahora se ha mostrado como, una vez que se diseña este modelo,
-se deriva la representación lógica correspondiente como base de la
-implementación del AD según una tecnología específica.
-
-Sin embargo, aunque se diseñe un buen modelo MD conceptual, existe
-un intervalo semántico entre este modelo y su representación lógica
-que complica un adecuado tratamiento de la \emph{sumarizabilidad},
-lo que puede conducir a la obtención de resultados erróneos en las
-herramientas de análisis de datos. Las investigaciones llevadas a
-cabo hasta la fecha sólo plantean soluciones parciales, usando
-diferentes tipos de terminologías que dificultan el progreso en este
-área.
-
-Por tanto, la propuesta dirigida por modelos para el diseño MD
-presentada en esta tesis doctoral se ha extendido mediante la
-inclusión de varias transformaciones que tienen en cuenta los
-problemas de sumarizabilidad en el paso del PIM al PSM. Esta parte
-de la tesis se describe en profundidad en los
-apéndices~\ref{a1},~\ref{a2} y~\ref{a3}.
-
-Con el fin de motivar esta parte de la investigación, se ha
-realizado una revisión del estado de la cuestión (ver
-apéndice~\ref{a1}), aportando una terminología unificada, para
-determinar (i) los puntos fuertes y débiles de las propuestas
-actuales en cuanto al modelado MD de estructuras complejas a nivel
-conceptual y (ii) los mecanismos existentes para evitar problemas de
-sumarizabilidad cuando se implementan modelos MDs conceptuales. Esta
-revisión sugiere que la sumarizabilidad se debe asegurar mediante un
-proceso global apoyado por una herramienta de diseño que permita:
-
-\begin{enumerate}
-\item La representación adecuada de las interacciones entre dimensiones y hechos~\cite{DBLP:conf/dmdw/SongRME01}.
-\item La representación adecuada de las relaciones entre niveles de agregación en una jerarquía de dimensión.~\cite{DBLP:conf/vldb/JagadishLS99}.
-\end{enumerate}
-
-La noción de \emph{sumarizabilidad} fue descrita por primera vez por
-Rafanelli y Shoshani~\cite{DBLP:conf/ssdbm/RafanelliS90} para bases
-de datos estadísticas, donde se refiere al cálculo correcto de
-valores agregados a bajo nivel de detalle a partir de valores de más
-alto nivel. Aunque este trabajo sólo trata las relaciones entre dos
-niveles de jerarquía de dimensión, las relaciones entre hecho y
-dimensión también pueden causar problemas de sumarizabilidad en un
-modelo MD~\cite{DBLP:conf/ssdbm/LehnerAW98}. Por tanto, para poder
-ser implementado, un modelo MD debe asegurar la sumarizabilidad en
-estos dos tipos de estructuras MD. De lo contrario, su violación
-puede derivar en resultados incorrectos y decisiones
-erróneas~\cite{DBLP:conf/ssdbm/LenzS97}.
-
-En vista de estas complicaciones, la manera tradicional de proceder
-es implementar un modelo MD sin incluir aquellas estructuras que
-pueden causar problemas de sumarizabilidad. Sin embargo, esta
-propuesta es muy simple y dificulta la tarea de los diseñadores que
-no pueden usar toda la expresividad de un modelo conceptual. Por
-tanto, los diseñadores desperdician mucho esfuerzo en implementar un
-modelo MD con constructores MD poco expresivos, debiendo ser muy
-cuidadosos para obtener una representación fidedigna de escenarios
-reales.
-
-Por el contrario, según algunos
-autores~\cite{DBLP:conf/dmdw/HusemannLV00,DBLP:conf/dolap/RizziALT06,DBLP:conf/er/SapiaBHD98,DBLP:journals/computer/TrujilloPGS01,DBLP:conf/dolap/TryfonaBC99}
-el modelado MD pretende representar cada elemento MD en un modelo
-conceptual independiente de la implementación con el fin de reflejar
-situaciones reales lo más precisamente posible. Una vez que se
-diseña un modelo MD conceptual, se deriva su correspondiente
-representación lógica como base de su implementación en una
-tecnología concreta. Sin embargo, la diferencia de expresividad
-entre los elementos representados en los modelos MD conceptuales y
-su representación lógica debe reducirse para preservar toda la
-información capturada por las estructuras MD complejas, mientras se
-resuelven los problemas de
-sumarizabilidad~\cite{DBLP:journals/vldb/JensenKPT04,MalZim2008:book}.
-Además, derivar una representación lógica de un modelo MD conceptual
-es una tarea tediosa y sensible a errores por lo que debe ser
-automatizada tanto como sea posible.
-
-Hasta ahora existen pocas propuestas que hayan considerado las
-cuestiones mencionadas anteriormente, de manera conjunta, para
-modelar cada tipo de jerarquía y relación entre hecho y dimensión a
-nivel conceptual y, automáticamente, derivar una representación
-lógica que preserve la información definida a nivel conceptual
-evitando problemas de
-sumarizabilidad~\cite{DBLP:journals/dke/MalinowskiZ06,DBLP:journals/is/PedersenJD01,DBLP:conf/dawak/MansmannS06}.
-Además, las propuestas presentadas hasta la fecha tienen los
-siguientes inconvenientes: (i) sólo definen mecanismos informales
-para evitar problemas de sumarizabilidad, lo que dificulta
-soluciones automáticas o (ii) requieren de transformaciones a nivel
-de instancia (y no a nivel de esquema) para evitar problemas de
-sumarizabilidad por lo que se requiere de un preprocesado complejo
-que deriva en problemas de rendimiento y se producen instancias de
-datos ``artificiales'' difíciles de interpretar durante el análisis.
-
-Para paliar estos problemas, se ha extendido la propuesta MDA
-previamente presentada con un \emph{proceso de normalización}.
-Esencialmente, tal y como se muestra en la
-Fig.~\ref{c1:fig:normalization}, una vez que se define un PIM (el
-cual permite especificar estructuras MD complejas), se obtiene un
-PIM normalizado por medio de la ejecución automática de varias
-transformaciones QVT~\cite{OMG/QVT}. Este PIM normalizado captura la
-información representada en el modelo MD conceptual usando solamente
-aquel subconjunto de elementos que no viola la sumarizabilidad. A
-partir del PIM normalizado se puede derivar un PSM.
-
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=0.8\textwidth]{img/summary/normalization.png}
-%\end{center}
-%\caption{Proceso de normalización para evitar problemas de
-%sumarizabilidad} \label{c1:fig:normalization}
-%\end{figure}
-
-El proceso de normalización ha sido implementado junto con la
-herramienta basada en \emph{Eclipse} presentada anteriormente. Se ha
-definido un \emph{plugin} con todas las transformaciones QVT
-necesarias (implementadas con el motor de ATL~\cite{ATL}) para
-ejecutar el proceso de normalización de manera automática. En la
-Fig.~\ref{c1:fig:normalizationATL} se muestra una captura de
-pantalla.
-
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=\textwidth]{img/summary/normalizationATL.png}
-%\end{center}
-%\caption{Implementación del proceso de normalización en
-%\emph{Eclipse} mediante ATL} \label{c1:fig:normalizationATL}
-%\end{figure}
-
 
 \section{Conclusiones}
 
@@ -910,6 +912,9 @@ la vez que se evitan los problemas de sumarizabilidad.
 %development of every part of a DW with MDA (see chapter~\ref{c3}),
 %thus paving the way for future research objectives as the modeling
 %of ETL process or data analysis tools...}
+
+
+
 
 
 \bibliographystyle{abbrv}

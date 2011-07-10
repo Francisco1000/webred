@@ -8,58 +8,23 @@
 
 \preface
 
-Designing a multidimensional model of a data warehouse is a highly
-complex, prone to fail, and time consuming task, due to the fact
-that (i) the information needs of decision makers and the available
-operational data sources that will populate the data warehouse must
-both be considered together in a conceptual multidimensional model,
-and (ii) summarizability-aware non-trivial mappings must be
-performed to obtain the final implementation of this conceptual
-multidimensional model. However, no significant effort has been made
-to take these issues into account in a systematic, well structured
-and comprehensive development process. To overcome the lack of such
-a process, this PhD Thesis proposes a model-driven approach for the
-development of a hybrid multidimensional model at the conceptual
-level and for the automatic derivation of its logical representation
-as a basis of implementation. A normalization process is also
-proposed to avoid summarizability problems at the conceptual level
-and in further implementation stages. Finally, an
-\emph{Eclipse}-based tool has been implemented as a proof of concept
-of this research. This tool has been used in a case study, which
-shows each step of the presented approach.
+%The engineering methodologies are an essential component for the Web applications development process, this is because through by a series of well-defined methods it is possible to undertake a systematic and structured development process. 
 
-This PhD Thesis is composed of a set of published and submitted
-papers. In order to write this PhD Thesis as a collection of papers,
-several requirements must be taken into account as stated by the
-University of Alicante. With regard to the content of the PhD
-Thesis, it must specifically include a summary which is devoted to
-the description of initial hypotheses, research objectives, and the
-collection of publications itself, thus justifying its coherence. It
-should be underlined that this summary of the PhD Thesis must also
-include research results and final conclusions. This summary
-corresponds to part~\ref{p1} of this PhD Thesis (chapter~\ref{c1}
-has been written in Spanish while chapter~\ref{c2} is in English).
+In recent years, there have been new proposals to address the development of such applications, some of them are mainly focused in the representation of the Web application at some level of abstraction (conceptual model), others meanwhile, are focused on specific tasks of the development process leaving aside the requirements phase. Moreover, because of the increasing complexity of the Web applications (i.e., changes in the platform implementation technology) and the multiple audiences involved in their use (i.e., heterogeneous audience), the requirements phase is more difficult to perform and to maintain. As a result, a problem emerges in these proposals: the absence of a design guide that facilitates the development of the Web applications based on the user's needs and expectations. 
 
-It should be mentioned that this PhD Thesis has been developed
-within the PhD program \emph{``Aplicaciones de la Informática''} of
-the Department of Software and Computing Systems (\emph{Departamento
-de Lenguajes y Sistemas Informáticos}, DLSI) of the University of
-Alicante. This PhD work was funded by the Spanish Ministry of
-Education and Science under the FPU grant AP2005-1360.
+To overcome the lack of such a process, this PhD Thesis proposes a contribution to a existing model-driven approach for the development of Web 1.0 applications. Specifically, we propose the requirements specification in a conceptual model based in the \emph{i*} goal-oriented modeling framework, with which, the automatic derivation of the Web application conceptual models are possible. A requirements managing support is also proposed to avoid problems at the conceptual level with regard to (i) requirements traceability, (ii) change impact analysis and (iii) the design choices based on non-functional requirements maximization. Finally, as a proof of concept a set of \emph{Eclipse} plugin's have been implemented. These are applied in a case study.
 
-Finally, this research was developed under the following projects:
-METASIGN (TIN2004-00779) and ESPIA (TIN2007-67078) projects from the
-Spanish Ministry of Education and Science; DADASMECA (GV05/220) and
-DEMETER (GVPRE/2008/063) projects from the Valencia Ministry of
-Enterprise, University and Science (Spain); and MESSENGER
-(PCC-03-003-1), DADS (PBC-05-012-2) and QUASIMODO (PAC08-0157-0668)
-projects from the Castilla-La Mancha Ministry of Education and
-Science (Spain).
+This PhD Thesis is composed of a set of published and submitted papers. In order to write this PhD Thesis as a collection of papers, several requirements must be taken into account as stated by the University of Alicante. With regard to the content of the PhD Thesis, it must specifically include a summary with regard to the description of the initial hypotheses, research objectives, and the collection of publications itself. This summary of the PhD Thesis includes the research results and the final conclusions. Finally, this summary corresponds to the part~\ref{p1} of this PhD Thesis (chapter~\ref{c1} has been written in Spanish while chapter~\ref{c2} is in English).
+
+It is important to highlight that this PhD Thesis has been developed under the PhD program \emph{``Aplicaciones de la Informática''} of the Department of Software and Computing Systems (\emph{Departamento de Lenguajes y Sistemas Informáticos}, DLSI) of the University of Alicante. This PhD work was funded by the CONACYT (\emph{Consejo Nacional de Ciencia y Tecnología, Mexico} and University of Sinaloa, Mexico.
+
+Finally, this research was developed under the following projects: MANTRA (GRE09-17) from the University of Alicante, SERENIDAD (PEII-11-0327-7035) from Junta de Comunidades de Castilla La Mancha (Spain) and by the MESOLAP (TIN2010-14860) project from the Spanish Ministry of Education and Science and QUASIMODO (PAC08-0157-0668)
+projects from the Castilla-La Mancha Ministry of Education and Science (Spain).
 
 
 
 %% Please "sign" your preface
 \vspace{1cm}
 \begin{flushright}\noindent
-Alicante, October 2008\hfill {\it Jose Norberto Maz{\'o}n L{\'o}pez}\\
+Alicante, July 2011\hfill {\it Jos{\'e} Alfonso Aguilar Calder{\'o}n}\\
 \end{flushright}
