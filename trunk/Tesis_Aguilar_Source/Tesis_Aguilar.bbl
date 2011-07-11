@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{impact}
+R.~Arnold and S.~Bohner.
+\newblock Impact analysis-towards a framework for comparison.
+\newblock In {\em Software Maintenance ,1993. CSM-93, Proceedings., Conference
+  on}, pages 292 --301, sep 1993.
+
 \bibitem{ECLIPSE}
 {E}clipse.
 \newblock \url{http://www.eclipse.org/}, 2010.
@@ -50,6 +56,11 @@ N.~Koch, G.~Zhang, and M.~J.~E. Cuaresma.
 A.~T. Language.
 \newblock \url{http://www.eclipse.org/m2m/atl/}.
 
+\bibitem{Lindvall}
+M.~Lindvall and K.~Sandahl.
+\newblock How well do experienced software developers predict software change?
+\newblock {\em J. Syst. Softw.}, 43:19--27, October 1998.
+
 \bibitem{MDA}
 {Model Driven Architecture}.
 \newblock {\url{http://www.omg.org/mda/}}.
@@ -70,10 +81,6 @@ R.~Quintero, V.~Pelechano, O.~Pastor, and J.~Fons.
 \newblock {Aplicaci{\'o}n de MDA al Desarrollo de Aplicaciones Web en OOWS}.
 \newblock {\em Jornadas de Ingenier{\'\i}a de Software y Base de Datos (JISBD),
   VIII}, pages 84--668, 2003.
-
-\bibitem{OMG/QVT}
-{QVT Language}.
-\newblock {\url{http://www.omg.org/cgi-bin/doc?ptc/2005-11-01}}.
 
 \bibitem{UML}
 {Unified Modeling Language}.

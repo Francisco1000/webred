@@ -142,7 +142,7 @@ En este apartado se resume la propuesta para el análisis y especificación de req
 A-OOH es la extensión del método OOH (\emph{Object-Oriented Hypermedia}) \cite{GomezOOH} con estratégicas de personalización. El proceso de desarrollo de A-OOH esta basado en MDA, es decir, los requisitos de la aplicación Web son definidos en un nivel CIM y a partir de son derivados los modelos conceptuales de la aplicación Web. Los modelos conceptuales corresponden al nivel PIM de la arquitectura MDA como puede verse en Fig. \ref{fig:approach}, estos son: 
 
 \begin{itemize}
-   \item \textbf{Modelo de dominio}. El modelo de dominio de A-OOH se expresa como un diagrama de clases UML (\emph{Unified Modeling Language}) \cite{UML}. Este modelo refleja la parte estática de la aplicación Web encapsulando su estructura y funcionalidad requerida. Los elementos principales para el modelado de un diagrama de clases son las clases (con sus atributos y operaciones) y sus relaciones.
+   \item \textbf{Modelo de dominio}. El modelo de dominio de A-OOH se expresa como un diagrama de clases UML (\emph{Unified Modeling Language}) \cite{UML}. Este modelo refleja la parte estática de la aplicación Web encapsulando su estructura y funcionalidad. Los elementos principales para el modelado de un diagrama de clases son las clases (con sus atributos y operaciones) y sus relaciones.
 	\item \textbf{Modelo de navegación}. El modelo de navegación de A-OOH se compone de nodos de navegación y las relaciones entre ellos. Este modelo indica los caminos de navegación que el usuario puede seguir en la Web (enlaces de navegación). Hay tres tipos de nodos: (i) clases navegacionales (que son vistas parciales de las clases de dominio), (ii) destinos navegacionales (que agrupan elementos del modelo que colaboran en el cumplimiento de uno o más requisitos de navegación del usuario) y (iii) colecciones (que son estructuras, posiblemente jerárquicas, que se definen entre clases de navegación o destinos navegacionales). La colección más común es la colección de clasificación (\emph{C-collection}), que actúa como un mecanismo de abstracción para el concepto de menú agrupando enlaces de navegación. Con respecto a los enlaces de navegación, A-OOH define dos tipos principales: enlaces de travesía (\emph{Transversal-links}) (definidos entre dos nodos de navegación) y enlaces de servicio (\emph{Service-links}), en donde la navegación sucede al activar una operación que modifica la lógica de negocio y además implica la navegación a un nodo mostrando información cuando la ejecución del servicio ha finalizado.
    \item \textbf{Modelo de presentación}. Este modelo permite definir la interfaz gráfica de la aplicación Web, por ejemplo el tpo de fuente utilizada en el texto, el color, etc.
    \item \textbf{Modelo de personalización}. Este modelo es utilizado para la especificación de estratégias de personalización.
@@ -159,11 +159,11 @@ A-OOH es la extensión del método OOH (\emph{Object-Oriented Hypermedia}) \cite{G
 \end{figure}
 
 
-\subsubsection{Especificación del Modelo de Requisitos a Nivel CIM}
+\subsubsection{Especificación del Modelo de Requisitos a Nivel CIM}\label{especificacion}
 
-El primer paso de la propuesta presentada en esta tesis doctoral es la especificación y el modelado de los requisitos de las aplicaciones Web. Esto se describe con más detalle en el \emph{Capítulo~\ref{c4}}.
+El primer paso de la propuesta presentada en esta tesis doctoral es la especificación y el modelado de los requisitos de las aplicaciones Web. Para una explicación más amplia el lector puede referirse al Capítulo \ref{c4} de la tesis doctoral.
 
-Los requisitos Web se definen en un modelo independiente de computación (CIM) utilizando el marco de modelado de requisitos \emph{i*}. El marco de modelado \emph{i*}  \cite{Yu95} es uno de los más utilizados para analizar los objetivos de los \emph{stakeholders} \footnote{.......} (actores en \emph{i*}) y cómo el sistema a diseñar debería satisfacerlos. Además, \emph{i*} permite razonar acerca de cómo estos objetivos pueden contribuir a la selección de diferentes alternativas de diseño según su viabilidad. Para una explicación más amplia el lector puede referirse al Capítulo \ref{c4} de la tesis doctoral.
+Los requisitos Web se definen en un modelo independiente de computación (CIM) utilizando el marco de modelado de requisitos \emph{i*}. El marco de modelado \emph{i*}  \cite{Yu95} es uno de los más utilizados para analizar los objetivos de los \emph{stakeholder0's} \footnote{.......} (actores en \emph{i*}) y cómo el sistema a diseñar debería satisfacerlos. Además, \emph{i*} permite razonar acerca de cómo estos objetivos pueden contribuir a la selección de diferentes alternativas de diseño según su viabilidad. Con el fin de motivar esta parte de la investigación, se ha realizado una revisión del estado de la cuestión (ver apéndice~\ref{a1})
 
 El marco de modelado \emph{i*} consiste básicamente en dos modelos: el modelo SD (\emph{Strategic Dependency}) para especificar las relaciones de dependencia entre varios actores en un contexto organizacional y el modelo SR (\emph{Strategic Rationale}), utilizado para describir los intereses y preocupaciones del actor y como es que podrían abordarse. El modelo SR representa una manera detallada para modelar los elementos intencionales y las relaciones de cada actor. Los elementos intencionales son objetivos (\emph{Goals}), tareas (\emph{Tasks}), recursos (\emph{Resources}) y \emph{Softgoals}. Las relaciones intencionales son links del tipo \emph{Meands-end} los cuales representan formas alternativas para satisfacer objetivos; los \emph{Decomposition-links} representan los elementos necesarios para que una tarea sea realizada; o los \emph{Contribution-links} que sirven para modelar como es que un elemento intencional contribuye a la satisfacción de un requisito no funcional (\emph{Softgoal}). En la Tabla \ref{tab:istarsymbols} se describen los elementos más importantes del marco de modelado \emph{i*}. 
 
@@ -210,14 +210,14 @@ Por otra parte, el marco de modelado \emph{i*} tiene que adaptarse al dominio de
    \item \textbf{Requisitos de navegación (\emph{Navigational})}. Un sistema Web debe también definir caminos de navegación disponibles para los usuarios. Algunos ejemplos son: ``consultar productos por categoría'', ``consultar el carrito de compras'', etc.
    \item \textbf{Requisitos de interfaz (\emph{Layout})}. Los requisitos también pueden definir la interfaz visual para los usuarios. Por ejemplo: ``presentar un estilo diferente para los adolescentes''.
    \item \textbf{Requisitos de personalización (\emph{Personalization})}. También consideramos requisitos de personalización en nuestra propuesta. El diseñador puede especificar las acciones de personalización a ser ejecutadas en el sitio Web. Por ejemplo: ``adaptar el estilo de la fuente para las personas con deficiencia visual''.
-   \item \textbf{Requisitos no funcionales (\emph{Softgoals})}. En nuestra propuesta el diseñador también puede modelar requisitos no funcionales. Estos requisitos representan criterios de calidad que el sistema debe conseguir. Algunos ejemplos de estos requisitos pueden ser: ``eficiencia'', ``atraer mas usuarios'' y ``buena experiencia del usuario''.
+   \item \textbf{Requisitos no funcionales (\emph{Softgoals})}. Estos requisitos representan criterios de calidad que el sistema debe conseguir. Algunos ejemplos de estos requisitos pueden ser: ``eficiencia'', ``atraer mas usuarios'' y ``buena experiencia del usuario''.
 \end{itemize}
 
 Para poder utilizar el marco de modelado \emph{i*} dentro de MDA se ha implementado un metamodelo. El metamodelo se implementó utilizando la tecnología EMF (\emph{Eclipse Modeling Framework}) de Eclipse \cite{ECLIPSE} (Fig. 7). Los elementos intencionales de \emph{i*} fueron extendidos con nuevas clases para representar cada uno de los tipos de requisitos Web descritos anteriormente (\emph{Navigational}, \emph{Service}, \emph{Personalization}, \emph{Layout} y \emph{Content}). Los requisitos no-funcionales se modelan directamente utilizando elementos de \emph{i*} (\emph{Softgoals}). 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{img/iStarMetamodel.eps}
+\includegraphics[width=\textwidth]{img/SeccionRequisitosWebMetamodelo.eps}
 \end{center}
 \caption{Extracto de metamodelo de requisitos Web del método A-OOH.}
 \label{fig:reqmetamodel}
@@ -228,365 +228,226 @@ específicos de esta tesis doctoral para una explicación más detallada.
 
 \subsubsection{Generación de los Modelos Conceptuales a nivel PIM}
 
-Definidos los requisitos en un CIM, el siguiente paso consiste en utilizarlos para derivar los modelos conceptuales de dominio, navegación y \emph{weaving} de la aplicación Web. 
+Definidos los requisitos en un CIM, el siguiente paso consiste en utilizarlos para derivar los modelos conceptuales de dominio y navegación de la aplicación Web. Para lograrlo, es necesario que los modelos cumplan con la sintaxis abstracta de un dominio especifico, es decir, que sean conformes a un metamodelo. A continuación se describen los metamodelos utilizados para la derivación de los modelos conceptuales a nivel PIM de MDA.
 
-En primera instancia, se pretende obtener el modelo de dominio a partir del modelo de requisitos en \emph{i*} tras la aplicación de un conjunto de reglas de transformación descritas formalmente en QVT. Con estas reglas, obtendremos también un modelo de \emph{weaving}, el cual mantendrá enlaces bidireccionales entre los elementos de ambos modelos (a nivel de sus respectivos elementos). A continuación se describen las principales reglas QVT para generar el modelo de dominio y el modelo de \emph{weaving}:
+UML (\emph{Unified Modeling Language}) es el lenguaje especifico de dominio (\emph{Domain Specific Language}, DSL) utilizado para la derivación del modelo de dominio de A-OOH. El metamodelo es una descripción de UML realizada en UML. Describe los objetos, atributos y relaciones necesarias para representar los conceptos de UML dentro de una aplicación de software. La notación UML la componen dos subdivisiones, la primera es utilizada para modelar los elementos estáticos del diseño como las clases, atributos y relaciones. La segunda subdivisión es aplicada para modelar los elementos dinámicos de diseño como lo son los objetos, mensajes y maquinas de estado finito. Los modelos estáticos son presentados en diagramas llamados Diagramas de Clases. El propósito de un diagrama de clase es representar a las clases dentro de un modelo. En una aplicación orientada a objetos, las clases tienen atributos (variables miembros), operaciones (funciones miembro) y relaciones con otras clases. Estas carácteristicas aplican perfectamente para la representación del modelo de dominio de A-OOH.
+
+Por otra parte, A-OOH dispone de un DSL para representar las rutas de navegación que el usuario puede seguir durante su interacción con la aplicación Web. En la Figura \ref{fig:navmetamodel} se muestra el metamodelo de navegación utilizado en A-OOH. Los elementos principales del metamodelo son: (i) Nodo Navegacional (\emph{Navigational Node}) y (ii) Enlace Navegacional (\emph{Navigational Link}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/NavigationalMetamodelFormal.eps}
+\end{center}
+\caption{Definición del metamodel de navegación en A-OOH.}
+\label{fig:navmetamodel}
+\end{figure}
+
+
+El Nodo Navegacional representa vistas restringidas de los conceptos del dominio y sus relaciones indican las rutas de navegación que el usuario de la aplicación Web puede seguir. Existen tres tipos diferentes de Nodos Navegacionales, los cuales se describen a continuación:
 
 \begin{itemize}
+\item \textbf{Clases de Navegación} (\emph{Navigational Classes}), son clases del dominio enriquecidas con atributos y métodos cuya visibilidad ha sido restringida, dependiendo claro del los permisos de acceso del usuario y de los requisitos de navegación. Es representada por una clase UML estereotipada NavigationalClass.
 
-\item \textbf{Content2DomainClass}. El dominio origen de esta relación está compuesto por un conjunto de elementos que representan una clase estereotipada como Content. Cuando se detecta este patrón en el modelo de entrada se fuerza la creación de una clase tipo Class en el modelo destino (modelo de dominio). Por tanto, por cada requisito de contenido se obtiene una clase en el modelo de dominio.
-\item \textbf{Service2Operation}. Esta relación detecta un conjunto de elementos en el modelo de entrada (modelo de requisitos) que corresponden con una clase estereotipada como Service asociada a una clase estereotipada como Content. Una vez detectado este patrón de elementos, se crea en el modelo de salida (modelo de dominio) una clase Operation en la clase del modelo de dominio correspondiente.
-\item \textbf{Navigation2Relationship}. Esta relación permite crear asociaciones entre clases en el modelo de dominio. Existen dos clases como origen para detectar clases estereotipadas como Content. Si estas dos clases se usan para cumplir el mismo requisito de navegación, entonces se crea una clase Association entre las clases del modelo de dominio que las representan (figura 5).
-\item \textbf{CreateModelTrace}. Al ejecutarse por primera vez, esta regla crea un modelo de \emph{weaving}. Cada vez que una regla QVT transforma un elemento del modelo de entrada (modelo de requisitos) crea un nuevo enlace en el modelo de \emph{weaving}.
+\item \textbf{Objetivos de Navegación} (\emph{Navigational Targets}), agrupan los elementos del modelo que colaboran en el cumplimiento de cada requisito de navegación del usuario. Son representados utilizando la notación UML de paquetes con el estereotipo NavigationalTarget.
 
+\item \textbf{Colecciones} (\emph{Collections}), son estructuras jerárquicas definidas en Clases Navegacionales u Objetivos Navegacionales. Proveen al usuario de la aplicación Web nuevas formas de accesar a la información. La colección más común es C-Collection (Clasifier Collection), la cual actúa como un mecanismo de abstracción para el concepto de menú, agrupa de esta forma Ligas Navegacionales (Navigational Links). Otra colección importante es la llamada S-Collection (Selector Collection) mediante la cual podemos representar un mecanismo de selección. Las colecciones son representadas por medio de una clase UML estereotipada como NavigationalC-Collection o NavigationalS-Collection.
 \end{itemize}
 
+El Enlace Navegacional define las rutas de navegación que el usuario puede seguir a través de la aplicación Web. A-OOH en su metamodelo de navegación define dos tipos principales de enlaces (links):
+
+\begin{itemize}
+\item \textbf{T-Links} (\emph{Transversal Links}), son enlaces definidos entre dos nodos navegacionales (clases navegacionales, colecciones u objetivos navegacionales). La navegación es realizada para mostrar información a través de la interfaz del usuario sin modificar en absoluto la lógica de negocio. Estos tipos de ligas son representadas por el estereotipo TransversalLink.
+
+\item \textbf{S-Link} (\emph{Service Links}), con estos tipos de enlaces la navegación es realizada para activar una operación, la cual, en forma opuesta a los T-Links modifica la lógica del negocio y además implica que la navegación a un nodo muestre información cuando termine la ejecución del servicio. Se establece cuando un servicio de la clase navegacional es activado. Estos tipos de ligas son representados por el estereotipo ServiceLink  y tiene asociado el nombre del servicio que lo invoco.
+\end{itemize}
+
+
+Un modelo representa algún aspecto de un sistema \emph{software} y conforma con el metamodelo del DSL con el que está expresado. Esto significa que los elementos del modelo son instancias de elementos del metamodelo. Una vez se han presentado y descrito los metamodelos utilizados por A-OOH se procederá a explicar la derivación de los modelos conceptuales de dominio y navegación.
+
+El modelo de dominio en A-OOH encapsula la estructura y funcionalidad de los conceptos relevantes del dominio de la aplicación Web y también refleja la parte estática de la misma, este se representa como un diagrama de clases en notación UML. El objetivo consiste en obtener el modelo de dominio a partir del modelo de requisitos en \emph{i*} por medio de un conjunto de reglas de transformación descritas formalmente en QVT. Con las reglas, se obtendrá un modelo de \emph{weaving} para mantener enlaces bidireccionales entre los elementos de ambos modelos (a nivel de sus respectivos elementos). A continuación se describen las principales reglas QVT para generar el modelo de dominio y el modelo de \emph{weaving}:
+
+\begin{itemize}
+\item \textbf{\emph{Content2DomainClass}}. El dominio origen de esta relación está compuesto por un conjunto de elementos que representan una clase estereotipada como Content. Cuando se detecta este patrón en el modelo de entrada se fuerza la creación de una clase tipo UML-Class en el modelo destino (modelo de dominio). Por tanto, por cada requisito de contenido se obtiene una clase en el modelo de dominio (Figura \ref{fig:content2Domain}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{img/content2domainclass.eps}
+\end{center}
+\caption{Regla QVT para obtener las clases del modelo de dominio.}
+\label{fig:content2Domain}
+\end{figure}
+
+\item \textbf{\emph{Service2Operation}}. La regla detecta un conjunto de elementos en el modelo de entrada (modelo de requisitos) que corresponden con una clase estereotipada como Service asociada a una clase estereotipada como Content. Una vez detectado este patrón de elementos, se crea en el modelo de salida (modelo de dominio) una clase Operation en la clase del modelo de dominio correspondiente (Figura \ref{fig:service2operation}).
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{img/service2operation.eps}
+\end{center}
+\caption{Regla QVT para obtener las clases del modelo de dominio.}
+\label{fig:service2operation}
+\end{figure}
+\item \textbf{\emph{Navigation2Relationship}}. Esta relación permite crear asociaciones entre clases en el modelo de dominio. Existen dos clases como origen para detectar clases estereotipadas como Content. Si estas dos clases se usan para cumplir el mismo requisito de navegación, entonces se crea una clase Association entre las clases del modelo de dominio que las representan (Figura \ref{fig:navigation2relationship}).
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.6\textwidth]{img/navigation2relationship.eps}
 \end{center}
 \caption{Regla QVT para obtener las relaciones entre las clases del modelo de dominio A-OOH.}
-\label{fig:reqmetamodel}
+\label{fig:navigation2relationship}
 \end{figure}
+\item \textbf{\emph{CreateModelTrace}}. Al ejecutarse por primera vez, esta regla crea un modelo de \emph{weaving}. Cada vez que una regla QVT transforma un elemento del modelo de entrada (modelo de requisitos) crea un nuevo enlace en el modelo de \emph{weaving}.
+\end{itemize}
 
 
-El modelo de navegación de A-OOH...........
+Como se menciono en anteriormente, el modelo de navegación esta compuesto de nodos navegacionales y sus respectivas relaciones para indicar las rutas de navegación de la aplicación Web. Para derivar el modelo de navegación los requisitos tomados en cuenta son los requisitos de contenido (\emph{Content}), servicio (\emph{Service}), navegación (\emph{Navigational}) y personalización (\emph{Personalization}) para generar un conjunto de reglas de transformación QVT. En este caso, las reglas QVT para la obtención del modelo de navegación son las siguientes:
+
+
+\begin{itemize}
+\item \textbf{\emph{Navigation2NavClass}}. Esta regla de transformación detecta cada requisito navegacional, derivando su correspondiente clase. En concreto, cuando se detecta en el modelo origen una clase estereotipada como Navigational unida a una clase Content, entonces se crea una clase estereotipada como NavigationalClass en el modelo destino. Además cada una de estas nuevas clases es el destino de una nueva asociación TransversalLink desde una C-Collection previamente creada por la función createMenu que se encuentra en la cláusula when (Figura \ref{fig:nav2navclass}).
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{img/navigation2relationship.eps}
+\end{center}
+\caption{Regla QVT para obtener las clases navegacionales.}
+\label{fig:nav2navclass}
+\end{figure}
+\item \textbf{\emph{Personalization2NavClass}}. La regla es similar a la anterior pero detectando los requisitos de personalización (estereotipo Personalization) que tienen un requisito de contenido asociado. Se derivan en el modelo de navegación los mismos elementos que en la regla anterior.
+
+
+\item \textbf{\emph{Navigation2TransversalLink}}. Permite crear asociaciones entre clases navegacionales en el modelo de navegación. Existen dos modelos origen con el fin de detectar clases estereotipadas como Content. Si estas dos clases se usan para cumplir con el mismo requisito de navegación (comprobado en la cláusula when con la operación SameNavigationOrigin), entonces se crea una asociación estereotipada como TransversalLink entre las clases del modelo de navegación que las representan.
+
+\item \textbf{\emph{Service2ServiceAndSLink}}. Esta relación detecta un conjunto de elementos en el modelo origen que corresponden con una clase estereotipada como Service asociada a una clase estereotipada como Content. Una vez detectado este patrón de elementos, se crea en el modelo destino una clase Operation en la clase del modelo de navegación correspondiente. Además, se crea una asociación estereotipada como ServiceLink para cada operación añadida. Este nuevo enlace de servicio se asocia a una nueva clase navegacional (NavigationalClass) destino. Antes de ejecutarse esta relación, se debe verificar que se cumple con las sentencias dispuestas en la cláusula when, en este caso Navigation2NavClass y Personaliza tion2NavClass, con el fin de crear en el modelo destino todas las posibles clases de navegación a partir de cada una de las clases estereotipadas como Content en el modelo origen.
+
+
+\end{itemize}
+
+
 
 \subsection{Gestión de Requisitos en A-OOH}
 
-Un modelo MD conceptual (es decir, un PIM según la propuesta MDA
-presentada anteriormente) proporciona un alto nivel de abstracción
-para describir de manera exacta y expresiva situaciones reales.
-Hasta ahora se ha mostrado como, una vez que se diseña este modelo,
-se deriva la representación lógica correspondiente como base de la
-implementación del AD según una tecnología específica.
+El uso de técnicas orientadas a objetivos para la especificación de requisitos en ingeniería Web permité reflejar desde las etapas iniciales del proceso de desarrollo los objetivos, tareas y relaciones de los stakeholder's. De esta forma se consideran las necesidades y objetivos del usuario de la aplicación Web. Sin embargo, a pesar de que los requisitos son especificados en un modelo conceptual, los stakeholders necesitan observar que han sido reflejados correctamente en la aplicación Web final. Una forma de brindar soporte a esta necesidad es proveer al diseñador Web con una etapa de requisitos que consideré la gestión de los mismos. 
 
-Sin embargo, aunque se diseñe un buen modelo MD conceptual, existe
-un intervalo semántico entre este modelo y su representación lógica
-que complica un adecuado tratamiento de la \emph{sumarizabilidad},
-lo que puede conducir a la obtención de resultados erróneos en las
-herramientas de análisis de datos. Las investigaciones llevadas a
-cabo hasta la fecha sólo plantean soluciones parciales, usando
-diferentes tipos de terminologías que dificultan el progreso en este
-área.
+Por tanto, la propuesta presentada en la tesis se ha extendido para proveer al diseñador con soporte para: (i) trazabilidad de requisitos (CIM-PIM), (ii) evaluar el impacto derivado de un cambio en los modelos conceptuales (análisis de impacto) y (iii) alternativas de diseño considerando la maximización y/o balance de los requisitos no-funcionales.
 
-Por tanto, la propuesta dirigida por modelos para el diseño MD
-presentada en esta tesis doctoral se ha extendido mediante la
-inclusión de varias transformaciones que tienen en cuenta los
-problemas de sumarizabilidad en el paso del PIM al PSM. Esta parte
-de la tesis se describe en profundidad en los
-apéndices~\ref{a1},~\ref{a2} y~\ref{a3}.
+\subsubsection{Trazabilidad de Requisitos en A-OOH}
 
-Con el fin de motivar esta parte de la investigación, se ha
-realizado una revisión del estado de la cuestión (ver
-apéndice~\ref{a1}), aportando una terminología unificada, para
-determinar (i) los puntos fuertes y débiles de las propuestas
-actuales en cuanto al modelado MD de estructuras complejas a nivel
-conceptual y (ii) los mecanismos existentes para evitar problemas de
-sumarizabilidad cuando se implementan modelos MDs conceptuales. Esta
-revisión sugiere que la sumarizabilidad se debe asegurar mediante un
-proceso global apoyado por una herramienta de diseño que permita:
+En el campo de la ingeniería Web dirigida por modelos, realizar el seguimiento de los requisitos durante la etapa de desarrollo de la aplicación Web hasta su implementación final es una tarea compleja. Esto se debe a que en ingeniería Web se deben generar varios modelos conceptuales a partir de los requisitos como son el modelo de dominio o de navegación. Además, debido al desarrollo gradual de las necesidades de los usuarios de una aplicación Web, estos modelos cambian constantemente por lo que la trazabilidad de los requisitos se hace indispensable.
 
-\begin{enumerate}
-\item La representación adecuada de las interacciones entre dimensiones y hechos~\cite{DBLP:conf/dmdw/SongRME01}.
-\item La representación adecuada de las relaciones entre niveles de agregación en una jerarquía de dimensión.~\cite{DBLP:conf/vldb/JagadishLS99}.
-\end{enumerate}
+La trazabilidad de requisitos se define como la capacidad de describir y seguir la vida de un requisito, en ambas direcciones [27]: (i) determinar qué partes del modelo están relacionadas con cada uno de los requisitos, y (ii) determinar qué requisitos dieron origen a qué partes del modelo. Actualmente existen dos estrategias para gestionar y almacenar la información para la trazabilidad entre modelos: (i) la información se puede integrar en los modelos a los que se refiere y (ii) la información de trazabilidad se puede almacenar por separado en otro modelo [16]. La primera de estas dos opciones tiene como desventaja que si la información es almacenada en el mismo modelo, el modelo será contaminado con información poco relevante para el contexto del modelo y por lo tanto, será difícil de mantener y utilizar. Por otro lado, la segunda estrategia consiste en almacenar la información en un modelo aparte. De esta forma se pueden corregir las desventajas mencionadas.
 
-La noción de \emph{sumarizabilidad} fue descrita por primera vez por
-Rafanelli y Shoshani~\cite{DBLP:conf/ssdbm/RafanelliS90} para bases
-de datos estadísticas, donde se refiere al cálculo correcto de
-valores agregados a bajo nivel de detalle a partir de valores de más
-alto nivel. Aunque este trabajo sólo trata las relaciones entre dos
-niveles de jerarquía de dimensión, las relaciones entre hecho y
-dimensión también pueden causar problemas de sumarizabilidad en un
-modelo MD~\cite{DBLP:conf/ssdbm/LehnerAW98}. Por tanto, para poder
-ser implementado, un modelo MD debe asegurar la sumarizabilidad en
-estos dos tipos de estructuras MD. De lo contrario, su violación
-puede derivar en resultados incorrectos y decisiones
-erróneas~\cite{DBLP:conf/ssdbm/LenzS97}.
+Con el fin de brindar soporte para la trazabilidad de requisitos en A-OOH se ha utilizado el concepto de modelo de \emph{weaving}. Un modelo de \emph{weaving} es un tipo de modelo formado por enlaces y referencias a elementos, los enlaces están dirigidos a las referencias de los elementos de un modelo origen y de un modelo destino. A continuación, se presenta el metamodelo base para \emph{weaving} [15] y una extensión para proveer a dicho metamodelo con elementos útiles para representar la trazabilidad entre modelos [6]. El metamodelo se muestra en la Figura \ref{fig:weavingmetamodel}:
 
-En vista de estas complicaciones, la manera tradicional de proceder
-es implementar un modelo MD sin incluir aquellas estructuras que
-pueden causar problemas de sumarizabilidad. Sin embargo, esta
-propuesta es muy simple y dificulta la tarea de los diseñadores que
-no pueden usar toda la expresividad de un modelo conceptual. Por
-tanto, los diseñadores desperdician mucho esfuerzo en implementar un
-modelo MD con constructores MD poco expresivos, debiendo ser muy
-cuidadosos para obtener una representación fidedigna de escenarios
-reales.
+\begin{itemize}
+\item \textbf{\emph{WElement}}. Es el elemento base del cual los seis elementos restantes heredan, esta formado por los atributos nombre y descripción.
+\item \textbf{\emph{WModel}}. Representa el elemento raíz que contiene a todos los elementos del modelo. Está compuesto por las referencias y relaciones a los modelos de entrada y salida.
+\item \textbf{\emph{WLink}}. Sirve para representar un enlace entre los elementos del modelo.
+\item \textbf{\emph{WLinkEnd}}. Este elemento representa el extremo final de un enlace.
+\item \textbf{\emph{WElementRef}}. Este elemento se asocia a una función de identificación, creando un identificador único para cada elemento del modelo ligado, por tanto WElementRef permite referenciar el mismo elemento del modelo enlazados por diversos elementos WLinkEnd.
+\item \textbf{\emph{WModelRef}}. Representa un identificador único de un modelo.
+\end{itemize}
 
-Por el contrario, según algunos
-autores~\cite{DBLP:conf/dmdw/HusemannLV00,DBLP:conf/dolap/RizziALT06,DBLP:conf/er/SapiaBHD98,DBLP:journals/computer/TrujilloPGS01,DBLP:conf/dolap/TryfonaBC99}
-el modelado MD pretende representar cada elemento MD en un modelo
-conceptual independiente de la implementación con el fin de reflejar
-situaciones reales lo más precisamente posible. Una vez que se
-diseña un modelo MD conceptual, se deriva su correspondiente
-representación lógica como base de su implementación en una
-tecnología concreta. Sin embargo, la diferencia de expresividad
-entre los elementos representados en los modelos MD conceptuales y
-su representación lógica debe reducirse para preservar toda la
-información capturada por las estructuras MD complejas, mientras se
-resuelven los problemas de
-sumarizabilidad~\cite{DBLP:journals/vldb/JensenKPT04,MalZim2008:book}.
-Además, derivar una representación lógica de un modelo MD conceptual
-es una tarea tediosa y sensible a errores por lo que debe ser
-automatizada tanto como sea posible.
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/WeavingMetamodel.eps}
+\end{center}
+\caption{Metamodelo de \emph{weaving} y extensión para trazabilidad.}
+\label{fig:weavingmetamodel}
+\end{figure}
 
-Hasta ahora existen pocas propuestas que hayan considerado las
-cuestiones mencionadas anteriormente, de manera conjunta, para
-modelar cada tipo de jerarquía y relación entre hecho y dimensión a
-nivel conceptual y, automáticamente, derivar una representación
-lógica que preserve la información definida a nivel conceptual
-evitando problemas de
-sumarizabilidad~\cite{DBLP:journals/dke/MalinowskiZ06,DBLP:journals/is/PedersenJD01,DBLP:conf/dawak/MansmannS06}.
-Además, las propuestas presentadas hasta la fecha tienen los
-siguientes inconvenientes: (i) sólo definen mecanismos informales
-para evitar problemas de sumarizabilidad, lo que dificulta
-soluciones automáticas o (ii) requieren de transformaciones a nivel
-de instancia (y no a nivel de esquema) para evitar problemas de
-sumarizabilidad por lo que se requiere de un preprocesado complejo
-que deriva en problemas de rendimiento y se producen instancias de
-datos ``artificiales'' difíciles de interpretar durante el análisis.
 
-Para paliar estos problemas, se ha extendido la propuesta MDA
-previamente presentada con un \emph{proceso de normalización}.
-Esencialmente, tal y como se muestra en la
-Fig.~\ref{c1:fig:normalization}, una vez que se define un PIM (el
-cual permite especificar estructuras MD complejas), se obtiene un
-PIM normalizado por medio de la ejecución automática de varias
-transformaciones QVT~\cite{OMG/QVT}. Este PIM normalizado captura la
-información representada en el modelo MD conceptual usando solamente
-aquel subconjunto de elementos que no viola la sumarizabilidad. A
-partir del PIM normalizado se puede derivar un PSM.
+En la parte inferior de la Figura \ref{fig:weavingmetamodel}, se ilustra la extensión del metamodelo para \emph{weaving} que permite la representación de la trazabilidad. Esta extensión la forman los siguientes elementos:
 
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=0.8\textwidth]{img/summary/normalization.png}
-%\end{center}
-%\caption{Proceso de normalización para evitar problemas de
-%sumarizabilidad} \label{c1:fig:normalization}
-%\end{figure}
+\begin{itemize}
+\item \textbf{\emph{TraceModel}}. Es el elemento que representa al modelo de trazabilidad, esta integrado por referencias a otros modelos.
+\item \textbf{\emph{TraceModelRef}}. Representa la referencia a otros modelos, es decir, es un único identificador para los modelos que conforman el modelo de trazabilidad.
+\item \textbf{\emph{ElementRef}}. Es un identificador para señalar cada elemento que integran los modelos ligados.
+\item \textbf{\emph{TraceLink}}. Un enlace de rastreo, utilizado para representar las correspondencias entre las referencias de los elementos de los modelos enlazados. Como información de trazabilidad, almacena el nombre de la regla de transformación que ha sido ejecutada.
+\item \textbf{\emph{TraceLinkEnd}}. Su función es similar al elemento WLinkEnd del cual hereda, pues permite crear una relación uno a muchos (1-N) entre las referencias de los elementos del modelo de entrada (sourceElements) y los del modelo de salida (targetElement).
+\end{itemize}
 
-El proceso de normalización ha sido implementado junto con la
-herramienta basada en \emph{Eclipse} presentada anteriormente. Se ha
-definido un \emph{plugin} con todas las transformaciones QVT
-necesarias (implementadas con el motor de ATL~\cite{ATL}) para
-ejecutar el proceso de normalización de manera automática. En la
-Fig.~\ref{c1:fig:normalizationATL} se muestra una captura de
-pantalla.
+De esta forma se ha definido formalmente la regla de transformación \emph{CreateModelTrace} para derivar un modelo de \emph{weaving} que almacene un conjunto de enlaces dirigidos a los elementos de los modelos conceptuales de A-OOH.
 
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=\textwidth]{img/summary/normalizationATL.png}
-%\end{center}
-%\caption{Implementación del proceso de normalización en
-%\emph{Eclipse} mediante ATL} \label{c1:fig:normalizationATL}
-%\end{figure}
+\begin{itemize}
+\item \textbf{\emph{CreateModelTrace}}. Al ejecutarse por primera vez, la regla crea un modelo de \emph{weaving} con referencias a los modelos origen y destino. De esta forma, cada vez que una regla QVT transforma un elemento del modelo de entrada (modelo de requisitos) en uno o varios elementos de los modelos conceptuales A-OOH (dominio y navegación) crea un nuevo enlace en el modelo de \emph{weaving}.
+\end{itemize}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/content2domainclass.eps}
+\end{center}
+\caption{Regla QVT para obtener el modelo de \emph{weaving}.}
+\label{fig:createModelTrace}
+\end{figure}
+
+
+\subsubsection{Análisis de Impacto en A-OOH}
+
+Los requisitos evolucionan constantemente a razón de la naturaleza dinámica de la Web. Debido a esto, es común encontrar inconsistencias entre los modelos conceptuales de la aplicación Web y los requisitos. Una de las ventajas ofrecidas por el soporte para trazabilidad en A-OOH es el de conocer las dependencias entre los elementos de los modelos conceptuales y los requisitos. Por tanto, es posible conocer los requisitos afectados debido a un cambio en alguno de los modelos conceptuales. Análisis de impacto (\emph{Change Impact Analysis}) es la tarea de identificar las consecuencias potenciales de un cambio o estimar qué es necesario modificar para llevar a cabo el cambio \cite{impact}. Comúnmente, el análisis de impacto se ha realizado de forma intuitiva por los diseñadores de la aplicación Web por medio de un análisis superficial del código y documentación de la aplicación. Esto quizá sea suficiente para aplicaciones Web no muy grandes, pero no es suficientes para aplicaciones Web sofisticadas. Asímismo, investigación empirica demuestra que, incluso los desarrolladores más experimentados deducen un análisis de impacto incompleto \cite{Lindvall}.
+
+Para paliar esta limitante, se ha definido un algoritmo para analizar las dependencias entre los requisitos funcionales. El algoritmo analiza el modelo de requisitos A-OOH para conocer las dependencias entre los requisitos funcionales además de saber qué requisitos no funcionales se ven afectados. De esta forma, a través del soporte para trazabilidad es posible conocer que otros elementos de los modelos conceptuales son afectados. Finalmente, debido a que el modelo de requisitos A-OOH es orientado a objetivos, el algoritmo puede mostrar al diseñador un camino alternativo en el cual se indique qué requisitos tienen que ser implementados para seguir cumpliento con el objetivo (\emph{Goal}).
+
+
+\subsubsection{Alternativas de Diseño en A-OOH considerando a los Requisitos No-Funcionales}
+
+Como se ha motivado anteriormente, las aplicaciones Web tienen una audiencia amplia y heterogénea, por eso es indispensable que las metodologías de diseño brinden soporte al diseñador en la etapa de requisitos y le permitan seleccionar distintas opciones de diseño en base la audiencia de la aplicación Web. 
+
+En A-OOH se ha implementado el algoritmo Frontera de Pareto para proveer al diseñador con un conjunto de alternativas de diseño basadas en la prioridad de los requisitos no-funcionales. Para esto, el diseñador establecerá una lista de requisitos no-funcionales, a continuación, el algoritmo obtendrá todas las posibles configuraciones de entre las cuales el diseñador seleccionará aquella que maximice o balancee los requisitos no-funcionales establecidos previamente.
 
 \subsection{Implementación}
 \label{c1:implementation}
 
-Después de probar varias plataformas, tales como
-\emph{Rational}~\cite{RATIONAL} o \emph{Borland Together
-Architecture}~\cite{BORLAND}, la propuesta definida en esta tesis
-doctoral se ha implementado en la plataforma de desarrollo
-\emph{Eclipse}~\cite{ECLIPSE}. \emph{Eclipse} puede extenderse por
-medio de \emph{plugins} con el fin de añadir más características y
-nuevas funcionalidades. Se ha desarrollado un \emph{plugin} que da
-soporte a cada parte de la propuesta~\cite{RE08}. Este nuevo plugin
-contiene los siguientes módulos:
+La propuesta definida en esta tesis doctoral se ha implementado en la plataforma de desarrollo \emph{Eclipse}~\cite{ECLIPSE} utilizando tecnología EMF (\emph{Eclipse Modeling Framework}) (CITA) y GMF (\emph{Graphical Modeling Framework}) (CITA). \emph{Eclipse} puede extenderse por medio de \emph{plugins} con el fin de añadir más características y nuevas funcionalidades. Se ha desarrollado un \emph{plugin} que da soporte a cada parte de la propuesta. Este nuevo plugin contiene los siguientes módulos:
 
-\begin{description}
-\item[\textbf{Módulo CIM.}] Este módulo implementa el \emph{profile}
-UML para usar \emph{i*} en el dominio de los ADs. Usando este módulo
-se implementa un CIM MD. El marco de modelado \emph{i*} suministra
-mecanismos con los que poder representar varios actores, sus
-dependencias y estructurar los objetivos que se pretenden alcanzar.
-Los principales elementos de \emph{i*} se describen en la
-Tab.~\ref{c1:tab:istar}. El \emph{profile} de \emph{i*} para ADs
-(ver Fig.~\ref{c1:fig:profile-i}) se ha desarrollado mediante la
-extensión de estos elementos por medio de nuevos estereotipos (los
-iconos correspondientes se muestran en la
-Fig.~\ref{c1:istarpalette}).
+\subsubsection{Módulo \emph{Computational Independent Model}}
 
-\begin{table}
-\caption{Principales elementos para el modelado en \emph{i*}}
-\label{c1:tab:istar}
-\begin{tabular}{p{0.3\textwidth}p{0.7\textwidth}}
-\hline\noalign{\smallskip}
-Elemento & Descripción  \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-\textsc{Actor} & Es una entidad que lleva a cabo acciones para cumplir con sus objetivos. Se relaciona con varios elementos intencionales (objetivo, tarea o recurso).\\
-\textsc{Goal} & Representa una condición o estado que el actor le gustaría alcanzar. En el contexto del AD, los objetivos pueden ser estratégicos, decisionales e informacionales.\\
-\textsc{Task} & Representa una manera particular de hacer algo. En el contexto del AD, una tarea se relaciona con la manera en la cual se obtienen los datos (requisito de información). \\
-\textsc{Resource} & Es una entidad que debe estar disponible para su uso. En el contexto del AD, un recurso se relaciona con un ítem de información, p.e. una medida.\\
-\textsc{Means-ends} & Son asociaciones que describen cómo se alcanzan los objetivos al representar cuales son los elementos necesarios para su cumplimiento. \\
-\textsc{Decomposition} & Son asociaciones que definen elementos adicionales necesarios para llevar a cabo una tarea. \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-\end{tabular}
-\end{table}
+Este modulo implementa los conceptos del marco de modelado \emph{i*} y la clasificación de requisitos presentada en \cite{EscalonaK04} para proveer al diseñador con un editor gráfico para la especificación de requisitos Web. Concretamente, el metamodelo de requisitos implementado en la tesis doctoral ha sido extendido para incorporar los tipos de requisitos de la taxonomía presentada en la sección \ref{especificacion}, la Figura \ref{fig:SeccionRequisitosWebMetamodelo} muestra una captura de pantalla donde puede apreciarse la implementación del metamodelo en Eclipse. 
 
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=\textwidth]{img/summary/profile-i}
-%\end{center}
-%\caption{\emph{Profile} UML para el modelado \emph{i*} en ADs}
-%\label{c1:fig:profile-i}
-%\end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/WebRequirementsMetamodel.eps}
+\end{center}
+\caption{Metamodelo para la especificación de requisitos Web con \emph{i*}.}
+\label{fig:SeccionRequisitosWebMetamodelo}
+\end{figure}
+
+Por otra parte, con el editor, el diseñador de la aplicación Web es capaz de especificar en un diagrma los requisitos funcionales y no-funcionales de la aplicación Web. A continuación se describen las carácteristicas principales del editor gráfico:
+
+\begin{itemize}
+\item El editor implementa el metamodelo de requisitos Web \emph{i*} de tal forma que, los modelos especificados utilizando el editor son conformes al metamodelo.
+\item El editor gráfico permite la creación, modificación y actualización de la especificación de requisitos Web (diagramas). 
+\item Las propiedades de los elementos del marco de modelado \emph{i*} pueden ser modificadas seleccionando cada elemento en la vista de propiedades.
+\item Además de poder especificar requisitos Web (\emph{Content}, \emph{Navigational}, \emph{Personalization}, \emph{Service} y \emph{Layout}), el editor permite la creación de diagramas (modelos) con los elementos clásicos (\emph{Goal}, \emph{Task}, \emph{Resource} y \emph{Softgoal} de \emph{i*}).
+\end{itemize}
 
 
-Los objetivos de los usuarios del AD se definen mediante el uso de
-los estereotipos \emph{Strategic}, \emph{Decision} e
-\emph{Information}. Los requisitos de información se derivan de los
-objetivos informacionales y se representan como tareas
-estereotipadas como \emph{Requirement}. Además, el análisis de
-requisitos para ADs necesita del concurso de ciertos conceptos MDs
-(tal y como se describe en~\cite{DBLP:conf/dolap/GiorginiRG05}). Por
-tanto, los siguientes conceptos se pueden añadir al CIM como
-recursos estereotipados: el proceso de negocio relacionado con los
-objetivos de los usuarios (estereotipo \emph{BusinessProcess}),
-medidas relacionadas con los requisitos de información
-(\emph{Measure}) y los contextos para el análisis de esas medidas
-(\emph{Context}). De manera adicional, se pueden prever y modelar
-relaciones entre los contextos de análisis. Por ejemplo, los
-contextos ciudad y país deberían estar relacionados porque las
-ciudades pueden agregarse en países. Para modelar estas relaciones
-se usa la relación de agregación (compartida) de UML.
+\subsubsection{Módulo \emph{Platform Independent Model}}
+
+El metamodelo de navegación en A-OOH se implementa en este módulo. El metamodelo definido formalmente en la Figura \ref{fig:navmetamodel} e implementado en la Figura X define la sintaxis para la representación conceptual en un PIM del modelo de navegación de A-OOH.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/NavigationalMetamodel.eps}
+\end{center}
+\caption{Metamodelo de Navegación de A-OOH.}
+\label{fig:NavMetamodel}
+\end{figure}
 
 
-\item[\textbf{Módulo PIM.}]
-Este módulo implementa el \emph{profile} de UML para modelado MD que
-permite definir un modelo MD conceptual en un PIM.
+\subsubsection{Módulo {Transformaciones}}
 
-La definición del PIM se basa en el \emph{profile} de UML para
-modelado MD conceptual presentado
-en~\cite{DBLP:journals/dke/Lujan-MoraTS06}. Este \emph{profile}
-contiene los estereotipos necesarios para representar propiedades
-MDs (ver Fig.~\ref{c1:fig:profile-md}) a nivel conceptual mediante
-un diagrama de clases UML. Los principales elementos de este
-\emph{profile} se describen en la Tab.~\ref{c1:tab:md} (los iconos
-utilizados se muestran en la Fig.~\ref{c1:mdpalette}). Este
-\emph{profile} se ha definido formalmente y posee una serie de
-restricciones OCL (\emph{Object Constraint Language})~\cite{OMG/OCL}
-para expresar reglas bien formadas de los nuevos elementos, evitando
-su uso arbitrario.
+Este modulo tiene como objetivo implementar todas las transformaciones definidas formalmente en QVT. La opción elegida para la implementación de las transformaciones es el \emph{ATLAS Transformation Language} (ATL)~\cite{ATL}. ATL es un lenguaje para transformaciones entre modelos que agiliza el proceso de implementación de las reglas especificadas formalmente con el lenguaje QVT. Utilizar ATL para implementar transformaciones QVT es factible debido a que ATL y QVT están alineados [19].
 
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=0.7\textwidth]{img/summary/profile-md}
-%\end{center}
-%\caption{\emph{Profile} UML para el modelado MD de ADs}
-%\label{c1:fig:profile-md}
-%\end{figure}
+\subsubsection{Caso de estudio}
 
-\begin{table}
-\caption{Principales estereotipos del \emph{profile} UML para
-modelado MD de ADs}
-\label{c1:tab:md}       % Give a unique label
-%
-% Follow this input for your own table layout
-%
-\begin{tabular}{p{0.25\textwidth}p{0.2\textwidth}p{0.55\textwidth}}
-\hline\noalign{\smallskip}
-Estereotipo & Extiende & Descripción \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-\textsc{Fact} & Class  & Las clases con este estereotipo representan hechos de un modelo MD, los cuales consisten en medidas (los valores a analizar).\\
-\textsc{Dimension} & Class & Representan dimensiones en un modelo MD, las cuales contienen niveles de jerarquía. \\
-\textsc{Base} & Class & Son niveles de una jerarquía de dimensión y se componen de atributos de dimensión. \\
-\textsc{FactAttribute} & Property & Son atributos del hecho, es decir, medidas. Pueden representar medidas derivadas mediante una regla de derivación.\\
-\textsc{DimensionAttribute} & Property & Representan información descriptiva de un nivel de jerarquía. \\
-\textsc{Descriptor} & Property & Representan atributos descriptores de un nivel de jerarquía.\\
-\textsc{Rolls-UpTo} & Association & Son relaciones entre dos clases \emph{Base}. El rol \emph{r} representa la dirección en la que la jerarquía se agrega (\emph{rolls-up}) y el rol \emph{d} representa la dirección en la cual se desagrega (\emph{drills-down}). \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-\end{tabular}
-\end{table}
+En este apartado se presenta un caso de estudio para demostrar la aplicabilidad de nuestra propuesta. El caso de estudio es acerca de una empresa que se dedica a la aplicación de encuestas \emph{on-line}. Para esto la empresa requiere que su aplicación Web permita la aplicación de encuestas para usuarios registrados y para el público en general (quien tendrá ciertas restricciones). Para efectos demostrativos, en este caso de estudio nos enfocaremos únicamente a la obtención del modelo de dominio a partir de la especificación de requisitos.
+El primer paso consiste en la especificación de los requisitos para la aplicación Web "Survey WebApp".  En la figura 1,  por cuestiones de espacio, solo se presenta un extracto de la especificación de requisitos en el contexto del método Web A-OOH.  El actor "Survey WebApp" tiene como objetivo "Survey be performed", para alcanzar este objetivo es necesario seleccionar el requisito Navigational "Public Survey" o "Private Survey", cada uno de estos requisitos necesita de otros para poder realizarse, por ejemplo, el requisito "Public Survey" necesita del requisito Navigational "Make Survey" y este a su vez, necesita del requisito Service "Send Survey" y, finalmente, el requisito "Send Survey" necesita del requisito Content "Survey Repository" para poder llevarse a cabo. Finalmente, es importante resaltar que cada requisito contribuye de forma positiva o negativa a las Softgoals, por ejemplo, el requisito "Private Survey" lo hace de forma positiva (Some +) a la Softgoal "Security". Para fines prácticos, en la figura 5 se presenta el modelo de requisitos A-OOH en el ambiente Eclipse Modeling Framework (EMF). En la parte superior de la figura 5 se puede ver el modelo de requisitos representado en un diagrama ECORE de EMF; en la parte inferior de la figura se pueden observar las propiedades de cada elemento de i*, en este caso el elemento Means-end el cual indica el camino hacia el requisito "Public Survey". La finalidad de la representación del modelo de requisitos en ECORE es facilitar la ejecución de las reglas de transformación.
 
 
-
-\item[\textbf{Módulo PSM.}] Este módulo implementa la capa \emph{Resource}
-de CWM con el fin de definir modelos lógicos para el AD. Esta capa
-consiste en una serie de metamodelos estándar que permiten
-representar la estructura de los datos según diferentes tecnologías.
-Por ejemplo, el metamodelo \emph{relacional} (ver
-Fig.~\ref{c1:fig:cwm}) contiene clases y asociaciones que
-representan cada aspecto de una base de datos relacional: tabla,
-columna, clave primaria, clave ajena, etc.
-
-%\begin{figure}
-%\begin{center}
-%\includegraphics[width=0.7\textwidth]{img/summary/cwm}
-%\end{center}
-%\caption{Extracto del metamodelo relacional de CWM}
-%\label{c1:fig:cwm}
-%\end{figure}
-
-
-\item[\textbf{Módulo QVT.}] Tras probar varios motores de
-transformaciones para implementar las reglas QVT definidas (como
-\emph{mediniQVT} o \emph{smart\-QVT}), finalmente se eligió el motor
-del \emph{ATLAS Transformation Language} (ATL)~\cite{ATL}. Por
-tanto, este módulo aprovecha este motor para implementar y ejecutar
-todas las transformaciones definidas como parte de la propuesta
-guiada por modelos.
-
-\item[\textbf{Módulo Code.}] Este módulo utiliza un motor de
-transformaciones llamado \emph{MOFScript}~\cite{MOFSCRIPT} para la
-implementación del conjunto de transformaciones Mof2Text y su
-posterior ejecución para derivar el código de cada PSM.
-
-\end{description}
-
-Dentro de cada módulo se ha definido diferentes editores textuales y
-gráficos para crear una herramienta con la que diseñar los
-diferentes modelos y aplicar las transformaciones QVT y Mof2Text de
-manera integrada. La Fig.~\ref{c1:fig:screenshot} muestra una visión
-general de la herramienta\footnote{A partir de aquí y en aras de
-facilitar una mejor explicación del entorno \emph{Eclipse}, sólo se
-muestran partes detalladas de cada captura de pantalla.}. Los
-diferentes modelos (CIM, PIM y PSM) y el código se guardan en
-diferentes carpetas cuando se crea un proyecto
-(Fig.~\ref{c1:fig:project}). Se han creado también un par de paletas
-para poder dibujar los diferentes elementos de cada uno de los
-\emph{profiles} definidos (Fig.~\ref{c1:fig:parts}): una paleta para
-el \emph{profile} UML de \emph{i*} en el dominio de los ADs
-(Fig.~\ref{c1:istarpalette}) y otra para el \emph{profile} UML para
-modelado MD (Fig.~\ref{c1:mdpalette}). Además, cada una de las
-transformaciones puede ejecutarse mediante el uso de cada una de las
-opciones del menú \emph{``Transform''}
-(Fig.~\ref{c1:fig:menutransform}).
-
-%Describir: modelo vs diagrama, uso de UML2Tools...
-
-
-%\begin{figure}[h!t]
-%\begin{center}
-%\includegraphics[width=\textwidth]{img/summary/screenshot.png}
-%\end{center}
-%\caption{Captura de pantalla de la herramienta basada en
-%\emph{Eclipse}} \label{c1:fig:screenshot}
-%\end{figure}
-
-
-%\begin{figure}[h!t]
-%\subfigure[Explorador]{
-%\includegraphics[width=0.2\textwidth]{img/summary/project.png}
-%\label{c1:fig:project}} \qquad \qquad \subfigure[Paleta para
-%\emph{i*}]{
-%\includegraphics[width=0.2\textwidth]{img/summary/istarpalette.png}
-%\label{c1:istarpalette}} \qquad \qquad \subfigure[Paleta para MD]{
-%\includegraphics[width=0.2\textwidth]{img/summary/mdpalette.png}
-%\label{c1:mdpalette}}  \caption{Diferentes partes de la herramienta
-%\emph{Eclipse}} \label{c1:fig:parts}
-%\end{figure}
-
-%\begin{figure}[h!t]
-%\begin{center}
-%\includegraphics[width=0.9\textwidth]{img/summary/menuTransform.png}
-%\end{center}
-%\caption{Menú para la ejecución de transformaciones}
-%\label{c1:fig:menutransform}
-%\end{figure}
-
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/WebRed.eps}
+\end{center}
+\caption{Editor gráfico para la especificación de requisitos Web con \emph{i*}.}
+\label{fig:EditorGMF}
+\end{figure}
 
 A continuación, con el fin de ejemplificar el uso de esta
 herramienta, se presenta un caso de estudio basado en el Plan
@@ -651,16 +512,6 @@ crean dos clases \emph{Dimension} y sus jerarquías de clases
 \emph{Base} según los contextos de análisis definidos en el CIM (ver
 Fig.~\ref{c1:pim1_dim1} y Fig.~\ref{c1:pim1_dim2}).
 
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/pim1_fact.pdf}
-%\label{c1:pim1_fact}} \subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/pim1_dim1.pdf}
-%\label{c1:pim1_dim1}} \subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/pim1_dim2.pdf}
-%\label{c1:pim1_dim2}} \caption{PIM inicial} \label{c1:fig:pim1}
-%\end{figure}
-
 El próximo paso es la obtención de un modelo de fuentes de datos y
 su marcado con conceptos MDs (tales como hecho, dimensión, etc.). En
 este caso de estudio existe una implementación de las fuentes de
@@ -676,21 +527,6 @@ el metamodelo relacional de CWM. Una vez que se tiene este modelo,
 se marca cada uno de sus elementos con conceptos MDs. La
 figura~\ref{c1:fig:ds} muestra el modelo de las fuentes de datos del
 caso de estudio.
-
-%Figura donde se muestre las properties para ver que el modelo está marcado...
-
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.22\textwidth]{img/summary/ds1.png}
-%\label{c1:ds1}} \subfigure[]{
-%\includegraphics[width=0.22\textwidth]{img/summary/ds2.png}
-%\label{c1:ds2}} \subfigure[]{
-%\includegraphics[width=0.22\textwidth]{img/summary/ds3.png}
-%\label{c1:ds3}} \subfigure[]{
-%\includegraphics[width=0.22\textwidth]{img/summary/ds4.png}
-%\label{c1:ds4}} \caption{Modelo de las fuentes de datos}
-%\label{c1:fig:ds}
-%\end{figure}
 
 Una vez que se tiene el modelo de las fuentes y el PIM inicial, se
 debe proceder a realizar su reconciliación. Esta reconciliación se
@@ -713,17 +549,6 @@ Fig.~\ref{c1:fig:pim2}, \emph{ExaminationSession}, \emph{Country} y
 la asociación \emph{Rolls-upTo} entre \emph{Degree} y
 \emph{Department} están en color rojo porque no existen elementos
 equivalentes en el modelo de fuentes de datos.
-
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/pim2_fact.pdf}
-%\label{c1:pim2_fact}} \subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/pim2_dim1.pdf}
-%\label{c1:pim2_dim1}} \subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/pim2_dim2.pdf}
-%\label{c1:pim2_dim2}} \caption{PIM anotado con elementos requeridos}
-%\label{c1:fig:pim2}
-%\end{figure}
 
 Una vez se comprueba que el modelo es fidedigno mediante la
 anotación de elementos requeridos, el segundo paso es asegurar la
@@ -762,28 +587,6 @@ Fig.~\ref{c1:fig:pim3_2}, se muestran nuevos elementos en azul que
 forman parte de las fuentes de datos pero no aparecen en el PIM
 inicial.
 
-%Finally, a \emph{Dimension} class \emph{Date} is introduced, since
-%it is always a mandatory requirement for decision makers in MD
-%modeling~\cite{book/Kimball/DW}.
-
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim3_fact.pdf}
-%\label{c1:pim3_fact}} \subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim3_dim1.pdf}
-%\label{c1:pim3_dim1}}  \caption{PIM anotado con elementos
-%suministrados (1/2)} \label{c1:fig:pim3_1}
-%\end{figure}
-
-
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim3_dim2.pdf}
-%\label{c1:pim3_dim2}} \subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim3_dim3.pdf}
-%\label{c1:pim3_dim3}}  \caption{PIM anotado con elementos
-%suministrados (2/2)} \label{c1:fig:pim3_2}
-%\end{figure}
 
 Hasta ahora cada elemento del PIM inicial se ha etiquetado con
 cierto estado (\emph{status}) como \emph{required} o
@@ -798,33 +601,6 @@ tienen en cuenta los elementos cuyo estado es \emph{none} para poder
 derivar el PIM híbrido (ver Fig.~\ref{c1:fig:pim4_1} y
 Fig.~\ref{c1:fig:pim4_2}).
 
-%\begin{figure}[h!t]
-%\begin{center}
-%\includegraphics[width=0.8\textwidth]{img/summary/setStatusNone.png}
-%\end{center}
-%\caption{Fijando el estado de los elementos a \emph{none}}
-%\label{c1:fig:setstatusnone}
-%\end{figure}
-
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim4_fact.pdf}
-%\label{c1:pim4_fact}} \subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim4_dim1.pdf}
-%\label{c1:pim4_dim1}}  \caption{PIM después de eliminar los
-%elementos etiquetados como \emph{required} o \emph{supplied} (1/2)}
-%\label{c1:fig:pim4_1}
-%\end{figure}
-
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim4_dim2.pdf}
-%\label{c1:pim4_dim2}} \subfigure[]{
-%\includegraphics[width=0.4\textwidth]{img/summary/pim4_dim3.pdf}
-%\label{c1:pim4_dim3}}  \caption{PIM después de eliminar los
-%elementos etiquetados como \emph{required} o \emph{supplied} (2/2)}
-%\label{c1:fig:pim4_2}
-%\end{figure}
 
 Una vez que se obtiene el PIM híbrido, el siguiente paso es obtener
 un PSM acorde a una tecnología específica. En este ejemplo, se
