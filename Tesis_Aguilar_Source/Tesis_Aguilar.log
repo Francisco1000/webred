@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=latex 2011.7.7)  11 JUL 2011 18:05
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.7.12)  12 JUL 2011 20:31
 entering extended mode
-**Tesis_Aguilar.tex
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.tex"
+**C:/Users/José*Alfonso/Desktop/Tesis_Aguilar/Tesis_Aguilar.tex
+("C:/Users/José Alfonso/Desktop/Tesis_Aguilar/Tesis_Aguilar.tex"
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -91,24 +91,25 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvips.def"
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
+\Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen124
 \Gin@req@width=\dimen125
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count91
+\c@tracingmulticols=\count92
 \mult@box=\box26
 \multicol@leftmargin=\dimen126
-\c@unbalance=\count92
-\c@collectmore=\count93
-\doublecol@number=\count94
-\multicoltolerance=\count95
-\multicolpretolerance=\count96
+\c@unbalance=\count93
+\c@collectmore=\count94
+\doublecol@number=\count95
+\multicoltolerance=\count96
+\multicolpretolerance=\count97
 \full@width=\dimen127
 \page@free=\dimen128
 \premulticols=\dimen129
@@ -138,8 +139,8 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \@tempa=\box47
 \@tempa=\box48
 \@tempa=\box49
-\c@columnbadness=\count97
-\c@finalcolumnbadness=\count98
+\c@columnbadness=\count98
+\c@finalcolumnbadness=\count99
 \last@try=\dimen131
 \multicolovershoot=\dimen132
 \multicolundershoot=\dimen133
@@ -150,7 +151,7 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks15
 \footnotemargin=\dimen134
-\c@pp@next@reset=\count99
+\c@pp@next@reset=\count100
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -168,15 +169,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count100
-\calc@Bcount=\count101
+\calc@Acount=\count101
+\calc@Bcount=\count102
 \calc@Adimen=\dimen135
 \calc@Bdimen=\dimen136
 \calc@Askip=\skip45
 \calc@Bskip=\skip46
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count102
+\calc@Ccount=\count103
 \calc@Cskip=\skip47
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
@@ -193,7 +194,7 @@ Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode not detected.
+Package ifpdf Info: pdfTeX in pdf mode detected.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -201,8 +202,9 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -213,21 +215,13 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
 File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\ppnull.def"
-File: ppnull.def 2011/03/10 v0.4n Pdfpages dummy driver (AM)
-
-
-Package pdfpages Warning: I will use a dummy \includepdf command
-(pdfpages)                which will NOT insert any pages, because
-(pdfpages)                you are producing DVI output.
-
-))
+)
 \AM@pagebox=\box52
 \AM@toc@title=\toks16
-\c@AM@survey=\count103
+\c@AM@survey=\count104
 \AM@templatesizebox=\box53
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -239,10 +233,10 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigbottomskip=\skip50
 \subfigcapmargin=\dimen138
 \subfiglabelskip=\skip51
-\c@subfigure=\count104
-\c@lofdepth=\count105
-\c@subtable=\count106
-\c@lotdepth=\count107
+\c@subfigure=\count105
+\c@lofdepth=\count106
+\c@subtable=\count107
+\c@lotdepth=\count108
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -269,9 +263,9 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count108
-\Gm@cntv=\count109
-\c@Gm@tempcnt=\count110
+\Gm@cnth=\count109
+\Gm@cntv=\count110
+\c@Gm@tempcnt=\count111
 \Gm@bindingoffset=\dimen139
 \Gm@wd@mp=\dimen140
 \Gm@odd@mp=\dimen141
@@ -293,10 +287,70 @@ Writing index file Tesis_Aguilar.idx
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.aux"
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\dedic.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\ack.aux")
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\ack_eng.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\pref.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part1.aux")
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter1.aux"))
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter1.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part2.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter3.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter4.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter5.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter6.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part3.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\appendix1.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\appendix2.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\referenc.aux"
+
+LaTeX Warning: Label `impact' multiply defined.
+
+
+LaTeX Warning: Label `ECLIPSE' multiply defined.
+
+
+LaTeX Warning: Label `escalona2004developing' multiply defined.
+
+
+LaTeX Warning: Label `EscalonaK04' multiply defined.
+
+
+LaTeX Warning: Label `Garrigos09' multiply defined.
+
+
+LaTeX Warning: Label `GomezOOH' multiply defined.
+
+
+LaTeX Warning: Label `Koch02' multiply defined.
+
+
+LaTeX Warning: Label `KochTypesOfReq' multiply defined.
+
+
+LaTeX Warning: Label `KochModelTRans' multiply defined.
+
+
+LaTeX Warning: Label `ATL' multiply defined.
+
+
+LaTeX Warning: Label `Lindvall' multiply defined.
+
+
+LaTeX Warning: Label `MDA' multiply defined.
+
+
+LaTeX Warning: Label `OMG' multiply defined.
+
+
+LaTeX Warning: Label `OOWS2001' multiply defined.
+
+
+LaTeX Warning: Label `OOWSMDA' multiply defined.
+
+
+LaTeX Warning: Label `UML' multiply defined.
+
+
+LaTeX Warning: Label `Yu95' multiply defined.
+
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
@@ -309,7 +363,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
-\AtBeginShipoutBox=\box54
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen147
+\scratchbox=\box54
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen148
+\MPnumerator=\count116
+\everyMPtoPDFconversion=\toks21
+)
+\AtBeginShipoutBox=\box55
 
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -350,8 +417,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--65
  []
 
 [1
+Non-PDF special ignored!
 
-] [2
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2
 
 
 ] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\dedic.tex") [5
@@ -368,29 +437,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
 ) [7]
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\ack_eng.tex" [8
-
-
-
-
-]) [9]
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\pref.tex" [10
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\pref.tex" [8
 
 
 
 
 ]
 
-LaTeX Warning: Reference `c2' on page XI undefined on input line 17.
+LaTeX Warning: Reference `c2' on page IX undefined on input line 17.
 
-) [11] [12
+) [9] [10
 
 
 
 ] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.toc")
 \tf@toc=\write4
 
-[13] [14
+[11] [12
 
 
 ] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part1.tex" [1
@@ -403,46 +466,18 @@ Chapter 1.
 
 LaTeX Warning: Reference `c2' on page 3 undefined on input line 29.
 
-
-LaTeX Warning: Reference `p2' on page 3 undefined on input line 29.
-
-
-LaTeX Warning: Reference `p3' on page 3 undefined on input line 29.
-
 [3
 
 
 
 
-]
-
-LaTeX Warning: Reference `c3' on page 4 undefined on input line 38.
-
-
-LaTeX Warning: Reference `c4' on page 4 undefined on input line 44.
-
-
-LaTeX Warning: Reference `c5' on page 4 undefined on input line 50.
-
-[4]
-
-LaTeX Warning: Reference `c6' on page 5 undefined on input line 57.
-
-
-LaTeX Warning: Reference `a1' on page 5 undefined on input line 71.
-
-
-LaTeX Warning: Reference `c3' on page 5 undefined on input line 75.
-
+] [4]
 
 LaTeX Warning: Reference `a3' on page 5 undefined on input line 77.
 
-
-LaTeX Warning: Reference `c4' on page 5 undefined on input line 82.
-
 [5]
 Overfull \hbox (3.17659pt too wide) in paragraph at lines 101--102
-[][]\OT1/cmr/m/n/10 Una Prop-uesta Ori-en-tada a Ob-je-tivos para el Analisis
+[]\OT1/cmr/m/n/10 Una Prop-uesta Ori-en-tada a Ob-je-tivos para el Analisis
  []
 
 [6]
@@ -454,166 +489,3358 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
  [7]
-File: img/approach.eps Graphic file (type eps)
 
-<img/approach.eps> [8]
+! LaTeX Error: Unknown graphics extension: .eps.
 
-LaTeX Warning: Reference `c4' on page 9 undefined on input line 164.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 ...cs[width=0.6\textwidth]{img/approach.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
+[8]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 166.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 166.
 
-LaTeX Warning: Reference `a1' on page 9 undefined on input line 166.
 
-File: img/iactor.eps Graphic file (type eps)
-<img/iactor.eps>
-File: img/goal.eps Graphic file (type eps)
- <img/goal.eps>
-File: img/task.eps Graphic file (type eps)
- <img/task.eps>
-File: img/resource.eps Graphic file (type eps)
- <img/resource.eps>
-File: img/means-end.eps Graphic file (type eps)
+! LaTeX Error: Unknown graphics extension: .eps.
 
-<img/means-end.eps>
-File: img/decomposition.eps Graphic file (type eps)
- <img/decomposition.eps>
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 ...cludegraphics[height=3mm]{img/iactor.eps}
+                                                  ) & Es una entidad que lle...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 ...includegraphics[height=3mm]{img/goal.eps}
+                                                  ) & Representa una condici...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 ...includegraphics[height=3mm]{img/task.eps}
+                                                  ) & Representa una manera ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 ...udegraphics[height=3mm]{img/resource.eps}
+                                                  ) & Es una entidad que deb...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...degraphics[height=3mm]{img/means-end.eps}
+                                                  ) & Son asociaciones que d...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...aphics[height=3mm]{img/decomposition.eps}
+                                                  ) & Son asociaciones que d...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 Overfull \hbox (5.99998pt too wide) in paragraph at lines 190--202
-[][][] 
+[][] 
  []
 
 [9]
-File: img/SeccionRequisitosWebMetamodelo.eps Graphic file (type eps)
- <img/SeccionRequisitosWebMetamodelo.eps> [10]
-File: img/NavigationalMetamodelFormal.eps Graphic file (type eps)
 
-<img/NavigationalMetamodelFormal.eps> [11]
-File: img/content2domainclass.eps Graphic file (type eps)
- <img/content2domainclass.eps>
-[12]
-File: img/service2operation.eps Graphic file (type eps)
- <img/service2operation.eps>
-File: img/navigation2relationship.eps Graphic file (type eps)
- <img/navigation2relationship.eps> [13]
-File: img/navigation2relationship.eps Graphic file (type eps)
+! LaTeX Error: Unknown graphics extension: .eps.
 
-<img/navigation2relationship.eps> [14] [15]
-File: img/WeavingMetamodel.eps Graphic file (type eps)
- <img/WeavingMetamodel.eps> [16]
-File: img/content2domainclass.eps Graphic file (type eps)
-
-<img/content2domainclass.eps> [17]
-File: img/WebRequirementsMetamodel.eps Graphic file (type eps)
- <img/WebRequirementsMetamodel.eps>
-File: img/NavigationalMetamodel.eps Graphic file (type eps)
-
-<img/NavigationalMetamodel.eps> [18]
-File: img/WebRed.eps Graphic file (type eps)
- <img/WebRed.eps> [19]
-
-LaTeX Warning: Reference `c1:fig:cim' on page 20 undefined on input line 487.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 ...]{img/SeccionRequisitosWebMetamodelo.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 20 undefined on input 
-line 506.
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 ...dth]{img/NavigationalMetamodelFormal.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[10] [11]
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 ...6\textwidth]{img/content2domainclass.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `c1:fig:pim1' on page 20 undefined on input line 509.
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.283 ...0.6\textwidth]{img/service2operation.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Reference `c1:pim1_fact' on page 20 undefined on input line 511.
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.291 ...xtwidth]{img/navigation2relationship.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 ...xtwidth]{img/navigation2relationship.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[12] [13]
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.349 ...dth=\textwidth]{img/WeavingMetamodel.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 ...=\textwidth]{img/content2domainclass.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[14]
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.391 ...8\textwidth]{img/content2domainclass.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[15]
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437 ...8\textwidth]{img/content2domainclass.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[16]
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.466 ...twidth]{img/WebRequirementsMetamodel.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.488 ...textwidth]{img/NavigationalMetamodel.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[17]
+
+! LaTeX Error: Unknown graphics extension: .eps.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.507 ...raphics[width=\textwidth]{img/WebRed.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `DBLP:conf/er/MazonPT07' on page 18 undefined on input 
+line 516.
+
+
+LaTeX Warning: Reference `c1:fig:pim1' on page 18 undefined on input line 519.
+
+
+LaTeX Warning: Reference `c1:pim1_fact' on page 18 undefined on input line 521.
 
 
 
-LaTeX Warning: Reference `c1:pim1_dim1' on page 20 undefined on input line 514.
+LaTeX Warning: Reference `c1:pim1_dim1' on page 18 undefined on input line 524.
 
 
 
-LaTeX Warning: Reference `c1:pim1_dim2' on page 20 undefined on input line 514.
+LaTeX Warning: Reference `c1:pim1_dim2' on page 18 undefined on input line 524.
 
 
 
-LaTeX Warning: Reference `c1:fig:ds' on page 20 undefined on input line 539.
+LaTeX Warning: Reference `c1:fig:ds' on page 18 undefined on input line 539.
 
+[18]
 
-LaTeX Warning: Reference `c1:fig:menutransform' on page 20 undefined on input l
-ine 565.
+LaTeX Warning: Citation `DBLP:conf/dolap/RizziALT06' on page 19 undefined on in
+put line 557.
 
-
-LaTeX Warning: Reference `c1:fig:pim2' on page 20 undefined on input line 574.
-
-[20]
-
-LaTeX Warning: Reference `c1:fig:menutransform' on page 21 undefined on input l
-ine 614.
-
-
-LaTeX Warning: Reference `c1:fig:pim3_1' on page 21 undefined on input line 622
-.
-
-
-LaTeX Warning: Reference `c1:fig:pim3_2' on page 21 undefined on input line 623
-.
-
-
-LaTeX Warning: Reference `c1:fig:setstatusnone' on page 21 undefined on input l
-ine 655.
-
-
-LaTeX Warning: Reference `c1:fig:pim4_1' on page 21 undefined on input line 660
-.
-
-
-LaTeX Warning: Reference `c1:fig:pim4_2' on page 21 undefined on input line 661
-.
-
-
-LaTeX Warning: Citation `book/Kimball/DW' on page 21 undefined on input line 69
-4.
-
-
-LaTeX Warning: Reference `c1:fig:psm' on page 21 undefined on input line 699.
-
-
-LaTeX Warning: Reference `c1:fig:codesql' on page 21 undefined on input line 71
-3.
-
-
-LaTeX Warning: Reference `c1:fig:codeolap' on page 21 undefined on input line 7
-15.
-
-[21]
-
-LaTeX Warning: Citation `DBLP:conf/dolap/RizziALT06' on page 22 undefined on in
-put line 747.
-
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.bbl" [22
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.bbl" [19
 
 ]))
-[23] [24
+[20] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part2.tex" [21
 
 
 
-] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.aux"
+
+] [22])
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter3.tex"
+Chapter 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 13.
+
+! Package pdfpages Error: Cannot find file `WEBIST2010.pdf'.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 1 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 1 pages.
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 4 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 4 pages.
+
+[23
+
+
+
+
+]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[24]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[25]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[26]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[27]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...penright=true,pages={1-4}]{WEBIST2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[28]) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter4.tex"
+Chapter 3.
+
+Underfull \hbox (badness 3281) in paragraph at lines 13--13
+[]|\OT1/cmr/m/it/9 The con-tent of this chap-ter cor-re-sponds with the fol-low
+-ing
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 13--13
+\OT1/cmr/m/it/9 pub-li-ca-tion: \OT1/cmr/bx/it/9 J.A. Aguilar, I. Gar-rigos, J
+.-N. Mazon, J.
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 13--13
+\OT1/cmr/bx/it/9 Anal-y-sis in Web En-gi-neer-ing. Jour-nal of Uni-ver-sal
+ []
+
+
+! Package pdfpages Error: Cannot find file `JUCS2010.pdf'.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+(That was another \errmessage.)
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 1 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 1 pages.
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 20 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 20 pages.
+
+[29
+
+
+
+
+]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[30]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[31]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[32]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[33]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[34]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[35]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[36]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[37]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[38]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[39]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[40]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[41]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[42]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[43]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[44]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[45]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[46]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[47]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[48]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[49]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...openright=true,pages={1-20}]{JUCS2010.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[50]) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter5.tex"
+Chapter 4.
+
+Underfull \hbox (badness 3281) in paragraph at lines 14--14
+[]|\OT1/cmr/m/it/9 The con-tent of this chap-ter cor-re-sponds with the fol-low
+-ing
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 14--14
+\OT1/cmr/m/it/9 pub-li-ca-tion: \OT1/cmr/bx/it/9 J.A. Aguilar, I. Gar-rigos, J
+.-N. Mazon.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\OT1/cmr/bx/it/9 En-gi-neer-ing. The 11th In-ter-na-tional Con-fer-ence on
+ []
+
+
+! Package pdfpages Error: Cannot find file `ICCSA2011.pdf'.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+(That was another \errmessage.)
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 1 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 1 pages.
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 15 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 15 pages.
+
+[51
+
+
+
+
+]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[52]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[53]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[54]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[55]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[56]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[57]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[58]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[59]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[60]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[61]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[62]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[63]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[64]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[65]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[66]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 ...penright=true,pages={1-15}]{ICCSA2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[67]) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter6.tex" [68
+
+
+
+
+]
+Chapter 5.
+
+Underfull \hbox (badness 1454) in paragraph at lines 13--13
+\OT1/cmr/bx/it/9 Web Ap-pli-ca-tions. The 8th th In-ter-na-tional Work-shop
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 13--13
+\OT1/cmr/bx/it/9 on Web In-for-ma-tion Sys-tems Mod-el-ing (WISM 2011),
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 13--13
+\OT1/cmr/bx/it/9 held in con-junc-tion with the In-ter-na-tional Con-fer-ence
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 13--13
+\OT1/cmr/bx/it/9 on Con-cep-tual Mod-el-ing (ER 2011), 31 Oc-to-ber - 03
+ []
+
+
+! Package pdfpages Error: Cannot find file `AguilarWISM2011.pdf'.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+(That was another \errmessage.)
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 1 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 1 pages.
+
+! Undefined control sequence.
+\AM@checkpagenumber #1->\ifnum #1>\AM@pagecount 
+                                                \relax \ifthenelse {\boolean...
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! Package pdfpages Error: page 10 of `\AM@currentdocname ' does not exist.
+
+See the pdfpages package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+You have set a wrong page number in the `pages' option. Document 
+`\AM@currentdocname ' does not have 10 pages.
+
+[69]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[70]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[71]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[72]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[73]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[74]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[75]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[76]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[77]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[78]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[79]
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package pdftex.def Error: File `\AM@currentdocname .png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...ht=true,pages={1-10}]{AguilarWISM2011.pdf}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[80]) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part3.tex" [81
+
+
+
+
+] [82])
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\appendix1.tex"
+Appendix A.
+
+Underfull \hbox (badness 1014) in paragraph at lines 12--12
+[]|\OT1/cmr/m/it/9 The con-tent of this ap-pendix has been sub-mit-ted to \OT1/
+cmr/m/n/9 XXXXX
+ []
+
+[83
+
+
+
+
+]
+<papers/apendice/AguilarElsevier2010.pdf, id=317, page=1, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 1>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 1>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 1>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 1> [84]
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 1>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 1>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 1> [85 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=356, page=2, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 2>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 2>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 2> [86 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=365, page=3, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 3>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 3>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 3> [87 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=370, page=4, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 4>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 4>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 4> [88 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=374, page=5, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 5>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 5>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 5> [89 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=383, page=6, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 6>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 6>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 6> [90 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=392, page=7, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 7>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 7>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 7> [91 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=401, page=8, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 8>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 8>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 8> [92 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=405, page=9, 597.51233pt x 845.047
+1pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 9>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 9>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 9> [93 <C:/Users/José Alfons
+o/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=410, page=10, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 10>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 10>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 10> [94 <C:/Users/José Alfon
+so/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=414, page=11, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 11>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 11>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 11> [95 <C:/Users/José Alfon
+so/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=418, page=12, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 12>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 12>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 12> [96 <C:/Users/José Alfon
+so/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=422, page=13, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 13>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 13>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 13> [97 <C:/Users/José Alfon
+so/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=426, page=14, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 14>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 14>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 14> [98 <C:/Users/José Alfon
+so/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=430, page=15, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 15>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 15>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 15> [99 <C:/Users/José Alfon
+so/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=441, page=16, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 16>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 16>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 16> [100 <C:/Users/José Alfo
+nso/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=445, page=17, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 17>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 17>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 17> [101 <C:/Users/José Alfo
+nso/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=455, page=18, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 18>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 18>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 18> [102 <C:/Users/José Alfo
+nso/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=459, page=19, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 19>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 19>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 19> [103 <C:/Users/José Alfo
+nso/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>]
+<papers/apendice/AguilarElsevier2010.pdf, id=463, page=20, 597.51233pt x 845.04
+71pt>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarElsevier2010.pdf, page 20>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 20>
+File: papers/apendice/AguilarElsevier2010.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarElsevier2010.pdf, page 20> [104 <C:/Users/José Alfo
+nso/Desktop/Tesis_Aguilar/papers/apendice/AguilarElsevier2010.pdf>])
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\appendix2.tex"
+Appendix B.
+
+Underfull \hbox (badness 4193) in paragraph at lines 12--12
+[]|\OT1/cmr/m/it/9 The con-tent of this ap-pendix has been sub-mit-ted to \OT1/
+cmr/m/n/9 12th
+ []
+
+[105
+
+
+
+
+]
+<papers/apendice/AguilarWISE2011.pdf, id=473, page=1, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 1>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 1>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 1>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 1> [106]
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 1>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 1>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 1> [107 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=524, page=2, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 2>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 2>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 2> [108 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=533, page=3, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 3>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 3>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 3> [109 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=542, page=4, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 4>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 4>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 4> [110 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=580, page=5, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 5>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 5>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 5> [111 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=591, page=6, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 6>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 6>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 6> [112 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=612, page=7, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 7>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 7>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 7> [113 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=616, page=8, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 8>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 8>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 8> [114 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=630, page=9, 597.51233pt x 845.0471pt>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+<use papers/apendice/AguilarWISE2011.pdf, page 9>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 9>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 9> [115 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=634, page=10, 597.51233pt x 845.0471pt
+>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarWISE2011.pdf, page 10>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 10>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 10> [116 <C:/Users/José Alfonso/
+Desktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=654, page=11, 597.51233pt x 845.0471pt
+>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarWISE2011.pdf, page 11>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 11>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 11> [117 <C:/Users/José Alfonso/
+Desktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=659, page=12, 597.51233pt x 845.0471pt
+>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarWISE2011.pdf, page 12>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 12>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 12> [118 <C:/Users/José Alfonso/
+Desktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=669, page=13, 597.51233pt x 845.0471pt
+>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarWISE2011.pdf, page 13>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 13>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 13> [119 <C:/Users/José Alfonso/
+Desktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>]
+<papers/apendice/AguilarWISE2011.pdf, id=680, page=14, 597.51233pt x 845.0471pt
+>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+ <use papers/apendice/AguilarWISE2011.pdf, page 14>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 14>
+File: papers/apendice/AguilarWISE2011.pdf Graphic file (type pdf)
+
+<use papers/apendice/AguilarWISE2011.pdf, page 14> [120 <C:/Users/José Alfonso/
+Desktop/Tesis_Aguilar/papers/apendice/AguilarWISE2011.pdf>])
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\referenc.tex"
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.bbl")) [121
+
+
+
+
+]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.ind")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\Tesis_Aguilar.aux"
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\dedic.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\ack.aux")
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\ack_eng.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\pref.aux")
 ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part1.aux")
-("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter1.aux"))
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter1.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part2.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter3.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter4.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter5.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter6.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\part3.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\appendix1.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\appendix2.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\referenc.aux"))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3399 strings out of 494020
- 48098 string characters out of 3146501
- 128539 words of memory out of 3000000
- 6584 multiletter control sequences out of 15000+200000
- 9573 words of font info for 34 fonts, out of 3000000 for 9000
+ 4007 strings out of 494019
+ 61538 string characters out of 3146477
+ 142615 words of memory out of 3000000
+ 7107 multiletter control sequences out of 15000+200000
+ 13454 words of font info for 46 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 37i,11n,39p,184190b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,18n,47p,1654b,405s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/txfonts/rtcxr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfon
+ts/rtxb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/rtxbi.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/rtxi.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/txfonts/txsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Tesis_Aguilar.pdf (131 pages, 1884009 bytes).
+PDF statistics:
+ 751 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on Tesis_Aguilar.dvi (36 pages, 125612 bytes).

@@ -382,7 +382,65 @@ De esta forma se ha definido formalmente la regla de transformación \emph{Create
 
 Los requisitos evolucionan constantemente a razón de la naturaleza dinámica de la Web. Debido a esto, es común encontrar inconsistencias entre los modelos conceptuales de la aplicación Web y los requisitos. Una de las ventajas ofrecidas por el soporte para trazabilidad en A-OOH es el de conocer las dependencias entre los elementos de los modelos conceptuales y los requisitos. Por tanto, es posible conocer los requisitos afectados debido a un cambio en alguno de los modelos conceptuales. Análisis de impacto (\emph{Change Impact Analysis}) es la tarea de identificar las consecuencias potenciales de un cambio o estimar qué es necesario modificar para llevar a cabo el cambio \cite{impact}. Comúnmente, el análisis de impacto se ha realizado de forma intuitiva por los diseñadores de la aplicación Web por medio de un análisis superficial del código y documentación de la aplicación. Esto quizá sea suficiente para aplicaciones Web no muy grandes, pero no es suficientes para aplicaciones Web sofisticadas. Asímismo, investigación empirica demuestra que, incluso los desarrolladores más experimentados deducen un análisis de impacto incompleto \cite{Lindvall}.
 
-Para paliar esta limitante, se ha definido un algoritmo para analizar las dependencias entre los requisitos funcionales. El algoritmo analiza el modelo de requisitos A-OOH para conocer las dependencias entre los requisitos funcionales además de saber qué requisitos no funcionales se ven afectados. De esta forma, a través del soporte para trazabilidad es posible conocer que otros elementos de los modelos conceptuales son afectados. Finalmente, debido a que el modelo de requisitos A-OOH es orientado a objetivos, el algoritmo puede mostrar al diseñador un camino alternativo en el cual se indique qué requisitos tienen que ser implementados para seguir cumpliento con el objetivo (\emph{Goal}).
+Para paliar esta limitante, se ha definido un algoritmo para analizar las dependencias entre los requisitos funcionales. El algoritmo analiza el modelo de requisitos A-OOH para conocer las dependencias entre los requisitos funcionales además de saber qué requisitos no funcionales se ven afectados. De esta forma, a través del soporte para trazabilidad es posible conocer que otros elementos de los modelos conceptuales son afectados. Finalmente, debido a que el modelo de requisitos A-OOH es orientado a objetivos, el algoritmo puede mostrar al diseñador un camino alternativo en el cual se indique qué requisitos tienen que ser implementados para seguir cumpliento con el objetivo (\emph{Goal}). A continuación se presenta un ejemplo de la aplicación del algoritmo.
+
+El cliente ha solicitado la implementación de una aplicación Web que permita la aplicación de encuestas \emph{on-line}. En primer lugar es necesario que el diseñador especifique los requisitos de la aplicación Web, para esta demostración, solo se ha definido el actor que representa a la aplicación Web (Figura \ref{fig:req1iccsa}). 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/content2domainclass.eps}
+\end{center}
+\caption{El modelo de requisitos de la aplicación \emph{``Survey WebApp''}.}
+\label{fig:req1iccsa}
+\end{figure}
+
+El actor ``\emph{Survey WebApp}'' tiene que cumplir con el objetivo ``\emph{Survey be performed}'', para lograrlo dispone de dos vías, por medio de la aplicación de la encuesta pública ``\emph{Public survey}'' y la privada ``\emph{Private survey}'', ambos requisitos de navegación. Cada una de las vías necesita de uno o más requisitos para cumplirse, tal es el caso del requisito ``\emph{Private survey}'' debido a que necesita de los requisitos de navegación ``\emph{Make private survey}'' y ``\emph{Viewsurvey}'' así como del requisito de contenido ``\emph{Registered users}''. Algunos de los requisitos afectan positiva o negativamente a los requisitos no-funcionales especificados, por ejemplo, el requisito navegacional ``\emph{Private survey}'' afecta positivame al requisito no-funcional ``\emph{Security}''. El tipo de contribuciones que realizan los requisitos funcionales a los requisitos no-funcionales es relevante para la ejecución del algoritmo ya que son utilizadas para decidir qué requisitos funcionales será necesario implementar. En este ejemplo, solo los requisitos relacionados con el requisito de navegación ``\emph{Public survey}'' se encuentran implementados en los modelos conceptuales.
+
+Ahora bien, supongamos el siguiente escenario: el desarrollador Web elimina un elemento del modelo de dominio A-OOH, gracias al soporte para trazabilidad de A-OOH es posible conocer el requisito afectado por la clase del modelo de dominio que ha sido eliminada, la clase corresponde con el requisito navegacional ``\emph{Public survey}''. Por tanto, el objetivo ``\emph{Survey be performed}'' no se puede cumplir. Por tal motivo, es necesario conocer:
+\begin{itemize}
+	\item ¿Cuáles requisitos son afectados por este cambio en el modelo de requisitos?
+	\item ¿Cuáles elementos de los modelos conceptuales son afectados?
+\end{itemize}
+Por último, es necesario encontrar un camino alternativo en el modelo de requisitos (si es que existe) para continuar cumpliendo con el objetivo ``\emph{Survey be performed}''.
+
+El algoritmo inicia una vez que se han cumplido un conjunto de pre-condiciones, las cuales pueden consultarse con detalle en el Capítulo \ref{c5}. El primer paso del algoritmo consiste en realizar un listado de todos aquellos requisitos funcionales que se encuentren implementados o no (en este caso, reflejados en el modelo de dominio), y que además realicen alguna contribución positiva o negativa a cualquier requisito no-funcional. De tal forma que el listado quedará como lo muestra la Tabla \ref{tab:listaElementosIntencionales}. El requisito afectado se muestra resaltado en negritas. Con el listado generado y el soporte para trazabilidad de A-OOH es posible saber qué elementos del modelo conceptual de dominio resultan afectados por la eliminación del requisito navegacional ``\emph{Public survey}''.
+
+\begin{table}
+ \centering
+\tiny %\addtolength{\tabcolsep}{-5pt}
+ \caption{La contribución de los requisitos funcionales a cada requisito no-funcional.}\label{tab:listaElementosIntencionales}
+\begin{tabular}{| l | c| c | c |}
+\hline
+\textbf{Requirements} &
+\textbf{\emph{``Process easier''}} &
+\textbf{\emph{``Complete info''}} &
+\textbf{\emph{``Security''}}
+\\
+\hline
+  \textbf{\emph{``Public Survey''}} & \textbf{Help} & \textbf{-} & \textbf{Hurt} \\
+  \emph{``Make Survey''} & - & Break & - \\
+  \emph{``Private Survey''} & Some- & - & Some+ \\
+  \emph{``Send Survey''} & - & - & Some-\\
+  \emph{``View Surveys''} & - & Make & -\\
+  \emph{``Send Private Survey''} & - & - & Help \\
+\hline
+\end{tabular}
+\end{table}
+
+El siguiente paso consiste en determinar un camino alternativo para la satisfacción del objetivo de la aplicación (``\emph{Survey be performed}''). Por cada requisito no-funcional que recibe una contribución por parte del requisito a remover (Tabla \ref{tab:listaElementosIntencionales}) es necesario buscar un requisito no implementado del cual su contribución compense la eliminación del requisito a remover. En este caso el requisito navegacional \emph{``Private Survey''} realiza dos contribuciones a los requisitos no-funcionales \emph{``Process easier''} y\emph{``Security''}, por lo tanto se puede implementar. Para poder determinar si el requisito se puede implementar o no, es necesario aplicar un conjunto de heurísticas (Capítulo \ref{c5}). El requisito navegacional \emph{``Private Survey''} se puede implementar gracias a las heurísticas número 2 y 3. Este paso es iterativo y finaliza cuando no hay más requisitos (no implementados) que realicen contribuciones a los requisitos no-funcionales. En este caso finaliza cuando es detectado el requisito navegacional \emph{``Send Private Survey''}. 
+
+Finalmente, es necesario aplicar una post-condición, la cual establece que si los requisitos a implementar (\emph{``Private Survey''} y \emph{``Send Private Survey''}) tienen uno o más requisitos asociados, estos requisitos deben ser implementadas de forma automática. Por tanto, los requisitos \emph{``View Surveys''} y \emph{``Registered Users''} deben de ser implementados. En la Figura \ref{fig:req2iccsa} se muestran los requisitos a implementar.
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/content2domainclass.eps}
+\end{center}
+\caption{Los nuevos requisitos a implementar en el modelo de dominio.}
+\label{fig:req2iccsa}
+\end{figure}
+
+
 
 
 \subsubsection{Alternativas de Diseño en A-OOH considerando a los Requisitos No-Funcionales}
@@ -391,7 +449,10 @@ Como se ha motivado anteriormente, las aplicaciones Web tienen una audiencia amp
 
 En A-OOH se ha implementado el algoritmo Frontera de Pareto para proveer al diseñador con un conjunto de alternativas de diseño basadas en la prioridad de los requisitos no-funcionales. Para esto, el diseñador establecerá una lista de requisitos no-funcionales, a continuación, el algoritmo obtendrá todas las posibles configuraciones de entre las cuales el diseñador seleccionará aquella que maximice o balancee los requisitos no-funcionales establecidos previamente.
 
-\subsection{Implementación}
+\section{Web 2.0: \emph{Rich Internet Applications}}
+\label{c1:rias}
+
+\section{Implementación}
 \label{c1:implementation}
 
 La propuesta definida en esta tesis doctoral se ha implementado en la plataforma de desarrollo \emph{Eclipse}~\cite{ECLIPSE} utilizando tecnología EMF (\emph{Eclipse Modeling Framework}) (CITA) y GMF (\emph{Graphical Modeling Framework}) (CITA). \emph{Eclipse} puede extenderse por medio de \emph{plugins} con el fin de añadir más características y nuevas funcionalidades. Se ha desarrollado un \emph{plugin} que da soporte a cada parte de la propuesta. Este nuevo plugin contiene los siguientes módulos:
@@ -449,56 +510,6 @@ El primer paso consiste en la especificación de los requisitos para la aplicació
 \label{fig:EditorGMF}
 \end{figure}
 
-A continuación, con el fin de ejemplificar el uso de esta
-herramienta, se presenta un caso de estudio basado en el Plan
-Estratégico de Formación de la Universidad de Alicante
-(\url{http://www.ua.es/es/presentacion/pe/psec/formacion/index.html}).
-Este plan determina los ejes, los objetivos y las acciones
-necesarias para articular una oferta formativa de calidad. En
-concreto, tras el análisis de este plan, el caso de estudio se
-centra en el desarrollo de un AD que apoye la toma de decisiones en
-el proceso de evaluación (\emph{``Assessment''}) en la Universidad
-de Alicante. En este proceso está implicado un actor principal, el
-\emph{``education manager''}, mediante el objetivo estratégico
-\textit{``provide a good education program''}. A partir de este
-objetivo se obtienen tres objetivos decisionales diferentes:
-\textit{``adapt education program to demand''}, \textit{``achieve
-international recognition''} y \textit{``having renowned program''}.
-Los objetivos informacionales derivados de estos objetivos
-decisionales son: \textit{``evaluate environment demand''},
-\textit{``analyze international impact''} y \textit{``study student
-performance''}. A partir de estos objetivos informacionales se
-pueden obtener los requisitos de información como tareas:
-\textit{``percentage of students per city and province''},
-\textit{``percentage of foreign students''}, \textit{``average of
-passed examination sessions by subject, degree and department''}.
-Una vez hecho esto, se debe determinar las medidas y los contextos
-de análisis y asociarlos a los requisitos de información como
-recursos: la única medida es \textit{``examination session''} y los
-elementos que representan contextos de análisis son
-\textit{``student''}, \textit{``city''}, \textit{``province''},
-\textit{``country''}, \textit{``subject''}, \textit{``degree''} y
-\textit{``department''}. Parte de estos contextos de análisis
-(\textit{``student''} y \textit{``subject''}) pueden agregarse, por
-lo que se relacionan con otros contextos.
-
-Cada uno de estos elementos se define en un CIM mediante el
-\emph{profile} UML de \emph{i*} (Fig.~\ref{c1:fig:cim}).
-
-%\begin{figure}[h!t]
-%\begin{center}
-%\includegraphics[width=\textwidth]{img/summary/cim.pdf}
-%\end{center}
-%\caption{CIM del caso de estudio} \label{c1:fig:cim}
-%\end{figure}
-
-De manera resumida, para definir apropiadamente un CIM con \emph{i*}
-se deben realizar los siguientes pasos: (i) descubrir los actores
-(usuarios del AD), (ii) descubrir sus objetivos (estratégicos,
-decisionales e informacionales), (iii) derivar requisitos de
-información de los objetivos informacionales y (iv) obtener las
-medidas y el contexto de análisis relacionados con los requisitos de
-información.
 
 Con el fin de automatizar el paso del CIM al PIM, se ha desarrollado
 una serie de reglas de transformación
@@ -528,121 +539,6 @@ se marca cada uno de sus elementos con conceptos MDs. La
 figura~\ref{c1:fig:ds} muestra el modelo de las fuentes de datos del
 caso de estudio.
 
-Una vez que se tiene el modelo de las fuentes y el PIM inicial, se
-debe proceder a realizar su reconciliación. Esta reconciliación se
-ha implementado en tres pasos siguiendo las formas normales
-multidimensionales. Primero, con el fin de asegurar que el PIM es
-fidedigno, para cada una de sus dependencias funcionales (FD) se
-comprueba que existe una FD equivalente en el modelo de las fuentes
-de datos, es decir, las FDs del modelo MD deben ser un subconjunto
-de aquellas observadas en las fuentes de datos. La opción
-\emph{``Required Annotation''} (ver Fig.~\ref{c1:fig:menutransform})
-ejecuta una serie de reglas para hallar las FDs del PIM y comprobar
-que esas mismas FDs ocurren en el modelo de las fuentes de datos. Si
-esta comprobación falla, entonces el estado (\emph{status}) de los
-elementos involucrados se etiqueta como \emph{required} y se
-colorean en \emph{rojo} para indicar que estos elementos aparecen en
-el PIM inicial pero no tienen equivalente en el modelo de fuentes de
-datos (es decir, son requeridos por el usuario pero las fuentes de
-datos no los suministran). Por ejemplo, en la
-Fig.~\ref{c1:fig:pim2}, \emph{ExaminationSession}, \emph{Country} y
-la asociación \emph{Rolls-upTo} entre \emph{Degree} y
-\emph{Department} están en color rojo porque no existen elementos
-equivalentes en el modelo de fuentes de datos.
-
-Una vez se comprueba que el modelo es fidedigno mediante la
-anotación de elementos requeridos, el segundo paso es asegurar la
-completitud del modelo. Se debe realizar una comprobación de las
-siguientes condiciones:
-
-\begin{itemize}
-\item Las FDs entre niveles de dimensión que aparezcan en las
-fuentes de datos deben representarse como asociaciones
-\emph{Rolls-upTo} en el modelo MD. De lo contrario, el potencial de
-análisis se pierde (\emph{completitud de agregación}).
-\item Las FDs entre conjuntos de medidas que se encuentran en las
-fuentes de datos deben representarse mediante fórmulas de
-derivación. De otra manera, se perderían estas relaciones en el
-modelo MD (\emph{completitud de derivación}).
-\item Cada medida (\emph{FactAttribute}) se debe asignar a un hecho (clase
-\emph{Fact}) de tal manera que los niveles terminales de dimensión
-(clase \emph{Dimension}) determinen funcionalmente y sin
-dependencias transitivas a la medida. De otro modo, la medida se
-guarda de manera redundante en un nivel de detalle ``erróneo''
-(\emph{eliminación de redundancias}).
-\end{itemize}
-
-Estas condiciones se comprueban mediante la ejecución de la
-transformación \emph{``Supplied Annotation''} (ver
-Fig.~\ref{c1:fig:menutransform}), la cual comprueba que las FDs del
-modelo de fuentes de datos tienen su equivalente en el PIM. Cuando
-esta comprobación falla, el estado (\emph{status}) de los elementos
-involucrados se etiqueta como \emph{supplied} y se colorean de
-\emph{azul} para indicar que estos elementos aparecen en las fuentes
-de datos pero no en el PIM inicial (es decir, son suministrados por
-las fuentes de datos pero el usuario no los ha tenido en cuenta,
-bien porque no los necesitaba o bien porque no sabía de su
-existencia). Por ejemplo, en la Fig.~\ref{c1:fig:pim3_1} y en la
-Fig.~\ref{c1:fig:pim3_2}, se muestran nuevos elementos en azul que
-forman parte de las fuentes de datos pero no aparecen en el PIM
-inicial.
-
-
-Hasta ahora cada elemento del PIM inicial se ha etiquetado con
-cierto estado (\emph{status}) como \emph{required} o
-\emph{supplied}, o bien se ha dejado sin etiquetar (estado
-\emph{none}). La tarea del diseñador es comprobar el modelo
-resultante y cambiar el estado de los elementos a \emph{none} (ver
-Fig.~\ref{c1:fig:setstatusnone}) si (i) un elemento requerido
-(\emph{required}) puede ser suministrado por alguna fuente de datos
-externa o (ii) un elemento suministrado (\emph{supplied}) puede ser
-útil para el usuario. Obviamente, en el siguiente paso, sólo se
-tienen en cuenta los elementos cuyo estado es \emph{none} para poder
-derivar el PIM híbrido (ver Fig.~\ref{c1:fig:pim4_1} y
-Fig.~\ref{c1:fig:pim4_2}).
-
-
-Una vez que se obtiene el PIM híbrido, el siguiente paso es obtener
-un PSM acorde a una tecnología específica. En este ejemplo, se
-deriva un PSM según la representación lógica más común de un modelo
-MD: el \emph{esquema estrella}~\cite{book/Kimball/DW}. Éste es un
-esquema relacional que consiste en una tabla de hechos central con
-una clave primaria compuesta cuyos elementos forman una clave ajena
-a cada una de las tablas de dimensión (las cuales poseen una clave
-primaria única).  Este esquema se muestra en la
-Fig.~\ref{c1:fig:psm}.
-
-
-%\begin{figure}[h!t]
-%\subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/psm1.png}
-%\label{c1:psm1}} \subfigure[]{
-%\includegraphics[width=0.3\textwidth]{img/summary/psm2.png}
-%\label{c1:psm2}} \caption{PSM como esquema estrella}
-%\label{c1:fig:psm}
-%\end{figure}
-
-Finalmente, se obtiene el código que implementa el modelo MD en una
-herramienta comercial. El código SQL para el esquema estrella se
-obtiene del PSM (Fig.~\ref{c1:fig:codesql}), mientras que del PIM
-híbrido se obtiene directamente el código que se usará en una
-herramienta de análisis de datos (Fig.~\ref{c1:fig:codeolap}).
-
-%\begin{figure}[h!t]
-%\begin{center}
-%\includegraphics[width=0.5\textwidth]{img/summary/codesql.png}
-%\end{center}
-%\caption{Código SQL generado para un esquema estrella}
-%\label{c1:fig:codesql}
-%\end{figure}
-%
-%\begin{figure}[h!t]
-%\begin{center}
-%\includegraphics[width=0.8\textwidth]{img/summary/codeolap.png}
-%\end{center}
-%\caption{Código generado para una herramienta de análisis de datos}
-%\label{c1:fig:codeolap}
-%\end{figure}
 
 \clearpage
 
