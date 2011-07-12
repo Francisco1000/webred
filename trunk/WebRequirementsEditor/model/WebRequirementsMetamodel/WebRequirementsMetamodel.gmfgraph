@@ -42,11 +42,6 @@
           lineWidth="3">
         <layout
             xsi:type="gmfgraph:XYLayout"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="245"
-            green="245"
-            blue="220"/>
         <minimumSize
             dx="200"
             dy="200"/>
@@ -125,11 +120,6 @@
             xsi:type="gmfgraph:GridLayoutData"
             grabExcessHorizontalSpace="true"
             grabExcessVerticalSpace="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="123"
-            green="104"
-            blue="238"/>
         <preferredSize
             dx="100"
             dy="40"/>
@@ -167,11 +157,6 @@
         <layoutData
             xsi:type="gmfgraph:GridLayoutData"
             grabExcessVerticalSpace="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="123"
-            green="104"
-            blue="238"/>
         <preferredSize
             dx="100"
             dy="40"/>
@@ -202,11 +187,6 @@
           name="ContentFigure">
         <layout
             xsi:type="gmfgraph:XYLayout"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="211"
-            green="211"
-            blue="211"/>
         <preferredSize
             dx="90"
             dy="40"/>
@@ -256,11 +236,6 @@
         <layout
             xsi:type="gmfgraph:FlowLayout"
             vertical="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="230"
-            green="230"
-            blue="250"/>
         <preferredSize
             dx="80"
             dy="40"/>
@@ -325,11 +300,6 @@
         <layout
             xsi:type="gmfgraph:FlowLayout"
             vertical="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="173"
-            green="216"
-            blue="230"/>
         <preferredSize
             dx="80"
             dy="40"/>
@@ -394,11 +364,6 @@
         <layout
             xsi:type="gmfgraph:FlowLayout"
             vertical="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="147"
-            green="112"
-            blue="219"/>
         <preferredSize
             dx="80"
             dy="40"/>
@@ -463,11 +428,6 @@
         <layout
             xsi:type="gmfgraph:FlowLayout"
             vertical="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="255"
-            green="192"
-            blue="203"/>
         <preferredSize
             dx="80"
             dy="40"/>
@@ -630,11 +590,6 @@
         <layoutData
             xsi:type="gmfgraph:GridLayoutData"
             grabExcessVerticalSpace="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="123"
-            green="104"
-            blue="238"/>
         <preferredSize
             dx="80"
             dy="40"/>
@@ -669,11 +624,6 @@
         <layoutData
             xsi:type="gmfgraph:GridLayoutData"
             grabExcessVerticalSpace="true"/>
-        <backgroundColor
-            xsi:type="gmfgraph:RGBColor"
-            red="123"
-            green="104"
-            blue="238"/>
         <preferredSize
             dx="90"
             dy="40"/>
