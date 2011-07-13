@@ -213,15 +213,24 @@ Por otra parte, el marco de modelado \emph{i*} tiene que adaptarse al dominio de
    \item \textbf{Requisitos no funcionales (\emph{Softgoals})}. Estos requisitos representan criterios de calidad que el sistema debe conseguir. Algunos ejemplos de estos requisitos pueden ser: ``eficiencia'', ``atraer mas usuarios'' y ``buena experiencia del usuario''.
 \end{itemize}
 
-Para poder utilizar el marco de modelado \emph{i*} dentro de MDA se ha implementado un metamodelo. El metamodelo se implementó utilizando la tecnología EMF (\emph{Eclipse Modeling Framework}) de Eclipse \cite{ECLIPSE} (Fig. 7). Los elementos intencionales de \emph{i*} fueron extendidos con nuevas clases para representar cada uno de los tipos de requisitos Web descritos anteriormente (\emph{Navigational}, \emph{Service}, \emph{Personalization}, \emph{Layout} y \emph{Content}). Los requisitos no-funcionales se modelan directamente utilizando elementos de \emph{i*} (\emph{Softgoals}). 
+Para poder utilizar el marco de modelado \emph{i*} dentro de MDA se ha implementado un metamodelo. El metamodelo se implementó utilizando la tecnología EMF (\emph{Eclipse Modeling Framework}) de Eclipse \cite{ECLIPSE} (Fig. \ref{fig:SeccionRequisitosWebMetamodelo}). Los elementos intencionales de \emph{i*} fueron extendidos con nuevas clases para representar cada uno de los tipos de requisitos Web descritos anteriormente (\emph{Navigational}, \emph{Service}, \emph{Personalization}, \emph{Layout} y \emph{Content}). Los requisitos no-funcionales se modelan directamente utilizando elementos de \emph{i*} (\emph{Softgoals}). 
 
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\textwidth]{img/SeccionRequisitosWebMetamodelo.eps}
+%\end{center}
+%\caption{Extracto de metamodelo de requisitos Web del método A-OOH.}
+%\label{fig:reqmetamodel}
+%\end{figure}
+\begin{landscape}
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{img/SeccionRequisitosWebMetamodelo.eps}
+\includegraphics[width=1.8\textwidth]{img/WebRequirementsMetamodel.png}
 \end{center}
-\caption{Extracto de metamodelo de requisitos Web del método A-OOH.}
-\label{fig:reqmetamodel}
+\caption{Metamodelo para la especificación de requisitos Web con \emph{i*}.}
+\label{fig:SeccionRequisitosWebMetamodelo}
 \end{figure}
+\end{landscape}
 
 A continuación, se resume la generación de los modelos conceptuales de Dominio y Navegación. Se remite al lector a los capítulos
 específicos de esta tesis doctoral para una explicación más detallada.
@@ -232,15 +241,24 @@ Definidos los requisitos en un CIM, el siguiente paso consiste en utilizarlos pa
 
 UML (\emph{Unified Modeling Language}) es el lenguaje especifico de dominio (\emph{Domain Specific Language}, DSL) utilizado para la derivación del modelo de dominio de A-OOH. El metamodelo es una descripción de UML realizada en UML. Describe los objetos, atributos y relaciones necesarias para representar los conceptos de UML dentro de una aplicación de software. La notación UML la componen dos subdivisiones, la primera es utilizada para modelar los elementos estáticos del diseño como las clases, atributos y relaciones. La segunda subdivisión es aplicada para modelar los elementos dinámicos de diseño como lo son los objetos, mensajes y maquinas de estado finito. Los modelos estáticos son presentados en diagramas llamados Diagramas de Clases. El propósito de un diagrama de clase es representar a las clases dentro de un modelo. En una aplicación orientada a objetos, las clases tienen atributos (variables miembros), operaciones (funciones miembro) y relaciones con otras clases. Estas carácteristicas aplican perfectamente para la representación del modelo de dominio de A-OOH.
 
-Por otra parte, A-OOH dispone de un DSL para representar las rutas de navegación que el usuario puede seguir durante su interacción con la aplicación Web. En la Figura \ref{fig:navmetamodel} se muestra el metamodelo de navegación utilizado en A-OOH. Los elementos principales del metamodelo son: (i) Nodo Navegacional (\emph{Navigational Node}) y (ii) Enlace Navegacional (\emph{Navigational Link}).
+Por otra parte, A-OOH dispone de un DSL para representar las rutas de navegación que el usuario puede seguir durante su interacción con la aplicación Web. En la Figura \ref{fig:NavMetamodel} se muestra el metamodelo de navegación utilizado en A-OOH. Los elementos principales del metamodelo son: (i) Nodo Navegacional (\emph{Navigational Node}) y (ii) Enlace Navegacional (\emph{Navigational Link}).
 
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\textwidth]{img/NavigationalMetamodelFormal.eps}
+%\end{center}
+%\caption{Definición del metamodel de navegación en A-OOH.}
+%\label{fig:navmetamodel}
+%\end{figure}
+\begin{landscape}
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{img/NavigationalMetamodelFormal.eps}
+\includegraphics[width=1.5\textwidth]{img/NavigationalMetamodel.png}
 \end{center}
-\caption{Definición del metamodel de navegación en A-OOH.}
-\label{fig:navmetamodel}
+\caption{Metamodelo de Navegación de A-OOH.}
+\label{fig:NavMetamodel}
 \end{figure}
+\end{landscape}
 
 
 El Nodo Navegacional representa vistas restringidas de los conceptos del dominio y sus relaciones indican las rutas de navegación que el usuario de la aplicación Web puede seguir. Existen tres tipos diferentes de Nodos Navegacionales, los cuales se describen a continuación:
@@ -344,16 +362,18 @@ Con el fin de brindar soporte para la trazabilidad de requisitos en A-OOH se ha 
 \item \textbf{\emph{WModelRef}}. Representa un identificador único de un modelo.
 \end{itemize}
 
+%\begin{landscape}
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{img/WeavingMetamodel.eps}
+\includegraphics[width=\textwidth]{img/WeavingMetamodel.png}
 \end{center}
-\caption{Metamodelo de \emph{weaving} y extensión para trazabilidad.}
+\caption{Metamodelo de \emph{weaving}.}
 \label{fig:weavingmetamodel}
 \end{figure}
+%\end{landscape}
 
 
-En la parte inferior de la Figura \ref{fig:weavingmetamodel}, se ilustra la extensión del metamodelo para \emph{weaving} que permite la representación de la trazabilidad. Esta extensión la forman los siguientes elementos:
+Por otra parte, en la Figura \ref{fig:tracemetamodel}, se ilustra la extensión del metamodelo para \emph{weaving} que permite la representación de la trazabilidad. Esta extensión la forman los siguientes elementos:
 
 \begin{itemize}
 \item \textbf{\emph{TraceModel}}. Es el elemento que representa al modelo de trazabilidad, esta integrado por referencias a otros modelos.
@@ -363,7 +383,17 @@ En la parte inferior de la Figura \ref{fig:weavingmetamodel}, se ilustra la exte
 \item \textbf{\emph{TraceLinkEnd}}. Su función es similar al elemento WLinkEnd del cual hereda, pues permite crear una relación uno a muchos (1-N) entre las referencias de los elementos del modelo de entrada (sourceElements) y los del modelo de salida (targetElement).
 \end{itemize}
 
-De esta forma se ha definido formalmente la regla de transformación \emph{CreateModelTrace} para derivar un modelo de \emph{weaving} que almacene un conjunto de enlaces dirigidos a los elementos de los modelos conceptuales de A-OOH.
+%\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/TraceabilityMetamodel.png}
+\end{center}
+\caption{Extensión del metamodelo de \emph{weaving} para trazabilidad.}
+\label{fig:tracemetamodel}
+\end{figure}
+%\end{landscape}
+
+De esta forma se ha definido formalmente la regla de transformación \emph{CreateModelTrace} para derivar un modelo de \emph{weaving} que almacene un conjunto de enlaces dirigidos a los elementos de los modelos conceptuales de A-OOH. La regla ha sido definida formalmente con el lenguaje estándar QVT (Figura \ref{fig:createModelTrace}).
 
 \begin{itemize}
 \item \textbf{\emph{CreateModelTrace}}. Al ejecutarse por primera vez, la regla crea un modelo de \emph{weaving} con referencias a los modelos origen y destino. De esta forma, cada vez que una regla QVT transforma un elemento del modelo de entrada (modelo de requisitos) en uno o varios elementos de los modelos conceptuales A-OOH (dominio y navegación) crea un nuevo enlace en el modelo de \emph{weaving}.
@@ -380,7 +410,7 @@ De esta forma se ha definido formalmente la regla de transformación \emph{Create
 
 \subsubsection{Análisis de Impacto en A-OOH}
 
-Los requisitos evolucionan constantemente a razón de la naturaleza dinámica de la Web. Debido a esto, es común encontrar inconsistencias entre los modelos conceptuales de la aplicación Web y los requisitos. Una de las ventajas ofrecidas por el soporte para trazabilidad en A-OOH es el de conocer las dependencias entre los elementos de los modelos conceptuales y los requisitos. Por tanto, es posible conocer los requisitos afectados debido a un cambio en alguno de los modelos conceptuales. Análisis de impacto (\emph{Change Impact Analysis}) es la tarea de identificar las consecuencias potenciales de un cambio o estimar qué es necesario modificar para llevar a cabo el cambio \cite{impact}. Comúnmente, el análisis de impacto se ha realizado de forma intuitiva por los diseñadores de la aplicación Web por medio de un análisis superficial del código y documentación de la aplicación. Esto quizá sea suficiente para aplicaciones Web no muy grandes, pero no es suficientes para aplicaciones Web sofisticadas. Asímismo, investigación empirica demuestra que, incluso los desarrolladores más experimentados deducen un análisis de impacto incompleto \cite{Lindvall}.
+Los requisitos evolucionan constantemente a razón de la naturaleza dinámica de la Web. Debido a esto, es común encontrar inconsistencias entre los modelos conceptuales de la aplicación Web y los requisitos. Una de las ventajas ofrecidas por el soporte para trazabilidad en A-OOH es el de conocer las dependencias entre los elementos de los modelos conceptuales y los requisitos. Por tanto, es posible conocer los requisitos afectados debido a un cambio en alguno de los modelos conceptuales. Análisis de impacto, conocido también como (\emph{Change Impact Analysis}), es la tarea de identificar las consecuencias potenciales de un cambio o estimar qué es necesario modificar para llevar a cabo el cambio \cite{impact}. Comúnmente, el análisis de impacto se ha realizado de forma intuitiva por los diseñadores de la aplicación Web por medio de un análisis superficial del código y documentación de la aplicación. Esto quizá sea suficiente para aplicaciones Web no muy grandes, pero no es suficientes para aplicaciones Web sofisticadas. Asímismo, investigación empirica demuestra que, incluso los desarrolladores más experimentados deducen un análisis de impacto incompleto \cite{Lindvall}.
 
 Para paliar esta limitante, se ha definido un algoritmo para analizar las dependencias entre los requisitos funcionales. El algoritmo analiza el modelo de requisitos A-OOH para conocer las dependencias entre los requisitos funcionales además de saber qué requisitos no funcionales se ven afectados. De esta forma, a través del soporte para trazabilidad es posible conocer que otros elementos de los modelos conceptuales son afectados. Finalmente, debido a que el modelo de requisitos A-OOH es orientado a objetivos, el algoritmo puede mostrar al diseñador un camino alternativo en el cual se indique qué requisitos tienen que ser implementados para seguir cumpliento con el objetivo (\emph{Goal}). A continuación se presenta un ejemplo de la aplicación del algoritmo.
 
@@ -388,13 +418,21 @@ El cliente ha solicitado la implementación de una aplicación Web que permita la 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\textwidth]{img/content2domainclass.eps}
+\includegraphics[width=0.8\textwidth]{img/EjemploICCSA.png}
 \end{center}
 \caption{El modelo de requisitos de la aplicación \emph{``Survey WebApp''}.}
 \label{fig:req1iccsa}
 \end{figure}
 
-El actor ``\emph{Survey WebApp}'' tiene que cumplir con el objetivo ``\emph{Survey be performed}'', para lograrlo dispone de dos vías, por medio de la aplicación de la encuesta pública ``\emph{Public survey}'' y la privada ``\emph{Private survey}'', ambos requisitos de navegación. Cada una de las vías necesita de uno o más requisitos para cumplirse, tal es el caso del requisito ``\emph{Private survey}'' debido a que necesita de los requisitos de navegación ``\emph{Make private survey}'' y ``\emph{Viewsurvey}'' así como del requisito de contenido ``\emph{Registered users}''. Algunos de los requisitos afectan positiva o negativamente a los requisitos no-funcionales especificados, por ejemplo, el requisito navegacional ``\emph{Private survey}'' afecta positivame al requisito no-funcional ``\emph{Security}''. El tipo de contribuciones que realizan los requisitos funcionales a los requisitos no-funcionales es relevante para la ejecución del algoritmo ya que son utilizadas para decidir qué requisitos funcionales será necesario implementar. En este ejemplo, solo los requisitos relacionados con el requisito de navegación ``\emph{Public survey}'' se encuentran implementados en los modelos conceptuales.
+El actor ``\emph{Survey WebApp}'' tiene que cumplir con el objetivo ``\emph{Survey be performed}'', para lograrlo dispone de dos vías, por medio de la aplicación de la encuesta pública ``\emph{Public survey}'' y la privada ``\emph{Private survey}'', ambos requisitos de navegación. Cada una de las vías necesita de uno o más requisitos para cumplirse, tal es el caso del requisito ``\emph{Private survey}'' debido a que necesita de los requisitos de navegación ``\emph{Make private survey}'' y ``\emph{Viewsurvey}'' así como del requisito de contenido ``\emph{Registered users}''. Algunos de los requisitos afectan positiva o negativamente a los requisitos no-funcionales especificados, por ejemplo, el requisito navegacional ``\emph{Private survey}'' afecta positivame al requisito no-funcional ``\emph{Security}''. El tipo de contribuciones que realizan los requisitos funcionales a los requisitos no-funcionales es relevante para la ejecución del algoritmo ya que son utilizadas para decidir qué requisitos funcionales será necesario implementar. En este ejemplo, solo los requisitos relacionados con el requisito de navegación ``\emph{Public survey}'' se encuentran implementados en los modelos conceptuales (Figura \ref{fig:req1iccsaIniciales}). 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{img/EjemploICCSAReqIniciales.png}
+\end{center}
+\caption{Requisitos de la aplicación \emph{``Survey WebApp''} implementados inicialmente.}
+\label{fig:req1iccsaIniciales}
+\end{figure}
 
 Ahora bien, supongamos el siguiente escenario: el desarrollador Web elimina un elemento del modelo de dominio A-OOH, gracias al soporte para trazabilidad de A-OOH es posible conocer el requisito afectado por la clase del modelo de dominio que ha sido eliminada, la clase corresponde con el requisito navegacional ``\emph{Public survey}''. Por tanto, el objetivo ``\emph{Survey be performed}'' no se puede cumplir. Por tal motivo, es necesario conocer:
 \begin{itemize}
@@ -407,7 +445,7 @@ El algoritmo inicia una vez que se han cumplido un conjunto de pre-condiciones, 
 
 \begin{table}
  \centering
-\tiny %\addtolength{\tabcolsep}{-5pt}
+%\tiny %\addtolength{\tabcolsep}{-5pt}
  \caption{La contribución de los requisitos funcionales a cada requisito no-funcional.}\label{tab:listaElementosIntencionales}
 \begin{tabular}{| l | c| c | c |}
 \hline
@@ -434,7 +472,7 @@ Finalmente, es necesario aplicar una post-condición, la cual establece que si lo
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\textwidth]{img/content2domainclass.eps}
+\includegraphics[width=0.8\textwidth]{img/EjemploICCSAReqFinales.png}
 \end{center}
 \caption{Los nuevos requisitos a implementar en el modelo de dominio.}
 \label{fig:req2iccsa}
@@ -461,15 +499,15 @@ La propuesta definida en esta tesis doctoral se ha implementado en la plataforma
 
 Este modulo implementa los conceptos del marco de modelado \emph{i*} y la clasificación de requisitos presentada en \cite{EscalonaK04} para proveer al diseñador con un editor gráfico para la especificación de requisitos Web. Concretamente, el metamodelo de requisitos implementado en la tesis doctoral ha sido extendido para incorporar los tipos de requisitos de la taxonomía presentada en la sección \ref{especificacion}, la Figura \ref{fig:SeccionRequisitosWebMetamodelo} muestra una captura de pantalla donde puede apreciarse la implementación del metamodelo en Eclipse. 
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{img/WebRequirementsMetamodel.eps}
-\end{center}
-\caption{Metamodelo para la especificación de requisitos Web con \emph{i*}.}
-\label{fig:SeccionRequisitosWebMetamodelo}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\textwidth]{img/WebRequirementsMetamodel.eps}
+%\end{center}
+%\caption{Metamodelo para la especificación de requisitos Web con \emph{i*}.}
+%\label{fig:SeccionRequisitosWebMetamodelo}
+%\end{figure}
 
-Por otra parte, con el editor, el diseñador de la aplicación Web es capaz de especificar en un diagrma los requisitos funcionales y no-funcionales de la aplicación Web. A continuación se describen las carácteristicas principales del editor gráfico:
+Por otra parte, con el editor (Figura \ref{fig:herramienta}) WebREd (Web Requirements Editor), el diseñador de la aplicación Web es capaz de especificar en un diagrma los requisitos funcionales y no-funcionales de la aplicación Web. A continuación se describen las carácteristicas principales del editor gráfico:
 
 \begin{itemize}
 \item El editor implementa el metamodelo de requisitos Web \emph{i*} de tal forma que, los modelos especificados utilizando el editor son conformes al metamodelo.
@@ -478,18 +516,25 @@ Por otra parte, con el editor, el diseñador de la aplicación Web es capaz de esp
 \item Además de poder especificar requisitos Web (\emph{Content}, \emph{Navigational}, \emph{Personalization}, \emph{Service} y \emph{Layout}), el editor permite la creación de diagramas (modelos) con los elementos clásicos (\emph{Goal}, \emph{Task}, \emph{Resource} y \emph{Softgoal} de \emph{i*}).
 \end{itemize}
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/Herramienta.png}
+\end{center}
+\caption{Editor WebREd para la especificación de requisitos Web con \emph{i*}.}
+\label{fig:herramienta}
+\end{figure}
 
 \subsubsection{Módulo \emph{Platform Independent Model}}
 
-El metamodelo de navegación en A-OOH se implementa en este módulo. El metamodelo definido formalmente en la Figura \ref{fig:navmetamodel} e implementado en la Figura X define la sintaxis para la representación conceptual en un PIM del modelo de navegación de A-OOH.
+El metamodelo de navegación en A-OOH se implementa en este módulo. El metamodelo definido formalmente en la Figura \ref{fig:navmetamodel} define la sintaxis para la representación conceptual en un PIM del modelo de navegación de A-OOH.
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{img/NavigationalMetamodel.eps}
-\end{center}
-\caption{Metamodelo de Navegación de A-OOH.}
-\label{fig:NavMetamodel}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\textwidth]{img/NavigationalMetamodel.eps}
+%\end{center}
+%\caption{Metamodelo de Navegación de A-OOH.}
+%\label{fig:NavMetamodel}
+%\end{figure}
 
 
 \subsubsection{Módulo {Transformaciones}}
@@ -499,14 +544,14 @@ Este modulo tiene como objetivo implementar todas las transformaciones definidas
 \subsubsection{Caso de estudio}
 
 En este apartado se presenta un caso de estudio para demostrar la aplicabilidad de nuestra propuesta. El caso de estudio es acerca de una empresa que se dedica a la aplicación de encuestas \emph{on-line}. Para esto la empresa requiere que su aplicación Web permita la aplicación de encuestas para usuarios registrados y para el público en general (quien tendrá ciertas restricciones). Para efectos demostrativos, en este caso de estudio nos enfocaremos únicamente a la obtención del modelo de dominio a partir de la especificación de requisitos.
-El primer paso consiste en la especificación de los requisitos para la aplicación Web "Survey WebApp".  En la figura 1,  por cuestiones de espacio, solo se presenta un extracto de la especificación de requisitos en el contexto del método Web A-OOH.  El actor "Survey WebApp" tiene como objetivo "Survey be performed", para alcanzar este objetivo es necesario seleccionar el requisito Navigational "Public Survey" o "Private Survey", cada uno de estos requisitos necesita de otros para poder realizarse, por ejemplo, el requisito "Public Survey" necesita del requisito Navigational "Make Survey" y este a su vez, necesita del requisito Service "Send Survey" y, finalmente, el requisito "Send Survey" necesita del requisito Content "Survey Repository" para poder llevarse a cabo. Finalmente, es importante resaltar que cada requisito contribuye de forma positiva o negativa a las Softgoals, por ejemplo, el requisito "Private Survey" lo hace de forma positiva (Some +) a la Softgoal "Security". Para fines prácticos, en la figura 5 se presenta el modelo de requisitos A-OOH en el ambiente Eclipse Modeling Framework (EMF). En la parte superior de la figura 5 se puede ver el modelo de requisitos representado en un diagrama ECORE de EMF; en la parte inferior de la figura se pueden observar las propiedades de cada elemento de i*, en este caso el elemento Means-end el cual indica el camino hacia el requisito "Public Survey". La finalidad de la representación del modelo de requisitos en ECORE es facilitar la ejecución de las reglas de transformación.
+El primer paso consiste en la especificación de los requisitos para la aplicación Web "Survey WebApp".  En la Figura \ref{fig:EditorGMF},  se presenta la especificación de requisitos en el contexto del método Web A-OOH utilizando el editor WebREd (Figura \ref{fig:herramienta}).  El actor \emph{``Survey WebApp''} tiene como objetivo \emph{``Survey be performed''}, para alcanzar este objetivo es necesario seleccionar el requisito navigational \emph{``Public Survey''} o \emph{``Private Survey''}, cada uno de estos requisitos necesita de otros para poder realizarse, por ejemplo, el requisito \emph{``Public Survey''} necesita del requisito navigational \emph{``Make Survey''} y este a su vez, necesita del requisito Service \emph{``Send Survey''} y, finalmente, el requisito \emph{``Send Survey''} necesita del requisito Content \emph{``Survey Repository''} para poder llevarse a cabo. Finalmente, es importante resaltar que cada requisito contribuye de forma positiva o negativa a las \emph{``Softgoals''}, por ejemplo, el requisito \emph{``Private Survey''} lo hace de forma positiva (\emph{``Some +''}) a la Softgoal \emph{``Security''}. Para fines prácticos, en la figura 5 se presenta el modelo de requisitos A-OOH en el ambiente Eclipse Modeling Framework (EMF). En la parte superior de la figura 5 se puede ver el modelo de requisitos representado en un diagrama ECORE de EMF; en la parte inferior de la figura se pueden observar las propiedades de cada elemento de i*, en este caso el elemento Means-end el cual indica el camino hacia el requisito "Public Survey". La finalidad de la representación del modelo de requisitos en ECORE es facilitar la ejecución de las reglas de transformación.
 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{img/WebRed.eps}
+\includegraphics[width=\textwidth]{img/CasoEstudioWISM.png}
 \end{center}
-\caption{Editor gráfico para la especificación de requisitos Web con \emph{i*}.}
+\caption{Especificación de requisitos Web con \emph{i*} para el caso de estudio.}
 \label{fig:EditorGMF}
 \end{figure}
 
