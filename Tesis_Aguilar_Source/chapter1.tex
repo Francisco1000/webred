@@ -479,16 +479,178 @@ Finalmente, es necesario aplicar una post-condición, la cual establece que si lo
 \end{figure}
 
 
-
-
-\subsubsection{Alternativas de Diseño en A-OOH considerando a los Requisitos No-Funcionales}
+\subsubsection{Optimización de Requisitos No-Funcionales en Aplicaciones Web}
 
 Como se ha motivado anteriormente, las aplicaciones Web tienen una audiencia amplia y heterogénea, por eso es indispensable que las metodologías de diseño brinden soporte al diseñador en la etapa de requisitos y le permitan seleccionar distintas opciones de diseño en base la audiencia de la aplicación Web. 
 
-En A-OOH se ha implementado el algoritmo Frontera de Pareto para proveer al diseñador con un conjunto de alternativas de diseño basadas en la prioridad de los requisitos no-funcionales. Para esto, el diseñador establecerá una lista de requisitos no-funcionales, a continuación, el algoritmo obtendrá todas las posibles configuraciones de entre las cuales el diseñador seleccionará aquella que maximice o balancee los requisitos no-funcionales establecidos previamente.
+En A-OOH se ha implementado el algoritmo Frontera de Pareto (CITA) para proveer al diseñador con un conjunto de alternativas de diseño basadas en la prioridad de los requisitos no-funcionales. Para esto, el diseñador establecerá una lista de requisitos no-funcionales, a continuación, el algoritmo obtendrá todas las posibles configuraciones de entre las cuales el diseñador seleccionará aquella que maximice o balancee los requisitos no-funcionales establecidos previamente (Figura \ref{fig:ParetoApproach}). Asímismo, se han definido una serie de pasos con el fin de satisfacer los objetivos definidos en el modelo de requisitos (\emph{Goals}).
 
-\section{Web 2.0: \emph{Rich Internet Applications}}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/ParetoApproach.png}
+\end{center}
+\caption{Propuesta para la optimización de requisitos no-funcioales en aplicaciones Web.}
+\label{fig:ParetoApproach}
+\end{figure}
+
+La Frontera de Pareto es una temática que proviene del estudio de la economía y ha sido ampliamente aplicada en la ingeniería de \emph{software}, en este caso en particular lo enunciamos como: ``\emph{Dado un conjunto de ubicaciones alternativas y un conjunto de individuos, la ubicación A es una optimización sobre la ubicación B solo si A puede al menos, optimizar a un individuo mejor que B, sin deteriorar a otro individuo}'' (CITA1, CITA2). Por lo tanto, llamamos configuración óptima de Pareto a aquella configuración que mejor satisfaga a un requisito no-funcional mientras satisface a los demás de igual forma. El conjunto de soluciones óptimas de Pareto puede ser utilizado por el diseñador para la toma de decisiones, por ejemplo, cuando necesite seleccionar la configuración que mejor balancee la compensación entre los requisitos no-funcionales y cuando necesite considerar la maximización sobre un requisito no-funcional.
+
+A continuación, se presenta un ejemplo consiso para ejemplificar paso a paso la aplicación de la propuesta para la optimización de requisitos no-funcionales en aplicaciones Web. El caso de estudio es acerca de una aplicación Web para la gestión de conferencias (\emph{Conference Management System})\footnote{La especificación completa del caso de estudio se encuentra en \url{http://users.dsic.upv.es/~west/iwwost01}}. El porpósito de la aplicación Web es brindar soporte al proceso de envío, evaluación y selección de los artículos para una conferencia. La Figura \ref{fig:CasoEstudioWISM}, muestra la especificación de requisitos de la aplicación Web (modelo de requisitos de A-OOH). El objetivo de la aplicación Web consiste en ``\emph{Process of review of papers be selected}'', para satisfacer el objetivo, es necesario la implementación de alguno de los requisitos navegacionales ``\emph{Blind review process}'' y ``\emph{Normal review process}''. En este ejemplo el objetivo es logrado a través del requisito navegacional ``\emph{Blind review process}''. En la especificación de requisitos, también se puede observar que algunos requisitos necesitan de otros para poder cumplir con su función, tal es el caso del requisito navegacional ``\emph{Review paper}'' el cual necesita del requisito de servicio ``\emph{Submit review}''. Además, algunos requisitos afectan de forma positiva o negativa a algunos requisitos no-funcionales (llamados \emph{Softgoals} de aquí en adelante), por ejemplo el requisito de servicio ``\emph{Download paper without author's name}'' afecta de forma positiva a la \emph{Softgoal} ``\emph{Privacy be maximized}'' y de forma negativa a ``\emph{Obtain more complete info}''. Las contribuciones de los requisitos funcionales a las \emph{Softgoals} pueden verse en la Tabla 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/CasoEstudioWISM.png}
+\end{center}
+\caption{Especificación de requisitos de la aplicación Web para la gestión de conferencias.}
+\label{fig:CasoEstudioWISM}
+\end{figure}
+
+\begin{table}
+ \centering
+ \small
+ \caption{Tipos de contribuciones.}\label{tab:contribuciones}
+\begin{tabular}{|l | c |}
+\hline
+\textbf{Contribución} & \textbf{Tipo de Contribución} \\
+\hline
+Positiva& Help \\
+Positiva de fuerza desconocida & Some + \\
+Negativa & Hurt \\
+Negativa de fuerza desconocida & Some - \\
+Negativa suficiente para no satisfacer una \emph{Softgoal}& Break \\
+Positiva suficiente para satisfacer una \emph{Softgoal} & Make \\
+\hline
+\end{tabular}
+\end{table}
+
+Una vez especificados los requisitos de la aplicación Web, es necesario elaborar una lista que contenga a los requisitos (implementados o no) que realicen algún tipo de contribución a alguna \emph{Softgoal}. La Tabla \ref{tab:listaElementosIntencionales}, muestra una lista de requisitos y el tipo de contribución (Tabla \ref{tab:contribuciones}) hacia las \emph{Softgoal}, en donde: S1 se refiere a la \emph{Softgoal} \emph{``Be fair in review''}, S2 corresponde a \emph{``Review process easier''}, S3 a la \emph{Softgoal} \emph{``Accurate review process''}, S4 a \emph{``Privacy be maximized''}, S5 \emph{``Avoid possible conflicts of interest''} y S6 a la \emph{Softgoal} \emph{``Obtain more complete info''}
+
+\begin{table}
+ \centering
+\small %\addtolength{\tabcolsep}{-5pt}
+ \caption{Las contribuciones de los requisitos hacia las \emph{Softgoals}.}\label{tab:listaElementosIntencionales}
+\begin{tabular}{| l | c| c | c | c | c | c |}
+\hline
+\textbf{Requisitos} &
+\textbf{\emph{``S1''}} &
+\textbf{\emph{``S2''}} &
+\textbf{\emph{``S3''}} &
+\textbf{\emph{``S4''}} &
+\textbf{\emph{``S5''}} &
+\textbf{\emph{``S6''}}
+\\
+\hline
+  \emph{``Blind review process''} & Help & Break & Hurt & Help & - & -\\
+  \textbf{\emph{``Download papers without authors' name''}} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{-} & \textbf{Help} & \textbf{Some -}\\
+  \emph{``Normal review process''} & Some - & Make & Help & - & - & -\\
+  \emph{``Download paper with author's name''} & - & - & - & Hurt & Some - & Help\\
+  \emph{``View review process status''} & - & - & - & - & - & Help\\
+\hline
+\end{tabular}
+\end{table}
+
+A continuación, es necesario almacenar cada configuración posible de los requisitos listados en la Tabla \ref{tab:listaElementosIntencionales}, en donde: la variable ``I'' representa el estado ``implementado'' y la variable ``N'' el estado ``no implementado''. Por lo tanto, tenemos 32 posibles configuraciones (Tabla \ref{tab:front}, columnas 1 y 2).
+
+Además, es necesario asignar un peso a cada tipo de contribución, para esto deben de asignarse, por cada tipo, el peso(W):  w= +1 si el tipo de contribución es  ``Help'',  w= -1 si es ``Hurt'', w= +2 para el tipo ``Some +'' , w= -2 para ``Some -'', w= +4 si es del tipo ``Make'' y w= -4 para el tipo ``Break''. Por ejemplo, dada la matriz (\ref{mt:matriz}), tenemos que, para la fila 3 (requisito ``\emph{Normal review process}'') y columna 2 (\emph{Softgoal ``Review process easier''}) la matriz muestra '+4', es decir una contribución del tipo ``Make'' si el requisito es implementado.
+
+\begin{equation}
+\small
+M= 
+\begin{pmatrix}
+  \hfill {\color {black} +1} & \hfill {\color {red} -4} & \hfill{\color {red} -1} & {\color {black} 0} & \hfill {\color {black} +1} & {\color {black} 0}\\
+  {\color {black} 0} & {\color {black} 0} & {\color {black} 0} & \hfill {\color {black} +1} & {\color {black} 0} & \hfill{\color {red} -2} \\
+  \hfill{\color {red} -2} & \hfill {\color {black} +4} & \hfill {\color {black} +1} & {\color {black} 0} & {\color {black} 0} & {\color {black} 0} \\
+  {\color {black} 0} & {\color {black} 0} & {\color {black} 0} & \hfill{\color {red} -2} & \hfill{\color {red} -1} & \hfill {\color {black} +1}\\
+  {\color {black} 0} & {\color {black} 0} & {\color {black} 0} & {\color {black} 0} & {\color {black} 0} & \hfill {\color {black} +1} \\
+\label{mt:matriz}
+\end{pmatrix}
+\end{equation}
+
+Con los pesos establecidos, el siguiente paso consiste en crear una matriz para calcular los valores númericos asociados cada configuración (Tabla \ref{tab:front}, columnas 7 a 12), por ejemplo para la configuración X25, si el requisito R1 \emph{``Blind review process''} no es implementado, tenemos que la \emph{Softgoal} \emph{``Be fair in review''} será afectada (-2). Por último, se calcula si la configuración es Frontera de Pareto (Tabla \ref{tab:front}, columnas 13), para hacerlo, se deben comparar cada una de las configuraciones indicando si es que existe una que sea mejor que otra, por ejemplo, la configuración X3 está en la Frontera de Pareto por que es mejor que las configuraciones X1 y X2 debido a que maximiza al menos a un individuo, es decir, maximiza a la \emph{Softgoal} 5.
+
+
+\begin{table}[!ht]
+ \centering
+\small%\tiny %\addtolength{\tabcolsep}{-5pt}
+ \caption{The posible requirements to implement or not for the softgoal tradeoff.}\label{tab:front}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Configuración} & \textbf{R1} & \textbf{R2} & \textbf{R3} & \textbf{R4} & \textbf{R5} & \textbf{F(S1)} & \textbf{F(S2)} & \textbf{F(S3)} & \textbf{F(S4)} & \textbf{F(S5)} & \textbf{F(S6)} & \textbf{Pareto front}
+\\
+\hline
+\textbf{X1} & I & I & I & I & I & -1 & 0 & 0 & -1 & 0 & 0 & No\\ %\rowcolor[rgb]{0.8,0.8,0.8}
+\textbf{X2} & I & I & I & I & N & -1 & 0 & 0 & -1 & 0 & -1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X3} & I & I & I & N & I & -1 & 0 & 0 & 1 & 1 & -1 & Yes\\
+\textbf{X4} & I & I & I & N & N & -1 & 0 & 0 & 1 & 1 & -2 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X5} & I & I & N & I & I & 1 & -4 & -1 & -1 & 0 & 0 & Yes\\
+\textbf{X6} & I & I & N & I & N & 1 & -4 & -1 & -1 & 0 & -1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X7} & I & I & N & N & I & 1 & -4 & -1 & 1 & 1 & -1 & Yes\\
+\textbf{X8} & I & I & N & N & N & 1 & -4 & -1 & 1 & 1 & -2 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X9} & I & N & I & I & I & -1 & 0 & 0 & -2 & 0 & 2 & Yes\\
+\textbf{X10} & I & N & I & I & N & -1 & 0 & 0 & -2 & 0 & 1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X11} & I & N & I & N & I & -1 & 0 & 0 & 0 & 1 & 1 & Yes\\
+\textbf{X12} & I & N & I & N & N & -1 & 0 & 0 & 0 & 1 & 0 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X13} & I & N & N & I & I & 1 & -4 & -1 & -2 & 0 & 2 & Yes\\
+\textbf{X14} & I & N & N & I & N & 1 & -4 & -1 & -2 & 0 & 1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X15} & I & N & N & N & I & 1 & -4 & -1 & 0 & 1 & 1 & Yes\\
+\textbf{X16} & I & N & N & N & N & 1 & -4 & -1 & 0 & 1 & 0 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X17} & N & I & I & I & I & -2 & 4 & 1 & -1 & -1 & 0 & Yes\\
+\textbf{X18} & N & I & I & I & N & -2 & 4 & 1 & -1 & -1 & -1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X19} & N & I & I & N & I & -2 & 4 & 1 & 1 & 0 & -1 & Yes\\
+\textbf{X20} & N & I & I & N & N & -2 & 4 & 1 & 1 & 0 & -2 & No\\
+\textbf{X21} & N & I & N & I & I & 0 & 0 & 0 & -1 & -1 & 0 & No\\
+\textbf{X22} & N & I & N & I & N & 0 & 0 & 0 & -1 & -1 & -1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X23} & N & I & N & N & I & 0 & 0 & 0 & 1 & 0 & -1 & Yes\\
+\textbf{X24} & N & I & N & N & N & 0 & 0 & 0 & 1 & 0 & -2 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X25} & N & N & I & I & I & -2 & 4 & 1 & -2 & -1 & 2 & Yes\\
+\textbf{X26} & N & N & I & I & N & -2 & 4 & 1 & -2 & -1 & 1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X27} & N & N & I & N & I & -2 & 4 & 1 & 0 & 0 & 1 & Yes\\
+\textbf{X28} & N & N & I & N & N & -2 & 4 & 1 & 0 & 0 & 0 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X29} & N & N & N & I & I & 0 & 0 & 0 & -2 & -1 & 2 & Yes\\
+\textbf{X30} & N & N & N & I & N & 0 & 0 & 0 & -2 & -1 & 1 & No\\
+\rowcolor[rgb]{0.8,0.8,0.8} \textbf{X31} & N & N & N & N & I & 0 & 0 & 0 & 0 & 0 & 1 & Yes\\
+\textbf{X32} & N & N & N & N & N & 0 & 0 & 0 & 0 & 0 & 0 &  No\\
+\hline
+\end{tabular}
+\end{table}
+
+Finalmente, el último paso consiste en maximizar \emph{Softgoals} y continuar cumpliendo con el objetivo establecido en el modelo de requisitos (\emph{``Process of review papers be selected''}). Para esto, es necesario crear una lista de \emph{Softgoals} ordenadas por prioridad (Tabla \ref{tab:prioridad}). En base a la lista, se debe de seleccionar de la Tabla \ref{tab:front} las configuraciones que además de estar en la Frontera de Pareto cumplen con el objetivo, y de sta forma escoger la configuración que maximice las \emph{Softgoals}.
+
+\begin{table}[!ht]
+ \centering
+\small%\tiny %\addtolength{\tabcolsep}{-5pt}
+ \caption{Lista de \emph{Softgoals}.}\label{tab:prioridad}
+\begin{tabular}{| c | c|}
+\hline
+\textbf{Prioridad} & \textbf{Softgoal}
+\\
+\hline
+\textbf{1} & \emph{``S4.- Privacy be maximized''}  \\
+\textbf{2} & \emph{``S2.- Review process easier''} \\
+\textbf{3} & \emph{``S3.- Accurate review process''} \\
+\textbf{4} & \emph{``S1.- Be fair in review''} \\
+\textbf{5} & \emph{``S5.- Avoid possible conflicts os interest''}\\
+\textbf{6} & \emph{``S6.- Obtain more complete info''}  \\
+\hline
+\end{tabular}
+\end{table}
+
+Para este ejemplo, ``X3'', ``X7'' y ``X17'' cumplen con el objetivo, de las tres configuraciones, la configuración X3 es la mejor opción. De acuerdo con la lista (Tabla \ref{tab:prioridad}), ``S4'' y ``S2'' son las \emph{Softgoals} a priorizar, por tanto, la configuración ``X17'' maximiza ``S2'', sin embargo afecta negativamente a la \emph{Softgoal} 4 (Tabla \ref{tab:front}). En cambio, la configuración ``X3'' maximiza a la \emph{Softgoal} ``S4'' (1) y no afecta a la \emph{Softgoal} ``S2'' (0).
+
+\section{Una Propuesta para la Distribución de Requisitos en la Web 2.0: \emph{Rich Internet Applications}}
 \label{c1:rias}
+
+Una de las vertientes que ha tomado como base la investigación asociada a la tesis doctoral consiste en la evolución constante de las tecnología de implementación de las aplicaciones Web. En este campo encontramos a las RIAs (\emph{Rich Internet Applications}), las cuales nacen como una evolución natural de la Web, este tipo de aplicaciones hace frente a la limitación impuesta por la tecnología tradicional de la Web 1.0 [8] al ofrecer una serie de características especiales, por ejemplo interfaces más atractivas (ricas) y una mejor capacidad de respuesta e interactividad con el usuario (similar a la de aplicaciones de escritorio). Por último, en lo que respecta a tecnologías para al comunicación las RIAs ofrecen la posibilidad de comunicación por medio del audio y video (Figura \ref{fig:RiasDiagramaVenn}).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{img/RiasDiagramaVenn.png}
+\end{center}
+\caption{Diagrama que ejemplifica las carácteristicas de las RIAs.}
+\label{fig:RiasDiagramaVenn}
+\end{figure}
+
+Por otra parte, a pesar de las posibilidades que ofrecen, las RIAs son más difíciles de diseñar e implementar que las aplicaciones Web 1.0. Por tal motivo, las metodologías para el desarrollo de aplicaciones Web han sido objeto de mejoras. Basicamente, el objetivo es brindar soporte a las características particulares de las RIAs, pero se han enfocado principalmente en cuestiones de presentación [18] y en capacidades de interacción [23] descuidando la etapa de análisis y especificación de requisitos. Esto es una desventaja muy importante a considerar, debido a que el diseñador tiene que lidiar con los requisitos de la Web 1.0, como lo es la navegación más los requisitos específicos de las RIAs, tales como, la capacidad de respuesta o la reducción del ancho de banda. Asimismo, el diseñador debe de considerar la distribución de los requisitos funcionales, es decir, si son implementados en el cliente o en el servidor y como es que la distribución afecta el cumplimiento de los requisitos no-funcionales. Por lo tanto, elegir dónde serán implementados los requisitos funcionales (cliente o servidor) es una decisión fundamental para el correcto desempeño de la RIA.
 
 \section{Implementación}
 \label{c1:implementation}
@@ -544,16 +706,16 @@ Este modulo tiene como objetivo implementar todas las transformaciones definidas
 \subsubsection{Caso de estudio}
 
 En este apartado se presenta un caso de estudio para demostrar la aplicabilidad de nuestra propuesta. El caso de estudio es acerca de una empresa que se dedica a la aplicación de encuestas \emph{on-line}. Para esto la empresa requiere que su aplicación Web permita la aplicación de encuestas para usuarios registrados y para el público en general (quien tendrá ciertas restricciones). Para efectos demostrativos, en este caso de estudio nos enfocaremos únicamente a la obtención del modelo de dominio a partir de la especificación de requisitos.
-El primer paso consiste en la especificación de los requisitos para la aplicación Web "Survey WebApp".  En la Figura \ref{fig:EditorGMF},  se presenta la especificación de requisitos en el contexto del método Web A-OOH utilizando el editor WebREd (Figura \ref{fig:herramienta}).  El actor \emph{``Survey WebApp''} tiene como objetivo \emph{``Survey be performed''}, para alcanzar este objetivo es necesario seleccionar el requisito navigational \emph{``Public Survey''} o \emph{``Private Survey''}, cada uno de estos requisitos necesita de otros para poder realizarse, por ejemplo, el requisito \emph{``Public Survey''} necesita del requisito navigational \emph{``Make Survey''} y este a su vez, necesita del requisito Service \emph{``Send Survey''} y, finalmente, el requisito \emph{``Send Survey''} necesita del requisito Content \emph{``Survey Repository''} para poder llevarse a cabo. Finalmente, es importante resaltar que cada requisito contribuye de forma positiva o negativa a las \emph{``Softgoals''}, por ejemplo, el requisito \emph{``Private Survey''} lo hace de forma positiva (\emph{``Some +''}) a la Softgoal \emph{``Security''}. Para fines prácticos, en la figura 5 se presenta el modelo de requisitos A-OOH en el ambiente Eclipse Modeling Framework (EMF). En la parte superior de la figura 5 se puede ver el modelo de requisitos representado en un diagrama ECORE de EMF; en la parte inferior de la figura se pueden observar las propiedades de cada elemento de i*, en este caso el elemento Means-end el cual indica el camino hacia el requisito "Public Survey". La finalidad de la representación del modelo de requisitos en ECORE es facilitar la ejecución de las reglas de transformación.
+El primer paso consiste en la especificación de los requisitos para la aplicación Web "Survey WebApp".  En la Figura \ref{fig:herramienta},  se presenta la especificación de requisitos en el contexto del método Web A-OOH utilizando el editor WebREd (Figura \ref{fig:herramienta}).  El actor \emph{``Survey WebApp''} tiene como objetivo \emph{``Survey be performed''}, para alcanzar este objetivo es necesario seleccionar el requisito navigational \emph{``Public Survey''} o \emph{``Private Survey''}, cada uno de estos requisitos necesita de otros para poder realizarse, por ejemplo, el requisito \emph{``Public Survey''} necesita del requisito navigational \emph{``Make Survey''} y este a su vez, necesita del requisito Service \emph{``Send Survey''} y, finalmente, el requisito \emph{``Send Survey''} necesita del requisito Content \emph{``Survey Repository''} para poder llevarse a cabo. Finalmente, es importante resaltar que cada requisito contribuye de forma positiva o negativa a las \emph{``Softgoals''}, por ejemplo, el requisito \emph{``Private Survey''} lo hace de forma positiva (\emph{``Some +''}) a la Softgoal \emph{``Security''}. Para fines prácticos, en la figura 5 se presenta el modelo de requisitos A-OOH en el ambiente Eclipse Modeling Framework (EMF). En la parte superior de la figura 5 se puede ver el modelo de requisitos representado en un diagrama ECORE de EMF; en la parte inferior de la figura se pueden observar las propiedades de cada elemento de i*, en este caso el elemento Means-end el cual indica el camino hacia el requisito "Public Survey". La finalidad de la representación del modelo de requisitos en ECORE es facilitar la ejecución de las reglas de transformación.
 
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=\textwidth]{img/CasoEstudioWISM.png}
-\end{center}
-\caption{Especificación de requisitos Web con \emph{i*} para el caso de estudio.}
-\label{fig:EditorGMF}
-\end{figure}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=\textwidth]{img/CasoEstudioWISM.png}
+%\end{center}
+%\caption{Especificación de requisitos Web con \emph{i*} para el caso de estudio.}
+%\label{fig:EditorGMF}
+%\end{figure}
 
 
 Con el fin de automatizar el paso del CIM al PIM, se ha desarrollado
