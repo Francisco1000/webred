@@ -48,6 +48,13 @@ J.~B{\'e}zivin, F.~B{\\"u}ttner, M.~Gogolla, F.~Jouault, I.~Kurtev, and
 \newblock {\em Model Driven Engineering Languages and Systems}, pages 440--453,
   2006.
 
+\bibitem{Bolchini2003}
+D.~Bolchini and J.~Mylopoulos.
+\newblock From task-oriented to goal-oriented web requirements analysis.
+\newblock In {\em WISE '03: Proceedings of the Fourth International Conference
+  on Web Information Systems Engineering}, page 166, Washington, DC, USA, 2003.
+  IEEE Computer Society.
+
 \bibitem{Bozzon2008}
 A.~Bozzon, S.~Comai, and P.~Fraternali.
 \newblock {Current Research on the Design of Web 2.0 Applications Based on

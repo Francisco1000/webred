@@ -5,13 +5,13 @@ Version=2
 [SessionInfo]
 ActiveTab=0
 FrameCount=19
-ActiveFrame=1
+ActiveFrame=0
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,23 +24,23 @@ Class=CLatexEdit
 Document=AguilarTesisDoctorado.tex
 
 [Frame0_Row0]
-cyCur=208
+cyCur=358
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1023
+cxCur=1053
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=88
-Cursor.column=18
-TopSubLine=81
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
 
 [Frame1]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -53,17 +53,17 @@ Class=CLatexEdit
 Document=chapter1.tex
 
 [Frame1_Row0]
-cyCur=407
+cyCur=210
 cyMin=10
 
 [Frame1_Col0]
-cxCur=1162
+cxCur=1019
 cxMin=10
 
 [Frame1_View0,0]
 Cursor.row=377
-Cursor.column=169
-TopSubLine=648
+Cursor.column=173
+TopSubLine=721
 
 [Frame2]
 Columns=1
@@ -208,7 +208,7 @@ cxMin=10
 [Frame6_View0,0]
 Cursor.row=21
 Cursor.column=0
-TopSubLine=33
+TopSubLine=38
 
 [Frame7]
 Columns=1
@@ -382,7 +382,7 @@ cxMin=10
 [Frame12_View0,0]
 Cursor.row=53
 Cursor.column=0
-TopSubLine=52
+TopSubLine=53
 
 [Frame13]
 Columns=1
@@ -556,5 +556,5 @@ cxMin=10
 [Frame18_View0,0]
 Cursor.row=0
 Cursor.column=0
-TopSubLine=467
+TopSubLine=0
 
