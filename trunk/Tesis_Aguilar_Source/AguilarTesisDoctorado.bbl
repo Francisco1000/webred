@@ -3,7 +3,7 @@
 \bibitem{AguilarWISM}
 J.~A. Aguilar, I.~Garrig{\'o}s, S.~Casteleyn, and J.-N. Maz{\'o}n.
 \newblock Optimizing non-functioanl requirements in web applications.
-\newblock In {\em WISM (x) held in conjunction with ER 2011}, pages x--x, 2011.
+\newblock In {\em WISM (In press) held in conjunction with ER 2011}, 2011.
 
 \bibitem{aguilarDSDM}
 J.~A. Aguilar, I.~Garrig{\'o}s, and J.-N. Maz{\'o}n.
@@ -22,6 +22,13 @@ J.~A. Aguilar, I.~Garrig{\'o}s, J.-N. Maz{\'o}n, and J.~Trujillo.
 \newblock An mda approach for goal-oriented requirement analysis in web
   engineering.
 \newblock {\em J. UCS}, 16(17):2475--2494, 2010.
+
+\bibitem{Aguilar2010}
+J.~A. Aguilar, I.~Garrig\'{o}s, J.~N. Maz\'{o}n, and J.~Trujillo.
+\newblock {Web Engineering approaches for requirement analysis- A Systematic
+  Literature Review}.
+\newblock In {\em 6th Web Information Systems and Technologies (WEBIST)},
+  volume~2, pages 187--190, Valencia, Spain, 2010. SciTePress Digital Library.
 
 \bibitem{impact}
 R.~Arnold and S.~Bohner.
@@ -54,6 +61,12 @@ A.~Bozzon, S.~Comai, P.~Fraternali, and G.~T. Carughi.
 \newblock In {\em Proceedings of the 6th international conference on Web
   engineering - ICWE '06}, page 353, New York, New York, USA, 2006. ACM Press.
 
+\bibitem{Hera}
+S.~Casteleyn, W.~V. Woensel, and G.-J. Houben.
+\newblock A semantics-based aspect-oriented approach to adaptation in web
+  engineering.
+\newblock In {\em Hypertext}, pages 189--198, 2007.
+
 \bibitem{Pareto2}
 Y.~Collette and P.~Siarry.
 \newblock {\em {Multiobjective optimization: principles and case studies}}.
@@ -63,6 +76,11 @@ Y.~Collette and P.~Siarry.
 G.~Cormode and B.~Krishnamurthy.
 \newblock {Key differences between Web 1.0 and Web 2.0}.
 \newblock {\em First Monday}, 13(6):2, 2008.
+
+\bibitem{WSDM}
+O.~M.~F. De~Troyer and C.~J. Leune.
+\newblock Wsdm: a user centered design method for web sites.
+\newblock {\em Comput. Netw. ISDN Syst.}, 30(1-7):85--94, 1998.
 
 \bibitem{del2006weaving}
 M.~Del~Fabro, J.~B{\'e}zivin, and P.~Valduriez.
@@ -164,6 +182,12 @@ N.~Koch, A.~Knapp, G.~Zhang, and H.~Baumeister.
   Applications}, Human-Computer Interaction Series, pages 157--191. Springer
   London, 2008.
 
+\bibitem{kochMDWE}
+N.~Koch, S.~Meli{\'a}, N.~Moreno, V.~Pelechano, F.~S{\'a}nchez, and J.~Vara.
+\newblock Model-driven web engineering.
+\newblock {\em Upgrade, The European Journal for the Informatics Professional.
+  vIX i2}, pages 40--45.
+
 \bibitem{UWEpatterns4RIA}
 N.~Koch, M.~Pigerl, G.~Zhang, and T.~Morozova.
 \newblock Patterns for the model-based development of rias.
@@ -207,6 +231,12 @@ S.~Meli{\'a}, J.~G{\'o}mez, S.~P{\'e}rez, and O.~D{\'\i}az.
 \bibitem{MDA}
 {Model Driven Architecture}.
 \newblock {\url{http://www.omg.org/mda/}}.
+
+\bibitem{MDWE}
+N.~Moreno, J.~Romero, and A.~Vallecillo.
+\newblock An overview of model-driven web engineering and the mda.
+\newblock {\em Web Engineering: Modelling and Implementing Web Applications},
+  pages 353--382, 2008.
 
 \bibitem{OCL}
 {Object Constraint Language, Version 2.0}.
@@ -253,10 +283,30 @@ R.~Quintero, V.~Pelechano, O.~Pastor, and J.~Fons.
 {QVT Language}.
 \newblock {\url{http://www.omg.org/cgi-bin/doc?ptc/2005-11-01}}.
 
+\bibitem{MDE}
+D.~Schmidt.
+\newblock Guest editor's introduction: Model-driven engineering.
+\newblock {\em Computer}, 39(2):25--31, 2006.
+
+\bibitem{OOHDM1995}
+D.~Schwabe and G.~Rossi.
+\newblock The object-oriented hypermedia design model.
+\newblock {\em Communications of the ACM}, 38(8):45--46, 1995.
+
+\bibitem{SEI}
+{S}oftware Engineering~Institute.
+\newblock \url{http://www.sei.cmu.edu/}, 2010.
+
 \bibitem{Sommerville96}
 I.~Sommerville.
 \newblock {\em Software Engineering}.
 \newblock Addison-Wesley, 6th edition, 2001.
+
+\bibitem{cmmi4development}
+I.~Sommerville.
+\newblock {\em CMMI for Development®: Guidelines for Process Integration and
+  Product Improvement}.
+\newblock Addison-Wesley Professional, 3rd edition, 2011.
 
 \bibitem{Pareto1}
 F.~Szidarovszky, M.~Gershon, and L.~Duckstein.

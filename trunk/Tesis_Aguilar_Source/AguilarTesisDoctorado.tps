@@ -4,7 +4,7 @@ Version=2
 
 [SessionInfo]
 ActiveTab=0
-FrameCount=18
+FrameCount=19
 ActiveFrame=1
 
 [Frame0]
@@ -16,25 +16,25 @@ MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
 MaxPos.y=-30
-NormalPos.left=0
-NormalPos.top=0
-NormalPos.right=1056
-NormalPos.bottom=269
+NormalPos.left=50
+NormalPos.top=50
+NormalPos.right=1110
+NormalPos.bottom=317
 Class=CLatexEdit
-Document=chapter1.tex
+Document=AguilarTesisDoctorado.tex
 
 [Frame0_Row0]
-cyCur=210
+cyCur=208
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1019
+cxCur=1023
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=154
-Cursor.column=54
-TopSubLine=311
+Cursor.row=88
+Cursor.column=18
+TopSubLine=81
 
 [Frame1]
 Columns=1
@@ -45,25 +45,25 @@ MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
 MaxPos.y=-30
-NormalPos.left=50
-NormalPos.top=50
-NormalPos.right=1110
-NormalPos.bottom=317
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=1056
+NormalPos.bottom=269
 Class=CLatexEdit
-Document=AguilarTesisDoctorado.tex
+Document=chapter1.tex
 
 [Frame1_Row0]
-cyCur=358
+cyCur=407
 cyMin=10
 
 [Frame1_Col0]
-cxCur=1053
+cxCur=1162
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=10
-Cursor.column=0
-TopSubLine=0
+Cursor.row=377
+Cursor.column=169
+TopSubLine=648
 
 [Frame2]
 Columns=1
@@ -90,9 +90,9 @@ cxCur=1023
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=12
-Cursor.column=8
-TopSubLine=1
+Cursor.row=10
+Cursor.column=0
+TopSubLine=0
 
 [Frame3]
 Columns=1
@@ -148,8 +148,8 @@ cxCur=927
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=9
-Cursor.column=34
+Cursor.row=11
+Cursor.column=0
 TopSubLine=0
 
 [Frame5]
@@ -324,7 +324,7 @@ cxMin=10
 [Frame10_View0,0]
 Cursor.row=24
 Cursor.column=0
-TopSubLine=16
+TopSubLine=15
 
 [Frame11]
 Columns=1
@@ -496,9 +496,9 @@ cxCur=912
 cxMin=10
 
 [Frame16_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=0
+Cursor.row=12
+Cursor.column=38
+TopSubLine=4
 
 [Frame17]
 Columns=1
@@ -525,7 +525,36 @@ cxCur=912
 cxMin=10
 
 [Frame17_View0,0]
+Cursor.row=18
+Cursor.column=38
+TopSubLine=7
+
+[Frame18]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=1058
+NormalPos.bottom=280
+Class=CLatexEdit
+Document=tesis.bib
+
+[Frame18_Row0]
+cyCur=221
+cyMin=10
+
+[Frame18_Col0]
+cxCur=1021
+cxMin=10
+
+[Frame18_View0,0]
 Cursor.row=0
 Cursor.column=0
-TopSubLine=0
+TopSubLine=467
 
