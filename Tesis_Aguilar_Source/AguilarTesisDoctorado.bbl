@@ -74,15 +74,17 @@ S.~Casteleyn, W.~V. Woensel, and G.-J. Houben.
   engineering.
 \newblock In {\em Hypertext}, pages 189--198, 2007.
 
+\bibitem{WebML}
+S.~Ceri, P.~Fraternali, and A.~Bongio.
+\newblock Web modeling language (webml): a modeling language for designing web
+  sites.
+\newblock {\em International Journal of Computer and Telecommunications
+  Networking}, 33(1-6):137--157, 2000.
+
 \bibitem{Pareto2}
 Y.~Collette and P.~Siarry.
 \newblock {\em {Multiobjective optimization: principles and case studies}}.
 \newblock Springer Verlag, 2003.
-
-\bibitem{cormode2008key}
-G.~Cormode and B.~Krishnamurthy.
-\newblock {Key differences between Web 1.0 and Web 2.0}.
-\newblock {\em First Monday}, 13(6):2, 2008.
 
 \bibitem{WSDM}
 O.~M.~F. De~Troyer and C.~J. Leune.
@@ -149,6 +151,11 @@ I.~Garrig{\'o}s, J.-N. Maz{\'o}n, and J.~Trujillo.
 \newblock A requirement analysis approach for using i* in web engineering.
 \newblock In {\em ICWE}, pages 151--165, 2009.
 
+\bibitem{Pareto5}
+P.~Godfrey, R.~Shipley, and J.~Gryz.
+\newblock Algorithms and analyses for maximal vector computation.
+\newblock {\em The VLDB Journal}, 16:5--28, January 2007.
+
 \bibitem{GomezOOH}
 J.~G\'{o}mez, C.~Cachero, and O.~Pastor.
 \newblock Extending a conceptual modelling approach to web application design.
@@ -206,6 +213,11 @@ N.~Koch, M.~Pigerl, G.~Zhang, and T.~Morozova.
 N.~Koch, G.~Zhang, and M.~J.~E. Cuaresma.
 \newblock Model transformations from requirements to web system design.
 \newblock In {\em ICWE}, pages 281--288, 2006.
+
+\bibitem{KungPareto}
+H.~T. Kung, F.~Luccio, and F.~P. Preparata.
+\newblock On finding the maxima of a set of vectors.
+\newblock {\em J. ACM}, 22:469--476, October 1975.
 
 \bibitem{ATL}
 A.~T. Language.
@@ -280,6 +292,12 @@ J.~C. Preciado, M.~Linaje, F.~Sanchez, and S.~Comai.
   Web Site Evolution}, pages 7--13, Washington, DC, USA, 2005. IEEE Computer
   Society.
 
+\bibitem{Pareto4}
+B.~Qian, L.~Wang, D.~xian Huang, W.~liang Wang, and X.~Wang.
+\newblock An effective hybrid de-based algorithm for multi-objective flow shop
+  scheduling with limited buffers.
+\newblock {\em Computers and Operations Research}, 36(1):209 -- 233, 2009.
+
 \bibitem{OOWSMDA}
 R.~Quintero, V.~Pelechano, O.~Pastor, and J.~Fons.
 \newblock {Aplicaci{\'o}n de MDA al Desarrollo de Aplicaciones Web en OOWS}.
@@ -347,6 +365,12 @@ J.~M. Wright and J.~B. Dietrich.
 \newblock In {\em Proceedings of the 9th international conference on Web
   Information Systems Engineering}, WISE '08, pages 106--119, Berlin,
   Heidelberg, 2008. Springer-Verlag.
+
+\bibitem{Pareto3}
+S.~Yoo and M.~Harman.
+\newblock Using hybrid algorithm for pareto efficient multi-objective test
+  suite minimisation.
+\newblock {\em Journal of Systems and Software}, 83(4):689--701, 2010.
 
 \bibitem{Yu95}
 E.~Yu.

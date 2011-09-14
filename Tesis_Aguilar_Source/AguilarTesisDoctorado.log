@@ -1,18 +1,26 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.7.17)  14 SEP 2011 01:15
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.8)  14 SEP 2011 20:57
 entering extended mode
-**C:/Users/José*Alfonso*Aguilar/Desktop/tesis/AguilarTesisDoctorado.tex
-("C:/Users/José Alfonso Aguilar/Desktop/tesis/AguilarTesisDoctorado.tex"
+**C:/Users/José*Alfonso/Desktop/Tesis_Aguilar/AguilarTesisDoctorado.tex
+("C:/Users/José Alfonso/Desktop/Tesis_Aguilar/AguilarTesisDoctorado.tex"
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\svmono.cls"
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\svmono.cls"
 Document Class: svmono 2006/05/11 v4.14 
 Springer Verlag global LaTeX document class for monographs
 Class Springer-SVMono Info: extra/valid Springer sub-package 
 (Springer-SVMono)           not found in option list - using "global" style.
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\article.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\size10.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -64,35 +72,35 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 634.
 \tabcapgap=\dimen123
 \c@merk=\count90
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\makeidx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/09/14 v0.05b Graphics/color for pdfTeX
 \Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen124
 \Gin@req@width=\dimen125
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\multicol.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \c@tracingmulticols=\count92
 \mult@box=\box26
@@ -139,7 +147,7 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\footmisc\footmisc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks15
 \footnotemargin=\dimen134
@@ -153,13 +161,13 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\pdfpages\pdfpages.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
 Package: pdfpages 2011/03/10 v0.4n Insert pages of external PDF documents (AM)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\ifthen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\calc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count101
 \calc@Bcount=\count102
@@ -172,26 +180,26 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count103
 \calc@Cskip=\skip47
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\eso-pic\eso-pic.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
 Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2010/03/25 v1.12 At begin shipout hook (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2010/04/08 v1.5 LaTeX kernel commands for general use (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in pdf mode detected.
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\xcolor\xcolor.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -205,7 +213,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\pdfpages\pppdftex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
 File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box52
@@ -213,11 +221,11 @@ File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count104
 \AM@templatesizebox=\box53
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\subfigure\subfigure.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip48
 \subfigcapskip=\skip49
@@ -233,37 +241,37 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("C:\Program Files\MiKTeX 2.8\tex\latex\subfigure\subfigure.cfg")
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
 \subfig@top=\skip52
 \subfig@bottom=\skip53
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\epstopdf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\epstopdf-base.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\grfext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
 
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -276,13 +284,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 436.
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\lscape.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amssymb.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amsfonts.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
@@ -290,10 +298,10 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\colortbl\colortbl.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\array.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen139
 \extrarowheight=\dimen140
@@ -304,24 +312,24 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \everycr=\toks19
 \minrowclearance=\skip56
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amstext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsgen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
 \ex@=\dimen141
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsbsy.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen142
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count109
@@ -365,20 +373,23 @@ Package amsmath Warning: Unable to redefine math accent \vec.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-) ("C:\Program Files\MiKTeX 2.8\tex\latex\base\inputenc.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\latin1.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/03/13 v5.3 Page Geometry
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count121
 \Gm@cntv=\count122
@@ -393,7 +404,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks27
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.cfg")
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")
 
 Package geometry Warning: `twoside' should be set to `true' or `false'.
 
@@ -401,18 +412,15 @@ Package geometry Warning: `twoside' should be set to `true' or `false'.
 \@indexfile=\write3
 
 Writing index file AguilarTesisDoctorado.idx
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\AguilarTesisDoctorado.aux"
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\dedic.aux")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\ack.aux")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\pref.aux")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\chapter1.aux"
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\AguilarTesisDoctorado.aux"
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter1.aux"
 
 LaTeX Warning: Label `mt:matriz' multiply defined.
 
 
 LaTeX Warning: Label `tab:front' multiply defined.
 
-) ("C:\Users\José Alfonso Aguilar\Desktop\tesis\referenc.aux"
+) ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\referenc.aux"
 
 LaTeX Warning: Label `AguilarWISM' multiply defined.
 
@@ -450,10 +458,10 @@ LaTeX Warning: Label `Bozzon2006' multiply defined.
 LaTeX Warning: Label `Hera' multiply defined.
 
 
+LaTeX Warning: Label `WebML' multiply defined.
+
+
 LaTeX Warning: Label `Pareto2' multiply defined.
-
-
-LaTeX Warning: Label `cormode2008key' multiply defined.
 
 
 LaTeX Warning: Label `WSDM' multiply defined.
@@ -492,6 +500,9 @@ LaTeX Warning: Label `irene08' multiply defined.
 LaTeX Warning: Label `Garrigos09' multiply defined.
 
 
+LaTeX Warning: Label `Pareto5' multiply defined.
+
+
 LaTeX Warning: Label `GomezOOH' multiply defined.
 
 
@@ -520,6 +531,9 @@ LaTeX Warning: Label `UWEpatterns4RIA' multiply defined.
 
 
 LaTeX Warning: Label `KochModelTRans' multiply defined.
+
+
+LaTeX Warning: Label `KungPareto' multiply defined.
 
 
 LaTeX Warning: Label `ATL' multiply defined.
@@ -561,6 +575,9 @@ LaTeX Warning: Label `Preciado2008' multiply defined.
 LaTeX Warning: Label `Preciado' multiply defined.
 
 
+LaTeX Warning: Label `Pareto4' multiply defined.
+
+
 LaTeX Warning: Label `OOWSMDA' multiply defined.
 
 
@@ -600,6 +617,9 @@ LaTeX Warning: Label `IAML' multiply defined.
 LaTeX Warning: Label `ReqForRIA' multiply defined.
 
 
+LaTeX Warning: Label `Pareto3' multiply defined.
+
+
 LaTeX Warning: Label `Yu95' multiply defined.
 
 
@@ -618,7 +638,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
- ("C:\Program Files\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
 \scratchdimen=\dimen158
@@ -636,9 +656,10 @@ LaTeX Font Info:    ... okay on input line 71.
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
 * driver: dvips
-* paper: 597.50787pt, 845.04675pt (class default)
-* layout: 597.50787pt, 845.04675pt
-* switch(es): twoside 
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
 * h-part:(L,W,R)=(93.89418pt, 409.71951pt, 93.89418pt)
 * v-part:(T,H,B)=(93.89418pt, 657.25839pt, 93.89418pt)
 * \paperwidth=597.50787pt
@@ -650,6 +671,7 @@ LaTeX Font Info:    ... okay on input line 71.
 * \topmargin=-2.37581pt
 * \headheight=12.0pt
 * \headsep=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
 * \marginparwidth=90.0pt
 * \marginparsep=11.0pt
@@ -662,7 +684,7 @@ LaTeX Font Info:    ... okay on input line 71.
 * \@twosidetrue
 * \@mparswitchtrue
 * \@reversemarginfalse
-* (1in=72.27pt, 1cm=28.453pt)
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--75
@@ -672,51 +694,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
 [1
 Non-PDF special ignored!
 
-{C:/Users/José Alfonso Aguilar/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.ma
-p}] [2
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2
 
 
 ]
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\dedic.tex") [5
-
-]
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\ack.tex" [6
-
-
-
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)) [7]
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\pref.tex" [8
-
-
-
-
-]
-
-LaTeX Warning: Reference `p1' on page IX undefined on input line 23.
-
-) [9] [10
-
-
-
-]
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\AguilarTesisDoctorado.toc")
+)
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\AguilarTesisDoctorado.toc")
 \tf@toc=\write4
 
-[11] [12
+[5
 
 
-] ("C:\Users\José Alfonso Aguilar\Desktop\tesis\chapter1.tex"
+] [6
+
+
+] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter1.tex"
 Chapter 1.
 
 LaTeX Warning: Reference `p1' on page 1 undefined on input line 29.
@@ -755,7 +756,7 @@ LaTeX Warning: Reference `c3' on page 3 undefined on input line 86.
 LaTeX Warning: Reference `c3' on page 3 undefined on input line 86.
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 89.
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\omscmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -765,474 +766,513 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 LaTeX Warning: Reference `a2' on page 4 undefined on input line 98.
 
 
-LaTeX Warning: Reference `c4' on page 4 undefined on input line 103.
+LaTeX Warning: Reference `c4' on page 4 undefined on input line 102.
 
 
-LaTeX Warning: Reference `a3' on page 4 undefined on input line 105.
-
-! Misplaced alignment tab character &.
-<argument> ...al Journal of Open Source Software &
-                                                   Processes (IJOSSP).
-l.108 ...en Source Software & Processes (IJOSSP).}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+LaTeX Warning: Reference `a3' on page 4 undefined on input line 104.
 
 
-LaTeX Warning: Reference `c5' on page 4 undefined on input line 110.
+LaTeX Warning: Reference `c5' on page 4 undefined on input line 109.
 
 [4]
-Overfull \hbox (3.17659pt too wide) in paragraph at lines 128--129
+Overfull \hbox (3.17659pt too wide) in paragraph at lines 127--128
 []\OT1/cmr/m/n/10 Una Prop-uesta Ori-en-tada a Ob-je-tivos para el Analisis
  []
 
-[5] [6] [7] <img/approach.png, id=66, 401.5pt x 325.215pt>
+[5] [6] [7] <img/approach.png, id=47, 401.5pt x 325.215pt>
 File: img/approach.png Graphic file (type png)
 
 <use img/approach.png>
 
-LaTeX Warning: Reference `c4' on page 8 undefined on input line 198.
+LaTeX Warning: Reference `c4' on page 8 undefined on input line 197.
 
 
-LaTeX Warning: Reference `c3' on page 8 undefined on input line 200.
+LaTeX Warning: Reference `c3' on page 8 undefined on input line 199.
 
 
-LaTeX Warning: Reference `a1' on page 8 undefined on input line 200.
+LaTeX Warning: Reference `a1' on page 8 undefined on input line 199.
 
-[8 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/approach.png (PNG copy)>]
+[8 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/approach.png (PNG copy)>]
 Package epstopdf Info: Source file: <img/iactor.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 17309 bytes
 (epstopdf)             Output file: <img/iactor-eps-converted-to.pdf>
-(epstopdf)                    date: 2011-07-17 16:14:25
+(epstopdf)                    date: 2011-07-18 12:26:54
 (epstopdf)                    size: 2441 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/iactor-eps-converted-to
 .pdf img/iactor.eps>
-(epstopdf)             \includegraphics on input line 228.
+(epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/iactor-eps-converted-to.pdf, id=71, 71.26625pt x 72.27pt>
+<img/iactor-eps-converted-to.pdf, id=52, 71.26625pt x 72.27pt>
 File: img/iactor-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/iactor-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/goal.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 17399 bytes
 (epstopdf)             Output file: <img/goal-eps-converted-to.pdf>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:23
 (epstopdf)                    size: 2509 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/goal-eps-converted-to.p
 df img/goal.eps>
-(epstopdf)             \includegraphics on input line 229.
+(epstopdf)             \includegraphics on input line 228.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/goal-eps-converted-to.pdf, id=72, 78.2925pt x 50.1875pt>
+<img/goal-eps-converted-to.pdf, id=53, 78.2925pt x 50.1875pt>
 File: img/goal-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/goal-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/task.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 17331 bytes
 (epstopdf)             Output file: <img/task-eps-converted-to.pdf>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:24
 (epstopdf)                    size: 2490 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/task-eps-converted-to.p
 df img/task.eps>
-(epstopdf)             \includegraphics on input line 230.
+(epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/task-eps-converted-to.pdf, id=73, 86.3225pt x 55.20625pt>
+<img/task-eps-converted-to.pdf, id=54, 86.3225pt x 55.20625pt>
 File: img/task-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/task-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/softgoal.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 23361 bytes
 (epstopdf)             Output file: <img/softgoal-eps-converted-to.pdf>
-(epstopdf)                    date: 2011-09-13 21:48:51
+(epstopdf)                    date: 2011-09-13 20:05:21
 (epstopdf)                    size: 2478 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/softgoal-eps-converted-
 to.pdf img/softgoal.eps>
-(epstopdf)             \includegraphics on input line 231.
+(epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/softgoal-eps-converted-to.pdf, id=74, 81.30376pt x 54.2025pt>
+<img/softgoal-eps-converted-to.pdf, id=55, 81.30376pt x 54.2025pt>
 File: img/softgoal-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/softgoal-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/resource.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 17151 bytes
 (epstopdf)             Output file: <img/resource-eps-converted-to.pdf>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:25
 (epstopdf)                    size: 2441 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/resource-eps-converted-
 to.pdf img/resource.eps>
-(epstopdf)             \includegraphics on input line 232.
+(epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/resource-eps-converted-to.pdf, id=75, 77.28876pt x 50.1875pt>
+<img/resource-eps-converted-to.pdf, id=56, 77.28876pt x 50.1875pt>
 File: img/resource-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/resource-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/means-end.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 19790 bytes
 (epstopdf)             Output file: <img/means-end-eps-converted-to.pdf>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:26
 (epstopdf)                    size: 2501 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/means-end-eps-converted
 -to.pdf img/means-end.eps>
-(epstopdf)             \includegraphics on input line 233.
+(epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/means-end-eps-converted-to.pdf, id=76, 62.2325pt x 33.12375pt>
+<img/means-end-eps-converted-to.pdf, id=57, 62.2325pt x 33.12375pt>
 File: img/means-end-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/means-end-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/decomposition.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 20934 bytes
 (epstopdf)             Output file: <img/decomposition-eps-converted-to.pdf>
-(epstopdf)                    date: 2011-07-17 16:14:26
+(epstopdf)                    date: 2011-07-18 12:26:54
 (epstopdf)                    size: 2413 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/decomposition-eps-conve
 rted-to.pdf img/decomposition.eps>
-(epstopdf)             \includegraphics on input line 234.
+(epstopdf)             \includegraphics on input line 233.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/decomposition-eps-converted-to.pdf, id=77, 61.22874pt x 31.11626pt>
+<img/decomposition-eps-converted-to.pdf, id=58, 61.22874pt x 31.11626pt>
 File: img/decomposition-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/decomposition-eps-converted-to.pdf>
 
-LaTeX Warning: Reference `c3' on page 9 undefined on input line 239.
+LaTeX Warning: Reference `c3' on page 9 undefined on input line 238.
 
 
-LaTeX Warning: Reference `a1' on page 9 undefined on input line 239.
+LaTeX Warning: Reference `a1' on page 9 undefined on input line 238.
 
-[9 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/iactor-eps-converted-to.pdf
-> <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/goal-eps-converted-to.pdf> <
-C:/Users/José Alfonso Aguilar/Desktop/tesis/img/task-eps-converted-to.pdf> <C:/
-Users/José Alfonso Aguilar/Desktop/tesis/img/softgoal-eps-converted-to.pdf> <C:
-/Users/José Alfonso Aguilar/Desktop/tesis/img/resource-eps-converted-to.pdf> <C
-:/Users/José Alfonso Aguilar/Desktop/tesis/img/means-end-eps-converted-to.pdf> 
-<C:/Users/José Alfonso Aguilar/Desktop/tesis/img/decomposition-eps-converted-to
+[9 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/iactor-eps-converted-to.pdf
+> <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/goal-eps-converted-to.pdf> <
+C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/task-eps-converted-to.pdf> <C:/
+Users/José Alfonso/Desktop/Tesis_Aguilar/img/softgoal-eps-converted-to.pdf> <C:
+/Users/José Alfonso/Desktop/Tesis_Aguilar/img/resource-eps-converted-to.pdf> <C
+:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/means-end-eps-converted-to.pdf> 
+<C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/decomposition-eps-converted-to
 .pdf>] [10]
-<img/WebRequirementsMetamodel.png, id=101, 1087.06125pt x 577.40718pt>
+<img/WebRequirementsMetamodel.png, id=82, 1087.06125pt x 577.40718pt>
 File: img/WebRequirementsMetamodel.png Graphic file (type png)
 
 <use img/WebRequirementsMetamodel.png>
-Overfull \hbox (80.23798pt too wide) in paragraph at lines 262--263
+Overfull \hbox (80.23798pt too wide) in paragraph at lines 263--264
  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 8.78113pt on input line 266.
+LaTeX Warning: Float too large for page by 8.78113pt on input line 267.
 
-[11 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/WebRequirementsMetamodel.p
+[11 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/WebRequirementsMetamodel.p
 ng>]
 
-LaTeX Warning: Reference `c4' on page 12 undefined on input line 270.
+LaTeX Warning: Reference `c4' on page 12 undefined on input line 271.
 
 [12
 
 
-] <img/NavigationalMetamodel.png, id=110, 756.57657pt x 395.22656pt>
+] <img/NavigationalMetamodel.png, id=91, 756.57657pt x 395.22656pt>
 File: img/NavigationalMetamodel.png Graphic file (type png)
 
 <use img/NavigationalMetamodel.png> [13
 
- <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/NavigationalMetamodel.png>]
+ <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/NavigationalMetamodel.png>]
 
-LaTeX Warning: Reference `4' on page 14 undefined on input line 321.
+LaTeX Warning: Reference `4' on page 14 undefined on input line 322.
 
 
-LaTeX Warning: Reference `a3' on page 14 undefined on input line 321.
+LaTeX Warning: Reference `a3' on page 14 undefined on input line 322.
 
 Package epstopdf Info: Source file: <img/content2domainclass.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2009-04-25 11:34:04
 (epstopdf)                    size: 82027 bytes
 (epstopdf)             Output file: <img/content2domainclass-eps-converted-to.p
 df>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:31
 (epstopdf)                    size: 6504 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/content2domainclass-eps
 -converted-to.pdf img/content2domainclass.eps>
-(epstopdf)             \includegraphics on input line 330.
+(epstopdf)             \includegraphics on input line 331.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/content2domainclass-eps-converted-to.pdf, id=115, 309.155pt x 145.54375pt>
+<img/content2domainclass-eps-converted-to.pdf, id=96, 309.155pt x 145.54375pt>
 File: img/content2domainclass-eps-converted-to.pdf Graphic file (type pdf)
+
 <use img/content2domainclass-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/service2operation.eps>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2009-04-25 13:12:38
 (epstopdf)                    size: 115136 bytes
 (epstopdf)             Output file: <img/service2operation-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:32
 (epstopdf)                    size: 7803 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/service2operation-eps-c
 onverted-to.pdf img/service2operation.eps>
-(epstopdf)             \includegraphics on input line 339.
+(epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/service2operation-eps-converted-to.pdf, id=116, 309.155pt x 224.84pt>
+<img/service2operation-eps-converted-to.pdf, id=97, 309.155pt x 224.84pt>
 File: img/service2operation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/service2operation-eps-converted-to.pdf>
 Package epstopdf Info: Source file: <img/navigation2relationship.eps>
-(epstopdf)                    date: 2011-07-16 10:51:42
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 114678 bytes
 (epstopdf)             Output file: <img/navigation2relationship-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:33
 (epstopdf)                    size: 8308 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/navigation2relationship
 -eps-converted-to.pdf img/navigation2relationship.eps>
-(epstopdf)             \includegraphics on input line 347.
+(epstopdf)             \includegraphics on input line 348.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/navigation2relationship-eps-converted-to.pdf, id=117, 309.155pt x 212.795p
-t>
+<img/navigation2relationship-eps-converted-to.pdf, id=98, 309.155pt x 212.795pt
+>
 File: img/navigation2relationship-eps-converted-to.pdf Graphic file (type pdf)
  <use img/navigation2relationship-eps-converted-to.pdf> [14
 
 ]
 Package epstopdf Info: Source file: <img/navigation2relationship.eps>
-(epstopdf)                    date: 2011-07-16 10:51:42
+(epstopdf)                    date: 2011-07-11 10:32:58
 (epstopdf)                    size: 114678 bytes
 (epstopdf)             Output file: <img/navigation2relationship-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2011-07-16 10:51:43
+(epstopdf)                    date: 2011-07-13 11:28:33
 (epstopdf)                    size: 8308 bytes
 (epstopdf)             Command: <epstopdf --outfile=img/navigation2relationship
 -eps-converted-to.pdf img/navigation2relationship.eps>
-(epstopdf)             \includegraphics on input line 362.
+(epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
 File: img/navigation2relationship-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/navigation2relationship-eps-converted-to.pdf> [15 <C:/Users/José Alfon
-so Aguilar/Desktop/tesis/img/content2domainclass-eps-converted-to.pdf> <C:/User
-s/José Alfonso Aguilar/Desktop/tesis/img/service2operation-eps-converted-to.pdf
->] [16 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/navigation2relationship
+so/Desktop/Tesis_Aguilar/img/content2domainclass-eps-converted-to.pdf> <C:/User
+s/José Alfonso/Desktop/Tesis_Aguilar/img/service2operation-eps-converted-to.pdf
+>] [16 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/navigation2relationship
 -eps-converted-to.pdf>]
 
-LaTeX Warning: Reference `a3' on page 17 undefined on input line 390.
+LaTeX Warning: Reference `a3' on page 17 undefined on input line 391.
 
 
-LaTeX Warning: Reference `c5' on page 17 undefined on input line 390.
+LaTeX Warning: Reference `c5' on page 17 undefined on input line 391.
 
 
-LaTeX Warning: Reference `c6' on page 17 undefined on input line 390.
+LaTeX Warning: Reference `c6' on page 17 undefined on input line 391.
 
-[17] <img/WeavingMetamodel.png, id=149, 633.86812pt x 231.11343pt>
+[17] <img/WeavingMetamodel.png, id=130, 633.86812pt x 231.11343pt>
 File: img/WeavingMetamodel.png Graphic file (type png)
 
 <use img/WeavingMetamodel.png>
-<img/TraceabilityMetamodel.png, id=150, 462.97969pt x 307.1475pt>
+<img/TraceabilityMetamodel.png, id=131, 462.97969pt x 307.1475pt>
 File: img/TraceabilityMetamodel.png Graphic file (type png)
 
-<use img/TraceabilityMetamodel.png> [18 <C:/Users/José Alfonso Aguilar/Desktop/
-tesis/img/WeavingMetamodel.png>]
+<use img/TraceabilityMetamodel.png> [18 <C:/Users/José Alfonso/Desktop/Tesis_Ag
+uilar/img/WeavingMetamodel.png>]
 
-LaTeX Warning: Reference `c5' on page 19 undefined on input line 461.
+LaTeX Warning: Reference `c5' on page 19 undefined on input line 462.
 
-[19 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/TraceabilityMetamodel.png>
-] <img/EjemploICCSA.png, id=159, 500.62032pt x 400.49625pt>
+[19 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/TraceabilityMetamodel.png>
+] <img/EjemploICCSA.png, id=140, 500.62032pt x 400.49625pt>
 File: img/EjemploICCSA.png Graphic file (type png)
 
-<use img/EjemploICCSA.png>
-<img/EjemploICCSAReqIniciales.png, id=160, 407.27156pt x 340.27126pt>
+<use img/EjemploICCSA.png> [20 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img
+/EjemploICCSA.png>]
+<img/EjemploICCSAReqIniciales.png, id=145, 407.27156pt x 340.27126pt>
 File: img/EjemploICCSAReqIniciales.png Graphic file (type png)
 
-<use img/EjemploICCSAReqIniciales.png> [20 <C:/Users/José Alfonso Aguilar/Deskt
-op/tesis/img/EjemploICCSA.png>]
+<use img/EjemploICCSAReqIniciales.png>
 
-LaTeX Warning: Reference `c5' on page 21 undefined on input line 490.
+LaTeX Warning: Reference `c5' on page 21 undefined on input line 496.
 
 
-LaTeX Warning: Reference `c5' on page 21 undefined on input line 514.
+LaTeX Warning: Reference `c5' on page 21 undefined on input line 520.
 
-[21 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/EjemploICCSAReqIniciales.p
-ng>] <img/EjemploICCSAReqFinales.png, id=170, 424.58624pt x 380.17032pt>
+[21 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/EjemploICCSAReqIniciales.p
+ng>] <img/EjemploICCSAReqFinales.png, id=151, 424.58624pt x 380.17032pt>
 File: img/EjemploICCSAReqFinales.png Graphic file (type png)
 
-<use img/EjemploICCSAReqFinales.png> [22 <C:/Users/José Alfonso Aguilar/Desktop
-/tesis/img/EjemploICCSAReqFinales.png>]
-<img/ParetoApproach.png, id=175, 1313.90875pt x 314.17375pt>
+<use img/EjemploICCSAReqFinales.png> [22 <C:/Users/José Alfonso/Desktop/Tesis_A
+guilar/img/EjemploICCSAReqFinales.png>]
+
+LaTeX Warning: Reference `c6' on page 23 undefined on input line 545.
+
+\c@definicion=\count129
+\c@defi=\count130
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 553.
+
+! Extra }, or forgotten \endgroup.
+l.554 ...e ``B'', sin deteriorar a otro individuo}
+                                                  '' \emph{\cite{Pareto2, Pa...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Reference `def1' on page 23 undefined on input line 557.
+
+
+LaTeX Warning: Reference `def1' on page 23 undefined on input line 557.
+
+<img/ParetoApproach.png, id=156, 1313.90875pt x 314.17375pt>
 File: img/ParetoApproach.png Graphic file (type png)
 
-<use img/ParetoApproach.png> [23 <C:/Users/José Alfonso Aguilar/Desktop/tesis/i
-mg/ParetoApproach.png (PNG copy)>]
-<img/CasoEstudioWISM.png, id=180, 623.32875pt x 478.78876pt>
+<use img/ParetoApproach.png> [23]
+<img/CasoEstudioWISM.png, id=160, 623.32875pt x 478.78876pt>
 File: img/CasoEstudioWISM.png Graphic file (type png)
 
-<use img/CasoEstudioWISM.png> [24 <C:/Users/José Alfonso Aguilar/Desktop/tesis/
-img/CasoEstudioWISM.png>]
+<use img/CasoEstudioWISM.png> [24 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/
+img/ParetoApproach.png (PNG copy)>] [25 <C:/Users/José Alfonso/Desktop/Tesis_Ag
+uilar/img/CasoEstudioWISM.png>]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 606.
+LaTeX Font Warning: Command \small invalid in math mode on input line 650.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 616.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 660.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 616.
+(Font)              size <5> substituted on input line 660.
 
 
-Overfull \hbox (4.42145pt too wide) in paragraph at lines 692--692
-[][]\OT1/cmr/m/n/9 Imagen tomada de $\OT1/cmtt/m/n/9 http : / / www . simonwha
-tley . co . uk / rich-[]internet-[]applications-[]a-[]background$| 
+Overfull \hbox (4.42145pt too wide) in paragraph at lines 738--738
+[][]\OT1/cmr/m/n/9 Imagen tomada de $\OT1/cmtt/m/n/9 http : / / www . simonwhat
+ley . co . uk / rich-[]internet-[]applications-[]a-[]background$| 
  []
 
-<img/RiasDiagramaVenn.png, id=185, 338.26375pt x 334.24875pt>
+[26] <img/RiasDiagramaVenn.png, id=175, 338.26375pt x 334.24875pt>
 File: img/RiasDiagramaVenn.png Graphic file (type png)
 
-<use img/RiasDiagramaVenn.png> [25]
+<use img/RiasDiagramaVenn.png>
 
-LaTeX Warning: Reference `a2' on page 26 undefined on input line 702.
+LaTeX Warning: Reference `a2' on page 27 undefined on input line 750.
 
-[26] <img/OverviewRIAs.png, id=195, 1065.9825pt x 448.67625pt>
+[27]
+
+LaTeX Warning: Reference `c6' on page 28 undefined on input line 754.
+
+
+LaTeX Warning: Reference `c6' on page 28 undefined on input line 754.
+
+
+LaTeX Warning: Reference `a2' on page 28 undefined on input line 754.
+
+
+LaTeX Warning: Reference `a3' on page 28 undefined on input line 754.
+
+[28 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/RiasDiagramaVenn.png (PNG 
+copy)>] <img/OverviewRIAs.png, id=183, 1065.9825pt x 448.67625pt>
 File: img/OverviewRIAs.png Graphic file (type png)
 
 <use img/OverviewRIAs.png>
-<img/EjemploRIAs.png, id=196, 543.53062pt x 361.35pt>
+<img/EjemploRIAs.png, id=184, 543.53062pt x 361.35pt>
 File: img/EjemploRIAs.png Graphic file (type png)
 
-<use img/EjemploRIAs.png> [27 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/
-RiasDiagramaVenn.png (PNG copy)>] [28 <C:/Users/José Alfonso Aguilar/Desktop/te
-sis/img/OverviewRIAs.png (PNG copy)> <C:/Users/José Alfonso Aguilar/Desktop/tes
-is/img/EjemploRIAs.png>] [29] [30]
-<img/X16.png, id=215, 794.2172pt x 365.11406pt>
+<use img/EjemploRIAs.png> [29 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/
+OverviewRIAs.png (PNG copy)>] [30 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/
+img/EjemploRIAs.png>] [31] <img/X16.png, id=199, 794.2172pt x 365.11406pt>
 File: img/X16.png Graphic file (type png)
- <use img/X16.png> [31
 
- <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/X16.png>] [32
+<use img/X16.png> [32
 
-]
-<img/Herramienta.png, id=223, 822.07124pt x 572.1375pt>
+ <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/X16.png>]
+
+LaTeX Warning: Reference `c4' on page 33 undefined on input line 868.
+
+
+LaTeX Warning: Reference `c4' on page 33 undefined on input line 870.
+
+
+LaTeX Warning: Reference `c5' on page 33 undefined on input line 872.
+
+
+LaTeX Warning: Reference `c6' on page 33 undefined on input line 874.
+
+
+LaTeX Warning: Reference `a3' on page 33 undefined on input line 874.
+
+[33
+
+] <img/Herramienta.png, id=208, 822.07124pt x 572.1375pt>
 File: img/Herramienta.png Graphic file (type png)
 
 <use img/Herramienta.png>
-<img/PropViewWebREd.png, id=224, 830.10126pt x 197.73875pt>
+<img/PropViewWebREd.png, id=209, 830.10126pt x 197.73875pt>
 File: img/PropViewWebREd.png Graphic file (type png)
 
 <use img/PropViewWebREd.png>
-<img/paleta.png, id=225, 133.24782pt x 375.65344pt>
+<img/paleta.png, id=210, 133.24782pt x 375.65344pt>
 File: img/paleta.png Graphic file (type png)
  <use img/paleta.png>
-[33 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/Herramienta.png (PNG copy)
->] [34 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/PropViewWebREd.png (PNG
- copy)> <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/paleta.png (PNG copy)>
-] <img/Content2DomainClasATL.png, id=233, 926.46124pt x 326.21875pt>
+[34] <img/Content2DomainClasATL.png, id=214, 926.46124pt x 326.21875pt>
 File: img/Content2DomainClasATL.png Graphic file (type png)
 
-<use img/Content2DomainClasATL.png>
-<img/EjemploImplementacionTesisRequisitos.png, id=234, 623.32875pt x 478.78876p
+<use img/Content2DomainClasATL.png> [35 <C:/Users/José Alfonso/Desktop/Tesis_Ag
+uilar/img/Herramienta.png (PNG copy)> <C:/Users/José Alfonso/Desktop/Tesis_Agui
+lar/img/PropViewWebREd.png (PNG copy)>] [36 <C:/Users/José Alfonso/Desktop/Tesi
+s_Aguilar/img/paleta.png (PNG copy)> <C:/Users/José Alfonso/Desktop/Tesis_Aguil
+ar/img/Content2DomainClasATL.png>]
+<img/EjemploImplementacionTesisRequisitos.png, id=222, 623.32875pt x 478.78876p
 t>
 File: img/EjemploImplementacionTesisRequisitos.png Graphic file (type png)
  <use img/EjemploImplementacionTesisRequisitos.png>
-<img/Service2ClassOperationATL.png, id=235, 1019.81pt x 580.1675pt>
+<img/Service2ClassOperationATL.png, id=223, 1019.81pt x 580.1675pt>
 File: img/Service2ClassOperationATL.png Graphic file (type png)
 
-<use img/Service2ClassOperationATL.png>
-<img/DomainModelCaseStudy.png, id=236, 508.90125pt x 591.20876pt>
+<use img/Service2ClassOperationATL.png> [37 <C:/Users/José Alfonso/Desktop/Tesi
+s_Aguilar/img/EjemploImplementacionTesisRequisitos.png>]
+<img/DomainModelCaseStudy.png, id=228, 508.90125pt x 591.20876pt>
 File: img/DomainModelCaseStudy.png Graphic file (type png)
 
 <use img/DomainModelCaseStudy.png>
-<img/TraceModelReqDomain.png, id=237, 1175.39125pt x 431.6125pt>
+<img/TraceModelReqDomain.png, id=229, 1175.39125pt x 431.6125pt>
 File: img/TraceModelReqDomain.png Graphic file (type png)
 
-<use img/TraceModelReqDomain.png> [35 <C:/Users/José Alfonso Aguilar/Desktop/te
-sis/img/Content2DomainClasATL.png>] [36 <C:/Users/José Alfonso Aguilar/Desktop/
-tesis/img/EjemploImplementacionTesisRequisitos.png> <C:/Users/José Alfonso Agui
-lar/Desktop/tesis/img/Service2ClassOperationATL.png (PNG copy)>] [37 <C:/Users/
-José Alfonso Aguilar/Desktop/tesis/img/DomainModelCaseStudy.png (PNG copy)> <C:
-/Users/José Alfonso Aguilar/Desktop/tesis/img/TraceModelReqDomain.png (PNG copy
-)>] [38]
-<img/TrazabilidadAtlasModelWeaver.png, id=252, 871.00406pt x 446.41782pt>
+<use img/TraceModelReqDomain.png> [38 <C:/Users/José Alfonso/Desktop/Tesis_Agui
+lar/img/Service2ClassOperationATL.png (PNG copy)>] [39 <C:/Users/José Alfonso/D
+esktop/Tesis_Aguilar/img/DomainModelCaseStudy.png (PNG copy)> <C:/Users/José Al
+fonso/Desktop/Tesis_Aguilar/img/TraceModelReqDomain.png (PNG copy)>]
+<img/TrazabilidadAtlasModelWeaver.png, id=237, 871.00406pt x 446.41782pt>
 File: img/TrazabilidadAtlasModelWeaver.png Graphic file (type png)
 
-<use img/TrazabilidadAtlasModelWeaver.png> [39
+<use img/TrazabilidadAtlasModelWeaver.png> [40
 
- <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/TrazabilidadAtlasModelWeaver.
+ <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/TrazabilidadAtlasModelWeaver.
 png (PNG copy)>]
-<img/CreateNavigationalModelATL.png, id=257, 1141.26375pt x 556.0775pt>
+<img/CreateNavigationalModelATL.png, id=241, 1141.26375pt x 556.0775pt>
 File: img/CreateNavigationalModelATL.png Graphic file (type png)
 
 <use img/CreateNavigationalModelATL.png>
-<img/NavigationalMetamodelCaseStudy.png, id=258, 730.73pt x 593.21625pt>
+<img/NavigationalMetamodelCaseStudy.png, id=242, 730.73pt x 593.21625pt>
 File: img/NavigationalMetamodelCaseStudy.png Graphic file (type png)
 
-<use img/NavigationalMetamodelCaseStudy.png> [40
+<use img/NavigationalMetamodelCaseStudy.png> [41
 
- <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/CreateNavigationalModelATL.pn
-g (PNG copy)>] [41 <C:/Users/José Alfonso Aguilar/Desktop/tesis/img/Navigationa
-lMetamodelCaseStudy.png (PNG copy)>] [42
-
-]
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\AguilarTesisDoctorado.bbl"
-[43
+ <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/CreateNavigationalModelATL.pn
+g (PNG copy)>] [42 <C:/Users/José Alfonso/Desktop/Tesis_Aguilar/img/Navigationa
+lMetamodelCaseStudy.png (PNG copy)>] [43
 
 ]
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\AguilarTesisDoctorado.bbl"
+[44
+
+] [45]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 314.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 332.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 314.
- [44])) [45] [46
-
-
-
-] ("C:\Users\José Alfonso Aguilar\Desktop\tesis\referenc.tex" ("C:\Users\José A
-lfonso Aguilar\Desktop\tesis\AguilarTesisDoctorado.bbl"
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 332.
+)) [46] ("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\referenc.tex"
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\AguilarTesisDoctorado.bbl"
 [47
 
+
+
+
 ] [48])) [49]
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\AguilarTesisDoctorado.ind")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\AguilarTesisDoctorado.aux"
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\dedic.aux")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\ack.aux")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\pref.aux")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\chapter1.aux")
-("C:\Users\José Alfonso Aguilar\Desktop\tesis\referenc.aux"))
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\AguilarTesisDoctorado.ind")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\AguilarTesisDoctorado.aux"
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\chapter1.aux")
+("C:\Users\José Alfonso\Desktop\Tesis_Aguilar\referenc.aux"))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
@@ -1242,36 +1282,36 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5199 strings out of 495285
- 74282 string characters out of 3180349
- 210174 words of memory out of 3000000
- 8207 multiletter control sequences out of 15000+200000
- 15036 words of font info for 58 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 41i,15n,39p,2230b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
-X 2.8/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.8/
-fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.8/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/pub
-lic/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts
-/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/
-Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
-iles/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
-eX 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.8/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/
-public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/ams
-fonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pro
-gram Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program File
-s/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on AguilarTesisDoctorado.pdf (59 pages, 1827565 bytes).
+ 5312 strings out of 494019
+ 75147 string characters out of 3146478
+ 213509 words of memory out of 3000000
+ 8426 multiletter control sequences out of 15000+200000
+ 15337 words of font info for 59 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 41i,15n,39p,1963b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on AguilarTesisDoctorado.pdf (53 pages, 1828619 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
+ 341 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
