@@ -3,15 +3,15 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=0
+ActiveTab=2
 FrameCount=19
-ActiveFrame=1
+ActiveFrame=0
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,23 +24,23 @@ Class=CLatexEdit
 Document=AguilarTesisDoctorado.tex
 
 [Frame0_Row0]
-cyCur=208
+cyCur=377
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1023
+cxCur=1107
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=78
-Cursor.column=1
-TopSubLine=73
+Cursor.row=106
+Cursor.column=11
+TopSubLine=89
 
 [Frame1]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -53,17 +53,17 @@ Class=CLatexEdit
 Document=chapter1.tex
 
 [Frame1_Row0]
-cyCur=407
+cyCur=210
 cyMin=10
 
 [Frame1_Col0]
-cxCur=1167
+cxCur=1019
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=930
-Cursor.column=179
-TopSubLine=1541
+Cursor.row=1045
+Cursor.column=0
+TopSubLine=1841
 
 [Frame2]
 Columns=1
@@ -177,9 +177,9 @@ cxCur=927
 cxMin=10
 
 [Frame5_View0,0]
-Cursor.row=12
-Cursor.column=149
-TopSubLine=5
+Cursor.row=14
+Cursor.column=810
+TopSubLine=18
 
 [Frame6]
 Columns=1
@@ -206,9 +206,9 @@ cxCur=912
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=21
-Cursor.column=0
-TopSubLine=44
+Cursor.row=13
+Cursor.column=471
+TopSubLine=20
 
 [Frame7]
 Columns=1
@@ -323,7 +323,7 @@ cxMin=10
 
 [Frame10_View0,0]
 Cursor.row=24
-Cursor.column=0
+Cursor.column=52
 TopSubLine=15
 
 [Frame11]
@@ -382,7 +382,7 @@ cxMin=10
 [Frame12_View0,0]
 Cursor.row=53
 Cursor.column=0
-TopSubLine=54
+TopSubLine=55
 
 [Frame13]
 Columns=1
@@ -440,7 +440,7 @@ cxMin=10
 [Frame14_View0,0]
 Cursor.row=60
 Cursor.column=0
-TopSubLine=52
+TopSubLine=53
 
 [Frame15]
 Columns=1
@@ -496,9 +496,9 @@ cxCur=912
 cxMin=10
 
 [Frame16_View0,0]
-Cursor.row=12
-Cursor.column=38
-TopSubLine=4
+Cursor.row=8
+Cursor.column=0
+TopSubLine=0
 
 [Frame17]
 Columns=1
@@ -525,9 +525,9 @@ cxCur=912
 cxMin=10
 
 [Frame17_View0,0]
-Cursor.row=18
-Cursor.column=38
-TopSubLine=7
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
 
 [Frame18]
 Columns=1
@@ -554,7 +554,7 @@ cxCur=1021
 cxMin=10
 
 [Frame18_View0,0]
-Cursor.row=49
-Cursor.column=2
-TopSubLine=31
+Cursor.row=555
+Cursor.column=20
+TopSubLine=546
 
