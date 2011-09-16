@@ -2,71 +2,91 @@
 
 \bibitem{AguilarWISM}
 J.~A. Aguilar, I.~Garrig{\'o}s, S.~Casteleyn, and J.-N. Maz{\'o}n.
-\newblock Optimizing non-functioanl requirements in web applications.
-\newblock In {\em WISM (In press) held in conjunction with ER 2011}, 2011.
+\newblock {Optimizing Non-Functioanl Requirements in Web Applications}.
+\newblock In {\em {Proceedings of the 8th International Workshop on Web
+  Information Systems Modeling (WISM) (In press) held in conjunction with ER}},
+  2011.
 
 \bibitem{aguilarDSDM}
 J.~A. Aguilar, I.~Garrig{\'o}s, and J.-N. Maz{\'o}n.
-\newblock Modelos de weaving para trazabilidad de requisitos web en a-ooh.
-\newblock In {\em In DSDM: Actas del VII Taller sobre Desarrollo de Software
-  Dirigido por Modelos, JISBD, Congreso Espanol de Informatica (CEDI)}, pages
-  146--155, Valencia, Espa{n}a, 2010. SISTEDES.
+\newblock {Modelos de weaving para trazabilidad de requisitos Web en A-OOH}.
+\newblock In {\em DSDM: Actas del VII Taller sobre Desarrollo de Software
+  Dirigido por Modelos, JISBD, Congreso Espa{\~n}ol de Inform\'atica (CEDI)},
+  pages 146--155, Valencia, Espa{\~n}a, 2010. SISTEDES.
 
 \bibitem{AguilarICCSA}
 J.~A. Aguilar, I.~Garrig{\'o}s, and J.-N. Maz{\'o}n.
-\newblock Impact analysis of goal-oriented requirements in web engineering.
-\newblock In {\em ICCSA (5)}, pages 421--436, 2011.
+\newblock {Impact Analysis of Goal-Oriented Requirements in Web Engineering}.
+\newblock In B.~Murgante, O.~Gervasi, A.~Iglesias, D.~Taniar, and B.~Apduhan,
+  editors, {\em Proceedings of The 12th International Conference on
+  Computational Science and Its Applications (ICCSA)}, volume 6786 of {\em
+  Lecture Notes in Computer Science}, pages 421--436. Springer Berlin /
+  Heidelberg, 2011.
 
 \bibitem{AguilarJUCS}
 J.~A. Aguilar, I.~Garrig{\'o}s, J.-N. Maz{\'o}n, and J.~Trujillo.
-\newblock An mda approach for goal-oriented requirement analysis in web
-  engineering.
-\newblock {\em J. UCS}, 16(17):2475--2494, 2010.
+\newblock {An MDA Approach for Goal-oriented Requirement Analysis in Web
+  Engineering}.
+\newblock {\em Journal of Universal Computer Science (J. UCS)},
+  16(17):2475--2494, 2010.
 
 \bibitem{Aguilar2010}
 J.~A. Aguilar, I.~Garrig\'{o}s, J.~N. Maz\'{o}n, and J.~Trujillo.
 \newblock {Web Engineering approaches for requirement analysis- A Systematic
   Literature Review}.
-\newblock In {\em 6th Web Information Systems and Technologies (WEBIST)},
-  volume~2, pages 187--190, Valencia, Spain, 2010. SciTePress Digital Library.
+\newblock In {\em {Proceedings of the 6th Web Information Systems and
+  Technologies (WEBIST)}}, volume~2, pages 187--190, Valencia, Spain, 2010.
+  SciTePress Digital Library.
+
+\bibitem{GORE}
+S.~Anwer and N.~Ikram.
+\newblock {Goal-Oriented Requirement Engineering: A Critical Study of
+  Techniques}.
+\newblock In {\em {Proceeding of 13th Asia Pacific Software Engineering
+  Conference (APSEC)}}, pages 121 --130, December 2006.
 
 \bibitem{impact}
 R.~Arnold and S.~Bohner.
-\newblock Impact analysis-towards a framework for comparison.
-\newblock In {\em Software Maintenance ,1993. CSM-93, Proceedings., Conference
-  on}, pages 292 --301, sep 1993.
+\newblock {Impact analysis-Towards a framework for comparison}.
+\newblock In {\em {Proceeding of the Software Maintenance (CSM)}}, pages 292
+  --301, sep 1993.
 
 \bibitem{barbero2007traceability}
 M.~Barbero, M.~Del~Fabro, and J.~B{\'e}zivin.
-\newblock Traceability and provenance issues in global model management.
-\newblock In {\em 3rd ECMDA-Traceability Workshop}, 2007.
+\newblock {Traceability and provenance issues in global model management}.
+\newblock In {\em {3rd ECMDA-Traceability Workshop}}, 2007.
+
+\bibitem{bezivin2005unification}
+J.~B{\'e}zivin.
+\newblock On the unification power of models.
+\newblock {\em {Software and Systems Modeling}}, 4(2):171--188, 2005.
 
 \bibitem{bezivin2006model}
-J.~B{\'e}zivin, F.~B{\\"u}ttner, M.~Gogolla, F.~Jouault, I.~Kurtev, and
+J.~B{\'e}zivin, F.~B{\'u}ttner, M.~Gogolla, F.~Jouault, I.~Kurtev, and
   A.~Lindow.
-\newblock Model transformations? transformation models!
-\newblock {\em Model Driven Engineering Languages and Systems}, pages 440--453,
-  2006.
+\newblock {Model transformations? transformation models!}
+\newblock {\em {Model Driven Engineering Languages and Systems}}, pages
+  440--453, 2006.
 
 \bibitem{Bolchini2003}
 D.~Bolchini and J.~Mylopoulos.
-\newblock From task-oriented to goal-oriented web requirements analysis.
-\newblock In {\em WISE '03: Proceedings of the Fourth International Conference
-  on Web Information Systems Engineering}, page 166, Washington, DC, USA, 2003.
-  IEEE Computer Society.
+\newblock {From Task-Oriented to Goal-Oriented Web Requirements Analysis}.
+\newblock In {\em {Proceedings of the 4th International Conference on Web
+  Information Systems Engineering (WISE)}}, page 166, Washington, DC, USA,
+  2003. IEEE Computer Society.
 
 \bibitem{Bozzon2008}
 A.~Bozzon, S.~Comai, and P.~Fraternali.
 \newblock {Current Research on the Design of Web 2.0 Applications Based on
   Model-Driven Approaches}.
-\newblock {\em ICWE 2008 Workshops}, pages 25--31, 2008.
+\newblock pages 25--31, 2008.
 
 \bibitem{Bozzon2006}
 A.~Bozzon, S.~Comai, P.~Fraternali, and G.~T. Carughi.
 \newblock {Conceptual modeling and code generation for rich internet
   applications}.
-\newblock In {\em Proceedings of the 6th international conference on Web
-  engineering - ICWE '06}, page 353, New York, New York, USA, 2006. ACM Press.
+\newblock In {\em {Proceedings of the 6th International Conference on Web
+  Engineering (ICWE)}}, page 353, New York, New York, USA, 2006. ACM Press.
 
 \bibitem{Hera}
 S.~Casteleyn, W.~V. Woensel, and G.-J. Houben.
@@ -76,10 +96,10 @@ S.~Casteleyn, W.~V. Woensel, and G.-J. Houben.
 
 \bibitem{WebML}
 S.~Ceri, P.~Fraternali, and A.~Bongio.
-\newblock Web modeling language (webml): a modeling language for designing web
-  sites.
-\newblock {\em International Journal of Computer and Telecommunications
-  Networking}, 33(1-6):137--157, 2000.
+\newblock {Web Modeling Language (WebML): a modeling language for designing Web
+  sites}.
+\newblock {\em {nternational Journal of Computer and Telecommunications
+  Networking}}, 33(1-6):137--157, 2000.
 
 \bibitem{Pareto2}
 Y.~Collette and P.~Siarry.
@@ -88,19 +108,19 @@ Y.~Collette and P.~Siarry.
 
 \bibitem{WSDM}
 O.~M.~F. De~Troyer and C.~J. Leune.
-\newblock Wsdm: a user centered design method for web sites.
+\newblock {WSDM: a user centered design method for Web sites}.
 \newblock {\em Comput. Netw. ISDN Syst.}, 30(1-7):85--94, 1998.
 
 \bibitem{del2006weaving}
 M.~Del~Fabro, J.~B{\'e}zivin, and P.~Valduriez.
-\newblock Weaving models with the eclipse amw plugin.
-\newblock In {\em Eclipse Modeling Symposium, Eclipse Summit Europe}, volume
+\newblock {Weaving Models with the Eclipse AMW plugin}.
+\newblock In {\em {Eclipse Modeling Symposium, Eclipse Summit Europe}}, volume
   2006, 2006.
 
 \bibitem{AtlasModelWeaver}
 M.~Del~Fabro, J.~B{\'e}zivin, and P.~Valduriez.
 \newblock {Weaving Models with the Eclipse AMW plugin}.
-\newblock In {\em Eclipse Modeling Symposium, Eclipse Summit Europe}, volume
+\newblock In {\em {Eclipse Modeling Symposium, Eclipse Summit Europe}}, volume
   2006, 2006.
 
 \bibitem{ADRIA2}
@@ -111,8 +131,8 @@ P.~Dolog and J.~Stage.
 \bibitem{ADRIA1}
 P.~Dolog and J.~Stage.
 \newblock {Designing interaction spaces for rich internet applications with
-  uml}.
-\newblock {\em Web Engineering}, pages 358--363, 2007.
+  UML}.
+\newblock {\em Journal of Web Engineering}, pages 358--363, 2007.
 
 \bibitem{ECLIPSE}
 {E}clipse.
@@ -125,49 +145,58 @@ P.~Dolog and J.~Stage.
 \bibitem{escalona2004developing}
 M.~Escalona, M.~Mej{\'\i}as, and J.~Torres.
 \newblock {Developing systems with NDT \& NDT-Tool}.
-\newblock In {\em 13th International conference on information systems
-  development: methods and tools, theory and practice, Vilna, Lithuania}, pages
-  149--59, 2004.
+\newblock In {\em {Proceedings of the 13th International Conference on
+  Information Systems Development: methods and tools, theory and practice}},
+  pages 149--59, 2004.
 
 \bibitem{NDT}
 M.~J. Escalona and G.~Arag\'{o}n.
-\newblock Ndt. a model-driven approach for web requirements.
-\newblock {\em IEEE Transactions on Software Engineering}, 34(3):377--390,
+\newblock {NDT. A Model-Driven Approach for Web Requirements}.
+\newblock {\em {IEEE Transactions on Software Engineering}}, 34(3):377--390,
   2008.
 
 \bibitem{EscalonaK04}
 M.~J. Escalona and N.~Koch.
-\newblock Requirements engineering for web applications - a comparative study.
+\newblock {Requirements Engineering for Web Applications - A Comparative
+  Study}.
 \newblock {\em J. Web Eng.}, 2(3):193--212, 2004.
 
 \bibitem{irene08}
 I.~Garrig{\'o}s.
-\newblock {\em A-OOH: Extending Web Application Design with Dynamic
-  Personalization}.
+\newblock {\em {A-OOH: Extending Web Application Design with Dynamic
+  Personalization}}.
 \newblock PhD thesis, University of Alicante, Spain, 2008.
 
 \bibitem{Garrigos09}
 I.~Garrig{\'o}s, J.-N. Maz{\'o}n, and J.~Trujillo.
-\newblock A requirement analysis approach for using i* in web engineering.
-\newblock In {\em ICWE}, pages 151--165, 2009.
+\newblock {A Requirement Analysis Approach for Using i* in Web Engineering}.
+\newblock In {\em {Proceedings of the 9th International Conference on Web
+  Engineering (ICWE)}}, pages 151--165, 2009.
 
 \bibitem{Pareto5}
 P.~Godfrey, R.~Shipley, and J.~Gryz.
-\newblock Algorithms and analyses for maximal vector computation.
-\newblock {\em The VLDB Journal}, 16:5--28, January 2007.
+\newblock {Algorithms and analyses for maximal vector computation}.
+\newblock {\em {The VLDB Journal}}, 16:5--28, January 2007.
+
+\bibitem{goeritzer2011usingImpactAna}
+R.~Goeritzer.
+\newblock Using impact analysis in industry.
+\newblock In {\em {Proceeding of the 33rd International Conference on Software
+  Engineering (ICSE)}}, pages 1155--1157. ACM, 2011.
 
 \bibitem{GomezOOH}
 J.~G\'{o}mez, C.~Cachero, and O.~Pastor.
-\newblock Extending a conceptual modelling approach to web application design.
-\newblock In {\em CAiSE '00: Proceedings of the 12th International Conference
-  on Advanced Information Systems Engineering}, pages 79--93, London, UK, 2000.
+\newblock {Extending a Conceptual Modelling Approach to Web Application
+  Design}.
+\newblock In {\em {Proceedings of the 12th International Conference on Advanced
+  Information Systems Engineering (CAiSE)}}, pages 79--93, London, UK, 2000.
   Springer-Verlag.
 
 \bibitem{gotel1994analysis}
 O.~Gotel and A.~Finkelstein.
 \newblock An analysis of the requirements traceability problem.
-\newblock In {\em Proceedings of the First International Conference on
-  Requirements Engineering}, pages 94--101, 1994.
+\newblock In {\em {Proceedings of the 1st International Conference on
+  Requirements Engineering (RE)}}, pages 94--101, 1994.
 
 \bibitem{GMF}
 {G}raphical Modeling~Framework.
@@ -177,46 +206,57 @@ O.~Gotel and A.~Finkelstein.
 i*~wiki.
 \newblock \url{http://istar.rwth-aachen.de}.
 
+\bibitem{cmmi4development}
+S.~E. Institute.
+\newblock {\em {CMMI for Development®: Guidelines for Process Integration and
+  Product Improvement}}.
+\newblock Addison-Wesley Professional, 3rd edition, 2011.
+
+\bibitem{Java}
+{Java Language}.
+\newblock {\url{http://www.java.com}}, 2011.
+
 \bibitem{jouault2006architectural}
 F.~Jouault and I.~Kurtev.
-\newblock On the architectural alignment of atl and qvt.
-\newblock In {\em Proceedings of the 2006 ACM symposium on Applied computing},
+\newblock {On the Architectural Alignment of ATL and QVT}.
+\newblock In {\em {Proceedings of the ACM Symposium on Applied Computing}},
   pages 1188--1195. ACM, 2006.
 
 \bibitem{Koch02}
 N.~Koch.
 \newblock The expressive power of uml-based web engineering.
-\newblock In {\em International Workshop on Web-oriented Software Technology
-  (IWWOST)}, pages 40--41, 2002.
+\newblock In {\em {Proceedings of the 1st International Workshop on
+  Web-oriented Software Technology (IWWOST)}}, pages 40--41, 2002.
 
 \bibitem{KochTypesOfReq}
 N.~Koch, A.~Knapp, G.~Zhang, and H.~Baumeister.
-\newblock Uml-based web engineering.
-\newblock In {\em Web Engineering: Modelling and Implementing Web
-  Applications}, Human-Computer Interaction Series, pages 157--191. Springer
+\newblock {UML-Based Web Engineering}.
+\newblock In {\em {Web Engineering: Modelling and Implementing Web
+  Applications}}, {Human-Computer Interaction Series}, pages 157--191. Springer
   London, 2008.
 
 \bibitem{kochMDWE}
 N.~Koch, S.~Meli{\'a}, N.~Moreno, V.~Pelechano, F.~S{\'a}nchez, and J.~Vara.
-\newblock Model-driven web engineering.
-\newblock {\em Upgrade, The European Journal for the Informatics Professional.
-  vIX i2}, pages 40--45.
+\newblock {Model-driven Web Engineering}.
+\newblock {\em {The European Journal for the Informatics Professional}}, pages
+  40--45.
 
 \bibitem{UWEpatterns4RIA}
 N.~Koch, M.~Pigerl, G.~Zhang, and T.~Morozova.
-\newblock Patterns for the model-based development of rias.
-\newblock In {\em Proceedings of the 9th International Conference on Web
-  Engineering}, ICWE '9, pages 283--291, Berlin, Heidelberg, 2009.
+\newblock {Patterns for the Model-Based Development of RIAs}.
+\newblock In {\em {Proceedings of the 9th International Conference on Web
+  Engineering (ICWE)}}, ICWE, pages 283--291, Berlin, Heidelberg, 2009.
   Springer-Verlag.
 
 \bibitem{KochModelTRans}
 N.~Koch, G.~Zhang, and M.~J.~E. Cuaresma.
-\newblock Model transformations from requirements to web system design.
-\newblock In {\em ICWE}, pages 281--288, 2006.
+\newblock {Model transformations from requirements to Web system design}.
+\newblock In {\em Proceedings of the International Conference of Web
+  Engineering (ICWE)}, pages 281--288, 2006.
 
 \bibitem{KungPareto}
 H.~T. Kung, F.~Luccio, and F.~P. Preparata.
-\newblock On finding the maxima of a set of vectors.
+\newblock {On Finding the Maxima of a Set of Vectors}.
 \newblock {\em J. ACM}, 22:469--476, October 1975.
 
 \bibitem{ATL}
@@ -225,27 +265,28 @@ A.~T. Language.
 
 \bibitem{RUXMethod}
 M.~Linaje, J.~C. Preciado, and F.~Sanchez-Figueroa.
-\newblock Engineering rich internet application user interfaces over legacy web
-  models.
-\newblock {\em IEEE Internet Computing}, 11:53--59, 2007.
+\newblock {Engineering Rich Internet Application User Interfaces over Legacy
+  Web Models}.
+\newblock {\em Journal of IEEE Internet Computing}, 11:53--59, 2007.
 
 \bibitem{Lindvall}
 M.~Lindvall and K.~Sandahl.
-\newblock How well do experienced software developers predict software change?
-\newblock {\em J. Syst. Softw.}, 43:19--27, October 1998.
+\newblock {How well do experienced software developers predict software
+  change?}
+\newblock {\em {Journal. Systems and Software}}, 43:19--27, October 1998.
 
 \bibitem{UWER}
 L.~Machado, O.~Filho, and J.~a. Ribeiro.
-\newblock Uwe-r: an extension to a web engineering methodology for rich
-  internet applications.
-\newblock {\em WSEAS Trans. Info. Sci. and App.}, 6:601--610, April 2009.
+\newblock {UWE-R: an extension to a web engineering methodology for rich
+  internet applications}.
+\newblock {\em Journal of Trans. Info. Sci. and App.}, 6:601--610, April 2009.
 
 \bibitem{OOH4RIAMethod}
 S.~Meli{\'a}, J.~G{\'o}mez, S.~P{\'e}rez, and O.~D{\'\i}az.
 \newblock {A model-driven development for GWT-based Rich Internet Applications
   with OOH4RIA}.
-\newblock In {\em Web Engineering, 2008. ICWE'08. Eighth International
-  Conference on}, pages 13--23. IEEE, 2008.
+\newblock In {\em {Proceeding of the 8th International Conference on Web
+  Engineering (ICWE)}}, pages 13--23. IEEE, 2008.
 
 \bibitem{MDA}
 {Model Driven Architecture}.
@@ -254,7 +295,7 @@ S.~Meli{\'a}, J.~G{\'o}mez, S.~P{\'e}rez, and O.~D{\'\i}az.
 \bibitem{MDWE}
 N.~Moreno, J.~Romero, and A.~Vallecillo.
 \newblock An overview of model-driven web engineering and the mda.
-\newblock {\em Web Engineering: Modelling and Implementing Web Applications},
+\newblock {\em {Web Engineering: Modelling and Implementing Web Applications}},
   pages 353--382, 2008.
 
 \bibitem{OCL}
@@ -267,42 +308,43 @@ N.~Moreno, J.~Romero, and A.~Vallecillo.
 
 \bibitem{OOWS2001}
 O.~Pastor, S.~M. Abrah\, {a}o, and J.~Fons.
-\newblock An object-oriented approach to automate web applications development.
-\newblock In {\em EC-Web 2001: Proceedings of the Second International
-  Conference on Electronic Commerce and Web Technologies}, pages 16--28,
-  London, UK, 2001. Springer-Verlag.
+\newblock {An Object-Oriented Approach to Automate Web Applications
+  Development}.
+\newblock In {\em {Proceedings of the 2nd International Conference on
+  Electronic Commerce and Web Technologies (EC-Web)}}, pages 16--28, London,
+  UK, 2001. Springer-Verlag.
 
 \bibitem{Preciado2007}
 J.~Preciado, M.~Linaje, S.~Comai, and F.~Sanchez-Figueroa.
-\newblock {Designing rich internet applications with web engineering
-  methodologies}.
-\newblock In {\em Web Site Evolution, 2007. WSE 2007. 9th IEEE International
-  Workshop on}, pages 23--30. IEEE, Oct. 2007.
+\newblock {Designing Rich Internet Applications with Web Engineering
+  Methodologies}.
+\newblock In {\em Proceedings of the 9th IEEE International Workshop on Web
+  Site Evolution (WSE)}, pages 23--30. IEEE, Oct. 2007.
 
 \bibitem{Preciado2008}
 J.~Preciado, M.~Linaje, and F.~Sanchez-Figueroa.
 \newblock {Adapting Web 1.0 User Interfaces to Web 2.0 Multidevice User
   Interfaces using RUX-Method}.
-\newblock {\em Journal of Universal Computer Science}, 14(13):2239--2254, 2008.
+\newblock volume~14, pages 2239--2254, 2008.
 
 \bibitem{Preciado}
 J.~C. Preciado, M.~Linaje, F.~Sanchez, and S.~Comai.
-\newblock Necessity of methodologies to model rich internet applications.
-\newblock In {\em Proceedings of the Seventh IEEE International Symposium on
-  Web Site Evolution}, pages 7--13, Washington, DC, USA, 2005. IEEE Computer
+\newblock {Necessity of methodologies to model Rich Internet Applications}.
+\newblock In {\em {Proceedings of the 7th IEEE International Symposium on Web
+  Site Evolution}}, pages 7--13, Washington, DC, USA, 2005. IEEE Computer
   Society.
 
 \bibitem{Pareto4}
 B.~Qian, L.~Wang, D.~xian Huang, W.~liang Wang, and X.~Wang.
-\newblock An effective hybrid de-based algorithm for multi-objective flow shop
-  scheduling with limited buffers.
-\newblock {\em Computers and Operations Research}, 36(1):209 -- 233, 2009.
+\newblock {An effective hybrid DE-based algorithm for multi-objective flow shop
+  scheduling with limited buffers}.
+\newblock {\em {Computers and Operations Research}}, 36(1):209 -- 233, 2009.
 
 \bibitem{OOWSMDA}
 R.~Quintero, V.~Pelechano, O.~Pastor, and J.~Fons.
 \newblock {Aplicaci{\'o}n de MDA al Desarrollo de Aplicaciones Web en OOWS}.
-\newblock {\em Jornadas de Ingenier{\'\i}a de Software y Base de Datos (JISBD),
-  VIII}, pages 84--668, 2003.
+\newblock {\em {Jornadas de Ingenier{\'\i}a de Software y Base de Datos
+  (JISBD), VIII}}, pages 84--668, 2003.
 
 \bibitem{OMG/QVT}
 {QVT Language}.
@@ -315,8 +357,8 @@ D.~Schmidt.
 
 \bibitem{OOHDM1995}
 D.~Schwabe and G.~Rossi.
-\newblock The object-oriented hypermedia design model.
-\newblock {\em Communications of the ACM}, 38(8):45--46, 1995.
+\newblock {The Object-Oriented Hypermedia Design Model}.
+\newblock {\em {Communications of the ACM}}, 38(8):45--46, 1995.
 
 \bibitem{SEI}
 {S}oftware Engineering~Institute.
@@ -324,14 +366,8 @@ D.~Schwabe and G.~Rossi.
 
 \bibitem{Sommerville96}
 I.~Sommerville.
-\newblock {\em Software Engineering}.
+\newblock {\em {Software Engineering}}.
 \newblock Addison-Wesley, 6th edition, 2001.
-
-\bibitem{cmmi4development}
-I.~Sommerville.
-\newblock {\em CMMI for Development®: Guidelines for Process Integration and
-  Product Improvement}.
-\newblock Addison-Wesley Professional, 3rd edition, 2011.
 
 \bibitem{Pareto1}
 F.~Szidarovszky, M.~Gershon, and L.~Duckstein.
@@ -345,42 +381,58 @@ F.~Szidarovszky, M.~Gershon, and L.~Duckstein.
 
 \bibitem{OOHDMRIA}
 M.~Urbieta, G.~Rossi, J.~Ginzburg, and D.~Schwabe.
-\newblock Designing the interface of rich internet applications, 2007.
+\newblock {Designing the Interface of Rich Internet Applications}, 2007.
+
+\bibitem{Valderas}
+P.~Valderas and V.~Pelechano.
+\newblock {A Survey of Requirements Specification in Model-Driven Development
+  of Web Applications}.
+\newblock {\em ACM Trans. Web}, 5:10:1--10:51, May 2011.
 
 \bibitem{Valverde2010}
 F.~Valverde.
 \newblock {\em {OOWS 2.0: Un M\'{e}todo de Ingenier\'{i}a Web Dirigido por
   Modelos para la Producci\'{o}n de Aplicaciones Web 2.0}}.
-\newblock PhD thesis, Universidad Politecnica de Valencia, 2010.
+\newblock PhD thesis, Universidad Polit{\'e}cnica de Valencia, 2010.
+
+\bibitem{GOREtour}
+A.~Van~Lamsweerde.
+\newblock {Goal-Oriented Requirements Engineering: A Guided Tour}.
+\newblock In {\em {Proceedings of the 5th IEEE International Symposium on
+  Requirements Engineering (RE)}}, RE '01, pages 249--, Washington, DC, USA,
+  2001. IEEE Computer Society.
 
 \bibitem{IAML}
 J.~Wright.
 \newblock {A Modelling Language for Interactive Web Applications}.
-\newblock In {\em Automated Software Engineering, 2009. ASE'09. 24th IEEE/ACM
-  International Conference on}, pages 689--692. IEEE, 2010.
+\newblock In {\em {Proceedings of the 24th IEEE/ACM International Conference on
+  Automated Software Engineering (ASE)}}, pages 689--692. IEEE, 2010.
 
 \bibitem{ReqForRIA}
 J.~M. Wright and J.~B. Dietrich.
-\newblock Requirements for rich internet application design methodologies.
-\newblock In {\em Proceedings of the 9th international conference on Web
-  Information Systems Engineering}, WISE '08, pages 106--119, Berlin,
-  Heidelberg, 2008. Springer-Verlag.
+\newblock {Requirements for Rich Internet Application Design Methodologies}.
+\newblock In {\em Proceedings of the 9th international Conference on Web
+  Information Systems Engineering (WISE)}.
+
+\bibitem{Xpand}
+{Xpand Language}.
+\newblock {\url{http://wiki.eclipse.org/Xpand}}, 2011.
 
 \bibitem{Pareto3}
 S.~Yoo and M.~Harman.
-\newblock Using hybrid algorithm for pareto efficient multi-objective test
-  suite minimisation.
-\newblock {\em Journal of Systems and Software}, 83(4):689--701, 2010.
+\newblock {Using hybrid algorithm for Pareto efficient multi-objective test
+  suite minimisation}.
+\newblock {\em {Journal of Systems and Software}}, 83(4):689--701, 2010.
 
 \bibitem{Yu95}
 E.~Yu.
-\newblock {\em Modelling Strategic Relationships for Process Reenginering}.
+\newblock {\em {Modelling Strategic Relationships for Process Reenginering}}.
 \newblock PhD thesis, University of Toronto, Canada, 1995.
 
 \bibitem{Yu97}
 E.~Yu.
-\newblock Towards modeling and reasoning support for early-phase requirements
-  engineering.
-\newblock In {\em RE}, pages 226--235, 1997.
+\newblock {Towards Modeling and Reasoning Support for Early-Phase Requirements
+  Engineering}.
+\newblock In {\em Journal of Requirements Engineering}, pages 226--235, 1997.
 
 \end{thebibliography}
