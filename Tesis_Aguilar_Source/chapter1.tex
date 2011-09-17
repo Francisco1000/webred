@@ -169,6 +169,16 @@ El \textbf{objetivo de investigación} de la tesis doctoral es la propuesta de un
 
 El objetivo de investigación de la tesis doctoral se aborda en dos etapas, la primera es la definición de una propuesta orientada a objetivos para el análisis y especificación de requisitos en ingeniería Web. La finalidad de la primera etapa es la obtención de la estructura de los modelos conceptuales de la aplicación Web. La segunda, consiste en la especificación y aplicación de técnicas para la gestión de requisitos, concretamente, aquellas relacionadas con la trazabilidad de requisitos, análisis de impacto y alternativas de diseño en base a la maximización de requisitos no-funcionales.
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{img/Propuesta1.png}
+\end{center}
+\caption{Visión global de la propuesta de la tesis doctoral.}
+\label{fig:propuesta}
+\end{figure}
+
+En la Figura \ref{fig:propuesta} se presenta la visión global de la propuesta que se presenta en la tesis doctoral. Concretamente, el estudio llevado a cabo para obtener el estado de la cuestión en cuando a la ingeniería de requisitos en el desarrollo de aplicaciones Web (\textit{Managing Requirements in the Development of Web Applications}) es descrito en el Capítulo \ref{c3} y en el Apéndice \ref{a1}. El Capítulo \ref{c4} presenta el método propuesta para el análisis y especificación de requisitos para aplicaciones Web (\textit{Requirements Analisys and Specification}). La validación de requisitos (\textit{Requirements Validation}), específicamente en lo que a trazabilidad se refiere, se describe en el apartado titulado \label{otraspub} (``Otras Publicaciones''), esto es porque no forma parte del núcleo de la tesis. Finalmente, la gestión de requisitos (\textit{Requirements Management}), se puntualiza en los Capítulos \ref{c5} y \ref{c6}, así como en el Apéndice \ref{a3} de la tesis.
+
 
 \subsection{Una Aproximación Orientada a Objetivos para el Análisis de Requisitos en Ingeniería Web}\label{modelos}
 
@@ -192,7 +202,7 @@ A-OOH \cite{irene08}, es la extensión del método OOH (\emph{Object-Oriented Hype
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.8\textwidth]{img/approach.png}
+\includegraphics[width=0.8\textwidth]{img/CIMenAOOH.png}
 \end{center}
 \caption{La propuesta de la tesis doctoral integrada como CIM en el método Web A-OOH.}
 \label{fig:approach}
@@ -201,7 +211,7 @@ A-OOH \cite{irene08}, es la extensión del método OOH (\emph{Object-Oriented Hype
 
 \subsubsection{Especificación del Modelo de Requisitos a Nivel CIM}\label{especificacion}
 
-El primer paso de la propuesta presentada en la tesis doctoral es la especificación y el modelado de los requisitos de la aplicación Web. Para una explicación más amplia el lector puede referirse al Capítulo \ref{c4} de la tesis doctoral.
+El primer paso de la propuesta es la especificación y el modelado de los requisitos de la aplicación Web. Para una explicación más amplia el lector puede referirse al Capítulo \ref{c4} de la tesis doctoral.
 
 Los requisitos Web se definen en un modelo independiente de computación (CIM) utilizando el marco de modelado de requisitos \emph{i*}. El marco de modelado \emph{i*}  \cite{Yu95, Yu97} es uno de los más utilizados para analizar los objetivos de los \emph{stakeholder's} \footnote{Las personas u organizaciones que afectan o son afectados directa o indirectamente por el proyecto de desarrollo de \emph{software} en una forma positiva o negativa \cite{Sommerville96}.}, nombrados actores en \emph{i*}, y cómo el sistema a diseñar debería satisfacerlos. Además, \emph{i*} permite razonar acerca de cómo estos objetivos pueden contribuir a la selección de diferentes alternativas de diseño según su viabilidad. Con el fin de motivar esta parte de la investigación, se ha realizado una revisión del estado de la cuestión (ver Capítulo \ref{c3} y Apéndice~\ref{a1}) acerca de las técnicas utilizadas para el análisis y especificación de requisitos en ingeniería Web.
 
@@ -270,15 +280,6 @@ Por último, es importante destacar que los requisitos no-funcionales de la aplic
 %\caption{Extracto de metamodelo de requisitos Web del método A-OOH.}
 %\label{fig:reqmetamodel}
 %\end{figure}
-\begin{landscape}
-\begin{figure}
-\begin{center}
-\includegraphics[width=1.8\textwidth]{img/WebRequirementsMetamodel.png}
-\end{center}
-\caption{Metamodelo para la especificación de requisitos Web con \emph{i*}.}
-\label{fig:SeccionRequisitosWebMetamodelo}
-\end{figure}
-\end{landscape}
 
 A continuación, se resume la generación de la estructura de los modelos conceptuales de A-OOH. Se remite al lector a los capítulos
 específicos de la tesis doctoral para una explicación más detallada (Capítulo \ref{c4}).
@@ -290,6 +291,16 @@ específicos de la tesis doctoral para una explicación más detallada (Capítulo \r
 Definidos los requisitos en un CIM, el siguiente paso consiste en utilizarlos para derivar la estructura de los modelos conceptuales de la aplicación Web. Para lograrlo, es necesario que los modelos cumplan con la sintaxis abstracta de un dominio especifico, es decir, que sean conformes a un metamodelo. A continuación se describen los metamodelos utilizados para la derivación de los modelos conceptuales a nivel PIM de MDA.
 
 UML (\emph{Unified Modeling Language}) \cite{UML} es el lenguaje de modelado estándar utilizado para la derivación del modelo de dominio de A-OOH. El metamodelo describe los objetos, atributos y relaciones necesarias para representar los conceptos de UML dentro de una aplicación de \emph{software}. Los modelos estáticos son presentados en diagramas llamados Diagramas de Clases. El propósito de un diagrama de clases es representar a las clases dentro de un modelo. En una aplicación orientada a objetos, las clases tienen atributos (variables miembros), operaciones (funciones miembro) y relaciones con otras clases. Estas características aplican perfectamente para la representación del modelo de dominio de A-OOH.
+
+\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.8\textwidth]{img/WebRequirementsMetamodel.png}
+\end{center}
+\caption{Metamodelo para la especificación de requisitos Web con \emph{i*}.}
+\label{fig:SeccionRequisitosWebMetamodelo}
+\end{figure}
+\end{landscape}
 
 Por otra parte, A-OOH dispone de un metamodelo \cite{irene08} para representar las rutas de navegación que el usuario puede seguir durante su interacción con la aplicación Web. En la Figura \ref{fig:NavMetamodel} se muestra el metamodelo de navegación utilizado en A-OOH. Los elementos principales del metamodelo son: (i) Nodo Navegacional (\emph{Navigational Node}) y (ii) Enlace Navegacional (\emph{Navigational Link}).
 
@@ -304,16 +315,6 @@ El Nodo Navegacional representa vistas restringidas de los conceptos del dominio
 \item \textbf{Colecciones} (\emph{Collections}), son estructuras jerárquicas definidas en Clases Navegacionales u Objetivos Navegacionales. Proveen al usuario de la aplicación Web nuevas formas de accesar a la información. La colección más común es \emph{C-Collection} (\emph{Clasifier Collection}), la cual actúa como un mecanismo de abstracción para el concepto de \emph{menú}, agrupa de esta forma Enlaces Navegacionales (\emph{Navigational Links}). Otra colección importante es la llamada \emph{S-Collection} (\emph{Selector Collection}) mediante la cual podemos representar un mecanismo de selección. Las colecciones son representadas por medio de una clase UML estereotipada como \emph{NavigationalC-Collection} o \emph{NavigationalS-Collection}.
 \end{itemize}
 
-\begin{landscape}
-\begin{figure}
-\begin{center}
-%\includegraphics[width=1.5\textwidth]{img/NavigationalMetamodel.png}
-\includegraphics[width=18.5cm,height=13.5cm]{img/NavigationalMetamodel.png}
-\end{center}
-\caption{Metamodelo de Navegación de A-OOH.}
-\label{fig:NavMetamodel}
-\end{figure}
-\end{landscape}
 
 
 El Enlace Navegacional define las rutas de navegación que el usuario puede seguir a través de la aplicación Web. A-OOH en su metamodelo de navegación define dos tipos principales de enlaces (\emph{links}):
@@ -328,6 +329,17 @@ El Enlace Navegacional define las rutas de navegación que el usuario puede segui
 %Un modelo representa algún aspecto de un sistema \emph{software} y conforma con el metamodelo con el que está expresado. Una vez se han presentado y descrito los metamodelos utilizados por A-OOH se procederá a explicar la derivación de los modelos conceptuales de dominio y navegación.
 
 Una vez han sido explicados los metamodelos de dominio y navegación de A-OOH, el siguiente paso consiste en describir sus respectivos modelos. El modelo de dominio en A-OOH encapsula la estructura y funcionalidad de los conceptos relevantes del dominio de la aplicación Web y también refleja la parte estática de la misma, se representa como un diagrama de clases en notación UML \cite{UML}. El objetivo consiste en obtener el esqueleto del modelo de dominio de A-OOH a partir del modelo de requisitos en \emph{i*} por medio de un conjunto de reglas de transformación modelo a modelo (M2M) \cite{OMG/QVT} (ver Capítulo \ref{4} y Apéndice \ref{a3}). 
+
+\begin{landscape}
+\begin{figure}
+\begin{center}
+%\includegraphics[width=1.5\textwidth]{img/NavigationalMetamodel.png}
+\includegraphics[width=18.5cm,height=13.5cm]{img/NavigationalMetamodel.png}
+\end{center}
+\caption{Metamodelo de Navegación de A-OOH.}
+\label{fig:NavMetamodel}
+\end{figure}
+\end{landscape}
 
 %Con las reglas, se obtendrá un modelo de \emph{weaving} para mantener enlaces bidireccionales entre los elementos de ambos modelos (a nivel de sus respectivos elementos). A continuación se describen las principales reglas QVT para generar el modelo de dominio y el modelo de \emph{weaving}:
 
@@ -452,7 +464,7 @@ Por otra parte, en la Figura \ref{fig:tracemetamodel}, se ilustra la extensión d
 \end{figure}
 %\end{landscape}
 
-Los \emph{trace links} han sido introducidos dentro de las reglas de transformación que generan los elementos de los modelos conceptuales de A-OOH. Asimismo, es generado un modelo de trazabilidad (\emph{trace model}) al ejecutarse el conjunto de transformaciones por primera vez. Para un mejor entendimiento, se ha utilizado el lenguaje estándar QVT \cite{QVT-OMG} para representar en la Figura \ref{fig:Content2DomainWithTrace} la incorporación de los \emph{trace links} dentro de la regla \emph{Content2DomainClass}. En la figura, se observa que por cada vez que se encuentre un requisito \emph{Content} en el modelo de entrada (modelo de requisitos \emph{i*}), se creará en el modelo de dominio una clase del tipo \emph{Class} de UML, y al mismo tiempo, para referenciar a los elementos de los modelos de entrada y salida, se creará un (\emph{trace link}) en el modelo de trazabilidad.
+Los \emph{trace links} han sido introducidos dentro de las reglas de transformación que generan los elementos de los modelos conceptuales de A-OOH. Asimismo, es generado un modelo de trazabilidad (\emph{trace model}) al ejecutarse el conjunto de transformaciones por primera vez. Para un mejor entendimiento, se ha utilizado el lenguaje estándar QVT \cite{OMG/QVT} para representar en la Figura \ref{fig:Content2DomainWithTrace} la incorporación de los \emph{trace links} dentro de la regla \emph{Content2DomainClass}. En la figura, se observa que por cada vez que se encuentre un requisito \emph{Content} en el modelo de entrada (modelo de requisitos \emph{i*}), se creará en el modelo de dominio una clase del tipo \emph{Class} de UML, y al mismo tiempo, para referenciar a los elementos de los modelos de entrada y salida, se creará un (\emph{trace link}) en el modelo de trazabilidad.
 
 %\begin{landscape}
 \begin{figure}
@@ -550,13 +562,9 @@ Finalmente, es necesario aplicar una post-condición, la cual establece que si lo
 
 Como se ha motivado anteriormente, las aplicaciones Web tienen una audiencia amplia y heterogénea \cite{aguilarDSDM, irene08}, debido a esto, el diseñador se enfrenta a una problemática muy particular: ¿cómo diseñar la aplicación optimizando el máximo número posible de requisitos no-funcionales, de tal forma que la aplicación Web sea capaz de satisfacer, en medida de lo posible, a la amplia y heterogénea audiencia?, una opción consiste en enriquecer a las metodologías de diseño para que sean capaces de asistir al diseñador en la etapa de requisitos, es decir, que permitan seleccionar distintas opciones de diseño en base a la audiencia de la aplicación Web. 
 
-Por lo tanto, en A-OOH se ha implementado el algoritmo Optimización de Pareto \cite{Pareto1} para proveer al diseñador con un conjunto de alternativas de diseño basadas en la prioridad de los requisitos no-funcionales. La Optimización de Pareto, llamada así en honor de su introductor, Vilfredo Pareto, es un concepto de la economía con aplicación tanto en esa disciplina como en ciencias sociales e ingeniería \cite{KungPareto}. El concepto está relacionado con estudios de eficiencia económica y distribución del ingreso y establece como eficiente aquella situación en la cual se cumple que no es posible beneficiar a más individuos en un sistema sin perjudicar a otros. 
+Por lo tanto, en A-OOH se ha implementado el algoritmo Optimización de Pareto \cite{Pareto1} para proveer al diseñador con un conjunto de alternativas de diseño basadas en la prioridad de los requisitos no-funcionales. La Optimización de Pareto, llamada así en honor de su introductor, Vilfredo Pareto, es un concepto de la economía con aplicación tanto en esa disciplina como en ciencias sociales e ingeniería \cite{KungPareto}. El concepto está relacionado con estudios de eficiencia económica y distribución del ingreso y establece como eficiente aquella situación en la cual se cumple que no es posible beneficiar a más individuos en un sistema sin perjudicar a otros. %Información más detallada sobre la implementación del algoritmo se encuentra en el Capítulo \ref{c6} de la tesis doctoral.
 
-%Información más detallada sobre la implementación del algoritmo se encuentra en el Capítulo \ref{c6} de la tesis doctoral.
-
-La Optimización de Pareto ha sido ampliamente aplicada en la ingeniería de \emph{software} \cite{Pareto3}, principalmente, en problemas en los que hay 2 o más objetivos, este tipo de problema es conocido como problema multi-objetivo (PMO) \cite{Pareto4}. En un problema de optimización, se trata de encontrar una solución que represente el valor óptimo para una función objetivo \cite{Pareto5}.
-
-Una característica de los PMO es que, como regla general, tienen un conjunto de soluciones, que inclusive puede ser infinito, y entonces los algoritmos deben describir lo mejor posible este conjunto. Por lo tanto, en este trabajo,  se han realizado algunas modificaciones que permiten obtener mejores representaciones de los conjuntos solución. Información más detallada se encuentra en el Capítulo \ref{c6} de la tesis doctoral. 
+La Optimización de Pareto ha sido ampliamente aplicada en la ingeniería de \emph{software} \cite{Pareto3}, principalmente, en problemas en los que hay 2 o más objetivos, este tipo de problema es conocido como problema multi-objetivo (PMO) \cite{Pareto4}. En un problema de optimización, se trata de encontrar una solución que represente el valor óptimo para una función objetivo \cite{Pareto5}. Una característica de los PMO es que, como regla general, tienen un conjunto de soluciones, que inclusive puede ser infinito, y entonces los algoritmos deben describir lo mejor posible este conjunto. Por lo tanto, en este trabajo,  se han realizado algunas modificaciones que permiten obtener mejores representaciones de los conjuntos solución. Información más detallada se encuentra en el Capítulo \ref{c6} de la tesis doctoral. 
 
 Para un mejor entendimiento de la propuesta presentada en este apartado, se han adaptado una serie de definiciones para la aplicación del algoritmo Óptimo de Pareto, estas son presentadas a continuación:
 
@@ -654,6 +662,7 @@ Una vez especificados los requisitos de la aplicación Web, es necesario elaborar
 \end{tabular}
 \end{table}
 
+
 A continuación, es necesario almacenar cada configuración posible de los requisitos listados en la Tabla \ref{tab:listaElementosIntencionales}, en donde: la variable ``I'' representa el estado ``implementado'' y la variable ``N'' el estado ``no implementado''. Por lo tanto, tenemos 32 posibles configuraciones (Tabla \ref{tab:front}, columnas 1 y 2).
 
 Además, es necesario asignar un peso a cada tipo de contribución, para esto, deben de asignarse por cada tipo el peso(W):  w= +1 si el tipo de contribución es  ``\emph{Help}'',  w= -1 si es ``\emph{Hurt}'', w= +2 para el tipo ``\emph{Some +}'' , w= -2 para ``\emph{Some -}'', w= +4 si es del tipo ``\emph{Make}'' y w= -4 para el tipo ``\emph{Break}''. 
@@ -674,6 +683,26 @@ M=
 \label{mt:matriz}
 \end{pmatrix}
 \end{equation}
+
+
+\begin{table}%[!ht]
+ \centering
+\small%\tiny %\addtolength{\tabcolsep}{-5pt}
+ \caption{Lista de \emph{Softgoals}.}\label{tab:prioridad}
+\begin{tabular}{| c | c|}
+\hline
+\textbf{Prioridad} & \textbf{Softgoal}
+\\
+\hline
+\textbf{1} & \emph{``S4.- Privacy be maximized''}  \\
+\textbf{2} & \emph{``S2.- Review process easier''} \\
+\textbf{3} & \emph{``S3.- Accurate review process''} \\
+\textbf{4} & \emph{``S1.- Be fair in review''} \\
+\textbf{5} & \emph{``S5.- Avoid possible conflicts os interest''}\\
+\textbf{6} & \emph{``S6.- Obtain more complete info''}  \\
+\hline
+\end{tabular}
+\end{table}
 
 Con los pesos establecidos, el siguiente paso consiste en crear una matriz para calcular los valores númericos asociados cada configuración (Tabla \ref{tab:front}, columnas 7 a 12), por ejemplo para la configuración X25, si el requisito R1 \emph{``Blind review process''} no es implementado, tenemos que la \emph{Softgoal} \emph{``Be fair in review''} será afectada (-2). Por último, se calcula si la configuración es Frontera de Pareto (Tabla \ref{tab:front}, columnas 13), para hacerlo, se deben comparar cada una de las configuraciones indicando si es que existe una que sea mejor que otra, por ejemplo, la configuración X3 está en la Frontera de Pareto por que es mejor que las configuraciones X1 y X2 debido a que maximiza al menos a un individuo, es decir, maximiza a la \emph{Softgoal} 5 \emph{``Avoid possible conflicts of interest''}.
 
@@ -723,28 +752,12 @@ Con los pesos establecidos, el siguiente paso consiste en crear una matriz para 
 \end{tabular}
 \end{table}
 
+
 Finalmente, el último paso consiste, aparte de maximizar las \emph{Softgoals}, continuar cumpliendo con el objetivo establecido en el modelo de requisitos (\emph{``Process of review papers be selected''}). Para esto, es necesario crear una lista de \emph{Softgoals} ordenadas por prioridad (Tabla \ref{tab:prioridad}). En base a la lista, se debe de seleccionar de la Tabla \ref{tab:front} las configuraciones que además de estar en la Frontera de Pareto cumplen con el objetivo, y de esta forma escoger la configuración que maximice las \emph{Softgoals}.
 
-\begin{table}[!ht]
- \centering
-\small%\tiny %\addtolength{\tabcolsep}{-5pt}
- \caption{Lista de \emph{Softgoals}.}\label{tab:prioridad}
-\begin{tabular}{| c | c|}
-\hline
-\textbf{Prioridad} & \textbf{Softgoal}
-\\
-\hline
-\textbf{1} & \emph{``S4.- Privacy be maximized''}  \\
-\textbf{2} & \emph{``S2.- Review process easier''} \\
-\textbf{3} & \emph{``S3.- Accurate review process''} \\
-\textbf{4} & \emph{``S1.- Be fair in review''} \\
-\textbf{5} & \emph{``S5.- Avoid possible conflicts os interest''}\\
-\textbf{6} & \emph{``S6.- Obtain more complete info''}  \\
-\hline
-\end{tabular}
-\end{table}
 
 Para este ejemplo, ``X3'', ``X7'' y ``X17'' cumplen con el objetivo, de las tres configuraciones, la configuración X3 es la mejor opción, porque de acuerdo con la lista (Tabla \ref{tab:prioridad}), ``S4'' y ``S2'' son las \emph{Softgoals} a priorizar, por tanto, la configuración ``X17'' maximiza ``S2'', sin embargo afecta negativamente a la \emph{Softgoal} 4 (Tabla \ref{tab:front}). En cambio, la configuración ``X3'' maximiza a la \emph{Softgoal} ``S4'' (1) y no afecta a la \emph{Softgoal} ``S2'' (0).
+
 
 \section{Hacia la Gestión de Requisitos en las \emph{Rich Internet Applications}}
 \label{c1:rias}
@@ -867,14 +880,6 @@ El resto de configuraciones de la Frontera de Pareto (Tabla \ref{tab:front}) son
 
 
 
-\section{Implementación}
-\label{c1:implementation}
-
-Este apartado aborda los objetivos especificos planteados en la investigación asociada a la tesis doctoral. Los objetivos están descritos en la sección \ref{c1s1}. A continuación, se puntualiza cómo es que los objetivos han sido satisfechos a través de cada uno de los apartados establecidos en esta sección.
-
-\begin{itemize}
-	\item \textbf{\textit{Sección \ref{subseccioneditor}:}} ``Editor Gráfico para la Especificación de Requisitos Web (\emph{WebREd})''. En este apartado se explica la implementación de un editor gráfico para el análisis y especificación de requisitos por medio del marco de modelado orientado a objetivos \emph{i*}. Por lo tanto, se cumplen los objetivos especificos 1 y 2 (Sección \ref{c1s1}). Con el editor gráfico, se establecen mecanismos para la comprensión de los objetivos de negocio, y por medio del editor, los \emph{stakeholders} podrán razonar sobre ellos. Cabe destacar que los mecanismos están integrados dentro de una etapa de análisis de requisitos orientada a objetivos (Sección \ref{modelos} y Capítulo \ref{c4}), por tanto, brindan soporte para representar las expectativas reales de los \emph{stakeholders} de la aplicación Web.
-	
 \begin{landscape}	
 	\begin{figure}
 \begin{center}
@@ -884,6 +889,16 @@ Este apartado aborda los objetivos especificos planteados en la investigación as
 \caption{Configuración X16: distribución de los requisitos entre el cliente y el servidor.} \label{fig:X16}
 \end{figure}
 \end{landscape}
+	
+
+
+\section{Implementación}
+\label{c1:implementation}
+
+Este apartado aborda los objetivos especificos planteados en la investigación asociada a la tesis doctoral. Los objetivos están descritos en la sección \ref{c1s1}. A continuación, se puntualiza cómo es que los objetivos han sido satisfechos a través de cada uno de los apartados establecidos en esta sección.
+
+\begin{itemize}
+	\item \textbf{\textit{Sección \ref{subseccioneditor}:}} ``Editor Gráfico para la Especificación de Requisitos Web (\emph{WebREd})''. En este apartado se explica la implementación de un editor gráfico para el análisis y especificación de requisitos por medio del marco de modelado orientado a objetivos \emph{i*}. Por lo tanto, se cumplen los objetivos especificos 1 y 2 (Sección \ref{c1s1}). Con el editor gráfico, se establecen mecanismos para la comprensión de los objetivos de negocio, y por medio del editor, los \emph{stakeholders} podrán razonar sobre ellos. Cabe destacar que los mecanismos están integrados dentro de una etapa de análisis de requisitos orientada a objetivos (Sección \ref{modelos} y Capítulo \ref{c4}), por tanto, brindan soporte para representar las expectativas reales de los \emph{stakeholders} de la aplicación Web.
 	
 	
 \item \textbf{\textit{Sección \ref{imp:transformaciones}:}} ``Transformaciones Modelo a Modelo''. La sección permite satisfacer el objetivo 3 de la tesis doctoral, gracias a que por medio de las transformaciones modelo a modelo es posible la generación de las estructuras de los modelos conceptuales de la aplicación Web, que posteriormente, deberán ser completados por el diseñador. Por lo tanto, la sección \ref{imp:transformaciones} ofrece un alto grado de automatización en el desarrollo de aplicaciones Web por medio de un conjunto de transformaciones y con esto brinda soporte a la generación de código. Para más información consultar los artículos listados en la sección \ref{otraspub} y el Capítulo \ref{c4} de la tesis doctoral.
@@ -1015,7 +1030,7 @@ En este caso de estudio, el modelo de dominio de A-OOH se muestra en la Figura \
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.9\textwidth]{img/DomainModelCaseStudy.png}
+\includegraphics[width=0.7\textwidth]{img/DomainModelCaseStudy.png}
 \end{center}
 \caption{Modelo de dominio A-OOH.}
 \label{fig:imp:DomainModelCaseStudy}
@@ -1114,22 +1129,60 @@ Una explicación más a fondo sobre el funcionamiento del algoritmo Optimización d
 
 \section{Conclusiones}
 
-La Web cambia constantemente debido a la evolución constante en las tecnologías de implementación. Por tanto, las metodologías ingenieríles necesitan adaptarse a los cambios con el fin de ofrecer al diseñador una aproximación sistemática e integral para el desarrollo de aplicaciones Web. Además, debido a la naturaleza cambiante de la Web y a su audiencia heterogénea, mantener una etapa de análisis y especificación de requisitos resulta cada vez más complicado. 
+A continuación, se sintetiza el trabajo descrito en la tesis doctoral. En primer lugar, en la Sección \ref{aporaciones} se listan y comentan las principales aportaciones de la investigación descrita en la tesis. Posteriormente, en la Sección \ref{limitaciones} se mencionan las limitaciones dentro del ámbito de la investigación realizada. Finalmente, la Sección \ref{Trabajofuturo} presenta el trabajo que se realiza actualmente y las posibles contribuciones futuras.
 
-Para tratar con estas cuestiones, en esta tesis doctoral, se ha
-presentado una propuesta dirigida por modelos que permite (i) la
-especificación de un modelo de requisitos a nivel conceptual de manera
-integral, sistemática y bien estructurada y (ii) la derivación
-automática de los modelos conceptuales de dominio y navegación. Por lo tanto, la propuesta permite a los diseñadores disminuir el nivel de complejidad en el desarrollo de aplicaciones Web, ahorrando tiempo y esfuerzo con lo que el costo del proyecto disminuye. Posteriormente, se ha añadido a la propuesta dirigida por modelos un soporte al diseñador por medio de una gestión integral de requisitos con el fin de asegurar la la trazabilidad de los requisitos de CIM a PIM, análisis de impacto y la implementación de requisitos funcionales en base a distintas alternativas de diseño considerando la maximización de los requisitos no-funcionales. También, se ha realizado una implementación en \emph{Eclipse} para apoyar cada parte de esta propuesta.
+\subsection{Aportaciones}\label{aporaciones}
 
-Finalmente, cabe destacar que la tesis doctoral representa la
-primera propuesta dirigida por modelos en ingeniería Web que aplica un marco de trabajo orientado a objetivos para la etapa de análisis y especificación de requisitos en un contexto MDA, a la vez permite la generación de los modelos conceptuales de la aplicación Web en un proceso con un alto grado de automatización.
+Como se detalló en Capítulos anteriores, la Web cambia constantemente debido a la evolución constante en las tecnologías de implementación. Por consiguiente, las metodologías ingenieriles para el desarrollo de este tipo de aplicaciones necesitan adaptarse a los cambios con el fin de ofrecer al diseñador una aproximación sistemática e integral para el desarrollo de aplicaciones Web.  
 
-%\textbf{Not only an approach that deals with the MD modeling of DWs
-%has been defined but also a general framework to align the
-%development of every part of a DW with MDA (see chapter~\ref{c3}),
-%thus paving the way for future research objectives as the modeling
-%of ETL process or data analysis tools...}
+En este sentido, en la tesis doctoral se ha presentado una propuesta dirigida por modelos en ingeniería Web, la cual permite la especificación de los requisitos funcionales y no-funcionales de la aplicación Web de manera integral, sistemática y bien estructurada (Capítulo \ref{c4}). 
+
+En la propuesta, los requisitos son especificados en un modelo por medio del marco de modelado orientado a objetivos i* y a razón de que el método Web A-OOH se basa en MDA, el modelo, con los requisitos especificados, corresponde al nivel CIM de esta arquitectura. Gracias a eso, en el Capítulo \ref{c4} se demostró que es posible la derivación automática de la estructura de los modelos conceptuales de dominio y navegación del método Web A-OOH a partir de la especificación de requisitos. Debido a esto, es posible validar que los requisitos de la aplicación Web han sido reflejados en los modelos conceptuales a nivel PIM. Por lo tanto, la propuesta permite a los diseñadores disminuir el nivel de complejidad en el desarrollo de aplicaciones Web, ahorrando tiempo y esfuerzo, por lo que el costo del proyecto disminuye. 
+
+Por otra parte, debido a la naturaleza cambiante de la Web y a su audiencia heterogénea, mantener una etapa de análisis y especificación de requisitos resulta cada vez más complicado. A razón de esto, en la tesis se describe el soporte ofrecido al diseñador de la aplicación Web por medio de una gestión integral de requisitos. Concretamente, se asiste al diseñador en aspectos como la trazabilidad de los requisitos de CIM a PIM (Sección \ref{otraspub}), el análisis de impacto en los requisitos (Capítulo \ref{c5}) y en la implementación de requisitos funcionales en base a distintas alternativas de diseño considerando la maximización de los requisitos no-funcionales (Capítulo \ref{c6}).
+
+Además, se ha realizado una implementación en la plataforma Eclipse para apoyar cada parte de la propuesta. Como prueba de concepto, se ha desarrollado un editor gráfico para la especificación de los requisitos de la aplicación Web (Sección \ref{subseccioneditor}), así mismo, se desarrollaron un conjunto de transformaciones modelo a modelo para proveer un alto grado de automatización en la generación de los modelos conceptuales de la aplicación Web (Sección \ref{imp:transformaciones}). 
+
+Finalmente, gracias a la capacidad y mecanismos de extensión de la plataforma \emph{Eclipse}, se desarrolló un \textit{plugin} para asistir al diseñador Web respecto a la toma de decisiones de diseño en base a los requisitos no-funcionales expresados en la especificación de los requisitos (Sección \ref{imp:pareto}). Por medio del \textit{plugin}, el diseñador de la aplicación Web podrá analizar distintas alternativas de diseño, es decir, podrá analizar y seleccionar los requisitos funcionales a implementar en los modelos conceptuales de la aplicación Web considerando la prioridad establecida sobre los requisitos no-funcionales.
+
+
+\subsection{Limitaciones}\label{limitaciones}
+
+En el transcurso de la investigación, por distintos factores, como por ejemplo la restricción de tiempo, no fue posible cubrir todos los aspectos del proceso de ingeniería de \textit{software} (análisis, especificación, validación, gestión, etc.). Por tal motivo, fueron establecidos límites en la investigación, a razón de esto, surgieron las limitaciones de la propuesta. Estas son enlistadas a continuación.
+
+\begin{itemize}
+
+\item La herramienta WebREd permite la especificación de los requisitos de la aplicación Web en un ambiente gráfico, pero necesita un proceso de re-ingeniería para mejorar la interfaz gráfica de usuario.
+
+\item En lo que respecta al proceso de validación de los requisitos, solo ha sido considerada la trazabilidad de los requisitos, dejando de lado a los casos de prueba.
+
+\item En lo que se refiere a la gestión de requisitos, la propuesta ofrece soporte para el en análisis de impacto, pero se carece de un control de versiones, propagación de cambios y herramientas para la gestión de la configuración.
+
+\item La propuesta no está integrada en una sola herramienta, es decir, la constituyen un conjunto de \textit{plugins} de la plataforma Eclipse, por lo tanto resulta difícil su aplicación en casos reales, con lo cual resalta la necesidad de desarrollar una herramienta CASE.
+
+\end{itemize}
+
+\subsection{Trabajo futuro}\label{Trabajofuturo}
+
+\begin{itemize}
+
+\item El marco de modelado orientado a objetos i* es poco escalable, por lo que se estudiarán mecanismos que ofrezcan solución a este problema de tal forma que sea posible manejar el crecimiento de los requisitos de manera fluida, es decir, que cuando la especificación de los requisitos crezca el modelo pueda ser comprendido.
+
+\item Definir e implementar las transformaciones modelo a modelo para la generación automática de los modelos conceptuales de usuario, personalización y presentación del método Web A-OOH.
+
+\item Realizar distintos experimentos para comprobar el funcionamiento del algoritmo de Optimización de Pareto en casos reales.
+
+\item Integrar la propuesta presentada en la tesis en un prototipo de herramienta CASE.
+
+\item Extender la propuesta para la especificación de requisitos Web hacia las RIAs.
+
+\item Analizar la distribución de los requisitos funcionales de las RIAs (cliente o servidor) para proveer un algoritmo que permita asistir al diseñador Web en el proceso de distribución de los requisitos funcionales considerando a los requisitos no-funcionales desde la etapa de análisis y especificación de requisitos.
+	
+\end{itemize}
+
+
+Finalmente, cabe destacar que, por lo que al autor respecta, la tesis doctoral representa la primera propuesta dirigida por modelos en ingeniería Web que aplica un marco de trabajo orientado a objetivos para la etapa de análisis y especificación de requisitos en un contexto MDA y a la vez permite la generación de los modelos conceptuales de la aplicación Web en un proceso con un alto grado de automatización. Además, gracias a la integración con el método Web A-OOH se ha logrado configurar un método de ingeniería Web dirigido por modelos que consume el proceso de desarrollo de la aplicación Web basado en MDA gracias a que el proceso inicia en el modelo independiente de computación (CIM), del cual son generados los modelos independientes de la plataforma (PIM) y culminando con los modelos específicos de la plataforma.
+
 
 \clearpage
 

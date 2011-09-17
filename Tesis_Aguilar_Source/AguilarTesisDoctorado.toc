@@ -1,40 +1,44 @@
-\contentsline {chapter}{\numberline {1}S\IeC {\'\i }ntesis}{1}
-\contentsline {section}{\numberline {1.1}Tesis Doctoral como Compendio de Art\IeC {\'\i }culos}{1}
-\contentsline {subsection}{\numberline {1.1.1}Publicaciones Pertenecientes a la Tesis Doctoral}{1}
-\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}2\hbox {}}{2}
-\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}3\hbox {}}{2}
-\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}4\hbox {}}{2}
-\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}5\hbox {}}{3}
-\contentsline {subsection}{\numberline {1.1.2}Art\IeC {\'\i }culos en Proceso de Revisi\'on Pertenecientes a la Tesis Doctoral}{3}
-\contentsline {subsubsection}{Ap\'endice\nobreakspace {}A\hbox {}}{3}
-\contentsline {subsubsection}{Ap\'endice\nobreakspace {}B\hbox {}}{4}
-\contentsline {subsubsection}{Ap\'endice\nobreakspace {}C\hbox {}}{4}
-\contentsline {subsection}{\numberline {1.1.3}Otras Publicaciones}{4}
-\contentsline {section}{\numberline {1.2}Hip\'otesis Inicial y Objetivos de Investigaci\'on}{5}
-\contentsline {section}{\numberline {1.3}Resumen del Contenido de la Tesis Doctoral}{7}
-\contentsline {subsection}{\numberline {1.3.1}Una Aproximaci\'on Orientada a Objetivos para el An\'alisis de Requisitos en Ingenier\IeC {\'\i }a Web}{7}
-\contentsline {subsubsection}{Especificaci\'on del Modelo de Requisitos a Nivel CIM}{9}
-\contentsline {subsubsection}{Generaci\'on de los Modelos Conceptuales a nivel PIM}{12}
-\contentsline {subsection}{\numberline {1.3.2}Gesti\'on de Requisitos en A-OOH}{17}
-\contentsline {subsubsection}{Trazabilidad de Requisitos en A-OOH}{17}
-\contentsline {subsubsection}{An\'alisis de Impacto en A-OOH}{19}
-\contentsline {subsubsection}{Optimizaci\'on de Requisitos No-Funcionales en Aplicaciones Web}{22}
-\contentsline {section}{\numberline {1.4}Hacia la Gesti\'on de Requisitos en las \emph {Rich Internet Applications}}{28}
-\contentsline {section}{\numberline {1.5}Implementaci\'on}{32}
-\contentsline {subsection}{\numberline {1.5.1}Editor Gr\'afico para la Especificaci\'on de Requisitos Web (\emph {WebREd})}{35}
-\contentsline {subsection}{\numberline {1.5.2}Transformaciones Modelo a Modelo}{35}
-\contentsline {subsection}{\numberline {1.5.3}Trazabilidad de Requisitos}{36}
-\contentsline {subsection}{\numberline {1.5.4}Optimizaci\'on de Pareto}{38}
-\contentsline {subsection}{\numberline {1.5.5}Caso de estudio}{38}
-\contentsline {section}{\numberline {1.6}Conclusiones}{46}
-\contentsline {section}{References}{47}
-\contentsline {part}{Part\ I\hspace {\betweenumberspace }Tesis Doctoral como Compendio de Art\IeC {\'\i }culos}{51}
-\contentsline {chapter}{\numberline {2}Web Engineering Approaches for Requirements Analysis - A Systematic Literature Review}{53}
-\contentsline {chapter}{\numberline {3}An MDA Approach for Goal-oriented Requirement Analysis in Web Engineering}{59}
-\contentsline {chapter}{\numberline {4}Impact Analysis of Goal-Oriented Requirements in Web Engineering}{81}
-\contentsline {chapter}{\numberline {5}A Goal-Oriented Approach for Optimizing Non-Functional Requirements in Web Applications}{99}
-\contentsline {part}{Part\ II\hspace {\betweenumberspace }Ap\'endice: Art\IeC {\'\i }culos enviados}{111}
-\contentsline {chapter}{\numberline {A}Requirements in Web engineering: a systematic literature review.}{113}
-\contentsline {chapter}{\numberline {B}A Goal-Oriented Requirements Engineering Approach to Distribute Functionality in RIAs}{147}
-\contentsline {chapter}{\numberline {C}Dealing with dependencies among functional and non-functional requirements for impact analysis in Web engineering}{163}
-\contentsline {section}{References}{191}
+\contentsline {part}{Part\ I\hspace {\betweenumberspace }S\IeC {\'\i }ntesis}{1}
+\contentsline {chapter}{\numberline {1}S\IeC {\'\i }ntesis}{3}
+\contentsline {section}{\numberline {1.1}Tesis Doctoral como Compendio de Art\IeC {\'\i }culos}{3}
+\contentsline {subsection}{\numberline {1.1.1}Publicaciones Pertenecientes a la Tesis Doctoral}{3}
+\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}2\hbox {}}{4}
+\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}3\hbox {}}{4}
+\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}4\hbox {}}{4}
+\contentsline {subsubsection}{Cap\IeC {\'\i }tulo\nobreakspace {}5\hbox {}}{5}
+\contentsline {subsection}{\numberline {1.1.2}Art\IeC {\'\i }culos en Proceso de Revisi\'on Pertenecientes a la Tesis Doctoral}{5}
+\contentsline {subsubsection}{Ap\'endice\nobreakspace {}A\hbox {}}{5}
+\contentsline {subsubsection}{Ap\'endice\nobreakspace {}B\hbox {}}{6}
+\contentsline {subsubsection}{Ap\'endice\nobreakspace {}C\hbox {}}{6}
+\contentsline {subsection}{\numberline {1.1.3}Otras Publicaciones}{6}
+\contentsline {section}{\numberline {1.2}Hip\'otesis Inicial y Objetivos de Investigaci\'on}{7}
+\contentsline {section}{\numberline {1.3}Resumen del Contenido de la Tesis Doctoral}{9}
+\contentsline {subsection}{\numberline {1.3.1}Una Aproximaci\'on Orientada a Objetivos para el An\'alisis de Requisitos en Ingenier\IeC {\'\i }a Web}{9}
+\contentsline {subsubsection}{Especificaci\'on del Modelo de Requisitos a Nivel CIM}{11}
+\contentsline {subsubsection}{Generaci\'on de los Modelos Conceptuales a nivel PIM}{13}
+\contentsline {subsection}{\numberline {1.3.2}Gesti\'on de Requisitos en A-OOH}{19}
+\contentsline {subsubsection}{Trazabilidad de Requisitos en A-OOH}{20}
+\contentsline {subsubsection}{An\'alisis de Impacto en A-OOH}{22}
+\contentsline {subsubsection}{Optimizaci\'on de Requisitos No-Funcionales en Aplicaciones Web}{26}
+\contentsline {section}{\numberline {1.4}Hacia la Gesti\'on de Requisitos en las \emph {Rich Internet Applications}}{30}
+\contentsline {section}{\numberline {1.5}Implementaci\'on}{36}
+\contentsline {subsection}{\numberline {1.5.1}Editor Gr\'afico para la Especificaci\'on de Requisitos Web (\emph {WebREd})}{37}
+\contentsline {subsection}{\numberline {1.5.2}Transformaciones Modelo a Modelo}{38}
+\contentsline {subsection}{\numberline {1.5.3}Trazabilidad de Requisitos}{39}
+\contentsline {subsection}{\numberline {1.5.4}Optimizaci\'on de Pareto}{40}
+\contentsline {subsection}{\numberline {1.5.5}Caso de estudio}{40}
+\contentsline {section}{\numberline {1.6}Conclusiones}{48}
+\contentsline {subsection}{\numberline {1.6.1}Aportaciones}{48}
+\contentsline {subsection}{\numberline {1.6.2}Limitaciones}{48}
+\contentsline {subsection}{\numberline {1.6.3}Trabajo futuro}{49}
+\contentsline {section}{References}{50}
+\contentsline {part}{Part\ II\hspace {\betweenumberspace }Tesis Doctoral como Compendio de Art\IeC {\'\i }culos}{53}
+\contentsline {chapter}{\numberline {2}Web Engineering Approaches for Requirements Analysis - A Systematic Literature Review}{55}
+\contentsline {chapter}{\numberline {3}An MDA Approach for Goal-oriented Requirement Analysis in Web Engineering}{61}
+\contentsline {chapter}{\numberline {4}Impact Analysis of Goal-Oriented Requirements in Web Engineering}{83}
+\contentsline {chapter}{\numberline {5}A Goal-Oriented Approach for Optimizing Non-Functional Requirements in Web Applications}{101}
+\contentsline {part}{Part\ III\hspace {\betweenumberspace }Ap\'endice: Art\IeC {\'\i }culos enviados}{113}
+\contentsline {chapter}{\numberline {A}Requirements in Web engineering: a systematic literature review.}{115}
+\contentsline {chapter}{\numberline {B}A Goal-Oriented Requirements Engineering Approach to Distribute Functionality in RIAs}{149}
+\contentsline {chapter}{\numberline {C}Dealing with dependencies among functional and non-functional requirements for impact analysis in Web engineering}{165}
+\contentsline {section}{References}{193}

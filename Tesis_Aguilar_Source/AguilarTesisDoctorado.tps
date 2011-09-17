@@ -3,15 +3,15 @@ Type=TeXnicCenterProjectSessionInformation
 Version=2
 
 [SessionInfo]
-ActiveTab=2
+ActiveTab=0
 FrameCount=19
-ActiveFrame=0
+ActiveFrame=1
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,23 +24,23 @@ Class=CLatexEdit
 Document=AguilarTesisDoctorado.tex
 
 [Frame0_Row0]
-cyCur=377
+cyCur=208
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1107
+cxCur=1023
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=106
-Cursor.column=11
-TopSubLine=89
+Cursor.row=73
+Cursor.column=83
+TopSubLine=62
 
 [Frame1]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -53,17 +53,17 @@ Class=CLatexEdit
 Document=chapter1.tex
 
 [Frame1_Row0]
-cyCur=210
+cyCur=377
 cyMin=10
 
 [Frame1_Col0]
-cxCur=1019
+cxCur=1107
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=1045
-Cursor.column=0
-TopSubLine=1841
+Cursor.row=1131
+Cursor.column=338
+TopSubLine=1902
 
 [Frame2]
 Columns=1
@@ -206,9 +206,9 @@ cxCur=912
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=13
-Cursor.column=471
-TopSubLine=20
+Cursor.row=22
+Cursor.column=0
+TopSubLine=34
 
 [Frame7]
 Columns=1
@@ -265,7 +265,7 @@ cxMin=10
 
 [Frame8_View0,0]
 Cursor.row=10
-Cursor.column=48
+Cursor.column=0
 TopSubLine=0
 
 [Frame9]
@@ -351,9 +351,9 @@ cxCur=912
 cxMin=10
 
 [Frame11_View0,0]
-Cursor.row=39
-Cursor.column=0
-TopSubLine=43
+Cursor.row=8
+Cursor.column=15
+TopSubLine=0
 
 [Frame12]
 Columns=1
@@ -380,9 +380,9 @@ cxCur=912
 cxMin=10
 
 [Frame12_View0,0]
-Cursor.row=53
-Cursor.column=0
-TopSubLine=55
+Cursor.row=9
+Cursor.column=69
+TopSubLine=0
 
 [Frame13]
 Columns=1
@@ -409,9 +409,9 @@ cxCur=912
 cxMin=10
 
 [Frame13_View0,0]
-Cursor.row=33
-Cursor.column=0
-TopSubLine=35
+Cursor.row=8
+Cursor.column=69
+TopSubLine=0
 
 [Frame14]
 Columns=1
@@ -438,9 +438,9 @@ cxCur=912
 cxMin=10
 
 [Frame14_View0,0]
-Cursor.row=60
-Cursor.column=0
-TopSubLine=53
+Cursor.row=9
+Cursor.column=69
+TopSubLine=5
 
 [Frame15]
 Columns=1
@@ -554,7 +554,7 @@ cxCur=1021
 cxMin=10
 
 [Frame18_View0,0]
-Cursor.row=555
-Cursor.column=20
-TopSubLine=546
+Cursor.row=160
+Cursor.column=13
+TopSubLine=148
 
