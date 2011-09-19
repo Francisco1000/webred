@@ -53,17 +53,17 @@ Class=CLatexEdit
 Document=chapter1.tex
 
 [Frame1_Row0]
-cyCur=377
+cyCur=358
 cyMin=10
 
 [Frame1_Col0]
-cxCur=1107
+cxCur=1053
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=1131
-Cursor.column=338
-TopSubLine=1902
+Cursor.row=1175
+Cursor.column=192
+TopSubLine=2027
 
 [Frame2]
 Columns=1
@@ -179,7 +179,7 @@ cxMin=10
 [Frame5_View0,0]
 Cursor.row=14
 Cursor.column=810
-TopSubLine=18
+TopSubLine=19
 
 [Frame6]
 Columns=1
@@ -208,7 +208,7 @@ cxMin=10
 [Frame6_View0,0]
 Cursor.row=22
 Cursor.column=0
-TopSubLine=34
+TopSubLine=38
 
 [Frame7]
 Columns=1
@@ -554,7 +554,7 @@ cxCur=1021
 cxMin=10
 
 [Frame18_View0,0]
-Cursor.row=160
-Cursor.column=13
-TopSubLine=148
+Cursor.row=645
+Cursor.column=14
+TopSubLine=636
 
