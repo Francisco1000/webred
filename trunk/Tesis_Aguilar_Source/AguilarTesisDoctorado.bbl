@@ -10,15 +10,15 @@ J.~A. Aguilar, I.~Garrig{\'o}s, S.~Casteleyn, and J.-N. Maz{\'o}n.
 \bibitem{aguilarDSDM}
 J.~A. Aguilar, I.~Garrig{\'o}s, and J.-N. Maz{\'o}n.
 \newblock {Modelos de weaving para trazabilidad de requisitos Web en A-OOH}.
-\newblock In {\em DSDM: Actas del VII Taller sobre Desarrollo de Software
-  Dirigido por Modelos, JISBD, Congreso Espa{\~n}ol de Inform\'atica (CEDI)},
+\newblock In {\em {DSDM: Actas del VII Taller sobre Desarrollo de Software
+  Dirigido por Modelos, JISBD, Congreso Espa{\~n}ol de Inform\'atica (CEDI)}},
   pages 146--155, Valencia, Espa{\~n}a, 2010. SISTEDES.
 
 \bibitem{AguilarICCSA}
 J.~A. Aguilar, I.~Garrig{\'o}s, and J.-N. Maz{\'o}n.
 \newblock {Impact Analysis of Goal-Oriented Requirements in Web Engineering}.
 \newblock In B.~Murgante, O.~Gervasi, A.~Iglesias, D.~Taniar, and B.~Apduhan,
-  editors, {\em Proceedings of The 12th International Conference on
+  editors, {\em Proceedings of the 12th International Conference on
   Computational Science and Its Applications (ICCSA)}, volume 6786 of {\em
   Lecture Notes in Computer Science}, pages 421--436. Springer Berlin /
   Heidelberg, 2011.
@@ -42,7 +42,7 @@ J.~A. Aguilar, I.~Garrig\'{o}s, J.~N. Maz\'{o}n, and J.~Trujillo.
 S.~Anwer and N.~Ikram.
 \newblock {Goal-Oriented Requirement Engineering: A Critical Study of
   Techniques}.
-\newblock In {\em {Proceeding of 13th Asia Pacific Software Engineering
+\newblock In {\em {Proceeding of the 13th Asia Pacific Software Engineering
   Conference (APSEC)}}, pages 121 --130, December 2006.
 
 \bibitem{impact}
@@ -51,10 +51,14 @@ R.~Arnold and S.~Bohner.
 \newblock In {\em {Proceeding of the Software Maintenance (CSM)}}, pages 292
   --301, sep 1993.
 
+\bibitem{ATL}
+{ATLAS Transformation Language}.
+\newblock \url{http://www.eclipse.org/m2m/atl/}.
+
 \bibitem{barbero2007traceability}
 M.~Barbero, M.~Del~Fabro, and J.~B{\'e}zivin.
 \newblock {Traceability and provenance issues in global model management}.
-\newblock In {\em {3rd ECMDA-Traceability Workshop}}, 2007.
+\newblock In {\em {Proceeding of the 3rd ECMDA-Traceability Workshop}}, 2007.
 
 \bibitem{bezivin2005unification}
 J.~B{\'e}zivin.
@@ -79,27 +83,29 @@ D.~Bolchini and J.~Mylopoulos.
 A.~Bozzon, S.~Comai, and P.~Fraternali.
 \newblock {Current Research on the Design of Web 2.0 Applications Based on
   Model-Driven Approaches}.
-\newblock pages 25--31, 2008.
+\newblock In {\em {Proceedings of the 8th International Conference on Web
+  Engineering (ICWE)}}, pages 25--31, 2008.
 
 \bibitem{Bozzon2006}
 A.~Bozzon, S.~Comai, P.~Fraternali, and G.~T. Carughi.
-\newblock {Conceptual modeling and code generation for rich internet
-  applications}.
+\newblock {Conceptual modeling and code generation for Rich Internet
+  Applications}.
 \newblock In {\em {Proceedings of the 6th International Conference on Web
   Engineering (ICWE)}}, page 353, New York, New York, USA, 2006. ACM Press.
 
 \bibitem{Hera}
 S.~Casteleyn, W.~V. Woensel, and G.-J. Houben.
-\newblock A semantics-based aspect-oriented approach to adaptation in web
-  engineering.
-\newblock In {\em Hypertext}, pages 189--198, 2007.
+\newblock {A semantics-based aspect-oriented approach to adaptation in Web
+  engineering}.
+\newblock In {\em Proceedings of the 18th Conference on Hypertext and
+  Hypermedia (HT)}, pages 189--198, 2007.
 
 \bibitem{WebML}
 S.~Ceri, P.~Fraternali, and A.~Bongio.
 \newblock {Web Modeling Language (WebML): a modeling language for designing Web
   sites}.
-\newblock {\em {nternational Journal of Computer and Telecommunications
-  Networking}}, 33(1-6):137--157, 2000.
+\newblock {\em {Journal of Computer and Telecommunications Networking}},
+  33(1-6):137--157, 2000.
 
 \bibitem{Pareto2}
 Y.~Collette and P.~Siarry.
@@ -111,26 +117,15 @@ O.~M.~F. De~Troyer and C.~J. Leune.
 \newblock {WSDM: a user centered design method for Web sites}.
 \newblock {\em Comput. Netw. ISDN Syst.}, 30(1-7):85--94, 1998.
 
-\bibitem{del2006weaving}
-M.~Del~Fabro, J.~B{\'e}zivin, and P.~Valduriez.
-\newblock {Weaving Models with the Eclipse AMW plugin}.
-\newblock In {\em {Eclipse Modeling Symposium, Eclipse Summit Europe}}, volume
-  2006, 2006.
-
 \bibitem{AtlasModelWeaver}
 M.~Del~Fabro, J.~B{\'e}zivin, and P.~Valduriez.
 \newblock {Weaving Models with the Eclipse AMW plugin}.
-\newblock In {\em {Eclipse Modeling Symposium, Eclipse Summit Europe}}, volume
-  2006, 2006.
-
-\bibitem{ADRIA2}
-P.~Dolog and J.~Stage.
-\newblock {ADRIA: A Method for Abstract Design of Rich Internet Applications
-  for the Web 2.0}.
+\newblock In {\em {Proceedings of the Eclipse Modeling Symposium, Eclipse
+  Summit Europe}}, volume 2006, 2006.
 
 \bibitem{ADRIA1}
 P.~Dolog and J.~Stage.
-\newblock {Designing interaction spaces for rich internet applications with
+\newblock {Designing interaction spaces for Rich Internet Applications with
   UML}.
 \newblock {\em Journal of Web Engineering}, pages 358--363, 2007.
 
@@ -224,7 +219,7 @@ F.~Jouault and I.~Kurtev.
 
 \bibitem{Koch02}
 N.~Koch.
-\newblock The expressive power of uml-based web engineering.
+\newblock {The Expressive Power of UML-based Web Engineering}.
 \newblock In {\em {Proceedings of the 1st International Workshop on
   Web-oriented Software Technology (IWWOST)}}, pages 40--41, 2002.
 
@@ -239,7 +234,7 @@ N.~Koch, A.~Knapp, G.~Zhang, and H.~Baumeister.
 N.~Koch, S.~Meli{\'a}, N.~Moreno, V.~Pelechano, F.~S{\'a}nchez, and J.~Vara.
 \newblock {Model-driven Web Engineering}.
 \newblock {\em {The European Journal for the Informatics Professional}}, pages
-  40--45.
+  40--45, 2008.
 
 \bibitem{UWEpatterns4RIA}
 N.~Koch, M.~Pigerl, G.~Zhang, and T.~Morozova.
@@ -259,10 +254,6 @@ H.~T. Kung, F.~Luccio, and F.~P. Preparata.
 \newblock {On Finding the Maxima of a Set of Vectors}.
 \newblock {\em J. ACM}, 22:469--476, October 1975.
 
-\bibitem{ATL}
-A.~T. Language.
-\newblock \url{http://www.eclipse.org/m2m/atl/}.
-
 \bibitem{RUXMethod}
 M.~Linaje, J.~C. Preciado, and F.~Sanchez-Figueroa.
 \newblock {Engineering Rich Internet Application User Interfaces over Legacy
@@ -277,8 +268,8 @@ M.~Lindvall and K.~Sandahl.
 
 \bibitem{UWER}
 L.~Machado, O.~Filho, and J.~a. Ribeiro.
-\newblock {UWE-R: an extension to a web engineering methodology for rich
-  internet applications}.
+\newblock {UWE-R: an extension to a Web engineering methodology for Rich
+  Internet Applications}.
 \newblock {\em Journal of Trans. Info. Sci. and App.}, 6:601--610, April 2009.
 
 \bibitem{OOH4RIAMethod}
@@ -294,7 +285,7 @@ S.~Meli{\'a}, J.~G{\'o}mez, S.~P{\'e}rez, and O.~D{\'\i}az.
 
 \bibitem{MDWE}
 N.~Moreno, J.~Romero, and A.~Vallecillo.
-\newblock An overview of model-driven web engineering and the mda.
+\newblock {An overview of Model-Driven Web Engineering and the MDA}.
 \newblock {\em {Web Engineering: Modelling and Implementing Web Applications}},
   pages 353--382, 2008.
 
@@ -307,7 +298,7 @@ N.~Moreno, J.~Romero, and A.~Vallecillo.
 \newblock {\url{http://www.omg.org}}.
 
 \bibitem{OOWS2001}
-O.~Pastor, S.~M. Abrah\, {a}o, and J.~Fons.
+O.~Pastor, S.~M. Abrah\~{a}o, and J.~Fons.
 \newblock {An Object-Oriented Approach to Automate Web Applications
   Development}.
 \newblock In {\em {Proceedings of the 2nd International Conference on
@@ -325,7 +316,8 @@ J.~Preciado, M.~Linaje, S.~Comai, and F.~Sanchez-Figueroa.
 J.~Preciado, M.~Linaje, and F.~Sanchez-Figueroa.
 \newblock {Adapting Web 1.0 User Interfaces to Web 2.0 Multidevice User
   Interfaces using RUX-Method}.
-\newblock volume~14, pages 2239--2254, 2008.
+\newblock {\em {Journal of Universal Computer Science (J.UCS)}},
+  14(13):2239--2254, jul 2008.
 
 \bibitem{Preciado}
 J.~C. Preciado, M.~Linaje, F.~Sanchez, and S.~Comai.
@@ -381,7 +373,10 @@ F.~Szidarovszky, M.~Gershon, and L.~Duckstein.
 
 \bibitem{OOHDMRIA}
 M.~Urbieta, G.~Rossi, J.~Ginzburg, and D.~Schwabe.
-\newblock {Designing the Interface of Rich Internet Applications}, 2007.
+\newblock {Designing the Interface of Rich Internet Applications}.
+\newblock In V.~A.~F. Almeida and R.~A. Baeza-Yates, editors, {\em {5th Latin
+  American Web Congress (LA-Web)}}, pages 144--153. IEEE Computer Society,
+  2007.
 
 \bibitem{Valderas}
 P.~Valderas and V.~Pelechano.
@@ -410,9 +405,10 @@ J.~Wright.
 
 \bibitem{ReqForRIA}
 J.~M. Wright and J.~B. Dietrich.
-\newblock {Requirements for Rich Internet Application Design Methodologies}.
-\newblock In {\em Proceedings of the 9th international Conference on Web
-  Information Systems Engineering (WISE)}.
+\newblock Requirements for rich internet application design methodologies.
+\newblock In {\em Proceedings of the 9th international conference on Web
+  Information Systems Engineering}, WISE '08, pages 106--119, Berlin,
+  Heidelberg, 2008. Springer-Verlag.
 
 \bibitem{Xpand}
 {Xpand Language}.
