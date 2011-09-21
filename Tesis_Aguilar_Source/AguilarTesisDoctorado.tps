@@ -32,8 +32,8 @@ cxCur=1107
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=73
-Cursor.column=0
+Cursor.row=75
+Cursor.column=34
 TopSubLine=58
 
 [Frame1]
@@ -63,7 +63,7 @@ cxMin=10
 [Frame1_View0,0]
 Cursor.row=792
 Cursor.column=303
-TopSubLine=1404
+TopSubLine=1413
 
 [Frame2]
 Columns=1
