@@ -289,6 +289,12 @@ N.~Moreno, J.~Romero, and A.~Vallecillo.
 \newblock {\em {Web Engineering: Modelling and Implementing Web Applications}},
   pages 353--382, 2008.
 
+\bibitem{ReqEngRoad}
+B.~Nuseibeh and S.~M. Easterbrook.
+\newblock {Requirements engineering: a roadmap}.
+\newblock In {\em {Proceedings of the Internationa Conference on Software
+  Engineering (ICSE)}}, pages 35--46, 2000.
+
 \bibitem{OCL}
 {Object Constraint Language, Version 2.0}.
 \newblock {\url{http://www.omg.org/spec/OCL/2.0/}}.
