@@ -5,13 +5,13 @@ Version=2
 [SessionInfo]
 ActiveTab=0
 FrameCount=19
-ActiveFrame=0
+ActiveFrame=1
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,23 +24,23 @@ Class=CLatexEdit
 Document=AguilarTesisDoctorado.tex
 
 [Frame0_Row0]
-cyCur=348
+cyCur=208
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1107
+cxCur=1023
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=75
-Cursor.column=34
-TopSubLine=58
+Cursor.row=112
+Cursor.column=18
+TopSubLine=101
 
 [Frame1]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -53,17 +53,17 @@ Class=CLatexEdit
 Document=chapter1.tex
 
 [Frame1_Row0]
-cyCur=210
+cyCur=393
 cyMin=10
 
 [Frame1_Col0]
-cxCur=1019
+cxCur=1053
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=792
-Cursor.column=303
-TopSubLine=1413
+Cursor.row=1014
+Cursor.column=0
+TopSubLine=1815
 
 [Frame2]
 Columns=1
@@ -90,9 +90,9 @@ cxCur=1023
 cxMin=10
 
 [Frame2_View0,0]
-Cursor.row=10
-Cursor.column=0
-TopSubLine=0
+Cursor.row=14
+Cursor.column=9
+TopSubLine=11
 
 [Frame3]
 Columns=1
@@ -177,9 +177,9 @@ cxCur=927
 cxMin=10
 
 [Frame5_View0,0]
-Cursor.row=8
-Cursor.column=1
-TopSubLine=3
+Cursor.row=35
+Cursor.column=361
+TopSubLine=76
 
 [Frame6]
 Columns=1
@@ -293,8 +293,8 @@ cxCur=912
 cxMin=10
 
 [Frame9_View0,0]
-Cursor.row=0
-Cursor.column=0
+Cursor.row=4
+Cursor.column=50
 TopSubLine=0
 
 [Frame10]
@@ -351,9 +351,9 @@ cxCur=912
 cxMin=10
 
 [Frame11_View0,0]
-Cursor.row=8
-Cursor.column=15
-TopSubLine=0
+Cursor.row=38
+Cursor.column=0
+TopSubLine=40
 
 [Frame12]
 Columns=1
@@ -380,9 +380,9 @@ cxCur=912
 cxMin=10
 
 [Frame12_View0,0]
-Cursor.row=9
-Cursor.column=69
-TopSubLine=0
+Cursor.row=35
+Cursor.column=22
+TopSubLine=35
 
 [Frame13]
 Columns=1
@@ -411,7 +411,7 @@ cxMin=10
 [Frame13_View0,0]
 Cursor.row=8
 Cursor.column=69
-TopSubLine=0
+TopSubLine=8
 
 [Frame14]
 Columns=1
@@ -438,9 +438,9 @@ cxCur=912
 cxMin=10
 
 [Frame14_View0,0]
-Cursor.row=9
-Cursor.column=69
-TopSubLine=5
+Cursor.row=28
+Cursor.column=0
+TopSubLine=19
 
 [Frame15]
 Columns=1
@@ -496,9 +496,9 @@ cxCur=912
 cxMin=10
 
 [Frame16_View0,0]
-Cursor.row=8
-Cursor.column=0
-TopSubLine=0
+Cursor.row=11
+Cursor.column=9
+TopSubLine=7
 
 [Frame17]
 Columns=1
@@ -525,9 +525,9 @@ cxCur=912
 cxMin=10
 
 [Frame17_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=0
+Cursor.row=15
+Cursor.column=51
+TopSubLine=4
 
 [Frame18]
 Columns=1
@@ -554,7 +554,7 @@ cxCur=1021
 cxMin=10
 
 [Frame18_View0,0]
-Cursor.row=2
-Cursor.column=0
-TopSubLine=0
+Cursor.row=54
+Cursor.column=42
+TopSubLine=54
 
